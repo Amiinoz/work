@@ -1,39 +1,89 @@
-@import '../components/header/header.scss';
+@import '../components/header/header.module.scss';
+@import '../components/banner/banner.module.scss';
 @import './breakpoints.scss';
+@import './variables';
+@import '../components/about/about.scss';
 
-.container {
-  flex-grow: 1;
-  margin: 0 auto;
-  padding: 0 32px;
-  position: relative;
-  width: auto;
-  height: 100%;
+html,
+body {
+  font-family: 'Work Sans', sans-serif;
 
-  @include media('<=1024') {
-    max-width: 960px;
-  }
-  @include media('<=1216') {
-    max-width: 1152px;
-  }
-  @include media('<=1400') {
-    max-width: 1244px;
-  }
+  cursor: none;
+  background-color: $bg-color;
+  background-image: radial-gradient($dots 10%, transparent 15%);
+  background-position: 0 0;
+  background-size: 7px 7px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 30px;
 }
 
-.fluid {
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
+.main-container {
+  // padding: 0 5vw;
+  // clip-path: inset(100% 0% 0% 0%);
+  // backface-visibility: hidden;
+  padding: 2.15px 5vw;
 }
 
-.row {
-  position: relative;
+section {
+  padding: 100px 0;
+  .section-header {
+    margin-bottom: 50px;
+  }
+}
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.loader-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 'all 0.25s ease-in-out';
+  background-color: #191919;
+  // color: #dbd8d6;
+  color: #fff;
+
+  .logo {
+    // width: 150px;
+    // height: 200px;
+    // margin: 50vh auto;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-left: 7vw;
+    }
+  }
+  h1 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.5vw;
+
+    // text-transform: uppercase;
+    font-family: 'Bai Jamjuree', serif;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 }
-.space-between {
-  justify-content: space-between;
-}
-.v-center {
-  align-items: center;
-}
+
+// ================

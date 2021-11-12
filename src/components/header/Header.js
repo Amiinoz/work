@@ -1,7 +1,7 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo_yellow.webp';
-import './header.scss';
+import './header.module.scss';
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
               <Logo />
             </NavLink> */}
             {/* <Logo /> */}
-            <img src={Logo} alt="Site logo" />
+            <img src={Logo} alt="Mo Magan ite logo" />
           </div>
           <div className="menu">
             <button>
