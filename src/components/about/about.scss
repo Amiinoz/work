@@ -1,6 +1,5 @@
-@import '../../styles/breakpoints.scss';
-@import '../../styles/_variables';
-
+@import '../../styles/mixins';
+@import '../../styles/variables';
 .about-container {
   position: relative;
   display: grid;
@@ -9,44 +8,45 @@
   padding-left: 12vw;
   place-items: center;
 
-  // @include mq('tablet-small', max) {
-  //   display: grid;
-  //   grid-template-columns: repeat(1, 1fr);
-  //   justify-content: center;
-  //   padding-top: 2rem;
-  // }
-}
-.bio {
-  p {
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-}
-.bio::after {
-  content: '';
-  width: 2rem;
-  height: 2px;
-  position: absolute;
-  background: currentColor;
-  top: calc(100% + -2rem);
-}
-.social {
-  margin-left: -10vw;
-  // @include mq('tablet-wide', max) {
-  //   margin-left: 4rem;
-  // }
-  .socialimage {
+  @include mq('tablet-small', max) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    place-items: center;
+    padding-top: 2rem;
   }
-  // .social__sign {
-  // }
-  .socialicons {
-    margin: 30px 0;
-    a {
-      img {
-        width: 20px;
-        padding: 0 0 0 34px;
+
+  &__bio {
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+  }
+  &__bio::after {
+    content: '';
+    width: 2rem;
+    height: 2px;
+    position: absolute;
+    background: currentColor;
+    top: calc(100% + -2rem);
+  }
+  &__social {
+    margin-left: -10vw;
+    @include mq('tablet-wide', max) {
+      margin-left: 4rem;
+    }
+    .social__image {
+      justify-content: center;
+      place-items: center;
+    }
+    .social__sign {
+    }
+    .social__icons {
+      margin: 30px 0;
+      a {
+        img {
+          width: 20px;
+          padding: 0 0 0 34px;
+        }
       }
     }
   }

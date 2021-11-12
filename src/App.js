@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 // import gsap from 'gsap';
 import useLocoScroll from './hooks/useLocoScroll';
 
+import Navigation from './components/navigation/Navigation';
 import Header from './components/header/Header';
-import { Banner } from './components/banner/Banner';
 import './styles/App.scss';
 import About from './components/about/About';
 
@@ -72,8 +72,8 @@ function App() {
             id="main-container"
             data-scroll-container
           >
+            <Navigation />
             <Header />
-            <Banner />
             <About />
           </div>
           ;

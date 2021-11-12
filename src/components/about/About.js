@@ -1,6 +1,6 @@
 import React from 'react';
 // import cn from 'classnames';
-// import SectionHeader from "../SectionHeader/sectionHeader";
+import SectionHeader from '../sectionHeader/SectionHeader';
 
 // import gsap from 'gsap';
 // import SplitText from '../../utils/Split3.min.js ';
@@ -8,15 +8,20 @@ import React from 'react';
 
 import './about.scss';
 // import Services from "../Services/services";
+import Mo from '../../assets/about_image.webp';
+import Signature from '../../assets/signature.svg';
+import Github from '../../assets/social/socialgithub.svg';
+import Behance from '../../assets/social/socialbehance.svg';
+import Linked from '../../assets/social/sociallinked.svg';
 
 const About = () => {
   return (
     <>
-      {/* <SectionHeader
+      <SectionHeader
         title="About"
         subtitle="Hello,"
         heading="Nice to meet you"
-      /> */}
+      />
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
           <p>
@@ -34,7 +39,7 @@ const About = () => {
             <img
               width="200"
               height="270 "
-              src="assets/about_image.webp"
+              src={Mo}
               alt="photo of me"
               data-scroll
             />
@@ -43,7 +48,7 @@ const About = () => {
             <img
               width="200"
               height="40"
-              src="assets/signature.svg"
+              src={Signature}
               alt="my signature"
               data-scroll
             />
@@ -55,19 +60,11 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="assets/social/socialgithub.svg"
-                alt="github logo"
-                data-scroll
-              />
+              <img src={Github} alt="github logo" data-scroll />
             </a>
 
             <a href="/">
-              <img
-                src="assets/social/socialbehance.svg"
-                alt="behance logo"
-                data-scroll
-              />
+              <img src={Behance} alt="behance logo" data-scroll />
             </a>
 
             <a
@@ -75,11 +72,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="assets/social/sociallinked.svg"
-                alt="linkedlin logo"
-                data-scroll
-              />
+              <img src={Linked} alt="linkedlin logo" data-scroll />
             </a>
           </div>
         </div>
