@@ -6,6 +6,7 @@ import Navigation from './components/navigation/Navigation';
 import Header from './components/header/Header';
 import './styles/App.scss';
 import About from './components/about/About';
+import Services from './components/services/Services';
 
 function App() {
   const ref = useRef(null);
@@ -75,6 +76,7 @@ function App() {
             <Navigation />
             <Header />
             <About />
+            <Services />
           </div>
           ;
         </>

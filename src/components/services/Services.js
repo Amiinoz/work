@@ -1,0 +1,157 @@
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
+// import Button from '../Button/button';
+
+import './services.scss';
+import SectionHeader from '../sectionHeader/SectionHeader';
+
+const accordionIds = [
+  {
+    id: 0,
+    title: 'Design',
+    results: [
+      'App design',
+      'Branding',
+      'UI and UX design',
+      'Interaction Design',
+      'Visual Design',
+    ],
+  },
+  {
+    id: 1,
+    title: 'Development',
+    results: [
+      'Front end Development',
+      'Back end Development',
+      'Hositing',
+      'Depolyment',
+      'Maintainance',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Digital',
+    results: [
+      'Digital marketing',
+      'Social media strategies',
+      'Email and Suscription',
+    ],
+  },
+];
+
+const Services = ({ text }) => {
+  const [expanded, setExpanded] = useState(0);
+  const animation = useAnimation();
+  const [aboutRef, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '-250px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible');
+    }
+  }, [animation, inView]);
+
+  return (
+    <>
+      <SectionHeader
+        title="Service"
+        subtitle="Skills"
+        heading="In Development & Design"
+      />
+      <div
+        ref={aboutRef}
+        animate={animation}
+        initial="hidden"
+        variants={{
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] },
+          },
+          hidden: { opacity: 0, y: 72 },
+        }}
+        data-scroll-section
+        className="service-container"
+      >
+        <div className="service-container__intro">
+          <h4>
+            Good product development— <br />
+            starts with a passion for visual connections and strategy.
+          </h4>
+          <p>
+            I strive to obtain transparent and collaborative services, so
+            whether you want to refresh or expand your brand, I can help you
+            gain more customers and exceed your goal.
+            <br />
+            <br /> I am always learning new technologies and would not stop
+            helping you at the product launch.
+          </p>
+          <span>
+            <img src="assets/techUsed.webp" alt="Technology used" />
+            {/* <Button text="Book a free Call" /> */}
+          </span>
+        </div>
+
+        <div className="service-container__accordion">
+          <h3>Services</h3>
+          {accordionIds.map((details, index) => (
+            <Accordion
+              key={index}
+              details={details}
+              expanded={expanded}
+              setExpanded={setExpanded}
+            />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+const Accordion = ({ details, expanded, setExpanded }) => {
+  const isOpen = details.id === expanded;
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <>
+      <motion.div
+        className="accordionHeader"
+        initial={false}
+        onClick={() => setExpanded(isOpen ? false : details.id)}
+        whileHover={{
+          color: '#000000',
+        }}
+        onHoverStart={() => setHovered(!hovered)}
+        onHoverEnd={() => setHovered(!hovered)}
+      >
+        <motion.div className="accordionIcon">
+          <motion.span
+            animate={{ rotate: isOpen || hovered ? 0 : 45, x: 3 }}
+            transition={{ duration: 0.2, ease: [0.6, 0.05, -0.01, 0.9] }}
+          ></motion.span>
+          <motion.span
+            animate={{ rotate: isOpen || hovered ? 0 : -45, x: -3 }}
+            transition={{ duration: 0.2, ease: [0.6, 0.05, -0.01, 0.9] }}
+          ></motion.span>
+        </motion.div>
+        {details.title}
+      </motion.div>
+      <motion.div
+        className="accordionContent"
+        key="content"
+        animate={{ height: isOpen ? '120%' : '0' }}
+        transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}
+      >
+        {details.results.map((result, index) => (
+          <span key={index}>{result}</span>
+        ))}
+      </motion.div>
+    </>
+  );
+};
+
+export default Services;

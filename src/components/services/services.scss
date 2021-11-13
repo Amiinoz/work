@@ -1,0 +1,131 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/_variables.scss";
+
+.service-container {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding-left: 12vw;
+  place-items: center;
+  top: -12vh;
+  margin-bottom: -45vh;
+
+  @include mq("tablet-wide", max) {
+    padding-top: 10vh;
+  }
+  @include mq("tablet", max) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding-top: 7rem;
+    margin: 3rem;
+    font-size: 20px;
+  }
+
+  &__intro {
+    @include mq("tablet", max) {
+      margin-left: -3rem;
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-family: "Bai Jamjuree", serif;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+
+    span {
+      padding: 30px 0 0px 0;
+      img {
+        width: 450px;
+        padding-top: 34px;
+        @include mq("tablet", min) {
+          width: 350px;
+          padding-top: 34px;
+        }
+      }
+    }
+  }
+
+  &__accordion {
+    width: 70%;
+    margin: 31px 0 0 106px;
+    @include mq("tablet-wide", max) {
+      margin-left: 14px;
+    }
+
+    h3 {
+      font-family: "Bai Jamjuree", serif;
+      color: black;
+      width: 60%;
+      font-size: 2rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      text-decoration: dotted;
+    }
+    p {
+      max-width: 440px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-left: 124px;
+    }
+  }
+}
+
+.accordionHeader {
+  width: 100%;
+  color: transparent;
+  text-shadow: #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 8px 0;
+}
+.accordionHeader {
+  width: 100%;
+  color: #000;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 8px 0;
+}
+.accordionIcon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 8px;
+
+  span {
+    width: 16px;
+    height: 4px;
+    background: $accent;
+    transition: all 0.1s ease-in-out;
+  }
+}
+.accordionContent {
+  overflow: hidden;
+  padding-left: 40px;
+
+  span {
+    width: 100%;
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    // color: $accent;
+    color: #bf9004;
+    display: block;
+    font-weight: 300;
+  }
+}
