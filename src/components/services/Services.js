@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 // import Button from '../Button/button';
+import TechStack from '../../assets/techUsed.webp';
 
 import './services.scss';
 import SectionHeader from '../sectionHeader/SectionHeader';
@@ -91,7 +92,7 @@ const Services = ({ text }) => {
             helping you at the product launch.
           </p>
           <span>
-            <img src="assets/techUsed.webp" alt="Technology used" />
+            <img src={TechStack} alt="Technology used" />
             {/* <Button text="Book a free Call" /> */}
           </span>
         </div>
