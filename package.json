@@ -15,12 +15,14 @@
     "node-sass": "^4.13.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.19.5",
     "react-intersection-observer": "^8.32.2",
     "react-loadable": "^5.5.0",
     "react-locomotive-scroll": "^0.2.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "sass": "^1.43.4",
+    "sweetalert2": "^11.1.10",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -53,9 +55,12 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.27.0",
+    "file-loader": "^6.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "react-image-webp": "^0.8.0",
+    "url-loader": "^4.1.1"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

@@ -5,8 +5,10 @@ import Navigation from '../components/navigation/Navigation';
 import Header from '../components/header/Header';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
-import Projects from '../components/projects/Projects';
+// import Projects from '../components/projects/Projects';
+import Contact from '../components/contact/Contact';
 import Spinner from '../assets/loader.gif';
+import Gallery from '../components/gallery/Gallery';
 
 import '../styles/App.scss';
 
@@ -75,7 +77,9 @@ const Home = () => {
             <Header />
             <About />
             <Services />
-            <Projects />
+            {/* <Projects /> */}
+            <Gallery />
+            <Contact />
           </div>
           ;
         </>
