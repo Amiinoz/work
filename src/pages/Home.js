@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 // import gsap from 'gsap';
 import useLocoScroll from '../hooks/useLocoScroll';
-import Navigation from '../components/navigation/Navigation';
+// import Navigation from '../components/navigation/Navigation';
 import Header from '../components/header/Header';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
@@ -9,8 +9,10 @@ import Services from '../components/services/Services';
 import Contact from '../components/contact/Contact';
 import Spinner from '../assets/loader.gif';
 import Gallery from '../components/gallery/Gallery';
+import { Helmet } from 'react-helmet';
 
 import '../styles/App.scss';
+import Layout from '../components/Layout';
 
 const Home = () => {
   const ref = useRef(null);
@@ -73,15 +75,20 @@ const Home = () => {
             id="main-container"
             data-scroll-container
           >
-            <Navigation />
-            <Header />
-            <About />
-            <Services />
-            {/* <Projects /> */}
-            <Gallery />
-            <Contact />
+            {/* <Navigation /> */}
+            <Layout>
+              <Helmet>
+                <title>Mo Magan | Home </title>
+                <meta name="description" content="Home" />
+              </Helmet>
+              <Header />
+              <About />
+              <Services />
+              {/* <Projects /> */}
+              <Gallery />
+              <Contact />
+            </Layout>
           </div>
-          ;
         </>
       )}
     </>

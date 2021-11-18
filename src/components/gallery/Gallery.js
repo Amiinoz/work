@@ -3,8 +3,7 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import useOnScreen from '../../hooks/useOnScreen';
 import cn from 'classnames';
-// import FaveTs from '../../assets/favetees/projectPrimaryImage.png';
-
+import { Link } from 'react-router-dom';
 import './gallery.scss';
 
 const images = [
@@ -142,13 +141,17 @@ export default function Gallery({ src, index, columnOffset }) {
           <span className="divider" />
           <span>{images.length}</span>
         </div>
-        {images.map((image, index) => (
-          <GalleryItem
-            key={src}
-            index={index}
-            {...image}
-            updateActiveImage={handleUpdateActiveImage}
-          />
+        {images.map((image, index, src) => (
+          <div key={src}>
+            <Link to={`/${image.title}`}>
+              <GalleryItem
+                key={src}
+                index={index}
+                {...image}
+                updateActiveImage={handleUpdateActiveImage}
+              />
+            </Link>
+          </div>
         ))}
       </div>
     </section>
