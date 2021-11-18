@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
+
 // import CustomCursor from "../CustomCursor/cursor";
 // import MenuManager from './Menu/MenuManager';
 

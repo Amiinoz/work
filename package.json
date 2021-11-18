@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "classnames": "^2.2.6",
     "framer-motion": "^4.1.17",
@@ -51,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^12.1.2",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
@@ -61,6 +61,7 @@
     "prettier": "^2.4.1",
     "react-helmet": "^6.1.0",
     "react-image-webp": "^0.8.0",
+    "react-test-renderer": "^17.0.2",
     "url-loader": "^4.1.1"
   },
   "lint-staged": {

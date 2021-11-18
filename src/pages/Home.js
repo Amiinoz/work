@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import gsap from 'gsap';
 import useLocoScroll from '../hooks/useLocoScroll';
-// import Navigation from '../components/navigation/Navigation';
 import Header from '../components/header/Header';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
-// import Projects from '../components/projects/Projects';
 import Contact from '../components/contact/Contact';
 import Spinner from '../assets/loader.gif';
 import Gallery from '../components/gallery/Gallery';
@@ -75,16 +72,14 @@ const Home = () => {
             id="main-container"
             data-scroll-container
           >
-            {/* <Navigation /> */}
             <Layout>
               <Helmet>
-                <title>Mo Magan | Home </title>
+                <title>Mo Magan Portfolio | Home </title>
                 <meta name="description" content="Home" />
               </Helmet>
               <Header />
               <About />
               <Services />
-              {/* <Projects /> */}
               <Gallery />
               <Contact />
             </Layout>

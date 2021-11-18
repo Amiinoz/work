@@ -19,7 +19,7 @@ import ProjImages1 from '../assets/favetees/projectImages1.webp';
 import ProjImages2 from '../assets/favetees/projectImages2.webp';
 import ProjImages3 from '../assets/favetees/projectImages3.webp';
 import ProjImages4 from '../assets/favetees/faveteesInAction.mp4';
-import PageGuides from '../components/PageGguides/pageguides';
+import PageGuides from '../components/PageGuides/pageguides';
 import Layout from '../components/Layout';
 
 const Favetees = () => {
@@ -28,8 +28,8 @@ const Favetees = () => {
       <>
         <div>
           <Helmet>
-            <title>Mo Magan | Favetees</title>
-            <meta name="eCommerce site" content="Favetees" />
+            <title>Mo Magan Portfolio | Favetees</title>
+            <meta name="description" content="Favetees" />
           </Helmet>
           <ProjectsTemplate
             title="Favetees"

@@ -1,0 +1,194 @@
+@import '../../styles/variables';
+@import '../../styles/_mixins.scss';
+@import '../../styles/breakpoints.scss';
+
+.short {
+  height: 407vh;
+}
+
+.mosdev-container {
+  font-family: 'Work Sans', sans-serif;
+
+  background-color: #282a36;
+  background-image: radial-gradient($dots 10%, transparent 15%);
+  background-position: 0 0;
+  background-size: 7px 7px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 80vh;
+
+  margin-left: -5vw;
+
+  .banner {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 5vw;
+
+    .banner-title {
+      // background-color: pink;
+      display: inline-block;
+      position: relative;
+      font-family: 'Bai Jamjuree';
+      font-weight: 600;
+      font-size: 120px;
+      padding: 20px;
+      color: $accent-Two;
+      z-index: 12;
+      @media only screen and (min-width: 425px) and (max-width: 640px) {
+        font-size: 80px;
+      }
+    }
+
+    .banner-image {
+      img {
+        display: grid;
+        place-items: center;
+        margin: -77vh 0 0 14vw;
+        width: 2749px;
+        height: 2037px;
+        overflow: hidden;
+        @media only screen and (min-width: 425px) and (max-width: 640px) {
+          margin: -76vh 0 0 -37vw;
+        }
+      }
+    }
+    .scroll {
+      position: relative;
+      h3 {
+        font-size: 20px;
+        color: #ffc600;
+        margin: -70vh 0 0 2vw;
+      }
+    }
+  }
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    // margin: -33vh 0 10vh -31vw;
+    // @media only screen and (min-width: 320px) and (max-width: 640px) {
+    //   margin: -33vh 0 10vh -20vw;
+    // }
+    // @media only screen and (min-width: 640px) and (max-width: 790px) {
+    //   margin: -33vh 0 10vh -25vw;
+    // }
+  }
+
+  .info {
+    flex: 1 1 150px;
+    margin: 5px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: right;
+
+    img {
+      width: 100px;
+      margin: -1vh 1vh 0 0;
+      @media only screen and (min-width: 320px) and (max-width: 640px) {
+        width: 90px;
+      }
+    }
+  }
+  .heading {
+    h3 {
+      justify-content: left;
+      font-size: 24px;
+      @media only screen and (min-width: 320px) and (max-width: 640px) {
+        justify-content: left;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .install {
+    margin-left: 7vw;
+    @media only screen and (min-width: 320px) and (max-width: 640px) {
+      margin: 4px;
+    }
+    button {
+      color: #262626;
+      padding: 0.4em 2em;
+      border: $black 2px solid;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 4px;
+      background: linear-gradient(45deg, #f7f9fa 50%, #ff4141 50%);
+      -webkit-background-clip: text;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, $black 50%, transparent 50%);
+        z-index: -1;
+      }
+      &:after {
+        background-size: 300%;
+        background-position: 100%;
+        transition: 1s;
+      }
+      &:hover {
+        background: $black;
+        color: $background;
+      }
+    }
+  }
+
+  .insp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // border: 1px solid red;
+    // color: red;
+  }
+
+  .insp {
+    flex: 1 150px; /*  Stretching: */
+
+    margin: 40px;
+  }
+
+  .image {
+    margin-left: 12vw;
+  }
+  .heading2 {
+    padding-left: 20px;
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+      padding-bottom: 30vh;
+    }
+
+    p {
+      padding-top: 50px;
+    }
+  }
+  .lang-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: black;
+    @media only screen and (min-width: 320px) and (max-width: 640px) {
+      margin-left: -3vw;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+      margin: 2vh 0 0 6vw;
+      color: $accent-Two;
+    }
+  }
+
+  .mockups {
+    display: grid;
+    place-items: center;
+  }
+}
