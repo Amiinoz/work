@@ -1,4 +1,3 @@
-/* eslint-disable no-var */
 import firebase from 'firebase';
 
 // Your web app's Firebase configuration

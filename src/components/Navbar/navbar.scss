@@ -1,8 +1,8 @@
-@import "../../styles/_mixins.scss";
-@import "../../styles//variables";
+@import '../../styles/_mixins.scss';
+@import '../../styles//variables';
 
 .nav-container {
-  position: fixed;
+  position: relative;
   z-index: 11;
   top: 80px;
   max-width: 155px;

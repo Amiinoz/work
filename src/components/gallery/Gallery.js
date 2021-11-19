@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import useOnScreen from '../../hooks/useOnScreen';
+import Work from '../../components/work/Work';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 import './gallery.scss';
@@ -134,26 +135,29 @@ export default function Gallery({ src, index, columnOffset }) {
   };
 
   return (
-    <section data-scroll-section className="section-wrapper gallery-wrap">
-      <div className="gallery" ref={ref}>
-        <div className="gallery-counter">
-          <span>{activeImage}</span>
-          <span className="divider" />
-          <span>{images.length}</span>
-        </div>
-        {images.map((image, index, src) => (
-          <div key={src}>
-            <Link to={`/${image.title}`}>
-              <GalleryItem
-                key={src}
-                index={index}
-                {...image}
-                updateActiveImage={handleUpdateActiveImage}
-              />
-            </Link>
+    <>
+      <Work />
+      <section data-scroll-section className="section-wrapper gallery-wrap">
+        <div className="gallery" ref={ref}>
+          <div className="gallery-counter">
+            <span>{activeImage}</span>
+            <span className="divider" />
+            <span>{images.length}</span>
           </div>
-        ))}
-      </div>
-    </section>
+          {images.map((image, index, src) => (
+            <div key={src}>
+              <Link to={`/${image.title}`}>
+                <GalleryItem
+                  key={src}
+                  index={index}
+                  {...image}
+                  updateActiveImage={handleUpdateActiveImage}
+                />
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

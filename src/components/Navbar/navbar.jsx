@@ -7,7 +7,7 @@ import './navbar.scss';
 export default function Navbar() {
   return (
     <>
-      <div className="nav-wrap">
+      <div className="nav-wrap" data-scroll-section>
         <a href="/" target="Home">
           <img
             src={Logo}
