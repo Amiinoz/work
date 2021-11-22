@@ -1,24 +1,29 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Link from 'gatsby';
-import SEO from '../components/seo';
-import CustomCursor from '../CustomCursor/cursor';
-const Error = () => {
+import { Helmet } from 'react-helmet';
+import '../styles/components/notfound.scss';
+
+const NotFound = () => {
   return (
-    <Layout>
-      <CustomCursor />
-      <SEO title="404: Not found" />
-      <main className="error-page">
-        <div className="error-container">
-          <h1>NOT FOUND</h1>
-          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-          <Link to="/" className="btn">
+    <>
+      <Helmet>
+        <title>Mo Magan Portfolio | 404 </title>
+        <meta name="description" content="Not Found" />
+      </Helmet>
+      <main className="container-notfound">
+        <div className="content">
+          <h1>404 </h1>
+          <h2>NOT FOUND</h2>
+          <p>
+            You just took an L and hit a route that doesn&#39;t exist... the
+            sadness.
+          </p>
+          <a href="/" target="Home">
             Back home
-          </Link>
+          </a>
         </div>
       </main>
-    </Layout>
+    </>
   );
 };
 
-export default Error;
+export default NotFound;

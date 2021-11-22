@@ -4,14 +4,14 @@
 .menu-holder {
   .menu-inside {
     position: fixed;
-    width: 100vw;
+    width: 120vw;
     height: 120vh;
     transform: translateX(100%);
     transition: transform 1s cubic-bezier(1, 0, 0, 1);
     will-change: transform;
     background-color: $accent;
     z-index: -1;
-    margin-left: -85vw;
+    margin-left: -83vw;
     margin-top: -22vh;
     // margin-top: 12vw;
 

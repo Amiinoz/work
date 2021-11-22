@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './pages/Home';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Contact from './pages/contact';
 import Favetees from './pages/Favetees';
 import Covid19Tracker from './pages/Covid19Tracker';
 import Portfolio from './pages/Portfolio';
@@ -10,11 +9,13 @@ import Garabaldi from './pages/Garabaldi';
 import MosDev from './pages/MosDev';
 import Weather from './pages/Weather';
 import Airbnb from './pages/Airbnb';
+// import NotFound from './pages/NotFound';
+import NotFound from './pages/404';
 import Layout from './components/Layout';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/contact', component: Contact },
+
   { path: '/Favetees', component: Favetees },
   { path: '/Covid19Tracker', component: Covid19Tracker },
   { path: '/Portfolio', component: Portfolio },
@@ -22,6 +23,7 @@ const routes = [
   { path: '/MosDev', component: MosDev },
   { path: '/Weather', component: Weather },
   { path: '/Airbnb', component: Airbnb },
+  { path: '/404', component: NotFound },
 ];
 
 function App() {
