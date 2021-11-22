@@ -1,5 +1,5 @@
-@import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
 
 .menu-holder {
   .menu-inside {
@@ -10,8 +10,9 @@
     transition: transform 1s cubic-bezier(1, 0, 0, 1);
     will-change: transform;
     background-color: $accent;
-    z-index: 10;
-    margin-left: -5vw;
+    z-index: -1;
+    margin-left: -85vw;
+    margin-top: -22vh;
     // margin-top: 12vw;
 
     // margin: 11vw 0 0 -6vw;
@@ -21,6 +22,7 @@
 
       .internal-nav-links {
         li {
+          list-style-type: none;
           a {
             transform: translate(0);
             transition-duration: 0.8s;
@@ -49,9 +51,11 @@
     .internal-nav-links {
       li {
         margin-bottom: 20px;
+        list-style-type: none;
 
         a {
           text-decoration: none;
+          list-style-type: none;
           color: $black;
           outline: none;
           font-size: clamp(32px, 4vw, 52px);
@@ -89,8 +93,8 @@
           transform: translateY(-50%) translateX(-30px);
           right: 10%;
           object-fit: cover;
-          filter: brightness(1.3) grayscale(0.54) contrast(0.8) saturate(1.2)
-            sepia(0.21);
+          -webkit-filter: brightness(75%);
+          filter: brightness(75%);
           transition: transform 0.5s ease-in-out;
         }
       }
@@ -124,7 +128,7 @@
     }
   }
 
-  @include mq("tablet", max) {
+  @include mq('tablet', max) {
     .menu-inside {
       .menu-nav-container {
         left: 10%;

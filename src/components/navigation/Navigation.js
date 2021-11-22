@@ -2,11 +2,14 @@ import React, { useRef } from 'react';
 // import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Logo from '../../assets/logo_yellow.webp';
+import Menu from '../Menu/menu';
 import './navigation.scss';
 
 const Navigation = () => {
   // eslint-disable-next-line no-unused-vars
   let navCon = useRef(null);
+  // eslint-disable-next-line no-unused-vars
+  let menCon = useRef(null);
 
   return (
     <motion.div
@@ -26,11 +29,12 @@ const Navigation = () => {
               <img src={Logo} alt="Mo Magan ite logo" />
             </a>
           </div>
-          <div className="menu">
-            <button>
+          <div ref={element => (menCon = element)}>
+            {/* <button>
               <span></span>
               <span></span>
-            </button>
+            </button> */}
+            <Menu />
           </div>
         </div>
       </div>

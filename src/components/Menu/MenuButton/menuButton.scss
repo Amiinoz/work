@@ -1,11 +1,12 @@
-@import "../../../styles/_mixins.scss";
-@import "../../../styles//variables";
+@import '../../../styles/_mixins.scss';
+@import '../../../styles//variables';
 
 .menu-button-wrap {
-  position: fixed;
-  right: 10vw;
-  top: 100px;
-  z-index: 11;
+  // position: fixed;
+  right: 11vw;
+  // top: 34px;
+  // z-index: 11;
+
   will-change: transform;
   transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
@@ -15,14 +16,16 @@
     height: 48px;
     border: none;
     background: 0 0;
-    margin-top: -8px;
+    margin-top: -12px;
+    margin-right: 11vw;
     will-change: transform;
     transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 14;
 
     span {
       &:after,
       &:before {
-        content: "";
+        content: '';
         width: 4px;
         height: 48px;
         position: absolute;
@@ -65,11 +68,12 @@
         transform: translate(-50%, -50%) rotate(45deg);
 
         background-color: $black;
+        z-index: inherit;
       }
     }
   }
 
-  @include mq("tablet", max) {
+  @include mq('tablet', max) {
     display: none;
   }
 }

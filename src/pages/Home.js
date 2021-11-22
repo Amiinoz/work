@@ -7,6 +7,7 @@ import Contact from '../components/Contact/contact';
 import Spinner from '../assets/loader.gif';
 import Gallery from '../components/gallery/Gallery';
 import { Helmet } from 'react-helmet';
+import ContactButton from '../components/ContactButton/contactButton';
 
 import '../styles/App.scss';
 
@@ -81,6 +82,7 @@ const Home = () => {
             <Services />
             <Gallery />
             <Contact />
+            <ContactButton />
           </div>
         </>
       )}
