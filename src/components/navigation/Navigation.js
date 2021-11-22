@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 // import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Logo from '../../assets/logo_yellow.webp';
 import './navigation.scss';
 
 const Navigation = () => {
+  // eslint-disable-next-line no-unused-vars
+  let navCon = useRef(null);
+
   return (
-    <div className="nav">
+    <motion.div
+      className="nav"
+      initial={{ y: -45, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, delay: 1.5, ease: [0.6, 0.5, -0.01, 0.9] }}
+      data-scroll-section
+    >
       <div className="container fluid ">
-        <div className="row v-center space-between">
+        <div
+          className="row v-center space-between"
+          ref={element => (navCon = element)}
+        >
           <div className="logo">
-            {/* <NavLink to="/" exact>
-              <Logo />
-            </NavLink> */}
-            {/* <Logo /> */}
-            <img src={Logo} alt="Mo Magan ite logo" />
+            <a href="/" target="Home">
+              <img src={Logo} alt="Mo Magan ite logo" />
+            </a>
           </div>
           <div className="menu">
             <button>
@@ -23,7 +34,7 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

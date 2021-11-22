@@ -10,6 +10,7 @@ import Garabaldi from './pages/Garabaldi';
 import MosDev from './pages/MosDev';
 import Weather from './pages/Weather';
 import Airbnb from './pages/Airbnb';
+import Layout from './components/Layout';
 
 const routes = [
   { path: '/', component: Home },
@@ -34,7 +35,9 @@ function App() {
         <title>Mo Magan | Portfolio</title>
         <link rel="canonical" href="http://momagan.com" />
       </Helmet>
-      <BrowserRouter>{routeComponents}</BrowserRouter>;
+      <Layout>
+        <BrowserRouter>{routeComponents}</BrowserRouter>
+      </Layout>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar/navbar';
+// import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
+import Navigation from './navigation/Navigation';
 
 // import CustomCursor from "../CustomCursor/cursor";
 // import MenuManager from './Menu/MenuManager';
@@ -11,7 +12,8 @@ const Layout = ({ children }) => {
       {/* <CustomCursor /> */}
       {/* <MenuManager> */}
       <div className="main-container" id="main-container" data-scroll-container>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Navigation />
         <main>{children}</main>
         <Footer />
       </div>

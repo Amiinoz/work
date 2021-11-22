@@ -226,7 +226,7 @@ const ProjectsTemplate = ({
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 1.2, ...transition },
+                  transition: { delay: 0.02, ...transition },
                 }}
                 className="details"
               />
@@ -443,14 +443,13 @@ const ProjectsTemplate = ({
                 <div className=" mock">
                   <h3>{projImgTitle4}</h3>
                   <p>{projImgInfo4}</p>
-                  <iframe
-                    width="853"
-                    height="480"
+
+                  <video
+                    height="100%"
+                    width="100%"
+                    loop
+                    autoPlay
                     src={projImages4}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Full site"
                   />
                 </div>
               </div>
