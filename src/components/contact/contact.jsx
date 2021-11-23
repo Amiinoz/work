@@ -43,7 +43,7 @@ const Contact = () => {
       <SectionHeader
         title="Contact"
         subtitle="Say hello"
-        heading="Open to new opportunities and freelance work"
+        heading="I am currently open to new opportunities and freelance work"
       />
       <section className="contact-container" data-scroll-section>
         <div className="contact-container_intro">

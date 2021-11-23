@@ -1,5 +1,5 @@
-@import "../../styles/_mixins.scss";
-@import "../../styles//variables";
+@import '../../styles/_mixins.scss';
+@import '../../styles//variables';
 
 .footer-section {
   // height: 65px;
@@ -26,12 +26,12 @@
     &__info {
       font-size: 18px;
       font-weight: 600;
-      line-height: 28px;
+      line-height: 8px;
     }
     &__content {
       font-size: 18px;
       font-weight: 600;
-      line-height: 20px;
+      line-height: 8px;
       .copyr {
         margin-left: -37px;
         svg {

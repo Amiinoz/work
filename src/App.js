@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Favetees from './pages/Favetees';
 import Covid19Tracker from './pages/Covid19Tracker';
@@ -9,7 +9,6 @@ import Garabaldi from './pages/Garabaldi';
 import MosDev from './pages/MosDev';
 import Weather from './pages/Weather';
 import Airbnb from './pages/Airbnb';
-// import NotFound from './pages/NotFound';
 import NotFound from './pages/404';
 import Layout from './components/Layout';
 
@@ -23,7 +22,7 @@ const routes = [
   { path: '/MosDev', component: MosDev },
   { path: '/Weather', component: Weather },
   { path: '/Airbnb', component: Airbnb },
-  { path: '/404', component: NotFound },
+  { path: '*', component: NotFound },
 ];
 
 function App() {
@@ -38,7 +37,7 @@ function App() {
         <link rel="canonical" href="http://momagan.com" />
       </Helmet>
       <Layout>
-        <BrowserRouter>{routeComponents}</BrowserRouter>
+        <Router>{routeComponents}</Router>
       </Layout>
     </div>
   );

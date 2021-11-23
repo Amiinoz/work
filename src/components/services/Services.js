@@ -84,12 +84,13 @@ const Services = ({ text }) => {
             starts with a passion for visual connections and strategy.
           </h4>
           <p>
-            I strive to obtain transparent and collaborative services, so
-            whether you want to refresh or expand your brand, I can help you
-            gain more customers and exceed your goal.
+            With a focus on eye-pleasing clean minimal design, user-friendly,
+            highly secure, and scalable..
             <br />
-            <br /> I am always learning new technologies and would not stop
-            helping you at the product launch.
+            <br /> Using the latest and established development technologies, I
+            can create everything from mobile web development solutions and
+            responsive website designs to unique e-commerce and intranet
+            experiences.
           </p>
           <span>
             <img src={TechStack} alt="Technology used" />

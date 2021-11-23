@@ -1,9 +1,15 @@
-@import '../../styles/_mixins.scss';
+// @import '../../styles/_mixins.scss';
 @import '../../styles//variables';
 @import '../../styles/breakpoints.scss';
+
+// 'phone': 425px,
+// 'tablet': 768px,
+// 'desktop': 1366px,
+// 'LGdesktop': 1920px,
 .header {
   visibility: hidden;
   height: 100vh;
+
   .container {
     width: 1440px;
     min-width: 1440px;
@@ -19,9 +25,11 @@
         width: 80%;
         // border: 1px solid red;
         // color: red;
+
         .header-content-inner {
           // width: 400px;
           margin: 0 auto;
+
           h1 {
             font-weight: 600;
             font-size: 7vw;
@@ -36,6 +44,19 @@
               margin: 0;
               height: 87px;
               overflow: hidden;
+              @include media('<=tablet') {
+                width: 137%;
+                height: 113px;
+              }
+              @include media('<=LGdesktop') {
+                width: 137%;
+                height: 113px;
+              }
+              @include media('>1920px') {
+                font-size: 5vw;
+                width: 137%;
+                height: 113px;
+              }
             }
           }
         }

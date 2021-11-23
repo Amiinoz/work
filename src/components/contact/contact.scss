@@ -1,11 +1,11 @@
-@import "../../styles/_mixins.scss";
-@import "../../styles//variables";
+@import '../../styles/_mixins.scss';
+@import '../../styles//variables';
 
 .contact-container {
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  height: 80vh;
+  height: 70vh;
 
   &_intro {
     p {
@@ -31,7 +31,7 @@
       }
       p::before {
         display: inline;
-        content: "⚠ ";
+        content: '⚠ ';
       }
       input,
       textarea {
@@ -47,7 +47,7 @@
         transition: all 0.2s ease-in-out;
         border-bottom: 1px solid black;
         background-color: #f7f9fa;
-        @include mq("phablet", max) {
+        @include mq('phablet', max) {
           padding: 10px;
           width: 98%;
           justify-content: center;
@@ -84,7 +84,7 @@
       text-transform: uppercase;
       letter-spacing: 5px;
       border-radius: 3px;
-      @include mq("phablet", max) {
+      @include mq('phablet', max) {
         padding: 10px;
         // width: 65%;
         justify-content: center;

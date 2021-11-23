@@ -64,8 +64,7 @@ const Portfolio = () => {
                     headlines"
             projDelImage2={ProjDelImage2}
             projDelHead2="Logo"
-            projDelBody2="The logo is based tropical water lilies can play a large
-                    part in emphasizing the beauty and tranquility"
+            projDelBody2="Minimal logo While the practise adheres to the principle of less is more, the emphasis is on restraint in order to maximise effect."
             projDelImage3={ProjDelImage3}
             projDelHead3="Colors"
             projDelBody3="Science says that looking at colours can relax you. That’s

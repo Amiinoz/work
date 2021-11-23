@@ -8,7 +8,7 @@
   background: $accent;
   position: absolute;
   bottom: 24vh;
-  right: 10vw;
+  right: 11vw;
   text-transform: uppercase;
   color: $black;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -20,6 +20,7 @@
 
   span {
     margin-right: 10px;
+    right: 7vw;
   }
 
   @include mq('tablet') {
