@@ -5,13 +5,15 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  height: 70vh;
+  height: 60vh;
+  margin-top: -11vh;
 
   &_intro {
     p {
       font-size: 16px;
       line-height: 1.5em;
       padding-left: 12vw;
+      // margin-top: -12vh;
     }
   }
 
@@ -20,11 +22,11 @@
     border: 1px solid black;
     border-radius: 3px;
     margin-left: 12vw;
-    margin-top: 10px;
+    // margin-top: -31vh;
 
     form {
       display: table;
-      margin: 80px auto;
+      margin: 37px auto;
 
       p {
         color: #ea281e;

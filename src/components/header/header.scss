@@ -50,7 +50,7 @@
               }
               @include media('<=LGdesktop') {
                 width: 137%;
-                height: 113px;
+                // height: 113px;
               }
               @include media('>1920px') {
                 font-size: 5vw;
