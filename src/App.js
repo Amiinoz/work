@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Favetees from './pages/Favetees';
 import Covid19Tracker from './pages/Covid19Tracker';
@@ -22,17 +22,17 @@ function App() {
       </Helmet>
       <Layout>
         <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/Favetees" component={Favetees} />
-            <Route exact path="/Covid19Tracker" component={Covid19Tracker} />
-            <Route exact path="/Portfolio" component={Portfolio} />
-            <Route exact path="/Garabaldi" component={Garabaldi} />
-            <Route exact path="/MosDev" component={MosDev} />
-            <Route exact path="/Weather" component={Weather} />
-            <Route exact path="/Airbnb" component={Airbnb} />
-            <Route path="*" component={NotFound} />
-          </Switch>
+          {/* <Switch> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Favetees" component={Favetees} />
+          <Route exact path="/Covid19Tracker" component={Covid19Tracker} />
+          <Route exact path="/Portfolio" component={Portfolio} />
+          <Route exact path="/Garabaldi" component={Garabaldi} />
+          <Route exact path="/MosDev" component={MosDev} />
+          <Route exact path="/Weather" component={Weather} />
+          <Route exact path="/Airbnb" component={Airbnb} />
+          <Route path="*" component={NotFound} />
+          {/* </Switch> */}
         </Router>
       </Layout>
     </div>

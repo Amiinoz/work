@@ -29,13 +29,14 @@
             transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
           }
         }
-        @for $i from 0 through 4 {
-          li:nth-child(#{$i + 1}n) {
-            a {
-              transition-delay: #{$i/10 + 0.8}s;
-            }
-          }
-        }
+        //////////////////////// change to break points
+        // @for $i from 0 through 4 {
+        //   li:nth-child(#{$i + 1}n) {
+        //     a {
+        //       transition-delay: #{$i/10 + 0.8}s;
+        //     }
+        //   }
+        // }
       }
     }
 
