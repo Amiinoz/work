@@ -127,7 +127,7 @@ const ShortProjectTemplate = ({
             animate={{
               opacity: 1,
               y: 0,
-              transition: { delay: 1.2, ...transition },
+              transition: { delay: 0.5, ...transition },
             }}
           >
             <motion.span variants={firstName}>

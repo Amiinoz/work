@@ -56,7 +56,7 @@ import './navigation.scss';
 const Navigation = () => {
   const animation = useAnimation();
   const [headRef, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     rootMargin: '-72px',
   });
 

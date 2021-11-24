@@ -4,20 +4,20 @@ import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/ProjectsTemplate/projectsTemplate';
 
 import PortoCover from '../assets/portfolio/cover.jpeg';
-import Colors from '../assets/portfolio/colorsTech.webp';
+import Colors from '../assets/portfolio/colorsTech.png';
 import ProjDelImage1 from '../assets/portfolio/typography.webp';
 import ProjDelImage2 from '../assets/portfolio/logo.webp';
-import ProjDelImage3 from '../assets/portfolio/colors.webp';
-import ProjDelImage4 from '../assets/portfolio/buttons.webp';
-import ProjDelImage5 from '../assets/portfolio/animation.webp';
-import ProjDelImage6 from '../assets/portfolio/icons.webp';
+import ProjDelImage3 from '../assets/portfolio/colors.png';
+import ProjDelImage4 from '../assets/portfolio/buttons.png';
+import ProjDelImage5 from '../assets/portfolio/animation.png';
+import ProjDelImage6 from '../assets/portfolio/icons.png';
 import ProjFeatImage1 from '../assets/portfolio/scroll.webp';
 import ProjFeatImage2 from '../assets/portfolio/accordian.webp';
 import ProjFeatImage3 from '../assets/portfolio/contactForm.webp';
-import FeatureImage from '../assets/portfolio/feutures1.webp';
-import ProjImages1 from '../assets/portfolio/mainImages1.webp';
-import ProjImages2 from '../assets/portfolio/mainImages2.webp';
-import ProjImages3 from '../assets/portfolio/mainImages3.webp';
+import FeatureImage from '../assets/portfolio/feutures_display.png';
+import ProjImages1 from '../assets/portfolio/mainImages1.jpg';
+import ProjImages2 from '../assets/portfolio/mainImage2.jpg';
+import ProjImages3 from '../assets/portfolio/mainImages3.png';
 import ProjImages4 from '../assets/portfolio/portfolioMovie.mp4';
 import PageGuides from '../components/PageGuides/pageguides';
 import Layout from '../components/Layout';
@@ -36,17 +36,13 @@ const Portfolio = () => {
             mainImage={PortoCover}
             projectInitial="p"
             projectTitle="Portfolio"
-            projectIntro="Garabaldi is vacationresort that overs tour guides and
-                    relaxation spa the Camen islands. Lorem ipsum, dolor sit
-                    amet consectetur adipisicing elit. Debitis facere reiciendis
-                    eum optio fuga odit neque, et nisi perferendis deserunt
-                    nobis"
+            projectIntro="Archiving samples of your work to a portfolio is a terrific approach to keep track of your accomplishments and make note of when you acquired crucial competencies outside of a job or client search."
             client="Client"
             clientName="Me"
             web="Website"
             plus="+"
             technology="technology"
-            techUsed="Adobe CS React gatsby, firebase"
+            techUsed="Adobe and firebase"
             projColorImage={Colors}
             role="role"
             roleType="Desing and Development"
@@ -60,8 +56,7 @@ const Portfolio = () => {
             delivTitle="Deliverables"
             projDelImage1={ProjDelImage1}
             projDelHead1="Typography"
-            projDelBody1="Simple yet elegant font that can be used either body or
-                    headlines"
+            projDelBody1="I chose playful yet minimalist fonts to grab the attention of the reader"
             projDelImage2={ProjDelImage2}
             projDelHead2="Logo"
             projDelBody2="Minimal logo While the practise adheres to the principle of less is more, the emphasis is on restraint in order to maximise effect."
