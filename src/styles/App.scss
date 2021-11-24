@@ -4,6 +4,15 @@
 @import './variables';
 // @import '../components/about/about.scss';
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
 html,
 body {
   font-family: 'Work Sans', sans-serif;
@@ -29,12 +38,12 @@ body {
   // color: red;
 }
 
-section {
-  padding: 100px 0;
-  .section-header {
-    margin-bottom: 50px;
-  }
-}
+// section {
+//   padding: 100px 0;
+//   .section-header {
+//     margin-bottom: 50px;
+//   }
+// }
 .absolute {
   position: fixed;
   top: 0;
