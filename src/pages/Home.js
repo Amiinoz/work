@@ -14,7 +14,7 @@ import '../styles/App.scss';
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   useLocoScroll(!preloader);
 
@@ -52,10 +52,11 @@ const Home = () => {
     return null;
   }
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-  console.log(toggleSidebar);
+  // const toggleSidebar = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
+  // console.log(toggleSidebar);
   return (
     <>
       {preloader ? (
