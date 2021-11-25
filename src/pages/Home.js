@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
-import Header from '../components/Header/header';
+import Header from '../components/Header/Header';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
 import Contact from '../components/Contact/contact';

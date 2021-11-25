@@ -144,11 +144,11 @@ export default function Gallery({ src, index, columnOffset }) {
             <span className="divider" />
             <span>{images.length}</span>
           </div>
-          {images.map((image, index, src) => (
-            <div key={src}>
+          {images.map((image, index, src, id) => (
+            <div key={src.id}>
               <Link to={`/${image.title}`}>
                 <GalleryItem
-                  key={src}
+                  key={src.id}
                   index={index}
                   {...image}
                   updateActiveImage={handleUpdateActiveImage}
