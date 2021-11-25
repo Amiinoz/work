@@ -73,7 +73,7 @@ const Home = () => {
             data-scroll-container
           >
             <Helmet>
-              <title>Mo Magan Portfolio | Home </title>
+              <title>Mo Magan | Home </title>
               <meta name="description" content="Home" />
             </Helmet>
 

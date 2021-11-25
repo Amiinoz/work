@@ -28,7 +28,7 @@ const Garabaldi = () => {
       <>
         <div>
           <Helmet>
-            <title>Mo Magan Portfolio | Garabladi</title>
+            <title>Mo Magan | Garabladi</title>
             <meta name="description" content="Garabaldi" />
           </Helmet>
           <ProjectsTemplate

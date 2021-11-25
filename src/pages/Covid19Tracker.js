@@ -28,7 +28,7 @@ const Covid19Tracker = () => {
       <>
         <div>
           <Helmet>
-            <title>Mo Magan Portfolio | Covid Tracker</title>
+            <title>Mo Magan | Covid Tracker</title>
             <meta name="description" content="Covid Tracker" />
           </Helmet>
           <ProjectsTemplate

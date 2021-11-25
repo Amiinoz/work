@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Mo Magan Portfolio | 404 </title>
+        <title>Mo Magan | 404 </title>
         <meta name="description" content="Not Found" />
       </Helmet>
       <main className="container-notfound">

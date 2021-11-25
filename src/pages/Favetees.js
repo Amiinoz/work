@@ -27,7 +27,7 @@ const Favetees = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan Portfolio | Favetees</title>
+          <title>Mo Magan | Favetees</title>
           <meta name="description" content="Favetees" />
         </Helmet>
         <ProjectsTemplate

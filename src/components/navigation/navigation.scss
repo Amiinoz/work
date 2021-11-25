@@ -1,4 +1,4 @@
-@import '../../styles/breakpoints.scss';
+@import '../../styles/_breakpoints.scss';
 
 .container {
   flex-grow: 1;
@@ -9,15 +9,15 @@
   height: 100%;
   z-index: 12;
 
-  @include media('<=1024') {
-    max-width: 960px;
-  }
-  @include media('<=1216') {
-    max-width: 1152px;
-  }
-  @include media('<=1400') {
-    max-width: 1244px;
-  }
+  // @include media('<=1024') {
+  //   max-width: 960px;
+  // }
+  // @include media('<=1216') {
+  //   max-width: 1152px;
+  // }
+  // @include media('<=1400') {
+  //   max-width: 1244px;
+  // }
 }
 
 .fluid {

@@ -13,7 +13,7 @@ const Weather = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan Portfolio | Weather</title>
+          <title>Mo Magan | Weather</title>
           <meta name="description" content="Progressive weather App" />
         </Helmet>
         <ShortProjectTemplate

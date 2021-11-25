@@ -28,7 +28,7 @@ const Portfolio = () => {
       <>
         <div>
           <Helmet>
-            <title>Mo Magan Portfolio | Portfolio</title>
+            <title>Mo Magan | Portfolio</title>
             <meta name="description" content="Portfolio" />
           </Helmet>
           <ProjectsTemplate

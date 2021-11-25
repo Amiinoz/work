@@ -15,7 +15,7 @@ const MosDev = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan Portfolio | MosDev</title>
+          <title>Mo Magan | MosDev</title>
           <meta name="description" content="VsCode Theme" />
         </Helmet>
         <ShortProjectTemplate
