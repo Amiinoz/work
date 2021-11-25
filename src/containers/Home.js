@@ -67,25 +67,23 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        <>
-          <div
-            className="main-container"
-            id="main-container"
-            data-scroll-container
-          >
-            <Helmet>
-              <title>Mo Magan | Home </title>
-              <meta name="description" content="Home" />
-            </Helmet>
+        <div
+          className="main-container"
+          id="main-container"
+          data-scroll-container
+        >
+          <Helmet>
+            <title>Mo Magan | Home </title>
+            <meta name="description" content="Home" />
+          </Helmet>
 
-            <Header />
-            <About />
-            <Services />
-            <Gallery />
-            <Contact />
-            <ContactButton />
-          </div>
-        </>
+          <Header />
+          <About />
+          <Services />
+          <Gallery />
+          <Contact />
+          <ContactButton />
+        </div>
       )}
     </>
   );
