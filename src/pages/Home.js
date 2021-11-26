@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
 
 import About from '../components/about/About';
-import Header from '../components/header/header';
+import Banner from '../components/Banner/Banner';
 
 import Services from '../components/services/Services';
 import Contact from '../components/Contact/contact';
@@ -79,7 +79,7 @@ const Home = () => {
             <meta name="description" content="Home" />
           </Helmet>
 
-          <Header />
+          <Banner />
           <About />
           <Services />
           <Gallery />

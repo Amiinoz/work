@@ -55,7 +55,6 @@ export default function MenuContent() {
             {internalLinks.map(link => (
               <li key={link.url}>
                 <a href={link.url}>{link.component}</a>
-
                 <img src={link.src} />
               </li>
             ))}

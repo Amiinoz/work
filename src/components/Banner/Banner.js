@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import { TweenMax, Power3 } from 'gsap';
-import './header.scss';
+import './banner.scss';
 import { Timeline } from 'gsap/gsap-core';
 
-const Header = () => {
+const Banner = () => {
   let head = useRef(null);
   let content = useRef(null);
   // eslint-disable-next-line prefer-const
@@ -76,4 +76,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Banner;

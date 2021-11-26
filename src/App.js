@@ -18,8 +18,8 @@ function App() {
       <div className="App" id="#app">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>MM | Portfolio</title>
-          <link rel="canonical" href="http://momagan.com" />
+          <title>Mo Magan | Portfolio</title>
+          <link rel="canonical" href="https://www.momagan.com/" />
         </Helmet>
         <Layout>
           <Router>
