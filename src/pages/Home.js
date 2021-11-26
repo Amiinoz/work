@@ -5,7 +5,7 @@ import About from '../components/about/About';
 import Banner from '../components/Banner/Banner';
 
 import Services from '../components/services/Services';
-import Contact from '../components/Contact/contact';
+import Connect from '../components/Connect/Connect';
 import Spinner from '../assets/loader.gif';
 import Gallery from '../components/gallery/Gallery';
 import { Helmet } from 'react-helmet';
@@ -83,7 +83,7 @@ const Home = () => {
           <About />
           <Services />
           <Gallery />
-          <Contact />
+          <Connect />
           <ContactButton />
         </div>
       )}

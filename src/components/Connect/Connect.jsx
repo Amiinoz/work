@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { db } from '../Contact/firebase';
+import { db } from '../Connect/firebase';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import SectionHeader from '../sectionHeader/SectionHeader';
 
-import './contact.scss';
+import './connect.scss';
 
-const Contact = () => {
+const Connect = () => {
   const { register, errors, handleSubmit } = useForm();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -105,4 +105,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Connect;
