@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
 // import { Facebook, Instagram, Youtube, Dribbble, Twitch } from 'react-feather';
 import cn from 'classnames';
-
 import './menuContent.scss';
 
 const internalLinks = [
@@ -56,6 +55,7 @@ export default function MenuContent() {
             {internalLinks.map(link => (
               <li key={link.url}>
                 <a href={link.url}>{link.component}</a>
+
                 <img src={link.src} />
               </li>
             ))}
