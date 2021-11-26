@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
-import Header from '../components/Header/Header';
+
 import About from '../components/about/About';
+import Header from '../components/header/header';
+
 import Services from '../components/services/Services';
 import Contact from '../components/Contact/contact';
 import Spinner from '../assets/loader.gif';
