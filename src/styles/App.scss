@@ -29,13 +29,7 @@ body {
 }
 
 .main-container {
-  // padding: 0 5vw;
-  // clip-path: inset(100% 0% 0% 0%);
-  // backface-visibility: hidden;
-
   padding: 2.15px 5vw;
-  // border: 1px solid red;
-  // color: red;
 }
 
 section {
@@ -54,93 +48,33 @@ section {
   z-index: 1;
 }
 
-// .loader-wrapper {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   transition: 'all 0.25s ease-in-out';
-//   background-color: #191919;
-//   // color: #dbd8d6;
-//   color: #fff;
-
-//   .logo {
-//     // width: 150px;
-//     // height: 200px;
-//     // margin: 50vh auto;
-
-//     img {
-//       width: 50px;
-//       height: 50px;
-//       margin-left: 7vw;
-//     }
-//   }
-//   h1 {
-//     font-size: 1.5vw;
-//     text-transform: uppercase;
-//     font-family: 'Bai Jamjuree', sans-serif;
-//     font-weight: 600;
-//   }
-//   h2 {
-//     font-size: 1.5vw;
-
-//     // text-transform: uppercase;
-//     font-family: 'Bai Jamjuree', serif;
-//     font-style: italic;
-//     margin-top: 10px;
-//   }
-//   p {
-//     display: block;
-//     margin-block-start: 1em;
-//     margin-block-end: 1em;
-//     margin-inline-start: 0px;
-//     margin-inline-end: 0px;
-//   }
-// }
-
 .loader-wrapper {
   display: grid;
   place-items: center;
   margin-left: -12vw;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // flex-direction: column;
+
   transition: 'all 0.25s ease-in-out';
   background-color: #191919;
-  // color: #dbd8d6;
+
   color: #fff;
 
   .logo {
-    // width: 150px;
-    // height: 200px;
-    // margin: 50vh auto;
-
     img {
       width: 50px;
       height: 50px;
       margin-left: 7vw;
     }
   }
-  h1 {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 600;
-  }
+
   h2 {
     font-size: 1.5vw;
 
-    // text-transform: uppercase;
     font-family: 'Bai Jamjuree', serif;
     font-style: italic;
     margin-top: 10px;
-  }
-  p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    @include media('<=phone') {
+      font-size: 3.5vw;
+      margin-left: -2vw;
+    }
   }
 }

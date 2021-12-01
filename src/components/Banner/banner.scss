@@ -1,11 +1,7 @@
-// @import '../../styles/_mixins.scss';
+@import '../../styles/_mixins.scss';
 @import '../../styles//variables';
 @import '../../styles/breakpoints.scss';
 
-// 'phone': 425px,
-// 'tablet': 768px,
-// 'desktop': 1366px,
-// 'LGdesktop': 1920px,
 .header {
   visibility: hidden;
   height: 100vh;
@@ -20,14 +16,12 @@
       justify-content: space-between;
       margin: 0 24px;
       height: 100vh;
+      @include media('<=phone') {
+        margin: -50px 0 0 -35px;
+      }
       .header-content {
-        // insert responsive
         width: 80%;
-        // border: 1px solid red;
-        // color: red;
-
         .header-content-inner {
-          // width: 400px;
           margin: 0 auto;
 
           h1 {
@@ -45,17 +39,15 @@
               height: 87px;
               overflow: hidden;
               @include media('<=tablet') {
-                width: 137%;
-                height: 113px;
+                height: 35px;
+                line-height: 4vh;
+                margin-left: -15vw;
               }
-              @include media('<=LGdesktop') {
-                width: 137%;
-                // height: 113px;
-              }
-              @include media('>1920px') {
-                font-size: 5vw;
-                width: 137%;
-                height: 113px;
+              @include media('>=desktop') {
+                height: 96px;
+                line-height: 9vh;
+                margin-left: -1vw;
+                font-size: 10vh;
               }
             }
           }

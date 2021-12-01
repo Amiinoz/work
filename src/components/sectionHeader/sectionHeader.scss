@@ -1,3 +1,5 @@
+@import '../../styles/breakpoints.scss';
+
 .section-header {
   padding-left: 4vw;
   // height: 5vh;
@@ -5,6 +7,9 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   height: auto;
+  @include media('<=phone') {
+    margin-left: -4rem;
+  }
 
   .header__content {
     padding: 24vh 3vw 0 8vw;
@@ -19,17 +24,24 @@
       overflow: auto;
     }
     &-subtitle {
-      font-family: "Bai Jamjuree", sans-serif;
+      font-family: 'Bai Jamjuree', sans-serif;
       font-size: 3.5rem;
       font-weight: 600;
       margin: 0;
       line-height: 1.2;
       pointer-events: none;
+      @include media('<=tablet') {
+        font-size: 2rem;
+      }
     }
     &-heading {
       font-weight: normal;
       margin: 0;
       font-size: 1.5rem;
+
+      @include media('<=phone') {
+        width: 248px;
+      }
     }
     &-intro {
       p {
@@ -39,7 +51,7 @@
       }
     }
     &-intro::after {
-      content: "";
+      content: '';
       width: 2rem;
       height: 2px;
       position: absolute;

@@ -1,5 +1,6 @@
 @import '../../styles/_mixins.scss';
-@import '../../styles//variables';
+@import '../../styles/variables';
+@import '../../styles/breakpoints.scss';
 
 .contact-button {
   border: 1px solid $black;
@@ -68,5 +69,12 @@
         transform: rotate(225deg) scale(1.5);
       }
     }
+  }
+  @include media('<=tablet') {
+    right: 50px;
+  }
+
+  @include media('>=desktop') {
+    right: 186px;
   }
 }

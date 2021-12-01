@@ -77,7 +77,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Services /> */}
     </>
   );
 };

@@ -1,5 +1,6 @@
 @import '../../styles/_mixins.scss';
 @import '../../styles/_variables.scss';
+@import '../../styles/breakpoints.scss';
 
 .service-container {
   height: 100vh;
@@ -26,8 +27,11 @@
 
   &__intro {
     @include mq('tablet', max) {
-      margin-left: -3rem;
+      margin-left: -2rem;
       font-size: 20px;
+      border: 1px solid red;
+      color: red;
+      width: 85%;
     }
     h4 {
       font-size: 2rem;
@@ -43,14 +47,18 @@
 
     span {
       padding: 30px 0 0px 0;
-      img {
-        width: 450px;
+    }
+    img {
+      width: 450px;
+      padding-top: 34px;
+
+      @include mq('tablet', min) {
+        width: 350px;
         padding-top: 34px;
-        @include mq('tablet', min) {
-          width: 350px;
-          padding-top: 34px;
-        }
       }
+      // @include media('<=tablet') {
+      //   width: 180px;
+      // }
     }
   }
 

@@ -69,6 +69,10 @@
             // @media only screen and (min-width: 425px) and (max-width: 640px) {
             //   font-size: 80px;
             // }
+            @include media('<=phone') {
+              font-size: 60px;
+              margin: 5vh 0 0 7vw;
+            }
           }
         }
       }

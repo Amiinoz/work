@@ -1,6 +1,7 @@
 @import '../../styles/_mixins.scss';
 @import '../../styles//variables';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import '../../styles/breakpoints.scss';
 .gallery-wrap {
   // background-color: #d53f41;
   margin-left: -5vw;
@@ -100,6 +101,10 @@
       .gallery-item-image {
         transform: scale(1);
         filter: none;
+        @include media('<=tablet') {
+          // width: 150px;
+          // height: 100%;
+        }
       }
     }
   }

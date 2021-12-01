@@ -52,6 +52,9 @@
   margin-left: 12vw;
   img {
     width: 120px;
+    @include media('<=phone') {
+      width: 90px;
+    }
   }
 }
 

@@ -16,7 +16,7 @@ import '../styles/App.scss';
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useLocoScroll(!preloader);
 
@@ -54,18 +54,18 @@ const Home = () => {
     return null;
   }
 
-  // const toggleSidebar = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
-  // console.log(toggleSidebar);
+  console.log(toggleSidebar);
   return (
     <>
       {preloader ? (
         <div className="loader-wrapper absolute">
           <div className="logo">
             <img src={Spinner} alt="mo magans portfolio preloader" />
-            <h2>Mohamed Magan | Portfolio</h2>
+            <h2>Mo Magan &apos; s Portfolio</h2>
           </div>
         </div>
       ) : (
