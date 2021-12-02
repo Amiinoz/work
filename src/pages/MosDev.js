@@ -1,14 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ShortProjectTemplate from '../components/ShortProjectTemplate/ShortProjectTemplate';
+import ShortProjectTemplate from '../components/short-project-template/short-project-template';
 import BannerImage from '../assets/mosdev/header2.webp';
 import infoHeadingImage from '../assets/mosdev/icon.webp';
 import MainImage from '../assets/mosdev/mosdefPoster.webp';
 import ImagesMock from '../assets/mosdev/theme-image2.webp';
-// import Js from '../assets/mosdev/javascript.webp';
-// import Css from '../assets/mosdev/css.webp';
-// import Html from '../assets/mosdev/html.webp';
-import PageGuides from '../components/PageGuides/pageguides';
+import PageGuides from '../components/page-guides/page-guides';
 
 const MosDev = () => {
   return (
@@ -34,12 +31,6 @@ const MosDev = () => {
           projInfo="This is the inspiration of these theme. Mos def aka Yasin bay is,
               a American hip hop star."
           projInfoBy="Art work by  Kamoni Khem"
-          // Images1Header="Js"
-          // Images1={Js}
-          // Images2Header="Css"
-          // Images2={Css}
-          // Images3Header="Html"
-          // Images3={Html}
           ImagesMock={ImagesMock}
         />
       </div>

@@ -2,7 +2,7 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints.scss';
 
-.app {
+.proj {
   padding: 100px 0;
   position: relative;
   padding: 0;
@@ -70,8 +70,12 @@
             //   font-size: 80px;
             // }
             @include media('<=phone') {
-              font-size: 60px;
-              margin: 5vh 0 0 7vw;
+              font-size: 40px;
+              margin: 10vh 0 0 10vw;
+            }
+             @include media('<=tablet') {
+              font-size: 50px;
+              margin: 10vh 0 0 19vw;
             }
           }
         }

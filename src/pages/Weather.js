@@ -1,12 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ShortProjectTemplate from '../components/ShortProjectTemplate/ShortProjectTemplate';
+import ShortProjectTemplate from '../components/short-project-template/short-project-template';
 import BannerImage from '../assets/weatherApp/header.webp';
 import infoHeadingImage from '../assets/weatherApp/weatherIcon.webp';
 import MainImage from '../assets/weatherApp/mainHead.png';
-
 import ImagesMock from '../assets/weatherApp/responsive.webp';
-import PageGuides from '../components/PageGuides/pageguides';
+import PageGuides from '../components/page-guides/page-guides';
 
 const Weather = () => {
   return (

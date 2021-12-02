@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { db } from '../Connect/firebase';
+import { db } from './firebase';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
-import SectionHeader from '../sectionHeader/SectionHeader';
+import SectionHeader from '../section-header/section-header';
 
 import './connect.scss';
 

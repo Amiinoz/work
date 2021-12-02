@@ -1,13 +1,7 @@
 import React from 'react';
-// import cn from 'classnames';
-import SectionHeader from '../sectionHeader/SectionHeader';
-
-// import gsap from 'gsap';
-// import SplitText from '../../utils/Split3.min.js ';
-// import useOnScreen from '../../hooks/useOnScreen';
+import SectionHeader from '../section-header/section-header';
 
 import './about.scss';
-// import Services from "../Services/services";
 import Mo from '../../assets/about_image.webp';
 import Signature from '../../assets/signature.svg';
 import Github from '../../assets/social/socialgithub.svg';

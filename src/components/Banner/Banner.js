@@ -31,7 +31,7 @@ const Banner = () => {
       ],
       1,
       {
-        y: 87, // same height in css
+        y: 87,
         ease: Power3.easeOut,
         delay: 0.8,
       },

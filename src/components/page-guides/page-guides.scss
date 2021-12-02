@@ -1,17 +1,14 @@
-@import "../../styles/_mixins.scss";
-@import "../../styles//variables";
+@import '../../styles/_mixins.scss';
+@import '../../styles//variables';
 
-.pageGuide {
+.page-guides {
   display: flex;
 
   justify-content: space-evenly;
   padding: 80px 0 0 0;
   gap: 80px;
-  // margin-top: 5vh;
   margin: 5vh 0 7vh 0;
   height: 130px;
-  // border: 1px solid red;
-  // color: red;
 
   .backHome {
     a {
@@ -74,7 +71,7 @@
       height: 32px;
       padding-left: 25px;
       overflow: hidden;
-      color: #ffffff;
+      color: $white;
       background-size: contain;
 
       image &:hover {

@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-// import Button from '../Button/button';
 import TechStack from '../../assets/techUsed.webp';
 
 import './services.scss';
-import SectionHeader from '../sectionHeader/SectionHeader';
+import SectionHeader from '../section-header/section-header';
 
 const accordionIds = [
   {
@@ -94,7 +93,6 @@ const Services = ({ text }) => {
           </p>
           <span>
             <img src={TechStack} alt="Technology used" />
-            {/* <Button text="Book a free Call" /> */}
           </span>
         </div>
 

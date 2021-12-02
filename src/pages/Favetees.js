@@ -1,8 +1,7 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ProjectsTemplate from '../components/ProjectsTemplate/projectsTemplate';
-
+import ProjectsTemplate from '../components/projects-template/projects-template';
 import FaveCover from '../assets/favetees/faveteesCover.jpeg';
 import Colors from '../assets/favetees/colorsSmall.webp';
 import ProjDelImage1 from '../assets/favetees/typography.webp';
@@ -19,8 +18,7 @@ import ProjImages1 from '../assets/favetees/projectImages1.webp';
 import ProjImages2 from '../assets/favetees/projectImages2.webp';
 import ProjImages3 from '../assets/favetees/projectImages3.webp';
 import ProjImages4 from '../assets/favetees/faveteesInAction.mp4';
-import PageGuides from '../components/PageGuides/pageguides';
-// import Layout from '../components/Layout';
+import PageGuides from '../components/page-guides/page-guides';
 
 const Favetees = () => {
   return (

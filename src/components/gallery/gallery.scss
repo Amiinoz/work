@@ -1,12 +1,9 @@
-@import '../../styles/_mixins.scss';
 @import '../../styles//variables';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import '../../styles/breakpoints.scss';
 .gallery-wrap {
-  // background-color: #d53f41;
   margin-left: -5vw;
   margin-right: -5vw;
-  // padding-top: -5vw;
 }
 
 .gallery-counter {
@@ -16,8 +13,7 @@
   z-index: 1;
   mix-blend-mode: difference;
   line-height: 16px;
-  // color: #dbd8d6;
-  color: gray;
+  color: $gray;
 
   font-family: 'Bai Jamjuree';
   font-weight: 600;
@@ -28,7 +24,7 @@
 
   .divider {
     content: '';
-    background-color: gray;
+    background-color: $gray;
 
     width: 6.25vw;
     margin: 7px 10px;
@@ -57,13 +53,13 @@
     bottom: 10%;
     z-index: 1;
     transform: translateX(-20%);
-    color: #dbd8d6;
-    color: white;
+    color: $offWhite;
+    color: $white;
     .gallery-info-title {
       line-height: 1vw;
       font-family: 'Bai Jamjuree';
       font-weight: 600;
-      color: black;
+      color: $black;
       font-size: 6vw;
       -webkit-font-smoothing: antialiased;
     }
@@ -84,7 +80,7 @@
       line-height: 24px;
       font-family: 'Bai Jamjuree';
       font-weight: 400;
-      color: darkslategray;
+      color: $gray;
       font-size: 24px;
       -webkit-font-smoothing: antialiased;
       margin-top: 2vh;
@@ -101,10 +97,6 @@
       .gallery-item-image {
         transform: scale(1);
         filter: none;
-        @include media('<=tablet') {
-          // width: 150px;
-          // height: 100%;
-        }
       }
     }
   }

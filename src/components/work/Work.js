@@ -1,7 +1,6 @@
 import React from 'react';
-
 import './work.scss';
-import SectionHeader from '../sectionHeader/SectionHeader';
+import SectionHeader from '../section-header/section-header';
 
 const Work = () => {
   return (

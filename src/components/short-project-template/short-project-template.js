@@ -2,8 +2,8 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import useWindowSize from '../../components/useWindowSize';
-import './ShortProjectTemplate.scss';
+import useWindowSize from '../useWindowSize';
+import './short-project-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {

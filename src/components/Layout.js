@@ -1,14 +1,14 @@
 import React from 'react';
-import Footer from '../components/Footer/footer';
+import Footer from './footer/footer';
 import Navigation from './navigation/Navigation';
+import CustomCursor from '../custom-cursor/cursor';
 
-// import CustomCursor from "../CustomCursor/cursor";
 import MenuManager from './Menu/MenuManager';
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       <MenuManager>
         <div
           className="main-container"

@@ -1,16 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
-
-import About from '../components/about/About';
-import Banner from '../components/Banner/Banner';
-
+import About from '../components/about/about';
+import Banner from '../components/banner/banner';
 import Services from '../components/services/Services';
-import Connect from '../components/Connect/Connect';
+import Connect from '../components/connect/connect';
 import Spinner from '../assets/loader.gif';
-import Gallery from '../components/gallery/Gallery';
+import Gallery from '../components/gallery/gallery';
 import { Helmet } from 'react-helmet';
-import ContactButton from '../components/ContactButton/contactButton';
-
+import WorkButton from '../components/work-button/work-button';
 import '../styles/App.scss';
 
 const Home = () => {
@@ -84,7 +81,7 @@ const Home = () => {
           <Services />
           <Gallery />
           <Connect />
-          <ContactButton />
+          <WorkButton />
         </div>
       )}
     </>

@@ -1,7 +1,7 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ProjectsTemplate from '../components/ProjectsTemplate/projectsTemplate';
+import ProjectsTemplate from '../components/projects-template/projects-template';
 
 import MainImage from '../assets/covid19-tracker/cover.jpeg';
 import Colors from '../assets/covid19-tracker/colorsSmall.webp';
@@ -19,7 +19,7 @@ import ProjImages1 from '../assets/covid19-tracker/projectImages1.webp';
 import ProjImages2 from '../assets/covid19-tracker/projectImages2.webp';
 import ProjImages3 from '../assets/covid19-tracker/projectImages3.webp';
 import ProjImages4 from '../assets/covid19-tracker/website.mp4';
-import PageGuides from '../components/PageGuides/pageguides';
+import PageGuides from '../components/page-guides/page-guides';
 import Layout from '../components/Layout';
 
 const Covid19Tracker = () => {

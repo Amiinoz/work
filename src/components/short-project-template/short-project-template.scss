@@ -1,5 +1,5 @@
 @import '../../styles/variables';
-@import '../../styles/_mixins.scss';
+// @import '../../styles/_mixins.scss';
 @import '../../styles/breakpoints.scss';
 
 .short {
@@ -8,17 +8,7 @@
 
 .mosdev-container {
   font-family: 'Work Sans', sans-serif;
-
-  // background-color: #282a36;
-  // background-image: radial-gradient($dots 10%, transparent 15%);
-  // background-position: 0 0;
-  // background-size: 7px 7px;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // width: 100vw;
   height: 80vh;
-
   margin-left: -5vw;
 
   .banner {
@@ -27,16 +17,18 @@
     padding: 5vw;
 
     .banner-title {
-      // background-color: pink;
       display: inline-block;
       position: relative;
       font-family: 'Bai Jamjuree';
       font-weight: 600;
       font-size: 120px;
       padding: 20px;
-      // color: $accent-Two;
       z-index: 12;
-      @media only screen and (min-width: 425px) and (max-width: 640px) {
+      // @media only screen and (min-width: 425px) and (max-width: 640px) {
+      //   font-size: 80px;
+      // }
+
+      @include media('<=tablet') {
         font-size: 80px;
       }
     }
@@ -49,16 +41,15 @@
         width: 2749px;
         height: 2037px;
         overflow: hidden;
-        // @media only screen and (min-width: 425px) and (max-width: 640px) {
-        //   margin: -76vh 0 0 -37vw;
-        // }
+        @media only screen and (min-width: 425px) and (max-width: 640px) {
+          margin: -76vh 0 0 -37vw;
+        }
       }
     }
     .scroll {
       position: relative;
       h3 {
         font-size: 20px;
-        // color: #ffc600;
         margin: -138vh 0 0 2vw;
       }
     }
@@ -149,8 +140,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // border: 1px solid red;
-    // color: red;
   }
 
   .insp {
@@ -174,22 +163,6 @@
       padding-top: 50px;
     }
   }
-  // .lang-container {
-  //   display: grid;
-  //   grid-gap: 1rem;
-  //   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  //   background-color: black;
-  //   // @media only screen and (min-width: 320px) and (max-width: 640px) {
-  //   //   margin-left: -3vw;
-  //   // }
-
-  //   h3 {
-  //     font-size: 24px;
-  //     font-weight: 300;
-  //     margin: 2vh 0 0 6vw;
-  //     color: $accent-Two;
-  //   }
-  // }
 
   .mockups {
     display: grid;

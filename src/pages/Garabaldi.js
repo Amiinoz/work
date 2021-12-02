@@ -1,8 +1,7 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ProjectsTemplate from '../components/ProjectsTemplate/projectsTemplate';
-
+import ProjectsTemplate from '../components/projects-template/projects-template';
 import TravCover from '../assets/garabaldi/cover.jpeg';
 import Colors from '../assets/garabaldi/Colors.png';
 import ProjDelImage1 from '../assets/garabaldi/typography.webp';
@@ -19,7 +18,7 @@ import ProjImages1 from '../assets/garabaldi/projectImages1.webp';
 import ProjImages2 from '../assets/garabaldi/projectImages2.webp';
 import ProjImages3 from '../assets/garabaldi/projectImages3.webp';
 import ProjImages4 from '../assets/garabaldi/projectImages4.mp4';
-import PageGuides from '../components/PageGuides/pageguides';
+import PageGuides from '../components/page-guides/page-guides';
 import Layout from '../components/Layout';
 
 const Garabaldi = () => {

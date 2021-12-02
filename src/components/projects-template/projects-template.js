@@ -9,9 +9,9 @@ import {
 
 import { useInView } from 'react-intersection-observer';
 
-import ScrollForMore from '../../components/scrollForMore';
+import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
-import './projectsTemplate.scss';
+import './projects-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {
@@ -155,7 +155,7 @@ const ProjectsTemplate = ({
   const size = useWindowSize();
 
   // Ref for parent div and scrolling div
-  const app = useRef();
+  // const app = useRef();
   const scrollContainer = useRef();
 
   // Configs
@@ -196,7 +196,7 @@ const ProjectsTemplate = ({
     const difference = data.current - data.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 0.3;
+    const skew = velocity * 0.4;
 
     //Assign skew and smooth scrolling to the scroll container
     scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
@@ -212,9 +212,9 @@ const ProjectsTemplate = ({
         animate="animate"
         exit="exit"
         // className="single"
-        data-scroll-section
-        className="app"
-        ref={app}
+        // data-scroll-section
+        className="proj"
+        // ref={app}
       >
         <div className="container" ref={scrollContainer}>
           {/* ////////////////////////////////////////// */}

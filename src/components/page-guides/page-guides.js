@@ -2,11 +2,11 @@ import React from 'react';
 import BackArrow from '../../assets/icons/arrow-right.svg';
 import FrontArrow from '../../assets/icons/arrow-right.svg';
 
-import './pageguides.scss';
+import './page-guides.scss';
 export default function PageGuides({ nextProject }) {
   return (
     <>
-      <div className="pageGuide">
+      <div className="page-guides">
         <div className="backHome">
           <a href="/contact">
             Contact

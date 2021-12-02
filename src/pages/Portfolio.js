@@ -1,7 +1,7 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ProjectsTemplate from '../components/ProjectsTemplate/projectsTemplate';
+import ProjectsTemplate from '../components/projects-template/projects-template';
 
 import PortoCover from '../assets/portfolio/cover.jpeg';
 import Colors from '../assets/portfolio/colorsTech.png';
@@ -19,7 +19,7 @@ import ProjImages1 from '../assets/portfolio/mainImages1.jpg';
 import ProjImages2 from '../assets/portfolio/mainImage2.jpg';
 import ProjImages3 from '../assets/portfolio/mainImages3.png';
 import ProjImages4 from '../assets/portfolio/portfolioMovie.mp4';
-import PageGuides from '../components/PageGuides/pageguides';
+import PageGuides from '../components/page-guides/page-guides';
 import Layout from '../components/Layout';
 
 const Portfolio = () => {

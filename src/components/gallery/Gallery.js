@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import useOnScreen from '../../hooks/useOnScreen';
-import Work from '../../components/work/Work';
+import Work from '../work/Work';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 import './gallery.scss';
