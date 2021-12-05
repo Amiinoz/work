@@ -52,6 +52,7 @@
   margin-left: 12vw;
   img {
     width: 120px;
+
     @include media('<=phone') {
       width: 90px;
     }
@@ -61,12 +62,12 @@
 .menu {
   margin-right: 15vw;
   z-index: 11;
-  button {
-    content: ' ';
-    transform-origin: center;
-    border: none;
-    padding: 20px;
-    background: none;
-    outline: none;
-  }
+  // button {
+  //   content: ' ';
+  //   transform-origin: center;
+  //   border: none;
+  //   padding: 20px;
+  //   background: none;
+  //   outline: none;
+  // }
 }

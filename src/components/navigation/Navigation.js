@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="row v-center space-between">
           <div className="logo">
             <a href="/" target="Home">
-              <img src={Logo} alt="Mo Magan ite logo" />
+              <img src={Logo} alt="Mo Magan site logo" />
             </a>
           </div>
           <div>

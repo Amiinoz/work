@@ -18,6 +18,7 @@ const firstName = {
   initial: {
     y: 0,
   },
+
   animate: {
     y: 0,
     transition: {

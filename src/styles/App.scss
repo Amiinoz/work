@@ -7,7 +7,7 @@
 html,
 body {
   font-family: 'Work Sans', sans-serif;
-  cursor: none;
+  // cursor: none;
   background-color: $bg-color;
   background-image: radial-gradient($dots 10%, transparent 15%);
   background-position: 0 0;
@@ -41,11 +41,10 @@ section {
   display: grid;
   place-items: center;
   margin-left: -12vw;
-
   transition: 'all 0.25s ease-in-out';
   background-color: #191919;
-
   color: #fff;
+  z-index: 99;
 
   .logo {
     img {

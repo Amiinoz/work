@@ -36,7 +36,7 @@ const accordionIds = [
     results: [
       'Digital marketing',
       'Social media strategies',
-      'Email and Suscription',
+      'Email and Subscription',
     ],
   },
 ];
