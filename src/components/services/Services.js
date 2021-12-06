@@ -77,7 +77,12 @@ const Services = ({ text }) => {
         data-scroll-section
         className="service-container"
       >
-        <div className="service-container__intro">
+        <div
+          className="service-container__intro"
+          data-scroll
+          data-scroll-delay="0.03"
+          data-scroll-speed="0.6"
+        >
           <h4>
             Good product development— <br />
             starts with a passion for visual connections and strategy.

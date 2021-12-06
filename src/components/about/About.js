@@ -18,7 +18,7 @@ const About = () => {
       />
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
-          <p>
+          <p data-scroll="" data-offset="2.8">
             My name is Mohamed Magan, I am a software developer & UX designer
             based in beautiful Calgary, Canada. I am passionate about solving
             problems and building rich user-friendly products. I am available
@@ -29,7 +29,7 @@ const About = () => {
         </div>
 
         <div className="about-container__social">
-          <div className="socialimage">
+          <div className="socialimage" data-scroll data-scroll-speed="0.9">
             <img
               width="200"
               height="270 "
@@ -38,7 +38,7 @@ const About = () => {
               data-scroll
             />
           </div>
-          <div className="socialsign">
+          <div className="socialsign" data-scroll>
             <img
               width="200"
               height="40"
@@ -48,17 +48,22 @@ const About = () => {
             />
           </div>
 
-          <div className="social__icons">
+          <div
+            className="social__icons"
+            data-scroll
+            data-scroll-delay="0.02"
+            data-scroll-speed="0.5"
+          >
             <a
               href="https://github.com/Amiinoz"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Github} alt="github logo" data-scroll />
+              <img src={Github} alt="github logo" />
             </a>
 
             <a href="/">
-              <img src={Behance} alt="behance logo" data-scroll />
+              <img src={Behance} alt="behance logo" />
             </a>
 
             <a
@@ -66,7 +71,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Linked} alt="linkedlin logo" data-scroll />
+              <img src={Linked} alt="linkedlin logo" />
             </a>
           </div>
         </div>

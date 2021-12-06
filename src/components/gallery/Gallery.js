@@ -85,8 +85,24 @@ function GalleryItem({
       <div></div>
       <div className={'gallery-item'}>
         <div className="gallery-item-info">
-          <h1 className="gallery-info-title">{title}</h1>
-          <h2 className="gallery-info-subtitle">{subtitle}</h2>
+          <h1
+            className="gallery-info-title"
+            data-scroll
+            data-scroll-speed="-3"
+            data-scroll-horizontal="top"
+            data-scroll-delay="0.03"
+          >
+            {title}
+          </h1>
+          <h2
+            className="gallery-info-subtitle"
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-horizontal="top"
+            data-scroll-delay="0.05"
+          >
+            {subtitle}
+          </h2>
           <p className="gallery-info-category">{category}</p>
         </div>
         <div
