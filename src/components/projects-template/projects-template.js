@@ -8,26 +8,27 @@ import {
 } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
-
+// import PageGuides from '../page-guides/page-guides';
 import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
+
 import './projects-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-const firstName = {
-  initial: {
-    y: 0,
-  },
+// const firstName = {
+//   initial: {
+//     y: 0,
+//   },
 
-  animate: {
-    y: 0,
-    transition: {
-      delayChildren: 0.6,
-      staggerChildren: 0.04,
-      staggerDirection: -1,
-    },
-  },
-};
+//   animate: {
+//     y: 0,
+//     transition: {
+//       delayChildren: 0.6,
+//       staggerChildren: 0.04,
+//       staggerDirection: -1,
+//     },
+//   },
+// };
 
 const letter = {
   initial: {
@@ -213,7 +214,7 @@ const ProjectsTemplate = ({
         animate="animate"
         exit="exit"
         // className="single"
-        // data-scroll-section
+        data-scroll-section
         className="proj"
         // ref={app}
       >
@@ -231,8 +232,8 @@ const ProjectsTemplate = ({
                 }}
                 className="details"
               />
-              <motion.div className="model">
-                <motion.span className="first" variants={firstName}>
+              <motion.div className="proj-container">
+                <motion.span className="title">
                   <motion.span variants={letter}>{title}</motion.span>
                 </motion.span>
               </motion.div>
@@ -297,7 +298,7 @@ const ProjectsTemplate = ({
                   <span>{projectInitial}</span>
                 </div>
                 <div className="content">
-                  <h4>{projectTitle}</h4>
+                  <h2>{projectTitle}</h2>
 
                   <p>{projectIntro}</p>
                 </div>
@@ -369,7 +370,6 @@ const ProjectsTemplate = ({
                   <p>{projDelBody3}</p>
                 </div>
               </div>
-
               <div className="project_deliverables">
                 <div className="deliverables_1">
                   <img src={projDelImage4} alt="Project deliverables four" />
@@ -388,7 +388,6 @@ const ProjectsTemplate = ({
                   <p>{projDelBody6}</p>
                 </div>
               </div>
-
               {/* ////////////////////////////////////////// */}
               {/* // Features */}
               <div className="features-container">
@@ -420,38 +419,86 @@ const ProjectsTemplate = ({
               </div>
               {/* ////////////////////////////////////////// */}
               {/* // Images */}
-
-              <div className="project-images">
+              {/* TODO: */}
+              <div className="project-images" data-scroll-section>
                 <h2>{imagesHead}</h2>
+                <div className="images-content">
+                  <div className="item">
+                    <div className="item__img-wrap">
+                      <div
+                        className="item__img item__img--t1"
+                        style={{
+                          transform: 'translate3d(0px, -7.95308px, 0px)',
+                        }}
+                        data-scroll
+                        data-scroll-speed="-9"
+                      >
+                        <img src={projImages1} />
+                      </div>
+                    </div>
+                    <div className="item__caption">
+                      <h4 className="item__caption-title">{projImgTitle1}</h4>
+                      <p className="item__caption-copy">{projImgInfo1}</p>
+                    </div>
+                  </div>
 
-                <div className="mock one">
-                  <h3>{projImgTitle1}</h3>
+                  <div className="item">
+                    <div className="item__img-wrap">
+                      <div
+                        className="item__img item__img--t2"
+                        style={{
+                          transform: 'translate3d(0px, -7.95308px, 0px)',
+                        }}
+                      >
+                        <img src={projImages2} />
+                      </div>
+                    </div>
+                    <div className="item__caption">
+                      <h4 className="item__caption-title">{projImgTitle2}</h4>
+                      <p className="item__caption-copy">{projImgInfo2}</p>
+                    </div>
+                  </div>
 
-                  <p>{projImgInfo1}</p>
+                  <div className="item">
+                    <div className="item__img-wrap">
+                      <div
+                        className="item__img item__img--t3"
+                        style={{
+                          transform: 'translate3d(0px, -7.95308px, 0px)',
+                        }}
+                      >
+                        <img src={projImages3} />
+                      </div>
+                    </div>
+                    <div className="item__caption">
+                      <h4 className="item__caption-title">{projImgTitle3} </h4>
+                      <p className="item__caption-copy">{projImgInfo3}</p>
+                    </div>
+                  </div>
 
-                  <img src={projImages1} />
-                </div>
-                <div className=" mock">
-                  <h3>{projImgTitle2}</h3>
-                  <p>{projImgInfo2}</p>
-                  <img src={projImages2} />
-                </div>
-                <div className=" mock ">
-                  <h3>{projImgTitle3}</h3>
-                  <p>{projImgInfo3}</p>
-                  <img src={projImages3} />
-                </div>
-                <div className=" mock">
-                  <h3>{projImgTitle4}</h3>
-                  <p>{projImgInfo4}</p>
-
-                  <video
-                    height="100%"
-                    width="100%"
-                    loop
-                    autoPlay
-                    src={projImages4}
-                  />
+                  <div className="item">
+                    <div className="item__img-wrap">
+                      <div
+                        className="item__img item__img--t3"
+                        style={{
+                          transform: 'translate3d(0px, -7.95308px, 0px)',
+                        }}
+                      >
+                        {/* <img src={projImages4} /> */}
+                        <video
+                          height="100%"
+                          width="100%"
+                          loop="true"
+                          autoPlay="true"
+                          src={projImages4}
+                        />
+                      </div>
+                    </div>
+                    <div className="item__caption">
+                      <h4 className="item__caption-title">{projImgTitle4} </h4>
+                      <p className="item__caption-copy">{projImgInfo4}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -464,3 +511,20 @@ const ProjectsTemplate = ({
 };
 
 export default ProjectsTemplate;
+
+// ////////////////////////////////////Images///////////////////////
+// imagesHead="High fidelity Mockups"
+// projImgTitle1="Mockups"
+// projImgInfo1="Stepping outside of the traditional formats used for client
+//           reviews and creating a custom-tailored approach."
+// projImages1={ProjImages1}
+// projImgTitle2="Design"
+// projImgInfo2=" Getting your clients to get involve in your process and creativity as much as the final product."
+// projImages2={ProjImages2}
+// projImgTitle3="Mobile"
+// projImgInfo3=" More and More customers use mobile and tablet devices to browse online hence the importance of having responsive site."
+// projImages3={ProjImages3}
+// projImgTitle4="Website"
+// projImgInfo4="Everything comes together; the deliverables, features and design."
+// projImages4={ProjImages4}
+// ////////////////////////////////////page guides///////////////////////

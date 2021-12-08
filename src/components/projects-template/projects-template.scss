@@ -7,8 +7,8 @@
   position: relative;
   padding: 0;
   margin: 0;
-  height: 530vh;
 
+  height: 530vh;
   background-color: $bg-color;
   background-image: radial-gradient($dots 10%, transparent 15%);
   background-position: 0 0;
@@ -33,18 +33,19 @@
               margin-left: 16px;
             }
           }
-          .mua {
-            text-transform: uppercase;
-          }
+          // .mua {
+          //   text-transform: uppercase;
+          // }
         }
       }
-      .model {
+      .proj-container {
         overflow: hidden;
-        .first {
+        .title {
           display: flex;
           justify-content: center;
-          margin-right: 120px;
+          /* margin-right: 120px; */
           margin-top: 18vh;
+          align-items: center;
           /////////////////////////////////////////
           // # Title
           /////////////////////////////////////////
@@ -222,8 +223,8 @@
       width: 100%;
       height: 50vh;
       margin-top: 54px;
-      border: 1px solid red;
-      color: red;
+      // border: 1px solid red;
+      // color: red;
 
       // @media only screen and (min-width: 425px) and (max-width: 640px) {
       //   width: 95%;
@@ -250,9 +251,9 @@
           display: flex;
           padding-top: 34px;
 
-          @include media ('<=tablet') {
-             width: 107%;
-        margin-left: -6vw;
+          @include media('<=tablet') {
+            width: 107%;
+            margin-left: -6vw;
           }
 
           .go {
@@ -265,6 +266,7 @@
 
             background-color: $black;
             color: $white;
+            border-radius: 5px;
             span {
               width: inherit;
               height: inherit;
@@ -281,247 +283,249 @@
           }
 
           .content {
-            margin: -34px 0 0 12px;
+            margin: -17px 0 0 12px;
             flex-direction: column;
-
-            h4 {
-              padding-bottom: 20px;
-              font: normal normal bold 24px/24px Bai Jamjuree;
-            }
-            // h4:before {
-            //   content: '';
-            //   display: block;
-            //   margin-bottom: 20px;
-            //   width: 36px;
-            //   height: 4px;
-            //   background-color: $black;
-            //   position: absolute;
-            //   bottom: 10px;
-            // }
-            p {
-              font-size: 16px;
-              line-height: 1.5em;
-            }
           }
-        }
-      }
-      //  :TODO
-      .projStart {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: max-content;
 
-        grid-gap: 4rem;
-        max-width: 730px;
-        margin: 32px auto;
-        margin-left: 14vw;
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          grid-gap: 0.5rem;
-          padding-left: 66px;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 767px) {
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 0.5rem;
-          padding-left: 66px;
-          padding-right: 10px;
-          line-height: 1.3em;
-        }
-        h4 {
-          font: normal normal bold 16px/16px Bai Jamjuree;
-          color: $black;
-          font-weight: bold;
-          text-transform: uppercase;
-          line-height: 1.7em;
-        }
-        p {
-          font-size: 16px;
-          color: #707070;
-        }
-        .proj-tech {
-          img {
-            width: 300px;
-            height: 150px;
+          h4 {
+            padding-bottom: 20px;
+            font: normal normal bold 24px/24px Bai Jamjuree;
           }
-        }
-
-        button {
-          color: #262626;
-          padding: 0.4em 2em;
-          border: $black 2px solid;
-          font-size: 1.1em;
-          cursor: pointer;
-          border-radius: 4px;
-          background: linear-gradient(45deg, #f7f9fa 50%, #ff4141 50%);
-          -webkit-background-clip: text;
-          position: relative;
-          &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, $black 50%, transparent 50%);
-            z-index: -1;
-          }
-          &:after {
-            background-size: 300%;
-            background-position: 100%;
-            transition: 1s;
-          }
-          &:hover {
-            background: $black;
-            color: $background;
+          // h4:before {
+          //   content: '';
+          //   display: block;
+          //   margin-bottom: 20px;
+          //   width: 36px;
+          //   height: 4px;
+          //   background-color: $black;
+          //   position: absolute;
+          //   bottom: 10px;
+          // }
+          p {
+            font-size: 16px;
+            line-height: 1.5em;
           }
         }
       }
     }
+    //  :TODO
+    .projStart {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: max-content;
 
-    ///////////////////////////////////
-    // # Deliverables
-    ///////////////////////////////////
-
-    .section-deliverables {
-      max-width: 1000px;
-      margin: 0 auto;
-
-      h2 {
-        padding-top: 50px;
-        // width: 63px;
-        height: 120px;
-        margin: -60px 0 0 0;
-        text-align: center;
-        font: normal normal bold 28px/28px Bai Jamjuree;
-        color: $fontColor;
-      }
-    }
-
-    .project_deliverables {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 10px;
-      background-color: $background;
-
-      @media only screen and (min-width: 320px) and (max-width: 767px) {
-        max-width: 50%;
-        margin: 0 auto;
-        flex-wrap: wrap;
-      }
-
-      img {
-        width: 350px;
-        height: 325px;
-        background: $background 0% 0% no-repeat padding-box;
-        border: 1px solid #707070;
-        border-radius: 7px;
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          width: 250px;
-          height: 250px;
-        }
-      }
-      h3 {
-        padding-top: 23px;
-        width: 43px;
-        height: 46px;
-        text-align: center;
-        font: normal normal bold 18px/18px Bai Jamjuree;
-        color: $fontColor;
-      }
-      p {
-        top: 680px;
-        left: 276px;
-        width: 370px;
-        height: 128px;
-        text-align: left;
-        font: normal normal normal 16px/16px Work Sans;
-        letter-spacing: 0px;
-        color: $fontColor;
-
-        padding-right: 20px;
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          width: 235px;
-        }
-      }
-
-      .deliverables_1 {
-        flex: 1 1 150px;
-      }
-      .deliverables_2 {
-        flex: 1 1 150px;
-      }
-      .deliverables_3 {
-        flex: 1 1 150px;
-      }
-    }
-
-    ///////////////////////////////////
-    ///// # Features
-    ///////////////////////////////////
-
-    .features-container {
-      max-width: 1000px;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    .features {
-      margin: 40px auto;
-      flex: 150px 1;
-      @media only screen and (min-width: 480px) and (max-width: 767px) {
-        max-width: 50%;
-        margin: 0 auto;
-      }
-      img {
-        top: 249px;
-        width: 990px;
-        left: 232px;
-        width: 60px;
-        height: 60px;
-        opacity: 1;
-        object-fit: cover;
-      }
-      h3 {
-        padding-top: 23px;
-        height: 31px;
-        margin: -60px 0 0 78px;
-        text-align: left;
-        font: normal normal bold 18px/18px Bai Jamjuree;
-        color: $fontColor;
-      }
-
-      p {
-        top: 328px;
-        left: 413px;
-        width: 250px;
-        height: 76px;
-
-        margin: 0 0 0 78px;
-        font: normal normal normal 16px/16px Work Sans;
-        letter-spacing: 0px;
-        color: $fontColor;
-        @media only screen and (min-width: 425px) and (max-width: 640px) {
-          width: 200px;
-        }
-      }
-    }
-    .features_image {
-      flex: 150px 1;
-      padding-top: 40px;
-      width: 500px;
+      grid-gap: 4rem;
+      max-width: 730px;
+      margin: 32px auto;
+      margin-left: 14vw;
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        width: 135px;
-      }
-      @media only screen and (min-width: 320px) and (max-width: 767px) {
-        width: 150px;
+        grid-gap: 0.5rem;
+        padding-left: 66px;
       }
 
-      img {
-        width: 800px;
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        padding-left: 66px;
+        padding-right: 10px;
+        line-height: 1.3em;
       }
+      h4 {
+        font: normal normal bold 16px/16px Bai Jamjuree;
+        color: $black;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.7em;
+      }
+      p {
+        font-size: 16px;
+        color: #707070;
+      }
+      .proj-tech {
+        img {
+          width: 300px;
+          height: 150px;
+        }
+      }
+
+      button {
+        color: #262626;
+        padding: 0.4em 2em;
+        border: $black 2px solid;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 4px;
+        background: linear-gradient(45deg, #f7f9fa 50%, #ff4141 50%);
+        -webkit-background-clip: text;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(45deg, $black 50%, transparent 50%);
+          z-index: -1;
+        }
+        &:after {
+          background-size: 300%;
+          background-position: 100%;
+          transition: 1s;
+        }
+        &:hover {
+          background: $black;
+          color: $background;
+        }
+      }
+    }
+  }
+
+  ///////////////////////////////////
+  // # Deliverables
+  ///////////////////////////////////
+
+  .section-deliverables {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      padding-top: 50px;
+      // width: 63px;
+      height: 120px;
+      // margin: -60px 0 0 0;
+      margin-top: -5vh;
+      // text-align: center;
+      font: normal normal bold 28px/28px Bai Jamjuree;
+      color: $fontColor;
+    }
+  }
+
+  .project_deliverables {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: $background;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      max-width: 50%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 300px;
+      height: 250px;
+      background: #f7f9fa 0% 0% no-repeat padding-box;
+      border: 1px solid #000;
+      border-radius: 12px;
+      /* margin: 0 auto; */
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        // width: 250px;
+        // height: 250px;
+      }
+    }
+    h3 {
+      padding-top: 23px;
+      width: 43px;
+      height: 46px;
+      text-align: center;
+      font: normal normal bold 18px/18px Bai Jamjuree;
+      color: $fontColor;
+    }
+    p {
+      top: 680px;
+      left: 276px;
+      width: 370px;
+      height: 128px;
+      text-align: left;
+      font: normal normal normal 16px/16px Work Sans;
+      letter-spacing: 0px;
+      color: $fontColor;
+
+      padding-right: 20px;
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 235px;
+      }
+    }
+
+    .deliverables_1 {
+      flex: 1 1 150px;
+    }
+    .deliverables_2 {
+      flex: 1 1 150px;
+    }
+    .deliverables_3 {
+      flex: 1 1 150px;
+    }
+  }
+
+  ///////////////////////////////////
+  ///// # Features
+  ///////////////////////////////////
+
+  .features-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .features {
+    margin: 40px 0 15vh 0;
+    flex: 150px 1;
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+    img {
+      top: 249px;
+      width: 990px;
+      left: 232px;
+      width: 60px;
+      height: 60px;
+      opacity: 1;
+      object-fit: cover;
+    }
+    h3 {
+      padding-top: 23px;
+      height: 31px;
+      margin: -60px 0 0 78px;
+      text-align: left;
+      font: normal normal bold 18px/18px Bai Jamjuree;
+      color: $fontColor;
+    }
+
+    p {
+      top: 328px;
+      left: 413px;
+      width: 250px;
+      height: 76px;
+
+      margin: 0 0 0 78px;
+      font: normal normal normal 16px/16px Work Sans;
+      letter-spacing: 0px;
+      color: $fontColor;
+      @media only screen and (min-width: 425px) and (max-width: 640px) {
+        width: 200px;
+      }
+    }
+  }
+  .features_image {
+    flex: 150px 1;
+    padding-top: 40px;
+    width: 500px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 135px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      width: 150px;
+    }
+
+    img {
+      width: 800px;
     }
   }
 }
@@ -530,64 +534,203 @@
 // # Project Images
 ///////////////////////////////////
 
-.project-images {
+// .project-images {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+
+//   h3 {
+//     height: 24px;
+//     margin: 9px 0 0 112px;
+//     text-align: left;
+//     font: normal normal bold 18px/18px Bai Jamjuree;
+//     color: #093145;
+//   }
+//   @media screen and (min-width: 992px) {
+//     padding: 20px;
+//   }
+
+//   .mock {
+//     flex: 1;
+//     h3 {
+//       height: 24px;
+//       margin: 10px 0px 0px 113px;
+//       text-align: left;
+//       font: bold 18px / 18px 'Bai Jamjuree';
+//       color: rgb(9, 49, 69);
+//     }
+
+//     p {
+//       top: 328px;
+//       left: 413px;
+//       width: 296px;
+//       height: 76px;
+
+//       margin: 0 0 0 112px;
+//       font: normal normal normal 16px/16px Work Sans;
+//       letter-spacing: 0px;
+//       color: $fontColor;
+//       @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//         margin-left: 305px;
+//       }
+//       @media only screen and (min-width: 640px) and (max-width: 768px) {
+//         margin-left: 300px;
+//       }
+//       @media only screen and (min-width: 425px) and (max-width: 640px) {
+//         margin-left: 380px;
+//       }
+//     }
+//     img {
+//       width: 1200px;
+//       opacity: 1;
+//       border-radius: 7px;
+//       .gif {
+//         max-width: 300px;
+//         max-height: 200px;
+//         // border: 34px white;
+//         border-radius: 7px;
+//       }
+//       @media screen and (min-width: 992px) {
+//       }
+//     }
+//   }
+// }
+
+.images-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding: 2rem 0;
+  counter-reset: figure;
+}
 
-  h3 {
-    height: 24px;
-    margin: 9px 0 0 112px;
-    text-align: left;
-    font: normal normal bold 18px/18px Bai Jamjuree;
-    color: #093145;
+.item {
+  margin: 10vh auto;
+  max-width: 100%;
+  position: relative;
+  will-change: transform;
+  //here
+  // height: 95vh;
+}
+.item:nth-child(even)::before {
+  right: 0;
+}
+
+.item::before {
+  counter-increment: figure;
+  content: counter(figure, decimal-leading-zero);
+  position: absolute;
+  font-family: 'Bai Jamjuree', serif;
+  font-size: 10rem;
+  // color: var(--color-deco);
+  bottom: calc(100% - 3rem);
+}
+.item__img-wrap {
+  img {
+    width: 800px;
+    --aspect-ratio: 900/505;
+    // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+    background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  @media screen and (min-width: 992px) {
-    padding: 20px;
+}
+// .item:nth-child(2) .item__img-wrap {
+//   img {
+//     width: 800px;
+//     --aspect-ratio: 900/505;
+//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -ms-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   }
+// }
+// .item:nth-child(3) .item__img-wrap {
+//   img {
+//     width: 800px;
+//     --aspect-ratio: 900/505;
+//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -ms-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   }
+// }
+
+.item__img-wrap {
+  --aspect-ratio: 1/1.5;
+  overflow: hidden;
+  width: 800px;
+  // height: 400px;
+  margin: 0 auto;
+  padding-bottom: calc(27% / (var(--aspect-ratio)));
+  max-width: calc(100% - 2rem);
+  will-change: transform;
+}
+
+.item__img--t1 {
+  --overflow: 60px;
+}
+.item__img {
+  --overflow: 40px;
+  height: calc(100% + (2 * var(--overflow)));
+  top: calc(-1 * var(--overflow));
+  width: 100%;
+  position: absolute;
+  background-image: var(--image);
+  background-size: cover;
+  background-position: 50% 0%;
+  will-change: transform;
+}
+
+.item__caption {
+  padding: 2rem 1rem;
+  // margin-top: -120vh;
+}
+
+.item__caption-title {
+  font-family: 'Bai Jamjuree', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+}
+h4 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.item__caption-copy {
+  margin: 0;
+
+  p {
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
-
-  .mock {
-    flex: 1;
-    h3 {
-      height: 24px;
-      margin: 10px 0px 0px 113px;
-      text-align: left;
-      font: bold 18px / 18px 'Bai Jamjuree';
-      color: rgb(9, 49, 69);
-    }
-
-    p {
-      top: 328px;
-      left: 413px;
-      width: 296px;
-      height: 76px;
-
-      margin: 0 0 0 112px;
-      font: normal normal normal 16px/16px Work Sans;
-      letter-spacing: 0px;
-      color: $fontColor;
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        margin-left: 305px;
-      }
-      @media only screen and (min-width: 640px) and (max-width: 768px) {
-        margin-left: 300px;
-      }
-      @media only screen and (min-width: 425px) and (max-width: 640px) {
-        margin-left: 380px;
-      }
-    }
-    img {
-      width: 1200px;
-      opacity: 1;
-      border-radius: 7px;
-      .gif {
-        max-width: 300px;
-        max-height: 200px;
-        // border: 34px white;
-        border-radius: 7px;
-      }
-      @media screen and (min-width: 992px) {
-      }
-    }
-  }
+}
+.item__caption-copy::before {
+  content: '__';
+  line-height: 1;
+  color: var(--color-link);
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  display: block;
 }
