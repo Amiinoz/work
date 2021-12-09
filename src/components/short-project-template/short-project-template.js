@@ -166,6 +166,7 @@ const ShortProjectTemplate = ({
           </motion.div>
         </motion.div>
 
+        {/* /////////// info */}
         <motion.div className="info-container" animate={animation}>
           <div className="info icon">
             <img src={infoHeadingImage} />
