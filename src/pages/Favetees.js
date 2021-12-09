@@ -23,13 +23,13 @@ import PageGuides from '../components/page-guides/page-guides';
 const Favetees = () => {
   return (
     <>
-      <div>
+      <div data-scroll-section>
         <Helmet>
           <title>Mo Magan | Favetees</title>
           <meta name="description" content="Favetees" />
         </Helmet>
         <ProjectsTemplate
-          title="Favetees"
+          title="favetees"
           mainImage={FaveCover}
           projectInitial="F"
           projectTitle="Favetees"

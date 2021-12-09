@@ -11,11 +11,8 @@ import Weather from './pages/Weather';
 import Airbnb from './pages/Airbnb';
 import NotFound from './pages/404';
 import Layout from './components/Layout';
-import useLocoScroll from './hooks/useLocoScroll';
 
 function App() {
-  useLocoScroll();
-
   https: return (
     <>
       <div className="App" id="#app">

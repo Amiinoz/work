@@ -30,9 +30,8 @@
       border-radius: 100px;
       transition: 0.4s ease-in-out;
       transform: rotate(180deg);
-    }
-    &:hover {
-      img {
+
+      &:hover {
         background: $accent;
       }
     }
@@ -46,6 +45,10 @@
       align-items: center;
       font-weight: 600;
       margin-top: -24px;
+      img &:hover {
+        background: $accent;
+        transition: opacity 0.2s, visibility 0.2s;
+      }
     }
     img {
       margin-left: 16px;
@@ -60,6 +63,7 @@
     &:hover {
       img {
         background: $accent;
+        transition: opacity 0.2s, visibility 0.2s;
       }
     }
     p {
@@ -76,6 +80,8 @@
 
       image &:hover {
         transition: opacity 0.2s, visibility 0.2s;
+
+        background: $accent;
       }
     }
   }

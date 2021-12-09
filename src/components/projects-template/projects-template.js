@@ -15,20 +15,6 @@ import useWindowSize from '../useWindowSize';
 import './projects-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-// const firstName = {
-//   initial: {
-//     y: 0,
-//   },
-
-//   animate: {
-//     y: 0,
-//     transition: {
-//       delayChildren: 0.6,
-//       staggerChildren: 0.04,
-//       staggerDirection: -1,
-//     },
-//   },
-// };
 
 const letter = {
   initial: {
@@ -168,7 +154,7 @@ const ProjectsTemplate = ({
     rounded: 0,
   };
 
-  // Run scrollrender once page is loaded.
+  // Run scroll render once page is loaded.
   useEffect(() => {
     requestAnimationFrame(() => skewScrolling());
   }, []);
@@ -213,10 +199,7 @@ const ProjectsTemplate = ({
         initial="initial"
         animate="animate"
         exit="exit"
-        // className="single"
-        data-scroll-section
         className="proj"
-        // ref={app}
       >
         <div className="container" ref={scrollContainer}>
           {/* ////////////////////////////////////////// */}
@@ -419,7 +402,7 @@ const ProjectsTemplate = ({
               </div>
               {/* ////////////////////////////////////////// */}
               {/* // Images */}
-              {/* TODO: */}
+
               <div className="project-images" data-scroll-section>
                 <h2>{imagesHead}</h2>
                 <div className="images-content">
@@ -484,7 +467,6 @@ const ProjectsTemplate = ({
                           transform: 'translate3d(0px, -7.95308px, 0px)',
                         }}
                       >
-                        {/* <img src={projImages4} /> */}
                         <video
                           height="100%"
                           width="100%"
@@ -511,20 +493,3 @@ const ProjectsTemplate = ({
 };
 
 export default ProjectsTemplate;
-
-// ////////////////////////////////////Images///////////////////////
-// imagesHead="High fidelity Mockups"
-// projImgTitle1="Mockups"
-// projImgInfo1="Stepping outside of the traditional formats used for client
-//           reviews and creating a custom-tailored approach."
-// projImages1={ProjImages1}
-// projImgTitle2="Design"
-// projImgInfo2=" Getting your clients to get involve in your process and creativity as much as the final product."
-// projImages2={ProjImages2}
-// projImgTitle3="Mobile"
-// projImgInfo3=" More and More customers use mobile and tablet devices to browse online hence the importance of having responsive site."
-// projImages3={ProjImages3}
-// projImgTitle4="Website"
-// projImgInfo4="Everything comes together; the deliverables, features and design."
-// projImages4={ProjImages4}
-// ////////////////////////////////////page guides///////////////////////
