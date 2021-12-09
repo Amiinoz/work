@@ -2,21 +2,22 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
+import ProjDelImage1 from '../assets/favetees/typography_1.png';
+import ProjDelImage2 from '../assets/favetees/logo_1.png';
+import ProjDelImage3 from '../assets/favetees/colors_1.png';
+import ProjDelImage4 from '../assets/favetees/buttons-image.png';
+
 import FaveCover from '../assets/favetees/faveteesCover.jpeg';
-import Colors from '../assets/favetees/colorsSmall.webp';
-import ProjDelImage1 from '../assets/favetees/typography.webp';
-import ProjDelImage2 from '../assets/favetees/logo.webp';
-import ProjDelImage3 from '../assets/favetees/colors.webp';
-import ProjDelImage4 from '../assets/favetees/buttons-image.webp';
-import ProjDelImage5 from '../assets/favetees/animation.webp';
-import ProjDelImage6 from '../assets/favetees/icons.webp';
-import ProjFeatImage1 from '../assets/favetees/shoppingCartIcon.webp';
-import ProjFeatImage2 from '../assets/favetees/paymentIcon.webp';
-import ProjFeatImage3 from '../assets/favetees/checkOutIcon.webp';
-import FeatureImage from '../assets/favetees/feutures1.webp';
-import ProjImages1 from '../assets/favetees/projectImages1.webp';
-import ProjImages2 from '../assets/favetees/projectImages2.webp';
-import ProjImages3 from '../assets/favetees/projectImages3.webp';
+import Colors from '../assets/favetees/colorsSmall_1.png';
+import ProjDelImage5 from '../assets/favetees/animation.png';
+import ProjDelImage6 from '../assets/favetees/icons.png';
+import ProjFeatImage1 from '../assets/favetees/shoppingCartIcon.png';
+import ProjFeatImage2 from '../assets/favetees/paymentIcon.png';
+import ProjFeatImage3 from '../assets/favetees/checkOutIcon.png';
+import FeatureImage from '../assets/favetees/feu1.png';
+import ProjImages1 from '../assets/favetees/projectImages1_1.jpg';
+import ProjImages2 from '../assets/favetees/projectImages2_2.jpg';
+import ProjImages3 from '../assets/favetees/projectImages3_1.jpg';
 import ProjImages4 from '../assets/favetees/faveteesInAction.mp4';
 import PageGuides from '../components/page-guides/page-guides';
 

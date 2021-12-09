@@ -403,7 +403,7 @@ const ProjectsTemplate = ({
               {/* ////////////////////////////////////////// */}
               {/* // Images */}
 
-              <div className="project-images" data-scroll-section>
+              <div className="project-images">
                 <h2>{imagesHead}</h2>
                 <div className="images-content">
                   <div className="item">
@@ -413,8 +413,6 @@ const ProjectsTemplate = ({
                         style={{
                           transform: 'translate3d(0px, -7.95308px, 0px)',
                         }}
-                        data-scroll
-                        data-scroll-speed="-9"
                       >
                         <img src={projImages1} />
                       </div>

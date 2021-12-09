@@ -13,7 +13,7 @@ import NotFound from './pages/404';
 import Layout from './components/Layout';
 
 function App() {
-  https: return (
+  return (
     <>
       <div className="App" id="#app">
         <Helmet>
