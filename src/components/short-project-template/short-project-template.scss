@@ -9,7 +9,7 @@
 .mosdev-container {
   font-family: 'Work Sans', sans-serif;
   height: 80vh;
-  margin-left: -5vw;
+  margin-left: 3vw;
 
   .banner {
     display: grid;
@@ -169,4 +169,283 @@
     place-items: center;
     margin-left: -73vw;
   }
+}
+
+/////////////
+.proj-info {
+  // border: 1px solid red;
+  // color: red;
+  width: 80%;
+  height: 20vh;
+  margin-top: -94vh;
+
+  display: grid;
+  grid-template-columns: (80px 1fr 300px);
+  grid-template-rows: max-content;
+  place-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  &_icon {
+    // background-color: lightcoral;
+    margin: -26px 0 0 56px;
+  }
+  &_body {
+    // background-color: lightcyan;
+  }
+  &_button {
+    // background-color: lightgreen;
+    margin: 0 0 0 -35;
+    button {
+      color: #262626;
+      padding: 0.8em 3em;
+      border: $black 1px solid;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 4px;
+      background: linear-gradient(45deg, #f7f9fa 50%, #ff4141 50%);
+      -webkit-background-clip: text;
+      position: relative;
+      transition: all 0.1s ease-out;
+      transform: scale(1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, $black 50%, transparent 50%);
+        z-index: -1;
+      }
+      &:after {
+        background-size: 300%;
+        background-position: 100%;
+        transition: 1s;
+      }
+      &:hover {
+        background: $black;
+        color: $background;
+        transform: scale(0.9);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+/////////
+.proj-content {
+  // background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  // place-items: center;
+
+  gap: 4rem;
+  padding: 5rem;
+
+  &_image {
+    // background-color: lightcoral;
+    // width: 100%;
+    // height: 60vh;
+    // overflow: hidden;
+    height: 60%;
+    width: 104%;
+    background-position: 50% 50%;
+    overflow: hidden;
+  }
+  &_text {
+    // background-color: lightcyan;
+    width: 100%;
+    height: 41vh;
+    margin-top: 2vh;
+
+    ////
+  }
+}
+.item {
+  &__content {
+    padding: 2rem;
+    height: calc(100vh - 300px);
+    overflow: auto;
+  }
+  &__content-title {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+    pointer-events: none;
+  }
+  &__content-title span {
+    display: inline-block;
+    white-space: pre;
+    pointer-events: none;
+    will-change: transform;
+  }
+  &__content-subtitle {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  &__content-text {
+    margin: 10vh 0 4rem 0;
+    position: relative;
+    line-height: 1.5;
+  }
+  &__content-text::after {
+    content: '';
+    width: 2rem;
+    height: 2px;
+    position: absolute;
+    background: currentColor;
+    top: calc(100% + 3rem);
+  }
+  &__content-back {
+    cursor: pointer;
+  }
+}
+/////////
+
+.images-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  padding: 2rem 0;
+  counter-reset: figure;
+}
+
+.item {
+  margin: 10vh auto;
+  max-width: 100%;
+  position: relative;
+  will-change: transform;
+  //here
+  // height: 95vh;
+}
+.item:nth-child(even)::before {
+  right: 0;
+}
+
+.item::before {
+  counter-increment: figure;
+  content: counter(figure, decimal-leading-zero);
+  position: absolute;
+  font-family: 'Bai Jamjuree', serif;
+  font-size: 10rem;
+  // color: var(--color-deco);
+  bottom: calc(100% - 3rem);
+}
+.item__img-wrap {
+  img {
+    width: 800px;
+    --aspect-ratio: 900/505;
+    // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+    background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+// .item:nth-child(2) .item__img-wrap {
+//   img {
+//     width: 800px;
+//     --aspect-ratio: 900/505;
+//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -ms-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   }
+// }
+// .item:nth-child(3) .item__img-wrap {
+//   img {
+//     width: 800px;
+//     --aspect-ratio: 900/505;
+//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
+//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -ms-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   }
+// }
+
+.item__img-wrap {
+  --aspect-ratio: 1/1.5;
+  overflow: hidden;
+  width: 800px;
+  // height: 400px;
+  margin: 0 auto;
+  padding-bottom: calc(27% / (var(--aspect-ratio)));
+  max-width: calc(100% - 2rem);
+  will-change: transform;
+}
+
+.item__img--t1 {
+  --overflow: 60px;
+}
+.item__img {
+  --overflow: 0px;
+  height: calc(100% + (2 * var(--overflow)));
+  top: calc(-1 * var(--overflow));
+  width: 100%;
+  position: absolute;
+  background-image: var(--image);
+  background-size: cover;
+  background-position: 50% 0%;
+  will-change: transform;
+  margin-left: -1vw;
+  border-radius: 4px;
+}
+
+.item__caption {
+  padding: 2rem 1rem;
+  // margin-top: -120vh;
+}
+
+.item__caption-title {
+  font-family: 'Bai Jamjuree', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+}
+h4 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.item__caption-copy {
+  margin: 0;
+
+  p {
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+}
+.item__caption-copy::before {
+  content: '__';
+  line-height: 1;
+  color: var(--color-link);
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  display: block;
 }

@@ -4,6 +4,11 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useWindowSize from '../useWindowSize';
 import './short-project-template.scss';
+import MosImage from '../../assets/mosdev/mosdefPoster.webp';
+import ProjectInfoIcon from '../../assets/mosdev/icon.webp';
+import projImg2 from '../../assets/mosdev/theme-image2_1.jpg';
+import projImg1 from '../../assets/mosdev/mosdef-main1.jpg';
+import projImg3 from '../../assets/mosdev/mosdef-main1.jpg';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {
@@ -167,54 +172,117 @@ const ShortProjectTemplate = ({
         </motion.div>
 
         {/* /////////// info */}
-        <motion.div className="info-container" animate={animation}>
-          <div className="info icon">
-            <img src={infoHeadingImage} />
-          </div>
-          <div className="info heading">
-            <h3>{infoHeading}</h3>
-          </div>
+        {/* TODO: */}
 
-          <div className=" info install">
-            <div className="install one">
-              <a href={viewCode} target="View Code">
-                <button> {button1}</button>
-              </a>
+        <div className="proj-info">
+          <div className="proj-info_icon">
+            <img
+              width="50"
+              height="50 "
+              src={ProjectInfoIcon}
+              alt="project icon"
+              data-scroll
+            />
+          </div>
+          <div className="proj-info_body">
+            <h4>
+              MosDev Is VsCode dark theme based on Monokai theme colours and
+              inspired by this artwork of my fave raper
+            </h4>
+          </div>
+          <div className="proj-info_button">
+            <button>Marketplace</button>
+          </div>
+        </div>
+        {/* /////////// info */}
+
+        {/* /////////// content */}
+        <div className="proj-content">
+          <div className="proj-content_image">
+            <img src={MosImage} />
+          </div>
+          <div className="proj-content_text">
+            <h2 className="item__content-title">MosDev</h2>
+            <h3 className="item__content-subtitle">A dark VsCode theme</h3>
+            <div className="item__content-text">
+              <p>
+                The inspiration for this theme. Yasin Bay aka Mos Def aka Yasin
+                is an American rapper, singer, songwriter, and actor with
+                classic albums like Black on both sides, Black star, and The
+                Ecstatic in his resume.
+              </p>
+              <p>Art work by Kamoni Khem</p>
             </div>
           </div>
-        </motion.div>
+        </div>
+        {/* /////////// content */}
+        {/* /////////// images */}
+        <div className="project-images">
+          {/* <h2>{projImg1}</h2> */}
+          <div className="images-content">
+            <div className="item">
+              <div className="item__img-wrap">
+                <div
+                  className="item__img item__img--t1"
+                  style={{
+                    transform: 'translate3d(0px, -7.95308px, 0px)',
+                  }}
+                >
+                  <img src={projImg1} />
+                </div>
+              </div>
+              <div className="item__caption">
+                {/* <h4 className="item__caption-title">{projImgTitle1}</h4> */}
+                <h4 className="item__caption-title">Languages</h4>
 
-        <motion.div className="insp-container">
-          <motion.div variants={firstName} className="insp image">
-            <img src={infoImage} alt="Project main image" />
-          </motion.div>
+                {/* <p className="item__caption-copy">{projImgInfo1}</p> */}
+                <p className="item__caption-copy">Javascript | Css | Html</p>
+              </div>
+            </div>
 
-          <motion.div variants={firstName} className="insp heading2">
-            <h3>{ProjectHeading}</h3>
-            <p>{projInfo}</p>
-            {/* <br /> */}
-            <br />
-            <p>{projInfoBy}</p>
-          </motion.div>
-        </motion.div>
+            <div className="item">
+              <div className="item__img-wrap">
+                <div
+                  className="item__img item__img--t2"
+                  style={{
+                    transform: 'translate3d(0px, -7.95308px, 0px)',
+                  }}
+                >
+                  <img src={projImg2} />
+                </div>
+              </div>
+              <div className="item__caption">
+                {/* <h4 className="item__caption-title">{projImgTitle2}</h4> */}
+                <h4 className="item__caption-title">Two</h4>
 
-        <div className="lang-container">
-          <div className=" lang js">
-            <h3>{Images1Header}</h3>
-            <img src={Images1} />
-          </div>
-          <div className=" lang cc">
-            <h3>{Images2Header}</h3>
-            <img src={Images2} />
-          </div>
-          <div className=" lang js">
-            <h3>{Images3Header}</h3>
-            <img src={Images3} />
+                {/* <p className="item__caption-copy">{projImgInfo2}</p> */}
+                <p className="item__caption-copy">Sub2</p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="item__img-wrap">
+                <div
+                  className="item__img item__img--t3"
+                  style={{
+                    transform: 'translate3d(0px, -7.95308px, 0px)',
+                  }}
+                >
+                  <img src={projImg3} />
+                </div>
+              </div>
+              <div className="item__caption">
+                {/* <h4 className="item__caption-title">{projImgTitle3} </h4> */}
+                <h4 className="item__caption-title">Three </h4>
+
+                {/* <p className="item__caption-copy">{projImgInfo3}</p> */}
+                <p className="item__caption-copy">Sub3</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="mockups">
-          <img src={ImagesMock} alt="Mock images of the project" />
-        </div>
+
+        {/* /////////// images */}
       </motion.section>
     </motion.div>
   );
