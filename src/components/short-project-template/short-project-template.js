@@ -4,12 +4,9 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useWindowSize from '../useWindowSize';
 import './short-project-template.scss';
-import MosImage from '../../assets/mosdev/mosdefPoster.webp';
+import MosImage from '../../assets/mosdev/mozdev.jpg';
 import ProjectInfoIcon from '../../assets/mosdev/icon.webp';
-import projImg2 from '../../assets/mosdev/theme-image2_1.jpg';
-import projImg1 from '../../assets/mosdev/mosdef-main1.jpg';
-import projImg3 from '../../assets/mosdev/mosdef-main1.jpg';
-
+import PageGuides from '../../components/page-guides/page-guides';
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {
   initial: {
@@ -123,168 +120,98 @@ const ShortProjectTemplate = ({
   };
 
   return (
-    <motion.div className="short" ref={short} data-scroll-section>
-      <motion.section className="mosdev-container" ref={scrollContainer}>
-        <motion.div className="banner">
-          <motion.div
-            className="banner-title"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.5, ...transition },
-            }}
-          >
-            <motion.span variants={firstName}>
-              <motion.span>
-                {Title}
-                <br />
-                {Subtitle}
-              </motion.span>
-            </motion.span>
-          </motion.div>
-
-          <motion.div className="banner-image">
-            <motion.img
-              alt="an image"
-              transition={transition}
-              borderRadius="40"
+    <>
+      <motion.div className="short" ref={short} data-scroll-section>
+        <motion.section className="mosdev-container" ref={scrollContainer}>
+          <motion.div className="banner">
+            <motion.div
+              className="banner-title"
+              initial={{ opacity: 0, y: 20 }}
               animate={{
-                transition: { delay: 0.6, ...transition },
-
-                x: window.imageDetails > 1400 ? -800 : -400,
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.5, ...transition },
               }}
-              src={BannerImage}
-            />
+            >
+              <motion.span variants={firstName}>
+                <motion.span>
+                  MosDev
+                  <br />
+                  VsCode Theme
+                </motion.span>
+              </motion.span>
+            </motion.div>
+
+            <motion.div className="banner-image">
+              <motion.img
+                alt="an image"
+                transition={transition}
+                borderRadius="40"
+                animate={{
+                  transition: { delay: 0.6, ...transition },
+
+                  x: window.imageDetails > 1400 ? -800 : -400,
+                }}
+                src={BannerImage}
+              />
+            </motion.div>
+
+            <motion.div
+              className="scroll"
+              initial={{ opacity: 0, y: 80 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 1.7, ...transition },
+              }}
+            >
+              <h3>Scroll</h3>
+            </motion.div>
           </motion.div>
 
-          <motion.div
-            className="scroll"
-            initial={{ opacity: 0, y: 80 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 1.7, ...transition },
-            }}
-          >
-            <h3>Scroll</h3>
-          </motion.div>
-        </motion.div>
+          {/* /////////// info */}
+          {/* TODO: */}
 
-        {/* /////////// info */}
-        {/* TODO: */}
-
-        <div className="proj-info">
-          <div className="proj-info_icon">
-            <img
-              width="50"
-              height="50 "
-              src={ProjectInfoIcon}
-              alt="project icon"
-              data-scroll
-            />
-          </div>
-          <div className="proj-info_body">
-            <h4>
-              MosDev Is VsCode dark theme based on Monokai theme colours and
-              inspired by this artwork of my fave raper
-            </h4>
-          </div>
-          <div className="proj-info_button">
-            <button>Marketplace</button>
-          </div>
-        </div>
-        {/* /////////// info */}
-
-        {/* /////////// content */}
-        <div className="proj-content">
-          <div className="proj-content_image">
-            <img src={MosImage} />
-          </div>
-          <div className="proj-content_text">
-            <h2 className="item__content-title">MosDev</h2>
-            <h3 className="item__content-subtitle">A dark VsCode theme</h3>
-            <div className="item__content-text">
-              <p>
-                The inspiration for this theme. Yasin Bay aka Mos Def aka Yasin
-                is an American rapper, singer, songwriter, and actor with
-                classic albums like Black on both sides, Black star, and The
-                Ecstatic in his resume.
-              </p>
-              <p>Art work by Kamoni Khem</p>
+          <div className="mos-info">
+            <div className="mos-info_icon">
+              <img src={ProjectInfoIcon} alt="mosdev icon" data-scroll />
+            </div>
+            <div className="mos-info_body">
+              <h4>
+                MosDev Is VsCode dark theme based on Monokai theme colours and
+                inspired by this artwork of my fave raper
+              </h4>
+            </div>
+            <div className="mos-info_button">
+              <button>{button1}</button>
             </div>
           </div>
-        </div>
-        {/* /////////// content */}
-        {/* /////////// images */}
-        <div className="project-images">
-          {/* <h2>{projImg1}</h2> */}
-          <div className="images-content">
-            <div className="item">
-              <div className="item__img-wrap">
-                <div
-                  className="item__img item__img--t1"
-                  style={{
-                    transform: 'translate3d(0px, -7.95308px, 0px)',
-                  }}
-                >
-                  <img src={projImg1} />
-                </div>
-              </div>
-              <div className="item__caption">
-                {/* <h4 className="item__caption-title">{projImgTitle1}</h4> */}
-                <h4 className="item__caption-title">Languages</h4>
+          {/* /////////// info */}
 
-                {/* <p className="item__caption-copy">{projImgInfo1}</p> */}
-                <p className="item__caption-copy">Javascript | Css | Html</p>
-              </div>
+          {/* /////////// content */}
+          <div className="mos-content">
+            <div className="mos-content_image">
+              <img src={MosImage} />
             </div>
-
-            <div className="item">
-              <div className="item__img-wrap">
-                <div
-                  className="item__img item__img--t2"
-                  style={{
-                    transform: 'translate3d(0px, -7.95308px, 0px)',
-                  }}
-                >
-                  <img src={projImg2} />
-                </div>
-              </div>
-              <div className="item__caption">
-                {/* <h4 className="item__caption-title">{projImgTitle2}</h4> */}
-                <h4 className="item__caption-title">Two</h4>
-
-                {/* <p className="item__caption-copy">{projImgInfo2}</p> */}
-                <p className="item__caption-copy">Sub2</p>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__img-wrap">
-                <div
-                  className="item__img item__img--t3"
-                  style={{
-                    transform: 'translate3d(0px, -7.95308px, 0px)',
-                  }}
-                >
-                  <img src={projImg3} />
-                </div>
-              </div>
-              <div className="item__caption">
-                {/* <h4 className="item__caption-title">{projImgTitle3} </h4> */}
-                <h4 className="item__caption-title">Three </h4>
-
-                {/* <p className="item__caption-copy">{projImgInfo3}</p> */}
-                <p className="item__caption-copy">Sub3</p>
+            <div className="mos-content_text">
+              <h2 className="item__content-title">MosDev</h2>
+              <h3 className="item__content-subtitle">A dark VsCode theme</h3>
+              <div className="item__content-text">
+                <p>
+                  The inspiration for this theme. Yasin Bay aka Mos Def aka
+                  Yasin is an American rapper, singer, songwriter, and actor
+                  with classic albums like Black on both sides, Black star, and
+                  The Ecstatic in his resume.
+                </p>
+                <p>Art work by Kamoni Khem</p>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* /////////// images */}
-      </motion.section>
-    </motion.div>
+          {/* /////////// content */}
+        </motion.section>
+      </motion.div>
+      <PageGuides nextProject="./Weather" />
+    </>
   );
 };
 

@@ -8,15 +8,15 @@ export default function PageGuides({ nextProject }) {
     <>
       <div className="page-guides">
         <div className="backHome">
-          <a href="/contact">
-            Contact
+          <a href="/">
+            Home
             <img src={BackArrow} alt="Back to Home icon" />
           </a>
         </div>
 
         <div className="nextProj">
           <a href={nextProject}>
-            <img src={FrontArrow} alt="Back to Home icon" />
+            <img src={FrontArrow} alt="To next project" />
             Next Project
           </a>
         </div>

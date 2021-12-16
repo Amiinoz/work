@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
-import About from '../components/about/about';
+import About from '../components/about/About';
 import Banner from '../components/banner/banner';
 import Services from '../components/services/Services';
 import Connect from '../components/connect/connect';
@@ -9,6 +9,7 @@ import Gallery from '../components/gallery/gallery';
 import { Helmet } from 'react-helmet';
 import WorkButton from '../components/work-button/work-button';
 import '../styles/App.scss';
+// import Layout from '../components/Layout';
 
 const Home = () => {
   const ref = useRef(null);
@@ -68,20 +69,21 @@ const Home = () => {
       ) : (
         <div
           className="main-container"
-          id="main-container"
+          // id="main-container"
           data-scroll-container
         >
           <Helmet>
             <title>Mo Magan | Home </title>
             <meta name="description" content="Home" />
           </Helmet>
-
+          {/* <Layout> */}
           <Banner />
           <About />
           <Services />
           <Gallery />
           <Connect />
           <WorkButton />
+          {/* </Layout> */}
         </div>
       )}
     </>

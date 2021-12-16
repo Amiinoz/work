@@ -61,13 +61,13 @@
     span {
       &:before {
         transform: translate(-50%, -50%) rotate(315deg);
-        background-color: $black;
+        background-color: $accent;
       }
 
       &:after {
         transform: translate(-50%, -50%) rotate(45deg);
 
-        background-color: $black;
+        background-color: $accent;
         z-index: inherit;
       }
     }

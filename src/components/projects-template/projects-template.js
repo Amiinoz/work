@@ -8,7 +8,6 @@ import {
 } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
-// import PageGuides from '../page-guides/page-guides';
 import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
 

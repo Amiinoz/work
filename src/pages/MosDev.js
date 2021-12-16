@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet';
 import ShortProjectTemplate from '../components/short-project-template/short-project-template';
 import BannerImage from '../assets/mosdev/header2.webp';
 import infoHeadingImage from '../assets/mosdev/icon.webp';
-import MainImage from '../assets/mosdev/mosdefPoster.webp';
+import MainImage from '../assets/mosdev/mozdev.jpg';
 import ImagesMock from '../assets/mosdev/theme-image2.webp';
-import PageGuides from '../components/page-guides/page-guides';
+// import PageGuides from '../components/page-guides/page-guides';
 
 const MosDev = () => {
   return (
@@ -23,9 +23,9 @@ const MosDev = () => {
           infoHeading=" MosDev Is VsCode dark theme based on Monokai theme colours and
               inspired by this artwork of my fave raper."
           viewCode="https://marketplace.visualstudio.com/items?itemName=MosDev.MosDev-Theme"
-          button1="download"
-          viewLive="https://marketplace.visualstudio.com/items?itemName=MosDev.MosDev-Theme"
-          button2="Marketplace"
+          button1="Marketplace"
+          // viewLive="https://marketplace.visualstudio.com/items?itemName=MosDev.MosDev-Theme"
+          // button2="Marketplace"
           infoImage={MainImage}
           ProjectHeading="inspiration"
           projInfo="This is the inspiration of these theme. Mos def aka Yasin bay is,
@@ -34,7 +34,6 @@ const MosDev = () => {
           ImagesMock={ImagesMock}
         />
       </div>
-      <PageGuides nextProject="./Weather" />
     </>
   );
 };

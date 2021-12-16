@@ -1,4 +1,3 @@
-@import '../../styles/_mixins.scss';
 @import '../../styles/variables';
 @import '../../styles/breakpoints.scss';
 
@@ -24,14 +23,14 @@
     right: 7vw;
   }
 
-  @include mq('tablet') {
+  @include media('>=tablet') {
     &:hover {
       background-color: $black;
       color: $accent;
     }
   }
 
-  @include mq('tablet', max) {
+  @include media('<=tablet') {
     position: fixed;
     right: 20px;
     bottom: 30px;
@@ -70,11 +69,12 @@
       }
     }
   }
+
   @include media('<=tablet') {
     right: 50px;
   }
 
   @include media('>=desktop') {
-    right: 186px;
+    right: 240px;
   }
 }

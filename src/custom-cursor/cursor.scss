@@ -14,8 +14,8 @@
   transition: width 0.025s ease-in-out, height 0.025s ease-in-out;
 
   &.regular {
-    width: 30px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
   }
   &.small {
     width: 20px;
@@ -33,8 +33,8 @@
 }
 
 .secondary-cursor {
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
 }
 
 @keyframes fadeIn {

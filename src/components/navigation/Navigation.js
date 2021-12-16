@@ -1,12 +1,14 @@
 import React from 'react';
 import Logo from '../../assets/logo_yellow.webp';
+import useLocoScroll from '../../hooks/useLocoScroll';
 
 import './navigation.scss';
 import Menu from '../Menu/menu';
 
 const Navigation = () => {
+  useLocoScroll();
   return (
-    <div className="nav" data-scroll-section>
+    <div className="nav" data-scroll data-scroll-section>
       <div className="container fluid ">
         <div className="row v-center space-between">
           <div className="logo">

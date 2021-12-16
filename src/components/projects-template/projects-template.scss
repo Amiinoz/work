@@ -7,8 +7,6 @@
   position: relative;
   padding: 0;
   margin: 0;
-  border: 1px solid red;
-  color: red;
   height: 368vh;
 
   background-color: $bg-color;
@@ -39,9 +37,6 @@
               margin-left: 16px;
             }
           }
-          // .mua {
-          //   text-transform: uppercase;
-          // }
         }
       }
       .proj-container {
@@ -229,7 +224,8 @@
       width: 100%;
       height: 50vh;
       margin-top: 54px;
-      margin: 54px 0 0 3vw;
+      // margin: 54px 0 0 3vw;
+      margin: 0 auto;
       // border: 1px solid red;
       // color: red;
 
@@ -248,7 +244,7 @@
         grid-template-columns: 1fr;
         max-width: 840px;
         margin: 0 auto;
-        margin-left: 14vw;
+        margin-left: 19vw;
 
         // @include media ('<=tablet') {
 
@@ -324,7 +320,7 @@
       grid-gap: 4rem;
       max-width: 730px;
       margin: 32px auto;
-      margin-left: 14vw;
+      margin-left: 22vw;
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         grid-gap: 0.5rem;
         padding-left: 66px;
@@ -434,7 +430,7 @@
       width: 300px;
       height: 250px;
       background: #f7f9fa 0% 0% no-repeat padding-box;
-      border: 1px solid #000;
+      border: 1.3px solid #000;
       border-radius: 12px;
       /* margin: 0 auto; */
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -461,6 +457,7 @@
       color: $fontColor;
 
       padding-right: 20px;
+
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         width: 235px;
       }

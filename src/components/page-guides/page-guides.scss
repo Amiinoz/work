@@ -3,11 +3,11 @@
 
 .page-guides {
   display: flex;
-
   justify-content: space-evenly;
   padding: 80px 0 0 0;
+  grid-gap: 80px;
   gap: 80px;
-  margin: 5vh 0 7vh 0;
+  margin: 91vh 0 7vh 0;
   height: 130px;
 
   .backHome {

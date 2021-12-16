@@ -29,7 +29,7 @@
             text-transform: uppercase;
             font-family: 'Bai Jamjuree', sans-serif;
             margin-bottom: 24px;
-            line-height: 12vh;
+            line-height: 9vh;
             margin-left: 9vw;
             margin-top: 31vh;
 
@@ -40,13 +40,34 @@
               @include media('<=tablet') {
                 height: 35px;
                 line-height: 4vh;
-                margin-left: -15vw;
+                // margin-left: -15vw;
               }
+
               @include media('>=desktop') {
-                height: 96px;
+                line-height: 9vh;
+                /* margin-left: -1vw; */
+                font-size: 10vh;
+                /* margin-left: 0vw; */
+
+                width: 72vw;
+              }
+              @include media('>=LGdesktop') {
+                // height: 96px;
+                line-height: 9vh;
+                /* margin-left: -1vw; */
+                font-size: 10vh;
+                /* margin-left: 0vw; */
+
+                width: 72vw;
+              }
+              @include media('>=LGdesktop') {
+                // height: 96px;
                 line-height: 9vh;
                 margin-left: -1vw;
-                font-size: 10vh;
+                font-size: 11vh;
+                margin-left: -5vw;
+
+                width: 72vw;
               }
             }
           }
