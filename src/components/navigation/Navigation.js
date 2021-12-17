@@ -16,18 +16,19 @@ const Navigation = () => {
               <img
                 src={Logo}
                 alt="Mo Magan site logo"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-speed="-4"
-                data-scroll-position="top"
+                // data-scroll
+                // data-scroll-direction="horizontal"
+                // data-scroll-speed="-3"
+                // data-scroll-position="top"
+                // data-scroll-delay="lerp"
               />
             </a>
           </div>
           <div
-            data-scroll
-            data-scroll-direction="horizontal"
-            data-scroll-speed="4"
-            data-scroll-position="top"
+          // data-scroll
+          // data-scroll-direction="horizontal"
+          // data-scroll-speed="3"
+          // data-scroll-position="top"
           >
             <Menu />
           </div>

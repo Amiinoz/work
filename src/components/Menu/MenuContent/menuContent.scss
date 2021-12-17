@@ -60,11 +60,10 @@
 
     .menu-nav-container {
       position: relative;
-      left: 25%;
-      // top: 21vh;
-      top: 21vh;
+      left: 30%;
+      top: 40vh;
       overflow: hidden;
-      width: calc(90vw - 286px);
+      width: calc(90vw - 283px);
     }
 
     .internal-nav-links {
@@ -111,9 +110,8 @@
           position: absolute;
           top: 50%;
           transform: translateY(-50%) translateX(-30px);
-          right: 10%;
+          right: 26%;
           object-fit: cover;
-          -webkit-filter: brightness(75%);
           filter: brightness(75%);
           transition: transform 0.5s ease-in-out;
         }

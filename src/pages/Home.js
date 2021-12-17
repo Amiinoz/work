@@ -9,7 +9,7 @@ import Gallery from '../components/gallery/gallery';
 import { Helmet } from 'react-helmet';
 import WorkButton from '../components/work-button/work-button';
 import '../styles/App.scss';
-// import Layout from '../components/Layout';
+import Layout from '../components/Layout';
 
 const Home = () => {
   const ref = useRef(null);
@@ -67,23 +67,19 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        <div
-          className="main-container"
-          // id="main-container"
-          data-scroll-container
-        >
+        <div className="main-container" id="main-container" data-scroll-section>
           <Helmet>
             <title>Mo Magan | Home </title>
             <meta name="description" content="Home" />
           </Helmet>
-          {/* <Layout> */}
-          <Banner />
-          <About />
-          <Services />
-          <Gallery />
-          <Connect />
-          <WorkButton />
-          {/* </Layout> */}
+          <Layout>
+            <Banner />
+            <About />
+            <Services />
+            <Gallery />
+            <Connect />
+            <WorkButton />
+          </Layout>
         </div>
       )}
     </>

@@ -8,6 +8,8 @@ import Github from '../../assets/social/socialgithub.svg';
 import Behance from '../../assets/social/socialbehance.svg';
 import Linked from '../../assets/social/sociallinked.svg';
 
+// import { HashLink as Link } from 'react-router-hash-link';
+
 const About = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const About = () => {
         title="About"
         subtitle="Hello,"
         heading="Nice to meet you"
+        id="about"
       />
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
