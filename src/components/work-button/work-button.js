@@ -10,7 +10,7 @@ export default function WorkButton() {
 
   return (
     <button
-      className={cn('work-button', { open })}
+      className={cn('projects-button', { open })}
       onClick={() => setOpen(!open)}
     >
       <span>Work</span> <Plus />
