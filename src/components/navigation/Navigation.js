@@ -8,7 +8,7 @@ import Menu from '../Menu/menu';
 const Navigation = () => {
   useLocoScroll();
   return (
-    <div className="nav" data-scroll data-scroll-section>
+    <div className="nav">
       <div className="container fluid ">
         <div className="row v-center space-between">
           <div className="logo">

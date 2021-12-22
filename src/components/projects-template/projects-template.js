@@ -12,6 +12,7 @@ import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
 import Layout from '../Layout';
 import './projects-template.scss';
+import PageGuides from '../../components/page-guides/page-guides';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -105,6 +106,7 @@ const ProjectsTemplate = ({
 
   images,
   columnOffset,
+  nextProject,
 }) => {
   const dimensions = {
     width: 524,
@@ -486,10 +488,14 @@ const ProjectsTemplate = ({
                   </div>
                 </div>
               </div>
-              {/* //////////////////////////////    page guides   ///////////////// */}
             </div>
           </div>
         </motion.div>
+
+        {/* //////////////////////////////    page guides   //
+         /////////////// */}
+
+        <PageGuides nextProject={nextProject} />
       </Layout>
     </>
   );

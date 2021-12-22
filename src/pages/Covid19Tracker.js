@@ -19,7 +19,6 @@ import ProjImages1 from '../assets/covid19-tracker/projectImages1.jpg';
 import ProjImages2 from '../assets/covid19-tracker/projectImages2.jpg';
 import ProjImages3 from '../assets/covid19-tracker/projectImages3.jpg';
 import ProjImages4 from '../assets/covid19-tracker/website.mp4';
-import PageGuides from '../components/page-guides/page-guides';
 
 const Covid19Tracker = () => {
   return (
@@ -98,9 +97,9 @@ const Covid19Tracker = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
+          nextProject="./Portfolio.js"
         />
       </div>
-      <PageGuides nextProject="./Portfolio" />
     </>
   );
 };

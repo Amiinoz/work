@@ -12,10 +12,11 @@
 
   .mosdev-container {
     font-family: 'Work Sans', sans-serif;
-    // height: 60vh;
     /* margin-left: 11vw; */
-    // overflow: hidden;
-    height: 120vh;
+    height: 132vh;
+    @include media('<=tablet') {
+      height: 152vh;
+    }
 
     .banner {
       display: grid;
@@ -55,9 +56,24 @@
     }
     .scroll {
       position: relative;
-      h3 {
-        font-size: 18px;
-        margin: -77vh 0 0 2vw;
+      margin-top: 14vh;
+      bottom: 94vh;
+      left: 32px;
+      z-index: 20;
+      .icon {
+        svg {
+          height: auto;
+          width: 20px;
+          stroke: $black;
+          fill: transparent;
+          stroke-width: 1px;
+        }
+      }
+      .text {
+        font-size: 11px;
+        margin-top: 8px;
+        color: $black;
+        text-transform: uppercase;
       }
     }
     .info-container {
@@ -85,7 +101,8 @@
 
     .icon {
       display: flex;
-      justify-content: right;
+      justify-content: center;
+      margin-left: -16vw;
 
       img {
         width: 131px;

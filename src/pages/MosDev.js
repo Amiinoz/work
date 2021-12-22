@@ -5,7 +5,6 @@ import BannerImage from '../assets/mosdev/header2.webp';
 import infoHeadingImage from '../assets/mosdev/icon.webp';
 import MainImage from '../assets/mosdev/mozdev.jpg';
 import ImagesMock from '../assets/mosdev/theme-image2.webp';
-// import PageGuides from '../components/page-guides/page-guides';
 
 const MosDev = () => {
   return (
@@ -32,6 +31,7 @@ const MosDev = () => {
               a American hip hop star."
           projInfoBy="Art work by  Kamoni Khem"
           ImagesMock={ImagesMock}
+          nextProject="./Airbnb.js"
         />
       </div>
     </>

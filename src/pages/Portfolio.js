@@ -19,7 +19,6 @@ import ProjImages1 from '../assets/portfolio/mainImages1.jpg';
 import ProjImages2 from '../assets/portfolio/mainImage2.jpg';
 import ProjImages3 from '../assets/portfolio/mainImage3.jpg';
 import ProjImages4 from '../assets/portfolio/portfolioMovie.mp4';
-import PageGuides from '../components/page-guides/page-guides';
 
 const Portfolio = () => {
   return (
@@ -105,8 +104,8 @@ const Portfolio = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
+          nextProject="./Garabaldi"
         />
-        <PageGuides nextProject="./Garabaldi" />
       </div>
     </>
   );

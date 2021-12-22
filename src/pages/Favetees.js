@@ -19,7 +19,6 @@ import ProjImages1 from '../assets/favetees/projectImages1_1.jpg';
 import ProjImages2 from '../assets/favetees/projectImages2_2.jpg';
 import ProjImages3 from '../assets/favetees/projectImages3_1.jpg';
 import ProjImages4 from '../assets/favetees/faveteesInAction.mp4';
-import PageGuides from '../components/page-guides/page-guides';
 
 const Favetees = () => {
   return (
@@ -98,9 +97,9 @@ const Favetees = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
+          nextProject="./Covid19Tracker.js"
         />
       </div>
-      <PageGuides nextProject="./Covid19Tracker" />
     </>
   );
 };

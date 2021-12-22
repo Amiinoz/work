@@ -3,5 +3,6 @@
   "editor.fontSize": 18,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "cSpell.words": ["scrollrender"],
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "js/ts.implicitProjectConfig.checkJs": true
 }

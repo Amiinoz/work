@@ -1,25 +1,56 @@
-@import '../../styles/mixins';
+// @import '../../styles/mixins';
 @import '../../styles/variables';
 @import '../../styles/breakpoints.scss';
 
 .proj {
-  padding: 100px 0;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  height: 368vh;
+  // padding: 100px 0;
+  // position: relative;
+  // padding: 0;
+  // margin: 0;
 
-  background-color: $bg-color;
-  background-image: radial-gradient($dots 10%, transparent 15%);
-  background-position: 0 0;
-  background-size: 7px 7px;
+  // height: 368vh;
+  // height: 100%;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // 1.
+  // min-height: 100%;
+  // display: flex;
+  // flex-direction: column;
 
-  @include media('<=tablet') {
-    height: 1150vh;
+  // 2
+  // display: inline-block;
+  // height: 100%;
+
+  // 3
+  // display: block;
+  // overflow: auto;
+
+  // 4
+  min-height: 355vh;
+  display: flex;
+  flex-direction: column;
+
+  @include media('<=desktop') {
+    min-height: 445vh;
   }
+
+  // display: block;
+  // overflow: auto;
+  // display: inline-block;
+  // height: 100%;
+  // margin: 0 auto;
+
+  // display: flex;
+  // flex-direction: column;
+  // flex-direction: column;
+  // min-height: 100vh;
+
+  // background-color: $bg-color;
+  // background-image: radial-gradient($dots 10%, transparent 15%);
+  // background-position: 0 0;
+  // background-size: 7px 7px;
+
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 
   .container {
     .top-row {
@@ -72,6 +103,7 @@
     }
     .bottom-row {
       height: 100vh;
+      width: 80vw;
       height: calc(var(--vh, 1vh) * 62);
       position: relative;
       display: flex;
@@ -244,7 +276,7 @@
         grid-template-columns: 1fr;
         max-width: 840px;
         margin: 0 auto;
-        margin-left: 19vw;
+        margin-left: 16vw;
 
         // @include media ('<=tablet') {
 
@@ -320,7 +352,7 @@
       grid-gap: 4rem;
       max-width: 730px;
       margin: 32px auto;
-      margin-left: 22vw;
+      margin-left: 19vw;
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         grid-gap: 0.5rem;
         padding-left: 66px;
@@ -418,7 +450,6 @@
     flex-wrap: nowrap;
     justify-content: center;
     padding: 10px;
-    background-color: $background;
 
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       max-width: 50%;

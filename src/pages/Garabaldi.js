@@ -18,7 +18,6 @@ import ProjImages1 from '../assets/garabaldi/projectImages1.png';
 import ProjImages2 from '../assets/garabaldi/projectImages2.png';
 import ProjImages3 from '../assets/garabaldi/projectImages3.png';
 import ProjImages4 from '../assets/garabaldi/projectImages4.mp4';
-import PageGuides from '../components/page-guides/page-guides';
 
 const Garabaldi = () => {
   return (
@@ -110,8 +109,9 @@ const Garabaldi = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
+          nextProject="./MosDev.js"
         />
-        <PageGuides nextProject="./MosDev" />
+        {/* <PageGuides nextProject="./MosDev" /> */}
       </div>
     </>
   );

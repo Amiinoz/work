@@ -41,7 +41,7 @@
 .nav {
   height: 120px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 72px;
   right: 0;
   left: 0;
@@ -49,7 +49,7 @@
 }
 
 .logo {
-  margin-left: 12vw;
+  margin-left: 8vw;
   img {
     width: 120px;
 
