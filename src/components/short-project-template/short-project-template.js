@@ -4,11 +4,11 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useWindowSize from '../useWindowSize';
 import './short-project-template.scss';
-import MosImage from '../../assets/mosdev/mozdev.jpg';
-import ProjectInfoIcon from '../../assets/mosdev/icon.webp';
 import PageGuides from '../../components/page-guides/page-guides';
 import Layout from '../Layout';
 import ScrollForMore from '../scrollForMore';
+import ProjectsButton from '../../components/work-button/work-button';
+
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {
   initial: {
@@ -31,29 +31,16 @@ const ShortProjectTemplate = ({
   infoHeadingImage,
   infoHeading,
   viewCode,
-  viewLive,
   button1,
-  button2,
-  infoImage,
-  ProjectHeading,
-  projInfo,
-  projInfoBy,
-  Images1,
-  LanguageHeader,
-  Images1Header,
-  Images2,
-  Images2Header,
-  Images3Header,
-  Images3,
-  ImagesMockHeader,
-  ImagesMock,
+  ProjectInfoIcon,
+  ProjectInfoBody,
+  ProjectInfoImage,
+  ProjectContentTitle,
+  ProjectContentSubTitle,
+  ProjectContentBody,
+  ProjectContentFooter,
 }) => {
   // Hook
-
-  // const dimensions = {
-  //   width: 1400,
-  //   height: 800,
-  // };
 
   const animation = useAnimation();
   const [inView] = useInView({
@@ -138,9 +125,9 @@ const ShortProjectTemplate = ({
               >
                 <motion.span variants={firstName}>
                   <motion.span>
-                    MosDev
+                    {Title}
                     <br />
-                    VsCode Theme
+                    {Subtitle}
                   </motion.span>
                 </motion.span>
               </motion.div>
@@ -168,51 +155,42 @@ const ShortProjectTemplate = ({
                   transition: { delay: 1.7, ...transition },
                 }}
               >
-                {/* <h3>Scroll</h3> */}
                 <ScrollForMore />
               </motion.div>
             </motion.div>
-
-            {/* /////////// info */}
-            {/* TODO: */}
 
             <div className="mos-info">
               <div className="mos-info_icon">
                 <img src={ProjectInfoIcon} alt="mosdev icon" data-scroll />
               </div>
               <div className="mos-info_body">
-                <h4>
-                  MosDev Is VsCode dark theme based on Monokai theme colours and
-                  inspired by this artwork of my fave raper
-                </h4>
+                <h4>{ProjectInfoBody}</h4>
               </div>
               <div className="mos-info_button">
                 <button>{button1}</button>
               </div>
             </div>
-            {/* /////////// info */}
 
-            {/* /////////// content */}
             <div className="mos-content">
               <div className="mos-content_image">
-                <img src={MosImage} />
+                <img src={ProjectInfoImage} />
               </div>
               <div className="mos-content_text">
-                <h2 className="item__content-title">MosDev</h2>
-                <h3 className="item__content-subtitle">A dark VsCode theme</h3>
+                <h2 className="item__content-title">{ProjectContentTitle}</h2>
+
+                <h3 className="item__content-subtitle">
+                  {ProjectContentSubTitle}
+                </h3>
+
                 <div className="item__content-text">
-                  <p>
-                    The inspiration for this theme. Yasin Bay aka Mos Def aka
-                    Yasin is an American rapper, singer, songwriter, and actor
-                    with classic albums like Black on both sides, Black star,
-                    and The Ecstatic in his resume.
-                  </p>
-                  <p>Art work by Kamoni Khem</p>
+                  <p>{ProjectContentBody}</p>
+
+                  <p>{ProjectContentFooter}</p>
                 </div>
               </div>
             </div>
-            {/* /////////// content */}
           </motion.section>
+          <ProjectsButton />
         </motion.div>
         <PageGuides nextProject="./Weather" />
       </Layout>

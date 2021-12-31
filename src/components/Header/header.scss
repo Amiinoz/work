@@ -1,0 +1,27 @@
+@import '../../styles/_mixins.scss';
+@import '../../styles//variables';
+
+.header-container {
+  position: relative;
+
+  h1 {
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    margin: 25vh 0 0 11vw;
+    line-height: 14vh;
+    width: 100%;
+  }
+}
+.lineParent {
+  overflow: hidden;
+  .lineChildren {
+    transform: translate(0, 500px);
+  }
+}
+
+.lineChildren {
+  transform: translate(0, 500px);
+}

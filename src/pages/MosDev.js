@@ -4,7 +4,7 @@ import ShortProjectTemplate from '../components/short-project-template/short-pro
 import BannerImage from '../assets/mosdev/header2.webp';
 import infoHeadingImage from '../assets/mosdev/icon.webp';
 import MainImage from '../assets/mosdev/mozdev.jpg';
-import ImagesMock from '../assets/mosdev/theme-image2.webp';
+import MosImage from '../assets/mosdev/mozdev.jpg';
 
 const MosDev = () => {
   return (
@@ -22,15 +22,19 @@ const MosDev = () => {
           infoHeading=" MosDev Is VsCode dark theme based on Monokai theme colours and
               inspired by this artwork of my fave raper."
           viewCode="https://marketplace.visualstudio.com/items?itemName=MosDev.MosDev-Theme"
-          button1="Marketplace"
-          // viewLive="https://marketplace.visualstudio.com/items?itemName=MosDev.MosDev-Theme"
-          // button2="Marketplace"
           infoImage={MainImage}
-          ProjectHeading="inspiration"
-          projInfo="This is the inspiration of these theme. Mos def aka Yasin bay is,
-              a American hip hop star."
-          projInfoBy="Art work by  Kamoni Khem"
-          ImagesMock={ImagesMock}
+          ProjectInfoIcon={infoHeadingImage}
+          ProjectInfoBody="MosDev Is VsCode dark theme based on Monokai theme colours and
+                  inspired by this artwork of my fave raper"
+          button1="Marketplace"
+          ProjectInfoImage={MosImage}
+          ProjectContentTitle="MosDev"
+          ProjectContentSubTitle="A dark VsCode theme"
+          ProjectContentBody="The inspiration for this theme. Yasin Bay aka Mos Def aka
+                    Yasin is an American rapper, singer, songwriter, and actor
+                    with classic albums like Black on both sides, Black star,
+                    and The Ecstatic in his resume."
+          ProjectContentFooter="Art work by Kamoni Khem"
           nextProject="./Airbnb.js"
         />
       </div>

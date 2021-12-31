@@ -44,20 +44,6 @@ const images = [
     subtitle: 'Dark VsCode Theme',
     category: 'Design',
   },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1596275281743-e7399c7bdfa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2524&q=80',
-    title: 'Weather',
-    subtitle: 'Progressive App',
-    category: 'Development / App',
-  },
-  {
-    id: 7,
-    src: 'https://images.unsplash.com/photo-1481026469463-66327c86e544?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1208&q=80 ',
-    title: 'Airbnb',
-    subtitle: 'React Native App',
-    category: 'Coming soon',
-  },
 ];
 function GalleryItem({
   src,

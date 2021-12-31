@@ -1,9 +1,43 @@
-// @import '../components/header/header.module.scss';
-// @import '../components/banner/banner.module.scss';
 @import './breakpoints.scss';
 @import './variables';
-// @import '../components/about/about.scss';
 @import './loco-scroll.scss';
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--fontColor);
+  font-family: 'Bai Jamjuree', serif;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header,
+section {
+  padding: 100px 0;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
 
 html,
 body {
@@ -21,10 +55,10 @@ body {
 
 .main-container {
   padding: 2.15px 5vw;
+  overflow: hidden !important;
 }
 
 section {
-  padding: 100px 0;
   .section-header {
     margin-bottom: 50px;
   }
@@ -42,6 +76,7 @@ section {
 .loader-wrapper {
   display: grid;
   place-items: center;
+  align-items: center;
   margin-left: -12vw;
   transition: 'all 0.25s ease-in-out';
   background-color: #191919;
@@ -53,17 +88,6 @@ section {
       width: 50px;
       height: 50px;
       margin-left: 7vw;
-    }
-  }
-
-  h2 {
-    font-size: 1.5vw;
-    font-family: 'Bai Jamjuree', serif;
-    font-style: italic;
-    margin-top: 10px;
-    @include media('<=phone') {
-      font-size: 3.5vw;
-      margin-left: -2vw;
     }
   }
 }

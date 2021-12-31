@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
 import About from '../components/about/About';
-import Banner from '../components/banner/Banner';
+import Header from '../components/Header/header';
 import Services from '../components/services/Services';
 import Connect from '../components/connect/connect';
 import Spinner from '../assets/loader.gif';
@@ -73,7 +73,7 @@ const Home = () => {
             <meta name="description" content="Home" />
           </Helmet>
           <Layout>
-            <Banner />
+            <Header />
             <About />
             <Services />
             <Gallery />

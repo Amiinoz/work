@@ -8,16 +8,6 @@
   width: auto;
   height: 100%;
   z-index: 12;
-
-  // @include media('<=1024') {
-  //   max-width: 960px;
-  // }
-  // @include media('<=1216') {
-  //   max-width: 1152px;
-  // }
-  // @include media('<=1400') {
-  //   max-width: 1244px;
-  // }
 }
 
 .fluid {
@@ -49,7 +39,7 @@
 }
 
 .logo {
-  margin-left: 9vw;
+  margin-left: 8vw;
   img {
     width: 120px;
 
@@ -62,12 +52,4 @@
 .menu {
   margin-right: 15vw;
   z-index: 11;
-  // button {
-  //   content: ' ';
-  //   transform-origin: center;
-  //   border: none;
-  //   padding: 20px;
-  //   background: none;
-  //   outline: none;
-  // }
 }

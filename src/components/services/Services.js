@@ -85,16 +85,15 @@ const Services = ({ text }) => {
         >
           <h4>
             Good product development— <br />
-            starts with a passion for visual connections and strategy.
+            starts with a passion for visual strategy.
           </h4>
           <p>
             With a focus on eye-pleasing clean minimal design, user-friendly,
             highly secure, and scalable..
             <br />
-            <br /> Using the latest and established development technologies, I
-            can create everything from mobile web development solutions and
-            responsive website designs to unique e-commerce and intranet
-            experiences.
+            <br /> Using the latest development technologies, I can develop
+            everything from mobile web development solutions and responsive
+            website designs to unique e-commerce and intranet experiences.
           </p>
           <span>
             <img src={TechStack} alt="Technology used" />

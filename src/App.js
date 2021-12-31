@@ -7,8 +7,6 @@ import Covid19Tracker from './pages/Covid19Tracker';
 import Portfolio from './pages/Portfolio';
 import Garabaldi from './pages/Garabaldi';
 import MosDev from './pages/MosDev';
-import Weather from './pages/Weather';
-import Airbnb from './pages/Airbnb';
 import NotFound from './pages/404';
 import CustomCursor from './custom-cursor/cursor';
 
@@ -30,8 +28,6 @@ function App() {
           <Route exact path="/Portfolio" component={Portfolio} />
           <Route exact path="/Garabaldi" component={Garabaldi} />
           <Route exact path="/MosDev" component={MosDev} />
-          <Route exact path="/Weather" component={Weather} />
-          <Route exact path="/Airbnb" component={Airbnb} />
           <Route path="*" component={NotFound} />
         </Switch>
       </div>

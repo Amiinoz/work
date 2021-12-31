@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer">
           <div className="footer__info">
             <p>+1.587.284.1084</p>
-            <p>info@momagan.com</p>
+            <p>momagan@gmail.com</p>
           </div>
           <div className="footer__content">
             <p>1 Vision Av</p>

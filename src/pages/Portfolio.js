@@ -18,7 +18,7 @@ import FeatureImage from '../assets/portfolio/FIE3.png';
 import ProjImages1 from '../assets/portfolio/mainImages1.jpg';
 import ProjImages2 from '../assets/portfolio/mainImage2.jpg';
 import ProjImages3 from '../assets/portfolio/mainImage3.jpg';
-import ProjImages4 from '../assets/portfolio/portfolioMovie.mp4';
+import ProjImages4 from '../assets/portfolio/portfolio2.mp4';
 
 const Portfolio = () => {
   return (

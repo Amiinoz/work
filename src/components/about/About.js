@@ -8,8 +8,6 @@ import Github from '../../assets/social/socialgithub.svg';
 import Behance from '../../assets/social/socialbehance.svg';
 import Linked from '../../assets/social/sociallinked.svg';
 
-// import { HashLink as Link } from 'react-router-hash-link';
-
 const About = () => {
   return (
     <>

@@ -3,54 +3,16 @@
 @import '../../styles/breakpoints.scss';
 
 .proj {
-  // padding: 100px 0;
-  // position: relative;
-  // padding: 0;
-  // margin: 0;
-
-  // height: 368vh;
-  // height: 100%;
-
-  // 1.
-  // min-height: 100%;
-  // display: flex;
-  // flex-direction: column;
-
-  // 2
-  // display: inline-block;
-  // height: 100%;
-
-  // 3
-  // display: block;
-  // overflow: auto;
-
-  // 4
-  min-height: 358vh;
+  min-height: 402vh;
   display: flex;
   flex-direction: column;
+  @include media('<=phone') {
+    max-height: 645vh;
+  }
 
   @include media('<=desktop') {
     min-height: 445vh;
   }
-
-  // display: block;
-  // overflow: auto;
-  // display: inline-block;
-  // height: 100%;
-  // margin: 0 auto;
-
-  // display: flex;
-  // flex-direction: column;
-  // flex-direction: column;
-  // min-height: 100vh;
-
-  // background-color: $bg-color;
-  // background-image: radial-gradient($dots 10%, transparent 15%);
-  // background-position: 0 0;
-  // background-size: 7px 7px;
-
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
 
   .container {
     .top-row {
@@ -76,7 +38,7 @@
           display: flex;
           justify-content: center;
           /* margin-right: 120px; */
-          margin-top: 18vh;
+          margin-top: 23vh;
           align-items: center;
           /////////////////////////////////////////
           // # Title
@@ -88,15 +50,16 @@
             font-weight: 600;
             font-size: 10vh;
             padding-bottom: 20px;
+            text-transform: uppercase;
 
             @include media('<=phone') {
-              font-size: 40px;
-              margin: 10vh 0 0 10vw;
+              font-size: 30px;
+              margin-right: 45vh;
             }
-            @include media('<=tablet') {
-              font-size: 50px;
-              margin: 10vh 0 0 30vw;
-            }
+            // @include media('<=tablet') {
+            //   font-size: 50px;
+            //   margin: 10vh 0 0 30vw;
+            // }
           }
         }
       }
@@ -127,45 +90,6 @@
           margin: 0 auto;
           overflow: hidden;
           border-radius: 7px;
-          // top: 45px;
-          // left: 0;
-          // right: 0;
-          // @media (min-width: 425px) {
-          //   width: 50%;
-          //   height: auto;
-          // }
-          // @media only screen and (min-width: 425px) and (max-width: 640px) {
-          // }
-          // @media only screen and (min-width: 640px) and (max-width: 768px) {
-          // }
-          // @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          // }
-          // @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-          // }
-
-          // @media (min-width: 640px) {
-          //   width: 50%;
-          //   height: auto;
-          // }
-
-          // @media (min-width: 768px) {
-          //   width: 80%;
-          //   height: auto;
-          // }
-
-          // @media (min-width: 1024px) {
-          //   width: 80%;
-          //   height: auto;
-          // }
-
-          // @media (min-width: 1200px) {
-          //   width: 100%;
-          // }
-          // @media screen and (min-width: 425px) {
-          //   width: 200px;
-          //   height: 200px;
-          //   margin: 0;
-          // }
         }
         /////////////////////////////////////////
         // # image
@@ -173,62 +97,54 @@
 
         .frame-single {
           border-radius: 7px;
-          display: block;
-          // border: 1px solid red;
-          // color: red;
           img {
             position: relative;
-            // width: 98.5%;
             width: 100%;
             height: 400px;
             object-fit: cover;
             margin: 0 auto;
-            padding-top: 400px;
+            padding-top: 360px;
             border-radius: 7px;
+            @include media('<=phone') {
+              margin-left: -5vw;
+            }
 
-            // @media screen and (max-width: 992px) {
-            //   height: 400px;
-            //   padding-top: 380px;
-            // }
-            // @media screen and (max-width: 768px) {
-            //   height: 300px;
-            // }
-
-            // @include media('<=tablet') {
-            //   height: 600px;
-            // }
+            @media screen and (max-width: 992px) {
+              height: 400px;
+              padding-top: 380px;
+            }
+            @media screen and (max-width: 768px) {
+              height: 300px;
+            }
           }
         }
         .frame-single::after {
-          // content: '';
-          // position: absolute;
-          // top: 0;
-          // right: 0;
-          // bottom: 0;
-          // left: 0;
-          // border-radius: 7px;
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          border-radius: 7px;
 
-          // transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-          // -webkit-transition: -webkit-transform 200ms ease-in-out;
-          // -moz-transition: -moz-transform 200ms ease-in-out;
-          // -o-transition: -o-transform 200ms ease-in-out;
-          // transition: transform 200ms ease-in-out;
-          // // border-radius: 5px;
-          // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+          -webkit-transition: -webkit-transform 200ms ease-in-out;
+          -moz-transition: -moz-transform 200ms ease-in-out;
+          -o-transition: -o-transform 200ms ease-in-out;
+          transition: transform 200ms ease-in-out;
+          // border-radius: 5px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         .scroll-for-more {
           position: relative;
-          margin-top: 15vh;
+          margin-top: 43px;
           bottom: 118px;
           left: 30px;
           z-index: 20;
-          // @media screen and (min-width: 480px) {
-          //   bottom: 65px;
-          // }
-          // @include media('<=desktop') {
-          //   margin-bottom: 5vh;
-          // }
+          @include media('<=phone') {
+            margin-top: 7vh;
+          }
           .icon {
             svg {
               height: auto;
@@ -258,13 +174,6 @@
       margin-top: 54px;
       // margin: 54px 0 0 3vw;
       margin: 0 auto;
-      // border: 1px solid red;
-      // color: red;
-
-      // @media only screen and (min-width: 425px) and (max-width: 640px) {
-      //   width: 95%;
-      //   padding-left: 5px;
-      // }
 
       @include media('<=tablet') {
         width: 107%;
@@ -277,10 +186,6 @@
         max-width: 840px;
         margin: 0 auto;
         margin-left: 16vw;
-
-        // @include media ('<=tablet') {
-
-        // }
 
         .new-beginning {
           display: flex;
@@ -318,7 +223,7 @@
           }
 
           .content {
-            margin: -17px 0 0 12px;
+            margin: 0 0 0 12px;
             flex-direction: column;
           }
 
@@ -326,24 +231,18 @@
             padding-bottom: 20px;
             font: normal normal bold 24px/24px Bai Jamjuree;
           }
-          // h4:before {
-          //   content: '';
-          //   display: block;
-          //   margin-bottom: 20px;
-          //   width: 36px;
-          //   height: 4px;
-          //   background-color: $black;
-          //   position: absolute;
-          //   bottom: 10px;
-          // }
+
           p {
             font-size: 16px;
             line-height: 1.5em;
+            @include media('<=phone') {
+              width: 34%;
+            }
           }
         }
       }
     }
-    //  :TODO
+
     .projStart {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -352,19 +251,13 @@
       grid-gap: 4rem;
       max-width: 730px;
       margin: 32px auto;
-      margin-left: 19vw;
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        grid-gap: 0.5rem;
-        padding-left: 66px;
+      margin-left: 16vw;
+      @include media('<=phone') {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1rem;
       }
 
-      @media only screen and (min-width: 320px) and (max-width: 767px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.5rem;
-        padding-left: 66px;
-        padding-right: 10px;
-        line-height: 1.3em;
-      }
       h4 {
         font: normal normal bold 16px/16px Bai Jamjuree;
         color: $black;
@@ -432,10 +325,11 @@
   .section-deliverables {
     max-width: 1000px;
     margin: 0 auto;
+    @include media('<=phone') {
+    }
 
     h2 {
       padding-top: 50px;
-      // width: 63px;
       height: 120px;
       // margin: -60px 0 0 0;
       margin-top: -5vh;
@@ -453,8 +347,8 @@
 
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       max-width: 50%;
-      margin: 0 auto;
       flex-wrap: wrap;
+      margin-left: 4vw auto;
     }
 
     img {
@@ -465,8 +359,8 @@
       border-radius: 12px;
       /* margin: 0 auto; */
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        // width: 250px;
-        // height: 250px;
+        width: 250px;
+        height: 250px;
       }
     }
     h3 {
@@ -578,68 +472,6 @@
 // # Project Images
 ///////////////////////////////////
 
-// .project-images {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-
-//   h3 {
-//     height: 24px;
-//     margin: 9px 0 0 112px;
-//     text-align: left;
-//     font: normal normal bold 18px/18px Bai Jamjuree;
-//     color: #093145;
-//   }
-//   @media screen and (min-width: 992px) {
-//     padding: 20px;
-//   }
-
-//   .mock {
-//     flex: 1;
-//     h3 {
-//       height: 24px;
-//       margin: 10px 0px 0px 113px;
-//       text-align: left;
-//       font: bold 18px / 18px 'Bai Jamjuree';
-//       color: rgb(9, 49, 69);
-//     }
-
-//     p {
-//       top: 328px;
-//       left: 413px;
-//       width: 296px;
-//       height: 76px;
-
-//       margin: 0 0 0 112px;
-//       font: normal normal normal 16px/16px Work Sans;
-//       letter-spacing: 0px;
-//       color: $fontColor;
-//       @media only screen and (min-width: 768px) and (max-width: 1024px) {
-//         margin-left: 305px;
-//       }
-//       @media only screen and (min-width: 640px) and (max-width: 768px) {
-//         margin-left: 300px;
-//       }
-//       @media only screen and (min-width: 425px) and (max-width: 640px) {
-//         margin-left: 380px;
-//       }
-//     }
-//     img {
-//       width: 1200px;
-//       opacity: 1;
-//       border-radius: 7px;
-//       .gif {
-//         max-width: 300px;
-//         max-height: 200px;
-//         // border: 34px white;
-//         border-radius: 7px;
-//       }
-//       @media screen and (min-width: 992px) {
-//       }
-//     }
-//   }
-// }
-
 .images-content {
   display: flex;
   flex-direction: column;
@@ -647,6 +479,9 @@
   align-items: center;
   padding: 2rem 0;
   counter-reset: figure;
+  @include media('<=phone') {
+    max-width: 50%;
+  }
 }
 
 .item {
@@ -683,32 +518,6 @@
     background-size: cover;
   }
 }
-// .item:nth-child(2) .item__img-wrap {
-//   img {
-//     width: 800px;
-//     --aspect-ratio: 900/505;
-//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
-//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -ms-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//   }
-// }
-// .item:nth-child(3) .item__img-wrap {
-//   img {
-//     width: 800px;
-//     --aspect-ratio: 900/505;
-//     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
-//     background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -ms-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//   }
-// }
 
 .item__img-wrap {
   --aspect-ratio: 1/1.5;
@@ -719,6 +528,9 @@
   padding-bottom: calc(27% / (var(--aspect-ratio)));
   max-width: calc(100% - 2rem);
   will-change: transform;
+  @include media('<=phone') {
+    margin: 0 auto;
+  }
 }
 
 .item__img--t1 {
