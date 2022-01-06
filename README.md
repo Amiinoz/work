@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- project logo  -->
+ <img src="/src/assets/logo.png">
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<h1 align="center">Favetees</h1>
 
-### `yarn start`
+ <p align="center">
+ 	<!-- tagline or very short intro of your project -->
+   eCommerce Store
+    <br />
+	 <!-- live demo link -->
+    <a href="https://favetees.netlify.app/">View Demo</a>
+    ·
+	<!-- issue link here -->
+    <a href="https://github.com/Amiinoz/favetees/issues">Report Bug</a>
+    ·
+	<!--  issue/discussion link -->
+    <a href="https://github.com/Amiinoz/favetees/discussions/1">Request Feature</a>
+  </p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="center">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- Use Shields website (link in acknowledgement section) to generate these for your repo or just replace the links here with yours -->
 
-### `yarn test`
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://favetees.netlify.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![Twitter:Mo.B](https://img.shields.io/twitter/follow/dev_mos.svg?style=social)](https://twitter.com/dev_mos)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `yarn build`
+<hr />
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Add your project demo gif here -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Project Demo Gif](/src/assets/favetees.gif)
 
-### `yarn eject`
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<hr />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 Objective
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Build & Deploy eCommerce App with React.js, Commerce.js, and Stripe.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To test the app please don't use your own credit card, use the blow instead:
 
-## Learn More
+```
+Credit card: 4242 4242 4242 4242
+expiry date: 04 / 24
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💡 Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Shopping cart
+2. Secure payment with stripe
+3. Domestic | International shipping
+4. Order Tracking
 
-### Code Splitting
+## ⛏️ Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Commerce.js
+- React/Stripe
+- Stripe.js
+- Material-UI
 
-### Analyzing the Bundle Size
+## ⚙️ How I worked on this project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+My goal was to simulate a professional work environment.
 
-### Making a Progressive Web App
+- I built this app based on Adobe XD designs: [Screenshot of designs](/src/assets/big.jpeg)
+- I worked with tasks on a Trello board: [Screenshot of tasks](/src/assets/trello.png)
+- I used feature branches and Pull Requests: [Link to example PR](/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔄 If I had more time I would change this
 
-### Advanced Configuration
+- Better design
+- More functionality
+- Refactor some of the code.
+- Add end-to-end tests with Cypress.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🏁 Getting Started
 
-### Deployment
+These instructions will help you to setup your own copy of Favetees project on your local machine for development and testing purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 📚 Prerequisit
 
-### `yarn build` fails to minify
+- Node & NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🧰Installation
+
+Step by step methods to guide the reader how to setup local dev environment for eg:
+
+1. Clone this repo
+1. Install all the dependencies
+
+   ```bash
+   npm install
+   ```
+
+1. Tweak the code
+1. Run on local server
+
+   ```bash
+   npm start
+   ```
+
+## 🚀Deployment
+
+Fallow these steps to deploy
+
+1. Create a new repo
+2. Push your code to github
+3. Build your project
+4. Create account on Netlify
+5. Add Your New Site
+6. Link to Your GitHub
+7. Authorize Netlify
+8. Select Your Repo
+9. Configure Your Settings
+10. Build Your Site
+11. eh! walaaa, you all done
+
+## 📝Todo
+
+List all the things you plan to do next in this project or list any known issue or bug which needs to be fixed. But why this is needed..? This will help the contributors like how they can contribute to this project and also when you open this project next time to work you will exactly know what has to be done for eg:
+
+- Add logout button
+- Add search functionality
+
+## 📈Future Plans
+
+List all the future plans you have with this project and would like to work on later this way you tell the reader that you are serious about what you do and make amd this way you will sound professional too for eg:
+
+- Add sign in with facebook
+
+## 🎈Usage
+
+Mention how your project could be used and take its advantage or you can include additional screenshots, code examples or anything relevant
+
+## Author
+
+👤 **Amiinoz**
+
+- Website: [momagan.com](https://www.momagan.com)
+- Twitter: [Mo.B](httmps://www.twitter.com/@dev_mos)
+- Github: [@Amiinoz](https://github.com/Amiinoz)
+- LinkedIn:[momagan](https://linkedin.com/in/Mo)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+[ Support me ](https://www.patreon.com/Amiinoz)
+
+---
+
+Made with ❤️ by [Mo Magan](https://www.momagan.com)
