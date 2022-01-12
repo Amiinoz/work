@@ -1,24 +1,24 @@
 <div align="center">
 
 <!-- project logo  -->
- <img src="/src/assets/logo.png">
+ <img src="/src/assets/logo_white.svg">
 
 </div>
 
-<h1 align="center">Favetees</h1>
+<h1 align="center">Portfolio</h1>
 
  <p align="center">
  	<!-- tagline or very short intro of your project -->
-   eCommerce Store
+   Personal site
     <br />
 	 <!-- live demo link -->
-    <a href="https://favetees.netlify.app/">View Demo</a>
+    <a href="https://www.momagan.com">View Demo</a>
     ·
 	<!-- issue link here -->
-    <a href="https://github.com/Amiinoz/favetees/issues">Report Bug</a>
+    <a href="https://github.com/Amiinoz/work/issues">Report Bug</a>
     ·
 	<!--  issue/discussion link -->
-    <a href="https://github.com/Amiinoz/favetees/discussions/1">Request Feature</a>
+    <a href="https://github.com/Amiinoz/work/discussions/1">Request Feature</a>
   </p>
 
 <div align="center">
@@ -39,7 +39,7 @@
 
 <!-- Add your project demo gif here -->
 
-![Project Demo Gif](/src/assets/favetees.gif)
+![Project Demo Gif](/src/assets/workxd.gif)
 
 </div>
 
@@ -47,51 +47,37 @@
 
 ## 🎯 Objective
 
-Build & Deploy eCommerce App with React.js, Commerce.js, and Stripe.
-
-To test the app please don't use your own credit card, use the blow instead:
-
-```
-Credit card: 4242 4242 4242 4242
-expiry date: 04 / 24
-```
+Build & Deploy portfolio app.
 
 ## 💡 Features
 
-1. Shopping cart
-2. Secure payment with stripe
-3. Domestic | International shipping
-4. Order Tracking
+1. Horizontal scroll
+2. Contact form
+3. Accordion display
+4. Side navigation
 
 ## ⛏️ Built with
 
-- Commerce.js
-- React/Stripe
-- Stripe.js
-- Material-UI
+- React.js
+- Locomotive scroll
+- gsap
+- firebase
 
 ## ⚙️ How I worked on this project
 
 My goal was to simulate a professional work environment.
 
-- I built this app based on Adobe XD designs: [Screenshot of designs](/src/assets/big.jpeg)
+- I built this app based on Adobe XD designs: [Screenshot of designs](/src/assets/portfolioxd.png)
 - I worked with tasks on a Trello board: [Screenshot of tasks](/src/assets/trello.png)
-- I used feature branches and Pull Requests: [Link to example PR](/)
 
 ## 🔄 If I had more time I would change this
 
-- Better design
-- More functionality
 - Refactor some of the code.
 - Add end-to-end tests with Cypress.
 
 ## 🏁 Getting Started
 
 These instructions will help you to setup your own copy of Favetees project on your local machine for development and testing purposes.
-
-### 📚 Prerequisit
-
-- Node & NPM
 
 ### 🧰Installation
 
@@ -129,20 +115,20 @@ Fallow these steps to deploy
 
 ## 📝Todo
 
-List all the things you plan to do next in this project or list any known issue or bug which needs to be fixed. But why this is needed..? This will help the contributors like how they can contribute to this project and also when you open this project next time to work you will exactly know what has to be done for eg:
+List all the things you plan to do next.
 
-- Add logout button
+- Add React Native projects
 - Add search functionality
 
 ## 📈Future Plans
 
-List all the future plans you have with this project and would like to work on later this way you tell the reader that you are serious about what you do and make amd this way you will sound professional too for eg:
+List all the future plans
 
-- Add sign in with facebook
+- Version 2
 
 ## 🎈Usage
 
-Mention how your project could be used and take its advantage or you can include additional screenshots, code examples or anything relevant
+Anyone can use as portfolio template for their project
 
 ## Author
 

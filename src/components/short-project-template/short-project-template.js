@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useWindowSize from '../useWindowSize';
 import './short-project-template.scss';
-import PageGuides from '../../components/page-guides/page-guides';
+// import PageGuides from '../../components/page-guides/page-guides';
 import Layout from '../Layout';
 import ScrollForMore from '../scrollForMore';
 import ProjectsButton from '../../components/work-button/work-button';
@@ -192,7 +192,7 @@ const ShortProjectTemplate = ({
           </motion.section>
           <ProjectsButton />
         </motion.div>
-        <PageGuides nextProject="./Weather" />
+        {/* <PageGuides nextProject="./Weather" /> */}
       </Layout>
     </>
   );

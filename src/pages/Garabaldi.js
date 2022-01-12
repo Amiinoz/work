@@ -109,7 +109,7 @@ const Garabaldi = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
-          nextProject="./MosDev.js"
+          nextProject="./MosDev"
         />
         {/* <PageGuides nextProject="./MosDev" /> */}
       </div>

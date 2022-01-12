@@ -7,7 +7,7 @@ import ProjDelImage2 from '../assets/favetees/logo_1.png';
 import ProjDelImage3 from '../assets/favetees/colors_1.png';
 import ProjDelImage4 from '../assets/favetees/buttons-image.png';
 
-import FaveCover from '../assets/favetees/faveteesCover.jpeg';
+import FaveCover from '../assets/favetees/faveteesCover.jp eg';
 import Colors from '../assets/favetees/colorsSmall_1.png';
 import ProjDelImage5 from '../assets/favetees/animation.png';
 import ProjDelImage6 from '../assets/favetees/icons.png';
@@ -97,7 +97,7 @@ const Favetees = () => {
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
           ////////////////////////////////////page guides///////////////////////
-          nextProject="./Covid19Tracker.js"
+          nextProject="./Covid19Tracker"
         />
       </div>
     </>

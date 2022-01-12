@@ -35,7 +35,7 @@ const MosDev = () => {
                     with classic albums like Black on both sides, Black star,
                     and The Ecstatic in his resume."
           ProjectContentFooter="Art work by Kamoni Khem"
-          nextProject="./Airbnb.js"
+          // nextProject="./Airbnb.js"
         />
       </div>
     </>
