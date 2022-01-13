@@ -44,7 +44,7 @@ const Portfolio = () => {
           role="role"
           roleType="Desing and Development"
           // button
-          viewCode="https://github.com/Amiinoz/portfolio-v1"
+          viewCode="https://github.com/Amiinoz/work"
           year="Year"
           yearOfDev="2021"
           //button
