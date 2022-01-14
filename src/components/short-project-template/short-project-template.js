@@ -17,7 +17,7 @@ const firstName = {
   animate: {
     y: 0,
     transition: {
-      delayChildren: 0.6,
+      delayChildren: 0.3,
       staggerChildren: 0.04,
       staggerDirection: -1,
     },
@@ -120,7 +120,7 @@ const ShortProjectTemplate = ({
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 0.5, ...transition },
+                  transition: { delay: 0.1, ...transition },
                 }}
               >
                 <motion.span variants={firstName}>
@@ -138,7 +138,7 @@ const ShortProjectTemplate = ({
                   transition={transition}
                   borderRadius="40"
                   animate={{
-                    transition: { delay: 0.6, ...transition },
+                    transition: { delay: 0.2, ...transition },
 
                     x: window.imageDetails > 1400 ? -800 : -400,
                   }}
@@ -152,7 +152,7 @@ const ShortProjectTemplate = ({
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 1.7, ...transition },
+                  transition: { delay: 0.3, ...transition },
                 }}
               >
                 <ScrollForMore />
@@ -167,7 +167,9 @@ const ShortProjectTemplate = ({
                 <h4>{ProjectInfoBody}</h4>
               </div>
               <div className="mos-info_button">
-                <button>{button1}</button>
+                <a href={viewCode} target="View Code">
+                  <button>{button1}</button>
+                </a>
               </div>
             </div>
 

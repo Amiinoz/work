@@ -63,7 +63,7 @@ const About = () => {
               <img src={Github} alt="github logo" />
             </a>
 
-            <a href="/">
+            <a href="https://www.behance.net/momagan">
               <img src={Behance} alt="behance logo" />
             </a>
 

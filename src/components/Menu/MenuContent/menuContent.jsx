@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
-import { GitHub, Dribbble, Twitter, Linkedin } from 'react-feather';
+import { GitHub, Twitter, Linkedin, PenTool } from 'react-feather';
 import cn from 'classnames';
 import './menuContent.scss';
-
-// import { Link } from 'react-router-dom';
 
 const internalLinks = [
   {
@@ -43,8 +41,8 @@ const externalLinks = [
   },
 
   {
-    url: 'https://dribbble.com/moamiin',
-    component: <Dribbble />,
+    url: 'https://www.behance.net/momagan',
+    component: <PenTool />,
   },
   {
     url: 'https://twitter.com/dev_mos',

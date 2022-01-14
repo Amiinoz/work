@@ -492,9 +492,9 @@ const ProjectsTemplate = ({
               </div>
             </div>
           </div>
+          <ProjectsButton />
         </motion.div>
 
-        <ProjectsButton />
         {/* //////////////////////////////    page guides   //
          /////////////// */}
 

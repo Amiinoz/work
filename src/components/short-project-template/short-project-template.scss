@@ -8,6 +8,9 @@
     @include media('<=tablet') {
       height: 152vh;
     }
+    @include media('<=desktop') {
+      min-height: 180vh;
+    }
 
     .banner {
       display: grid;
@@ -217,6 +220,7 @@
         transition: all 0.1s ease-out;
         transform: scale(1);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 99;
 
         &:after {
           content: '';
