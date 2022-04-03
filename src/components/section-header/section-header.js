@@ -1,5 +1,6 @@
 import React from 'react';
-import './section-header.scss';
+
+import '../../styles/components/section-header.scss';
 
 export default function SectionHeader({ title, subtitle, heading, intro }) {
   return (

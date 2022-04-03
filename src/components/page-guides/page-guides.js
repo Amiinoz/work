@@ -2,7 +2,8 @@ import React from 'react';
 import BackArrow from '../../assets/icons/arrow-right.svg';
 import FrontArrow from '../../assets/icons/arrow-right.svg';
 
-import './page-guides.scss';
+import '../../styles/components/page-guides.scss';
+
 export default function PageGuides({ nextProject }) {
   return (
     <>

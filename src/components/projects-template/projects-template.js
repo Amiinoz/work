@@ -11,9 +11,11 @@ import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
 import Layout from '../Layout';
-import './projects-template.scss';
+
 import ProjectsButton from '../../components/work-button/work-button';
 import PageGuides from '../../components/page-guides/page-guides';
+
+import '../../styles/components/projects-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 

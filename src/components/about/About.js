@@ -1,7 +1,8 @@
 import React from 'react';
 import SectionHeader from '../section-header/section-header';
 
-import './about.scss';
+import '../../styles/components/about.scss';
+
 import Mo from '../../assets/profile.png';
 import Signature from '../../assets/signature.svg';
 import Github from '../../assets/social/socialgithub.svg';

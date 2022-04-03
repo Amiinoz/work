@@ -5,7 +5,8 @@ import useOnScreen from '../../hooks/useOnScreen';
 import Work from '../work/Work';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
-import './gallery.scss';
+
+import '../../styles/components/gallery.scss';
 
 const images = [
   {

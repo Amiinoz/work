@@ -3,11 +3,11 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import useWindowSize from '../useWindowSize';
-import './short-project-template.scss';
-// import PageGuides from '../../components/page-guides/page-guides';
 import Layout from '../Layout';
 import ScrollForMore from '../scrollForMore';
 import ProjectsButton from '../../components/work-button/work-button';
+
+import '../../styles/components/short-project-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const firstName = {

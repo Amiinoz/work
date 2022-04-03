@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
 import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
 import cn from 'classnames';
-import './menuContent.scss';
+
+import '../../../styles/components/menuContent.scss';
 
 const internalLinks = [
   {

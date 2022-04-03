@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import SectionHeader from '../section-header/section-header';
 
-import './connect.scss';
+import '../../styles/components/connect.scss';
 
 const Connect = () => {
   const { register, errors, handleSubmit } = useForm();

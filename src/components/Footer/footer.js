@@ -3,7 +3,8 @@ import Github from '../../assets/social/socialgithub.svg';
 import LinkedIn from '../../assets/social/sociallinked.svg';
 import Twitter from '../../assets/social/socialtwitter.svg';
 
-import './footer.scss';
+import '../../styles/components/footer.scss';
+
 const Footer = () => {
   return (
     <div>

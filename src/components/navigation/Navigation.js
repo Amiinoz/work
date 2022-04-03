@@ -2,7 +2,8 @@ import React from 'react';
 import Logo from '../../assets/logo_yellow.webp';
 import useLocoScroll from '../../hooks/useLocoScroll';
 
-import './navigation.scss';
+import '../../styles/components/navigation.scss';
+
 import Menu from '../Menu/menu';
 
 const Navigation = () => {
