@@ -39,7 +39,7 @@ const Portfolio = () => {
           web="Website"
           plus="+"
           technology="technology"
-          techUsed="Adobe and firebase"
+          techUsed="React | Sass | Netlify | Firebase"
           projColorImage={Colors}
           role="role"
           roleType="Desing and Development"

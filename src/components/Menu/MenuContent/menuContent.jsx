@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
-import { GitHub, Twitter, Linkedin, PenTool } from 'react-feather';
+import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
 import cn from 'classnames';
 import './menuContent.scss';
 
@@ -32,6 +32,11 @@ const internalLinks = [
     component: <span>vsCode theme</span>,
     src: 'https://images.unsplash.com/photo-1596275281743-e7399c7bdfa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2524&q=80',
   },
+  {
+    url: '/blog/',
+    component: <span>blog</span>,
+    src: 'https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+  },
 ];
 
 const externalLinks = [
@@ -42,7 +47,7 @@ const externalLinks = [
 
   {
     url: 'https://www.behance.net/momagan',
-    component: <PenTool />,
+    component: <Dribbble />,
   },
   {
     url: 'https://twitter.com/dev_mos',
