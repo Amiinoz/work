@@ -3,7 +3,7 @@ import useLocoScroll from '../hooks/useLocoScroll';
 import About from '../components/about/About';
 import Header from '../components/Header/header';
 import Services from '../components/services/Services';
-import Connect from '../components/connect/connect';
+import Connect from '../components/contact/connect';
 import Spinner from '../assets/loader.gif';
 import Gallery from '../components/gallery/gallery';
 import { Helmet } from 'react-helmet';
