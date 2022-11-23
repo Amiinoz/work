@@ -12,7 +12,13 @@
   }
 
   .header__content {
-    padding: 24vh 3vw 0 8vw;
+    // padding: 34vh 5vw 3vh 4vw;
+    padding: 34vh 5vw 3vh 8vw;
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
     height: calc(100% - 12rem);
     display: flex;
     flex-direction: column;

@@ -12,33 +12,12 @@ const accordionIds = [
   {
     id: 0,
     title: 'Design',
-    results: [
-      'App design',
-      'Branding',
-      'UI and UX design',
-      'Interaction Design',
-      'Visual Design',
-    ],
+    results: ['UX design'],
   },
   {
     id: 1,
     title: 'Development',
-    results: [
-      'Front end Development',
-      'Back end Development',
-      'Hositing',
-      'Depolyment',
-      'Maintainance',
-    ],
-  },
-  {
-    id: 2,
-    title: 'Digital',
-    results: [
-      'Digital marketing',
-      'Social media strategies',
-      'Email and Subscription',
-    ],
+    results: ['Front end Development', 'Basic database setup', 'Depolyment'],
   },
 ];
 
@@ -60,8 +39,8 @@ const Services = ({ text }) => {
     <>
       <SectionHeader
         title="Service"
-        subtitle="Skills"
-        heading="In Development & Design"
+        subtitle="Passion"
+        heading="User centered design and development"
       />
       <div
         ref={aboutRef}
@@ -84,18 +63,34 @@ const Services = ({ text }) => {
           data-scroll-delay="0.03"
           data-scroll-speed="0.6"
         >
-          <h4>
-            Good product development— <br />
-            starts with a passion for visual strategy.
-          </h4>
+          <h4>What i bring to the table?</h4>
+
           <p>
-            With a focus on eye-pleasing clean minimal design, user-friendly,
-            highly secure, and scalable..
-            <br />
-            <br /> Using the latest development technologies, I can develop
-            everything from mobile web development solutions and responsive
-            website designs to unique e-commerce and intranet experiences.
+            I assisted small business and stakeholders in developing a viable
+            product for their business by improving the user experience through
+            planning and conducting usability studies, creating sitemaps and
+            wireframes, and enhancing their product as a whole. Moreover, I
+            assist them in building scalable websites that are minimal, elegant,
+            and functional.
           </p>
+
+          <h4>Why I love to work this industry?</h4>
+
+          <p>
+            The entire design process excites me, from the conception to the
+            research to the end product, always placing the user at the center
+            of every step.
+          </p>
+
+          <h4>What interests me?</h4>
+
+          <p>
+            I am pasionate about design and development, but overall I love to
+            see people sucsees. Playing soccer and basketball in my spare time
+            keeps me active. I also enjoy photography and fashion. I also
+            volunteer in the community by coaching amateur sports.
+          </p>
+
           <span>
             <img src={TechStack} alt="Technology used" />
           </span>

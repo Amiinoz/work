@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './footer/footer';
+import Footer from './footer';
 import Navigation from './navigation/Navigation';
 
 import MenuManager from './Menu/MenuManager';

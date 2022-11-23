@@ -4,6 +4,11 @@
 .header-container {
   position: relative;
 
+  .welcome-text {
+    margin: 25vh 0 -26vh 13vw;
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 7.5vw;
     text-transform: uppercase;
@@ -13,6 +18,12 @@
     margin: 25vh 0 0 11vw;
     line-height: 14vh;
     width: 100%;
+  }
+
+  .scrl {
+    max-width: 23px;
+    /* max-height: 8px; */
+    margin: -10vh 0 0 84vw;
   }
 }
 .lineParent {

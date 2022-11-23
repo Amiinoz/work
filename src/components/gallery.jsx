@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import useOnScreen from '../../hooks/useOnScreen';
-import Work from '../work/Work';
+import useOnScreen from '../hooks/useOnScreen';
+import Work from '../components/work';
+
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
-import '../../styles/components/gallery.scss';
+import '../styles/components/gallery.scss';
 
 const images = [
   {
@@ -148,7 +149,7 @@ export default function Gallery({ src, index, columnOffset }) {
             <span>{images.length}</span>
           </div>
           {images.map((image, index, src, id) => (
-            <div key={src.id}>
+            <div key={index}>
               <Link to={`/${image.title}`}>
                 <GalleryItem
                   key={src.id}

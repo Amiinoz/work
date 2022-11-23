@@ -12,7 +12,7 @@ p {
 
 h1,
 h2,
-h3 {
+loader-wrapper h3 {
   color: var(--fontColor);
   font-family: 'Bai Jamjuree', serif;
   font-weight: 600;
@@ -74,20 +74,30 @@ section {
 }
 
 .loader-wrapper {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: -12vw;
+  overflow: hidden;
+  // display: grid;
+  // place-items: center;
+  // align-items: center;
+  // margin-left: -12vw;
   transition: 'all 0.25s ease-in-out';
-  background-color: #191919;
+  // background-color: #191919;
+  background-color: #000000;
   color: #fff;
   z-index: 99;
 
   .logo {
     img {
-      width: 50px;
-      height: 50px;
-      margin-left: 7vw;
+      width: 25vw;
+      margin-left: -7vw;
+      // margin-left: auto;
+      // margin-right: auto;
+      // display: block;
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
     }
   }
 }

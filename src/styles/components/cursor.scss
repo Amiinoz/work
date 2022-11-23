@@ -8,9 +8,9 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  background: $white;
-  border: 1px solid $black;
-  mix-blend-mode: difference;
+  background: $accent;
+  border: 1px solid $white;
+  // mix-blend-mode: difference;
   transition: width 0.025s ease-in-out, height 0.025s ease-in-out;
 
   &.regular {
@@ -59,21 +59,21 @@
 
 @keyframes bgUp {
   from {
-    background-color: transparent;
+    background-color: $accent;
   }
 
   to {
-    background-color: $black;
+    background-color: transparent;
   }
 }
 
 @keyframes bgDown {
   from {
-    background-color: $black;
+    background-color: transparent;
   }
 
   to {
-    background-color: transparent;
+    background-color: $accent;
   }
 }
 

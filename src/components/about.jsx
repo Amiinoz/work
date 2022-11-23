@@ -1,13 +1,12 @@
 import React from 'react';
-import SectionHeader from '../section-header/section-header';
+import SectionHeader from './section-header/section-header';
+import '../styles/components/about.scss';
 
-import '../../styles/components/about.scss';
-
-import Mo from '../../assets/profile.png';
-import Signature from '../../assets/signature.svg';
-import Github from '../../assets/social/socialgithub.svg';
-import Behance from '../../assets/social/socialbehance.svg';
-import Linked from '../../assets/social/sociallinked.svg';
+import Mo from '../assets/profile.png';
+import Signature from '../assets/signature.svg';
+import Github from '../assets/social/socialgithub.svg';
+import Behance from '../assets/social/socialbehance.svg';
+import Linked from '../assets/social/sociallinked.svg';
 
 const About = () => {
   return (
@@ -21,12 +20,9 @@ const About = () => {
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
           <p data-scroll="" data-offset="2.8">
-            My name is Mohamed Magan, I am a software developer & UX designer
-            based in beautiful Calgary, Canada. I am passionate about solving
-            problems and building rich user-friendly products. I am available
-            for full-time roles & freelance projects. <br /> You can check out
-            my work, drop me a line and say hi, or share what projects you are
-            working on.
+            It is my pleasure to introduce myself as Mohamed Magan, a user
+            experience designer and front end developer. My passion is solving
+            problems and building user-friendly products.
           </p>
         </div>
 

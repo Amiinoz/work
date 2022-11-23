@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
-import About from '../components/about/About';
-import Header from '../components/Header/header';
+import About from '../components/about';
+import Header from '../components/header';
 import Services from '../components/services/Services';
 import Connect from '../components/contact/connect';
-import Spinner from '../assets/loader.gif';
-import Gallery from '../components/gallery/gallery';
+import Spinner from '../assets/looper.gif';
+
+import Gallery from '../components/gallery';
 import { Helmet } from 'react-helmet';
-import ProjectsButton from '../components/work-button/work-button';
+// import ProjectsButton from '../components/work-button/work-button';
 import '../styles/App.scss';
 import Layout from '../components/Layout';
 
@@ -63,7 +64,7 @@ const Home = () => {
         <div className="loader-wrapper absolute">
           <div className="logo">
             <img src={Spinner} alt="mo magans portfolio preloader" />
-            <h2>Mo Magan &apos; s Portfolio</h2>
+            {/* <h2>Mo Magan &apos; s Portfolio</h2> */}
           </div>
         </div>
       ) : (
@@ -74,11 +75,11 @@ const Home = () => {
           </Helmet>
           <Layout>
             <Header />
+            <Gallery />
             <About />
             <Services />
-            <Gallery />
             <Connect />
-            <ProjectsButton />
+            {/* <ProjectsButton /> */}
           </Layout>
         </div>
       )}

@@ -43,15 +43,10 @@ const Connect = () => {
       <SectionHeader
         title="Contact"
         subtitle="Say hello"
-        heading="I am currently open to new opportunities and freelance work"
+        heading="Have a project in mind? Lets work together"
       />
       <section className="contact-container" data-scroll-section>
-        <div className="contact-container_intro">
-          <p>
-            Thank you so much for visiting.
-            <br />
-          </p>
-        </div>
+        <div className="contact-container_intro"></div>
         <div className="contact-container_form">
           <form onSubmit={handleSubmit(submit)}>
             <input

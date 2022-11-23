@@ -1,9 +1,8 @@
 import React from 'react';
-import Github from '../../assets/social/socialgithub.svg';
-import LinkedIn from '../../assets/social/sociallinked.svg';
-import Twitter from '../../assets/social/socialtwitter.svg';
-
-import '../../styles/components/footer.scss';
+import Github from '../assets/social/socialgithub.svg';
+import LinkedIn from '../assets/social/sociallinked.svg';
+import Twitter from '../assets/social/socialtwitter.svg';
+import '../styles/components/footer.scss';
 
 const Footer = () => {
   return (
@@ -15,8 +14,6 @@ const Footer = () => {
             <p>momagan@gmail.com</p>
           </div>
           <div className="footer__content">
-            <p>1 Vision Av</p>
-            <p>Calgary, AB</p>
             <div className="copyr">
               <span>copyright&copy;{new Date().getFullYear()}</span>
             </div>
