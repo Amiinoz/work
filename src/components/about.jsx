@@ -21,8 +21,11 @@ const About = () => {
         <div className="about-container__bio">
           <p data-scroll="" data-offset="2.8">
             It is my pleasure to introduce myself as Mohamed Magan, a user
-            experience designer and front end developer. My passion is solving
-            problems and building user-friendly products.
+            experience designer, and front-end developer. I am humble yet
+            passionate about design and development, but overall I love to see
+            people succeed. Playing soccer and basketball in my spare time keeps
+            me active. I also enjoy photography and fashion. Coaching amateur
+            sports in the community keeps me grounded
           </p>
         </div>
 

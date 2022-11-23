@@ -7,7 +7,7 @@ import Colors from '../assets/garabaldi/colorsTeck.png';
 
 import ProjDelImage1 from '../assets/garabaldi/typography.png';
 import ProjDelImage2 from '../assets/garabaldi/logo.png';
-// import ProjDelImage3 from '../assets/garabaldi/colors.png';
+import ProjDelImage3 from '../assets/garabaldi/Colors.png';
 import ProjDelImage4 from '../assets/garabaldi/buttons.png';
 import ProjDelImage5 from '../assets/garabaldi/animation_1.png';
 import ProjDelImage6 from '../assets/garabaldi/icons_1.png';

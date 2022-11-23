@@ -21,6 +21,24 @@ const accordionIds = [
   },
 ];
 
+const projectArchive = [
+  {
+    id: 0,
+    title: 'Projects Archive',
+    results: [
+      'Vanilla Js Chat app',
+      'Budget ap',
+      'Web news scrapper ',
+      'Blog post',
+      'React and Framer motion',
+      'PWA Weather app',
+      'Awwwards remake',
+      'WebGL Portfolio',
+      'Dice game',
+    ],
+  },
+];
+
 const Services = ({ text }) => {
   const [expanded, setExpanded] = useState(0);
   const animation = useAnimation();
@@ -82,15 +100,6 @@ const Services = ({ text }) => {
             of every step.
           </p>
 
-          <h4>What interests me?</h4>
-
-          <p>
-            I am pasionate about design and development, but overall I love to
-            see people sucsees. Playing soccer and basketball in my spare time
-            keeps me active. I also enjoy photography and fashion. I also
-            volunteer in the community by coaching amateur sports.
-          </p>
-
           <span>
             <img src={TechStack} alt="Technology used" />
           </span>
@@ -99,6 +108,18 @@ const Services = ({ text }) => {
         <div className="service-container__accordion">
           <h3>Services</h3>
           {accordionIds.map((details, index) => (
+            <Accordion
+              key={index}
+              details={details}
+              expanded={expanded}
+              setExpanded={setExpanded}
+            />
+          ))}
+          <br />
+          <br />
+
+          <h3>Pojects Archive</h3>
+          {projectArchive.map((details, index) => (
             <Accordion
               key={index}
               details={details}

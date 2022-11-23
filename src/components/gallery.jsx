@@ -11,6 +11,13 @@ import '../styles/components/gallery.scss';
 
 const images = [
   {
+    id: 0,
+    src: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+    title: 'Posty',
+    subtitle: 'Case study',
+    category: 'Google Design challenge',
+  },
+  {
     id: 1,
     src: 'https://images.unsplash.com/photo-1627225924765-552d49cf47ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
     title: 'Favetees',

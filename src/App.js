@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Posty from './pages/Posty';
 import Favetees from './pages/Favetees';
 import Covid19Tracker from './pages/Covid19Tracker';
 import Portfolio from './pages/Portfolio';
@@ -22,7 +23,7 @@ function App() {
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />
-
+          <Route exact path="/Posty" component={Posty} />
           <Route exact path="/Favetees" component={Favetees} />
           <Route exact path="/Covid19Tracker" component={Covid19Tracker} />
           <Route exact path="/Portfolio" component={Portfolio} />
