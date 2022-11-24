@@ -19,6 +19,14 @@ import User from '../assets/posty/user_story.jpg';
 import ComAud from '../assets/posty/oneup_ompetitive-audit.jpg';
 import PaperWireframe from '../assets/posty/pepar-wf-1.png';
 import DigitlaWirefame1 from '../assets/posty/digital_wireframes-1.png';
+import LowFiProto from '../assets/posty/lf-wireframes.webp';
+import UsabilityStdy from '../assets/posty/Usability study findings.webp';
+import RefineDes1 from '../assets/posty/refine_1.webp';
+import RefineDes2 from '../assets/posty/refine_2.webp';
+import MockUp from '../assets/posty/mockup_1.webp';
+import Branding from '../assets/posty/branding.png';
+
+import HfProto from '../assets/posty/hf-wireframes.webp';
 
 import '../styles/components/projects-template.scss';
 
@@ -375,7 +383,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    {/* <img src={LowFiP} /> */}
+                    <img src={LowFiProto} />
                     {/* <img src='../assets/posty/low-fi-prototype.svg'> */}
                   </div>
                 </section>
@@ -398,7 +406,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/Usability study findings.webp" />
+                    <img src={UsabilityStdy} />
                   </div>
                 </section>
                 {/* ================================================
@@ -426,7 +434,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/refine_1.webp" />
+                    <img src={RefineDes1} />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -448,7 +456,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/refine_2.webp" />
+                    <img src={RefineDes2} />
                   </div>
                 </section>
                 {/* ================================================
@@ -468,7 +476,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/mockup_1.webp" />
+                    <img src={MockUp} />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -485,7 +493,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/hf-wireframes.webp" />
+                    <img src={HfProto} />
                   </div>
                 </section>
                 {/* ================================================
@@ -534,7 +542,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src="../assets/img/001_posty/branding.webp" />
+                    <img src={Branding} />
                   </div>
                 </section>
                 {/* ================================================
