@@ -2,6 +2,8 @@ import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import OneUp from './pages/oneup';
+import Tessa from './pages/tessa';
 import Posty from './pages/Posty';
 import Favetees from './pages/Favetees';
 import Covid19Tracker from './pages/Covid19Tracker';
@@ -23,6 +25,8 @@ function App() {
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/OneUp" component={OneUp} />
+          <Route exact path="/Tessa" component={Tessa} />
           <Route exact path="/Posty" component={Posty} />
           <Route exact path="/Favetees" component={Favetees} />
           <Route exact path="/Covid19Tracker" component={Covid19Tracker} />

@@ -118,7 +118,7 @@ const Services = ({ text }) => {
           <br />
           <br />
 
-          <h3>Pojects Archive</h3>
+          <h3>Projects </h3>
           {projectArchive.map((details, index) => (
             <Accordion
               key={index}
