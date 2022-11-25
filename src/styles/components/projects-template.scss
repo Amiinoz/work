@@ -2,6 +2,36 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints.scss';
 
+/* Remove default margin */
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// =======================
 .proj {
   min-height: 402vh;
   display: flex;
@@ -599,8 +629,8 @@ h4 {
   position: relative;
   max-width: 960px;
   // text-align: center;
-  margin: 110px auto 0;
-  color: $black;
+  margin: 0 auto 0;
+
   // font-family: 'Mulish', serif;
   font-weight: normal;
   font-size: 16px;
@@ -689,6 +719,9 @@ h4 {
   max-width: 500px;
   margin: 0 0 0 0;
 }
+#info .flex_info H3 {
+  font: normal normal 14px/14px Bai Jamjuree;
+}
 .year li,
 .role li {
   line-height: 15px;
@@ -726,7 +759,7 @@ h4 {
 
 #visit p a {
   text-decoration: none;
-  color: white;
+  // color: white;
 }
 
 /*#visit p a::after {
@@ -755,26 +788,30 @@ h4 {
 .flex_01 img,
 .flex_02 img,
 .flex_03 img {
-  /*-webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);*/
-  transform: scale(0.8);
-  -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // -webkit-filter: blur(20px);
+  // -moz-filter: blur(20px);
+  // -o-filter: blur(20px);
+  // -ms-filter: blur(20px);
+  // filter: blur(20px);
+  // transform: scale(0.8);
+  // -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: scale(1.1);
+  -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .flex_01.is_visible img,
 .flex_02.is_visible img,
 .flex_03.is_visible img {
-  /*-webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);*/
-  transform: scale(1);
+  // -webkit-filter: blur(0px);
+  // -moz-filter: blur(0px);
+  // -o-filter: blur(0px);
+  // -ms-filter: blur(0px);
+  // filter: blur(0px);
+  transform: scale(1.1);
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);

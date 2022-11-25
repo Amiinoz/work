@@ -13,9 +13,9 @@ import useWindowSize from '../components/useWindowSize';
 
 import Layout from '../components/Layout';
 
-import ProjectsButton from '../components/work-button/work-button';
+// import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/posty/user_story.jpg';
+import User from '../assets/posty/user_story.webp';
 import ComAud from '../assets/posty/oneup_ompetitive-audit.jpg';
 import PaperWireframe from '../assets/posty/pepar-wf-1.png';
 import DigitlaWirefame1 from '../assets/posty/digital_wireframes-1.png';
@@ -30,7 +30,7 @@ import HfProto from '../assets/posty/hf-wireframes.webp';
 
 import '../styles/components/projects-template.scss';
 
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+const transition = { duration: 0.8, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const letter = {
   initial: {
@@ -276,11 +276,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h1>
                     Understanding <br /> the User{' '}
                   </h1>
-                  <h3>
+                  <p>
                     User research <br /> Personas <br /> Problem Statement{' '}
                     <br />
                     User journey
-                  </h3>
+                  </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>USER RESEARCH SUMMARY</li>
@@ -299,7 +299,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={User} />
+                    <img src={User} loading="lazy" />
                   </div>
                   <div className="flex_01">
                     <img src={ComAud} />
@@ -313,11 +313,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h1>
                     Starting <br /> the designing
                   </h1>
-                  <h3>
+                  <p>
                     Paper wire-frames <br /> Digital wire-frames <br /> Low
                     fidelity prototypes <br />
                     Usability study
-                  </h3>
+                  </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>PAPER WIREFRAMES</li>
@@ -330,13 +330,14 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={PaperWireframe} />
+                    <img src={PaperWireframe} loading="lazy" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
                   <h1>
                     Starting <br /> the designing
                   </h1>
+                  <p>Wire frames</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>DIGITAL WIREFRAMES</li>
@@ -349,7 +350,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={DigitlaWirefame1} />
+                    <img src={DigitlaWirefame1} loading="lazy" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -383,7 +384,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={LowFiProto} />
+                    <img src={LowFiProto} loading="lazy" />
                     {/* <img src='../assets/posty/low-fi-prototype.svg'> */}
                   </div>
                 </section>
@@ -391,6 +392,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h1>
                     Starting <br /> the designing
                   </h1>
+                  <p>Usability study</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>USABILITY STUDY FINDINGS</li>
@@ -406,7 +408,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={UsabilityStdy} />
+                    <img src={UsabilityStdy} loading="lazy" />
                   </div>
                 </section>
                 {/* ================================================
@@ -417,7 +419,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Refining <br />
                     the design <br /> based on research
                   </h1>
-                  <h3>Before and afters</h3>
+                  <p>Before and afters</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>USERS WANTED SEARCH INPUT FIELD</li>
@@ -434,7 +436,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={RefineDes1} />
+                    <img src={RefineDes1} loading="lazy" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -442,7 +444,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Refining <br />
                     the design <br /> based on research
                   </h1>
-                  <h3>Before and afters</h3>
+                  <p>Before and afters</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>PEOPLE WANTED CLEAR FOCUS TIMER </li>
@@ -456,7 +458,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={RefineDes2} />
+                    <img src={RefineDes2} loading="lazy" />
                   </div>
                 </section>
                 {/* ================================================
@@ -467,6 +469,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Mockups <br />
                     design{' '}
                   </h1>
+                  <p>Wire frames</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>HIGH FIDELITY MOCK UPS</li>
@@ -476,7 +479,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={MockUp} />
+                    <img src={MockUp} loading="lazy" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -484,6 +487,8 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     High fidelity <br />
                     Wireframes{' '}
                   </h1>
+                  <p>Hi fidelity</p>
+
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>HIGH FIDELITY WIRE-FRAMES</li>
@@ -493,7 +498,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={HfProto} />
+                    <img src={HfProto} loading="lazy" />
                   </div>
                 </section>
                 {/* ================================================
@@ -501,7 +506,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
         ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>Accessability </h1>
-                  <h3>Considerations </h3>
+                  <p>Considerations </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>ONE</li>
@@ -528,11 +533,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
         ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
-                    Banding <br />{' '}
+                    Branding <br />{' '}
                   </h1>
-                  <h3>
+                  <p>
                     Colors <br /> Icons <br /> Typography <br /> Logo
-                  </h3>
+                  </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>BRANDING</li>
@@ -542,7 +547,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={Branding} />
+                    <img src={Branding} loading="lazy" />
                   </div>
                 </section>
                 {/* ================================================
@@ -553,7 +558,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Going <br />
                     forward{' '}
                   </h1>
-                  <h3>Takeaways </h3>
+                  <p>Takeaways </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>IMPACT</li>
@@ -581,7 +586,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Next <br />
                     Steps{' '}
                   </h1>
-                  <h3>Considerations </h3>
+                  <p>Future Considerations </p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>ONE</li>
@@ -607,7 +612,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </main>
           </div>
-          <ProjectsButton />
+          {/* <ProjectsButton /> */}
         </motion.div>
 
         {/* //////////////////////////////    page guides   //
