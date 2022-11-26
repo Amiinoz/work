@@ -2,38 +2,10 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints.scss';
 
-/* Remove default margin */
-
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 // =======================
 .proj {
-  min-height: 402vh;
+  // min-height: 402vh;
+
   display: flex;
   flex-direction: column;
   @include media('<=phone') {
@@ -719,9 +691,7 @@ h4 {
   max-width: 500px;
   margin: 0 0 0 0;
 }
-#info .flex_info H3 {
-  font: normal normal 14px/14px Bai Jamjuree;
-}
+
 .year li,
 .role li {
   line-height: 15px;
@@ -797,7 +767,8 @@ h4 {
   // -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   // -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   // transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: scale(1.1);
+  transform: scale(1.2);
+  margin-top: -8rem;
   -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -811,7 +782,7 @@ h4 {
   // -o-filter: blur(0px);
   // -ms-filter: blur(0px);
   // filter: blur(0px);
-  transform: scale(1.1);
+  transform: scale(1.2);
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -859,7 +830,7 @@ h4 {
   position: relative;
   max-width: 960px;
   margin: 60px auto 160px;
-  color: white;
+  // color: white;
   z-index: 100;
   font-weight: normal;
 }
@@ -882,4 +853,10 @@ h4 {
 
 .credit_box_item:nth-child(2) {
   font-weight: bold;
+}
+
+.proj {
+  // min-height: 402vh;
+  min-height: fit-content;
+  margin: 1rem;
 }

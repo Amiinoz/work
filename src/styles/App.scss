@@ -30,6 +30,11 @@ p {
   text-align: center;
 }
 
+body div {
+  min-height: fit-content;
+  padding: 1rem;
+}
+
 header,
 section {
   padding: 100px 0;

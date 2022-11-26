@@ -2,12 +2,26 @@
 @import '../../styles//variables';
 
 .footer-section {
-  position: relative;
-  height: 30px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-top: auto;
+  // position: relative;
+  // height: 30px;
+  // bottom: 0px;
+  // left: 0px;
+  // right: 0px;
+  // margin-top: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  // background-color: rgb(235, 195, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  // background-color: $bg-color;
+  // background-image: radial-gradient($dots 10%, transparent 15%);
+  // background-position: 0 0;
+  // background-size: 7px 7px;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 
   .footer {
     display: grid;

@@ -25,6 +25,7 @@ import RefineDes1 from '../assets/posty/refine_1.webp';
 import RefineDes2 from '../assets/posty/refine_2.webp';
 import MockUp from '../assets/posty/mockup_1.webp';
 import Branding from '../assets/posty/branding.png';
+import Process from '../assets/posty/process.png';
 
 import HfProto from '../assets/posty/hf-wireframes.webp';
 
@@ -120,7 +121,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
     const difference = data.current - data.rounded;
     const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 0.4;
+    const skew = velocity * 0.3;
 
     //Assign skew and smooth scrolling to the scroll container
     scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
@@ -269,6 +270,35 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </div>
               </section>
               <div>
+                {/* ================================================
+        =========== // process
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>
+                    Process <br />
+                  </h1>
+                  <p>User-centered design process</p>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>DESIGN PROCESS </li>
+                      <li>
+                        As part of my investigation into how my app could
+                        benefit my users, I used a user-centered design process.
+                        To come up with multiple solutions, I used user research
+                        as a guide. I then tested multiple ideas via usability
+                        tests and developed a high-fidelity interactive
+                        prototype based on my findings.
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={Process} loading="lazy" />
+                  </div>
+                </section>
+
                 {/* ================================================
         =========== // understanding  the user
         ================================================  */}
@@ -532,12 +562,8 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
         =========== // Branding
         ================================================  */}
                 <section id="info" className="flex_info">
-                  <h1>
-                    Branding <br />{' '}
-                  </h1>
-                  <p>
-                    Colors <br /> Icons <br /> Typography <br /> Logo
-                  </p>
+                  <h1>Branding</h1>
+                  <p>Colors, Icons, Typography, Logo</p>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>BRANDING</li>
@@ -545,6 +571,8 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
+                <br />
+                <br />
                 <section id="cap">
                   <div className="flex_01">
                     <img src={Branding} loading="lazy" />

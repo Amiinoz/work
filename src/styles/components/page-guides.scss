@@ -3,12 +3,27 @@
 @import '../../styles/breakpoints.scss';
 
 .page-guides {
+  padding: 1rem;
+  // background-color: #ebc340;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding-bottom: -10rem;
+  background-color: #f7f9fa;
+  background-image: radial-gradient(#c8d3de 10%, transparent 15%);
+  background-position: 0 0;
+  background-size: 7px 7px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: space-evenly;
-  padding: 90px 0 0 0;
+  padding: 48px 0 0 0;
+  grid-gap: 80px;
   grid-gap: 80px;
   gap: 80px;
-  height: 30px;
+  height: 35px;
 
   @include media('<=420px') {
     display: none;
