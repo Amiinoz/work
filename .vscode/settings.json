@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": " Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": " Jetbrains Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 18,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "cSpell.words": ["scrollrender"],

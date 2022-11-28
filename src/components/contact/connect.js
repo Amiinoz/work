@@ -3,6 +3,7 @@ import { db } from './firebase';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import SectionHeader from '../section-header/section-header';
+import Footer from '../footer';
 
 import '../../styles/components/connect.scss';
 
@@ -96,6 +97,7 @@ const Connect = () => {
           </form>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

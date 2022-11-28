@@ -26,10 +26,10 @@ import RefineDes2 from '../assets/posty/refine_2.webp';
 import MockUp from '../assets/posty/mockup_1.webp';
 import Branding from '../assets/posty/branding.png';
 import Process from '../assets/posty/process.png';
-
 import HfProto from '../assets/posty/hf-wireframes.webp';
 
 import '../styles/components/projects-template.scss';
+import '../styles/components/uxprojects.scss';
 
 const transition = { duration: 0.8, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -292,13 +292,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-
                 <section id="cap">
                   <div className="flex_01">
                     <img src={Process} loading="lazy" />
                   </div>
                 </section>
-
                 {/* ================================================
         =========== // understanding  the user
         ================================================  */}
@@ -558,6 +556,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
+                1f2336
                 {/* ================================================
         =========== // Branding
         ================================================  */}

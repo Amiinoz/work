@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './footer';
+// import Footer from './footer';
 import Navigation from './navigation/Navigation';
 
 import MenuManager from './Menu/MenuManager';
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <div>
           <Navigation />
           <main>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </MenuManager>
     </>

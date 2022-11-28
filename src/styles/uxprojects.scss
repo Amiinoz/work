@@ -2,6 +2,16 @@
 // # Ux design projects start
 /////////////////////////////////////////
 ///
+///
+// #info .proj {
+//   min-height: fit-content;
+//   padding: 1rem;
+// }
+
+.App #info {
+  min-height: fit-content;
+  // padding: 1rem;
+}
 #info {
   position: relative;
   max-width: 960px;
@@ -17,11 +27,6 @@
 .flex_info {
   display: flex;
   justify-content: space-between;
-}
-
-h1,
-h2 {
-  font-family: 'Bai Jamjuree';
 }
 
 .flex_info h1:after {
@@ -121,26 +126,26 @@ h2 {
   line-height: 30px;
 }
 
-/**/
-
-#visit {
-  position: relative;
-  max-width: 960px;
-  margin: 50px auto 210px;
-}
-
-#visit p {
-  position: absolute;
-  right: 0;
-  max-width: 960px;
-  font-weight: 700;
-  z-index: 100;
-}
-
-#visit p a {
-  text-decoration: none;
-  // color: white;
-}
+// /**/
+//
+// #visit {
+//   position: relative;
+//   max-width: 960px;
+//   margin: 50px auto 210px;
+// }
+//
+// #visit p {
+//   position: absolute;
+//   right: 0;
+//   max-width: 960px;
+//   font-weight: 700;
+//   z-index: 100;
+// }
+//
+// #visit p a {
+//   text-decoration: none;
+//   // color: white;
+// }
 
 /*#visit p a::after {
   position: absolute;
@@ -198,9 +203,9 @@ h2 {
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.flex_01 {
-  // margin-bottom: 80px;
-}
+// .flex_01 {
+//   // margin-bottom: 80px;
+// }
 
 .flex_01 img {
   width: 100%;
@@ -232,41 +237,4 @@ h2 {
 
 .flex_03_item img {
   width: 100%;
-}
-
-/**/
-
-#credit {
-  position: relative;
-  max-width: 960px;
-  margin: 60px auto 160px;
-  // color: white;
-  z-index: 100;
-  font-weight: normal;
-}
-
-.credit_tit {
-  font-weight: 700;
-  margin: 0 0 40px 75px;
-}
-
-.credit_box {
-  display: flex;
-  margin: 0 0 14px 75px;
-  font-size: 13px;
-}
-
-.credit_box_item:nth-child(1) {
-  color: #8f969e;
-  min-width: 236px;
-}
-
-.credit_box_item:nth-child(2) {
-  font-weight: bold;
-}
-
-.proj {
-  // min-height: 402vh;
-  min-height: fit-content;
-  margin: 1rem;
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import OneUp from './pages/oneup';
+// import OneUp from './pages/oneup';
+
 import Tessa from './pages/tessa';
 import Posty from './pages/Posty';
 import Favetees from './pages/Favetees';
@@ -12,6 +13,8 @@ import Garabaldi from './pages/Garabaldi';
 import MosDev from './pages/MosDev';
 import NotFound from './pages/404';
 import CustomCursor from './custom-cursor/cursor';
+
+const OneUp = React.lazy(() => './pages/oneup.js');
 
 function App() {
   return (

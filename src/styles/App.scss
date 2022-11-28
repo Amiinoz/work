@@ -14,7 +14,7 @@ h1,
 h2,
 loader-wrapper h3 {
   color: var(--fontColor);
-  font-family: 'Bai Jamjuree', serif;
+  font-family: 'Work sans', serif;
   font-weight: 600;
   line-height: 1;
   padding-bottom: 1rem;
@@ -28,11 +28,6 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-body div {
-  min-height: fit-content;
-  padding: 1rem;
 }
 
 header,
@@ -83,10 +78,12 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
   // display: grid;
   // place-items: center;
   // align-items: center;
   // margin-left: -12vw;
+
   transition: 'all 0.25s ease-in-out';
   // background-color: #191919;
   background-color: #000000;

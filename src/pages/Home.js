@@ -8,7 +8,6 @@ import Spinner from '../assets/looper.gif';
 
 import Gallery from '../components/gallery';
 import { Helmet } from 'react-helmet';
-// import ProjectsButton from '../components/work-button/work-button';
 import '../styles/App.scss';
 import Layout from '../components/Layout';
 
