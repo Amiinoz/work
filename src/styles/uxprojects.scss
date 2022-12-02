@@ -18,15 +18,23 @@
   // text-align: center;
   margin: 0 auto 0;
 
-  // font-family: 'Mulish', serif;
+  font-family: 'Work sans', serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   z-index: 100;
 }
 
 .flex_info {
   display: flex;
   justify-content: space-between;
+}
+.loader-wrapper .flex_info h1 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  pointer-events: none;
 }
 
 .flex_info h1:after {

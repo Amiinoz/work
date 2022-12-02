@@ -28,7 +28,7 @@ import Branding from '../assets/posty/branding.png';
 import Process from '../assets/posty/process.png';
 import HfProto from '../assets/posty/hf-wireframes.webp';
 
-import '../styles/components/projects-template.scss';
+// import '../styles/components/projects-template.scss';
 import '../styles/components/uxprojects.scss';
 
 const transition = { duration: 0.8, ease: [0.6, 0.01, -0.05, 0.9] };

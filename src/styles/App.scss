@@ -2,6 +2,16 @@
 @import './variables';
 @import './loco-scroll.scss';
 
+@font-face {
+  font-family: 'Work sans';
+  src: url('../assets/fonts/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Bai Jamjuree';
+  src: url('../assets/fonts/BaiJamjuree-Bold.ttf');
+}
+
 body,
 h1,
 h2,
