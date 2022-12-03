@@ -3,17 +3,21 @@
 @import '../../styles/breakpoints.scss';
 
 // =======================
+
 .proj {
   // min-height: 402vh;
 
   display: flex;
   flex-direction: column;
+  height: 95vh;
   @include media('<=phone') {
     max-height: 645vh;
   }
 
   @include media('<=desktop') {
-    min-height: 455vh;
+    // min-height: 455vh;
+    min-height: fit-content;
+    margin: 1rem;
   }
 
   .container {

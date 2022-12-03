@@ -640,12 +640,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
             </main>
           </div>
           {/* <ProjectsButton /> */}
+          <PageGuides nextProject={nextProject} />
         </motion.div>
 
         {/* //////////////////////////////    page guides   //
          /////////////// */}
-
-        <PageGuides nextProject={nextProject} />
       </Layout>
     </>
   );
