@@ -15,18 +15,20 @@ import Layout from '../components/Layout';
 
 // import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/posty/user_story.webp';
-import ComAud from '../assets/posty/oneup_ompetitive-audit.jpg';
+import User from '../assets/posty/user_story.png';
+import ComAud from '../assets/posty/posty_ompetitive-audit.png';
 import PaperWireframe from '../assets/posty/pepar-wf-1.png';
 import DigitlaWirefame1 from '../assets/posty/digital_wireframes-1.png';
 import LowFiProto from '../assets/posty/lf-wireframes.webp';
 import UsabilityStdy from '../assets/posty/Usability study findings.webp';
-import RefineDes1 from '../assets/posty/refine_1.webp';
-import RefineDes2 from '../assets/posty/refine_2.webp';
+import RefineDes1 from '../assets/posty/refine_1.png';
+import RefineDes2 from '../assets/posty/refine_2.png';
 import MockUp from '../assets/posty/mockup_1.webp';
-import Branding from '../assets/posty/branding.png';
 import Process from '../assets/posty/process.png';
 import HfProto from '../assets/posty/hf-wireframes.webp';
+import Colors from '../assets/posty/posty_brand-colors.png';
+import IconFont from '../assets/posty/posty_brand-iconFont.png';
+import ProjLogo from '../assets/posty/posty_brand-logo.png';
 
 // import '../styles/components/projects-template.scss';
 import '../styles/components/uxprojects.scss';
@@ -329,6 +331,10 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_01">
                     <img src={User} loading="lazy" />
                   </div>
+                </section>
+                <br />
+                <br />
+                <section id="cap">
                   <div className="flex_01">
                     <img src={ComAud} />
                   </div>
@@ -556,7 +562,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                1f2336
+
                 {/* ================================================
         =========== // Branding
         ================================================  */}
@@ -574,7 +580,21 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={Branding} loading="lazy" />
+                    <img src={Colors} loading="lazy" />
+                  </div>
+                </section>
+                <br />
+                <br />
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={IconFont} loading="lazy" />
+                  </div>
+                </section>
+                <br />
+                <br />
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={ProjLogo} loading="lazy" />
                   </div>
                 </section>
                 {/* ================================================
