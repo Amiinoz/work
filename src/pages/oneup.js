@@ -13,20 +13,23 @@ import useWindowSize from '../components/useWindowSize';
 
 import Layout from '../components/Layout';
 
-import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/posty/user_story.jpg';
-import ComAud from '../assets/posty/oneup_ompetitive-audit.jpg';
-import PaperWireframe from '../assets/posty/pepar-wf-1.png';
-import DigitlaWirefame1 from '../assets/posty/digital_wireframes-1.png';
-import LowFiProto from '../assets/posty/lf-wireframes.webp';
-import UsabilityStdy from '../assets/posty/Usability study findings.webp';
-import RefineDes1 from '../assets/posty/refine_1.webp';
-import RefineDes2 from '../assets/posty/refine_2.webp';
-import MockUp from '../assets/posty/mockup_1.webp';
-import Branding from '../assets/posty/branding.png';
+import User from '../assets/oneup/user_story.png';
+// import PaperWireframe from '../assets/posty/pepar-wf-1.png';
+import DigitlaWirefame1 from '../assets/oneup/oneup_wireframes-1.png';
+import LowFiProto from '../assets/oneup/oneup_lowFi-proto.png';
+import UsabilityStdy1 from '../assets/oneup/oneup_usablity-para.png';
+import UsabilityStdy2 from '../assets/oneup/oneup_usability-find.png';
 
-import HfProto from '../assets/posty/hf-wireframes.webp';
+import RefineDes1 from '../assets/oneup/oneup_refine-1.png';
+import MockUp from '../assets/oneup/oneup_mockup1.webp';
+import Sitemap from '../assets/oneup/oneup_sitemap.png';
+
+import HfProto from '../assets/oneup/oneup_hiFi-proto.webp';
+import ComAudit from '../assets/oneup/oneup-comm.png';
+import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
+import UserJourney from '../assets/oneup/oneup_user-journey.png';
+import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 
 import '../styles/components/projects-template.scss';
 
@@ -154,7 +157,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 />
                 <motion.div className="proj-container">
                   <motion.span className="title">
-                    <motion.span variants={letter}>Posty</motion.span>
+                    <motion.span variants={letter}>OneUP</motion.span>
                   </motion.span>
                 </motion.div>
               </div>
@@ -219,19 +222,22 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <ul className="year">
                     <li>PRODUCT</li>
                     <li>
-                      I am developing an app to help Students and Busy workers
-                      manage their social media accounts.
+                      I amm creating an app to help inner-city teens who
+                      struggle to balance school their environment and family
+                      dynamics connect with mentors who have once been in their
+                      shoes.
                     </li>
                   </ul>
                   <ul className="year">
                     <li>PRODUCT DURATION</li>
-                    <li>July 22</li>
+                    <li>September 22</li>
                   </ul>
                   <ul className="year">
                     <li>THE PROBLEM</li>
                     <li>
-                      Busy workers and commuters lack the time necessary to
-                      prepare a meal.
+                      Inner-city youth find it difficult to navigate the
+                      Canadian education system as well as their environment and
+                      parents who are unreachable.
                     </li>
                   </ul>
                 </div>
@@ -254,10 +260,9 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <ul className="role">
                     <li>THE GOAL</li>
                     <li>
-                      Students and busy office workers will benefit from this
-                      app by being able to manage social media apps with
-                      pomodoro timers. Efficacy will be measured by analyzing
-                      the time saved and the emotions of the customer
+                      By connecting and receiving guidance and mentorship from
+                      University students who have once walked in their shoes,
+                      disadvantaged youth may benefit from my app.
                     </li>
                   </ul>
                 </div>
@@ -285,14 +290,15 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>USER RESEARCH SUMMARY</li>
                       <li>
-                        In order to determine if my product will be useful to my
-                        target audience, I have conducted interviews, empathy
-                        maps, and unmoderated usability studies. I identified
-                        students and professionals who are busy but would like
-                        to balance their work and social lives as the primary
-                        users of my app. A user group and research confirmed
-                        that users were overwhelmed by information overload and
-                        found it difficult to balance work and life
+                        A primary user group identified through research is
+                        young black teens who struggle to navigate Canadian
+                        education system and their needs. The study confirmed
+                        initial assumptions about ideal users, but also revealed
+                        that a number of factors preventing users from
+                        navigating the educational system and succeeding,
+                        including socioeconomic, institutions, environment,
+                        racism, and a lack of communication between parents and
+                        children.
                       </li>
                     </ul>
                   </div>
@@ -301,10 +307,72 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_01">
                     <img src={User} />
                   </div>
-                  <div className="flex_01">
-                    <img src={ComAud} />
+                </section>
+
+                {/* ================================================
+        =========== // Competitive audit
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>
+                    Competitive
+                    <br /> audit{' '}
+                  </h1>
+                  <h3>Analysis</h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>SUMMARY</li>
+                      <li>
+                        I researched a few companies were done, however not much
+                        was learned as most of these companies are for-profit
+                      </li>
+                    </ul>
                   </div>
                 </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={ComAudit} />
+                  </div>
+                </section>
+
+                {/* ================================================
+        =========== // Ideation
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>Ideation</h1>
+                  <h3>Crazy 8 Design</h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>INITIAL SKETCHES</li>
+                      <li>
+                        From the beginning, my sketching goals were to place the
+                        user at the center of everything the app does
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={Ideation} />
+                  </div>
+                </section>
+                {/* ================================================
+        =========== // User journey
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>User</h1>
+                  <h3>Zaks journey</h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>UNDERSTANDING THE USER</li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={UserJourney} />
+                  </div>
+                </section>
+
                 {/* ================================================
                         =========== // Starting the design
                         ================================================  */}
@@ -314,35 +382,16 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Starting <br /> the designing
                   </h1>
                   <h3>
-                    Paper wire-frames <br /> Digital wire-frames <br /> Low
-                    fidelity prototypes <br />
+                    Digital wire-frames <br /> Low fidelity prototypes <br />
                     Usability study
                   </h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>PAPER WIREFRAMES</li>
-                      <li>
-                        The first irritation of the paper wireframes was to see
-                        if I can address users pain points
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <section id="cap">
-                  <div className="flex_01">
-                    <img src={PaperWireframe} />
-                  </div>
-                </section>
-                <section id="info" className="flex_info">
-                  <h1>
-                    Starting <br /> the designing
-                  </h1>
-                  <div className="flex_info_item">
-                    <ul className="year">
                       <li>DIGITAL WIREFRAMES</li>
                       <li>
-                        The goal for the first irritation was to address users
-                        pain points
+                        As a result of the ideation process, I have created
+                        initial designs for the OneUp app, with the focus on
+                        providing an easy method for finding and booking mentors
                       </li>
                     </ul>
                   </div>
@@ -352,6 +401,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={DigitlaWirefame1} />
                   </div>
                 </section>
+
                 <section id="info" className="flex_info">
                   <h1>
                     Starting <br /> the designing
@@ -391,22 +441,24 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h1>
                     Starting <br /> the designing
                   </h1>
+                  <h3>
+                    Usability study: parameters <br /> Usability study: findings
+                  </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>USABILITY STUDY FINDINGS</li>
-                      <li>
-                        The usability studies were carried out twice by me. The
-                        results of the first study guided the design process
-                        from wireframes to mockups. By using a high-fidelity
-                        prototype, the second study revealed what aspects of the
-                        mockups needed to be improved.
-                      </li>
+                      <li></li>
                     </ul>
                   </div>
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={UsabilityStdy} />
+                    <img src={UsabilityStdy1} />
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={UsabilityStdy2} />
                   </div>
                 </section>
                 {/* ================================================
@@ -415,20 +467,17 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="info" className="flex_info">
                   <h1>
                     Refining <br />
-                    the design <br /> based on research
+                    the design
                   </h1>
-                  <h3>Before and afters</h3>
+                  <h3>
+                    Mockups <br />
+                    High-fidelity prototype
+                    <br />
+                    Accessibility
+                  </h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>USERS WANTED SEARCH INPUT FIELD</li>
-                      <li>
-                        5 out of 5 asked for why there was no search box to look
-                        for their social media accounts
-                        <br />
-                        <br />
-                        “Wish there was easier way to look for social media
-                        accounts” (P1)
-                      </li>
+                      <li>BEFORE AND AFTERS</li>
                     </ul>
                   </div>
                 </section>
@@ -437,28 +486,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={RefineDes1} />
                   </div>
                 </section>
-                <section id="info" className="flex_info">
-                  <h1>
-                    Refining <br />
-                    the design <br /> based on research
-                  </h1>
-                  <h3>Before and afters</h3>
-                  <div className="flex_info_item">
-                    <ul className="year">
-                      <li>PEOPLE WANTED CLEAR FOCUS TIMER </li>
-                      <li>
-                        2 out have clicked the focus banner image to choose time
-                        “Wish there was easier way to look for social media
-                        accounts” (P1)
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <section id="cap">
-                  <div className="flex_01">
-                    <img src={RefineDes2} />
-                  </div>
-                </section>
+
                 {/* ================================================
         =========== // mockups
         ================================================  */}
@@ -506,43 +534,68 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>ONE</li>
                       <li>
-                        Easy way to input time for focusing, instead of
-                        scrolling to set time
+                        The first accessibility consideration would be a voice
+                        to text search
                       </li>
                     </ul>
                     <ul className="year">
                       <li>TWO</li>
                       <li>
-                        Adding night mode to accommodate visually challenge
-                        users
+                        Next accessibility consideration for OneUp app would be
+                        larger fonts
                       </li>
                     </ul>
                     <ul className="year">
                       <li>THREE</li>
-                      <li>Option to enlarge fonts for better readability</li>
+                      <li>Night mode for users with sensitive eyes</li>
                     </ul>
                   </div>
                 </section>
                 {/* ================================================
-        =========== // Branding
+        =========== // Responsive Design
         ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
-                    Banding <br />{' '}
+                    Responsive Design
+                    <br />{' '}
                   </h1>
                   <h3>
-                    Colors <br /> Icons <br /> Typography <br /> Logo
+                    Information architecture <br /> Responsive design
                   </h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>BRANDING</li>
+                      <li>SITEMAP</li>
+                      <li>
+                        The sitemap is meant to organize a table of contents for
+                        the website, which is important to the credibility and
+                        SEO of the website.
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={Sitemap} />
+                  </div>
+                </section>
+                <section id="info" className="flex_info">
+                  <h1>
+                    Responsive Design
+                    <br />{' '}
+                  </h1>
+                  <h3>
+                    Information architecture <br /> Responsive design
+                  </h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>RESPONSIVE DESIGN</li>
                       <li></li>
                     </ul>
                   </div>
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={Branding} />
+                    <img src={ResDesign} />
                   </div>
                 </section>
                 {/* ================================================
@@ -558,17 +611,17 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>IMPACT</li>
                       <li>
-                        The app makes users feel like they are focus and
-                        intentional about their time by consuming their social
-                        media in interval of between study and work
+                        Users expressed that the app can be very helpful since
+                        the mentors are from their community and they can relate
                       </li>
                     </ul>
                     <ul className="year">
                       <li>WHAT I LEARNED</li>
                       <li>
-                        Through the design of this app, I have learned a lot
-                        about performing good research and usability in order to
-                        put the usr at the centre of everything you do.{' '}
+                        What I learned trying to solve the challenges inner-city
+                        youth face in their daily life is huge and can not be
+                        solved by one app, however, matching mentors with youth
+                        could be a tremendous help.
                       </li>
                     </ul>
                   </div>
@@ -586,20 +639,19 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>ONE</li>
                       <li>
-                        Conduct 3rd round usability study, to improve overall
-                        use
+                        Present my solution to the community youth leaders and
+                        get their input,
                       </li>
                     </ul>
                     <ul className="year">
                       <li>TWO</li>
-                      <li>Viability to implementing user requested features</li>
+                      <li>But a team of developers develops the app itself</li>
                     </ul>
                     <ul className="year">
                       <li>THREE</li>
                       <li>
-                        Present to community leaders and to see if there is
-                        interest in going forward to raise funds to develop the
-                        app
+                        Perform two additional usability tests with community
+                        input
                       </li>
                     </ul>
                   </div>
@@ -607,7 +659,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </main>
           </div>
-          <ProjectsButton />
         </motion.div>
 
         {/* //////////////////////////////    page guides   //

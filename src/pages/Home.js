@@ -63,7 +63,6 @@ const Home = () => {
         <div className="loader-wrapper absolute">
           <div className="logo">
             <img src={Spinner} alt="mo magans portfolio preloader" />
-            {/* <h2>Mo Magan &apos; s Portfolio</h2> */}
           </div>
         </div>
       ) : (
