@@ -15,18 +15,21 @@ import Layout from '../components/Layout';
 
 import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/posty/user_story.jpg';
-import ComAud from '../assets/posty/oneup_ompetitive-audit.jpg';
-import PaperWireframe from '../assets/posty/pepar-wf-1.png';
-import DigitlaWirefame1 from '../assets/posty/digital_wireframes-1.png';
-import LowFiProto from '../assets/posty/lf-wireframes.webp';
-import UsabilityStdy from '../assets/posty/Usability study findings.webp';
-import RefineDes1 from '../assets/posty/refine_1.webp';
-import RefineDes2 from '../assets/posty/refine_2.webp';
-import MockUp from '../assets/posty/mockup_1.webp';
-import Branding from '../assets/posty/branding.png';
+import User from '../assets/tessa/tessa_user-journey.png';
+import ComAud from '../assets/tessa/tessa_com-audit.png';
+import SiteMap from '../assets/tessa/tessa_siteMap.png';
+import PaperWireframe1 from '../assets/tessa/tessa_paper-wf1.png';
+import PaperWireframe2 from '../assets/tessa/tessa_paper-wf2.png';
 
-import HfProto from '../assets/posty/hf-wireframes.webp';
+import DigitlaWirefame1 from '../assets/tessa/tessa_digital-wf1.png';
+import DigitlaWirefame2 from '../assets/tessa/tessa_digital-wf2.png';
+
+import LowFiProto from '../assets/tessa/tessa_low-fi.png';
+import UsabilityStdy from '../assets/tessa/tessa_usability-study.png';
+import RefineDes1 from '../assets/tessa/tessa_refine-design1.png';
+import RefineDes2 from '../assets/tessa/tessa_refine-design2.png';
+import MockUp1 from '../assets/tessa/tessa_mockup-1.png';
+import MockUp2 from '../assets/tessa/tessa_mockup-2.png';
 
 import '../styles/components/projects-template.scss';
 
@@ -219,28 +222,29 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <ul className="year">
                     <li>PRODUCT</li>
                     <li>
-                      I am developing an app to help Students and Busy workers
-                      manage their social media accounts.
+                      Design web app for existing shoe store, the store’s goal
+                      is to offers stylish quality made shoes for all ages in
+                      affordable price. The target user is between 15 to 45
+                      years old.
                     </li>
                   </ul>
                   <ul className="year">
                     <li>PRODUCT DURATION</li>
-                    <li>July 22</li>
+                    <li>September 2022 </li>
                   </ul>
                   <ul className="year">
                     <li>THE PROBLEM</li>
                     <li>
-                      Busy workers and commuters lack the time necessary to
-                      prepare a meal.
+                      Despite the business good reputation and loyal local
+                      customers, it does not exist online and loses valuable
+                      sales.
                     </li>
                   </ul>
                 </div>
                 <div className="flex_info_item">
                   <ul className="role">
                     <li>MY ROLE</li>
-                    <li>
-                      UX designer designing an app from conception to delivery
-                    </li>
+                    <li>UX designer, UX researcher.</li>
                   </ul>
                   <ul className="role">
                     <li>RESPONSIBILITIES</li>
@@ -254,10 +258,8 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <ul className="role">
                     <li>THE GOAL</li>
                     <li>
-                      Students and busy office workers will benefit from this
-                      app by being able to manage social media apps with
-                      pomodoro timers. Efficacy will be measured by analyzing
-                      the time saved and the emotions of the customer
+                      What can we do to establish an online presence, attract
+                      new users, and increase revenue
                     </li>
                   </ul>
                 </div>
@@ -285,14 +287,12 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>USER RESEARCH SUMMARY</li>
                       <li>
-                        In order to determine if my product will be useful to my
-                        target audience, I have conducted interviews, empathy
-                        maps, and unmoderated usability studies. I identified
-                        students and professionals who are busy but would like
-                        to balance their work and social lives as the primary
-                        users of my app. A user group and research confirmed
-                        that users were overwhelmed by information overload and
-                        found it difficult to balance work and life
+                        As part of my research, I conducted nine interviews with
+                        users who like to shop online and buy shoes. The main
+                        objective was to discover user needs that were not being
+                        met by existing online shoe stores. As a result, I have
+                        learned that quality and the user experience journey are
+                        not prioritized.
                       </li>
                     </ul>
                   </div>
@@ -301,10 +301,41 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_01">
                     <img src={User} />
                   </div>
+                </section>
+                <br />
+                <br />
+                <br />
+                <section id="cap">
                   <div className="flex_01">
                     <img src={ComAud} />
                   </div>
                 </section>
+                {/* ================================================
+                        =========== // Sitemap
+                        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>
+                    Sitemap <br />
+                  </h1>
+                  <h3></h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>SITEMAP</li>
+                      <li>
+                        Navigation and product and promotion ads were the most
+                        common challenges experienced by e-commerce users.
+                        Creating a really easy-to-navigate structure and
+                        reducing clutter and adds was my goal.
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={SiteMap} />
+                  </div>
+                </section>
+
                 {/* ================================================
                         =========== // Starting the design
                         ================================================  */}
@@ -314,25 +345,53 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Starting <br /> the designing
                   </h1>
                   <h3>
-                    Paper wire-frames <br /> Digital wire-frames <br /> Low
-                    fidelity prototypes <br />
+                    Paper wire-frames <br /> Paper screen size variation(s){' '}
+                    <br /> Digital screen size variation(s) <br /> Low fidelity
+                    prototypes <br />
                     Usability study
                   </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>PAPER WIREFRAMES</li>
                       <li>
-                        The first irritation of the paper wireframes was to see
-                        if I can address users pain points
+                        In five different versions, I sketched paper wire frames
+                        for my main pages and selected one section based on the
+                        user journeys and pain points. The user has limited time
+                        before he or she loses interest in the site, so this in
+                        this example the primary landing page variations.
                       </li>
                     </ul>
                   </div>
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={PaperWireframe} />
+                    <img src={PaperWireframe2} />
                   </div>
                 </section>
+
+                <section id="info" className="flex_info">
+                  <h1>
+                    Starting <br /> the designing
+                  </h1>
+                  <h3>Paper wireframe screen size variation(s)</h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>PAPER WIREFRAMES</li>
+                      <li>
+                        Since 80% of e-commerce sites cater to small devices, my
+                        plan was to create a site that could be accessed from
+                        any device.
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={PaperWireframe1} />
+                  </div>
+                </section>
+
+                {/* Digital wireframes  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Starting <br /> the designing
@@ -340,10 +399,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>DIGITAL WIREFRAMES</li>
-                      <li>
-                        The goal for the first irritation was to address users
-                        pain points
-                      </li>
+                      <li>The goal is always to address users pain points</li>
                     </ul>
                   </div>
                 </section>
@@ -352,6 +408,24 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={DigitlaWirefame1} />
                   </div>
                 </section>
+
+                <section id="info" className="flex_info">
+                  <h1>
+                    Starting <br /> the designing
+                  </h1>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>DIGITAL WIREFRAMES SCREEN SIZE VARIATION(S)</li>
+                      <li>The goal is always to address users pain points</li>
+                    </ul>
+                  </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={DigitlaWirefame2} />
+                  </div>
+                </section>
+
                 <section id="info" className="flex_info">
                   <h1>
                     Starting <br /> the designing
@@ -360,9 +434,9 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>LOW FIDELITY PROTOTYPES</li>
                       <li>
-                        I developed a low-fidelity prototype based on the
-                        digital wireframes. I connected social media accounts
-                        and set up a Pomodoro timer as the primary user flow.
+                        A prototype will be created based on a user flow where
+                        the user searches for shoes, selects the color, size,
+                        and orders the shoes based on the information provided.
                         <br />
                         <h3>
                           {' '}
@@ -384,7 +458,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="cap">
                   <div className="flex_01">
                     <img src={LowFiProto} />
-                    {/* <img src='../assets/posty/low-fi-prototype.svg'> */}
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -394,13 +467,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>USABILITY STUDY FINDINGS</li>
-                      <li>
-                        The usability studies were carried out twice by me. The
-                        results of the first study guided the design process
-                        from wireframes to mockups. By using a high-fidelity
-                        prototype, the second study revealed what aspects of the
-                        mockups needed to be improved.
-                      </li>
+                      <li></li>
                     </ul>
                   </div>
                 </section>
@@ -420,14 +487,12 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h3>Before and afters</h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>USERS WANTED SEARCH INPUT FIELD</li>
+                      <li>Mockups</li>
                       <li>
-                        5 out of 5 asked for why there was no search box to look
-                        for their social media accounts
+                        One of the user insights was that buttons to choose size
+                        and color did not work, and my goal was to fix that by
+                        making it easy to do so.
                         <br />
-                        <br />
-                        “Wish there was easier way to look for social media
-                        accounts” (P1)
                       </li>
                     </ul>
                   </div>
@@ -437,28 +502,14 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={RefineDes1} />
                   </div>
                 </section>
-                <section id="info" className="flex_info">
-                  <h1>
-                    Refining <br />
-                    the design <br /> based on research
-                  </h1>
-                  <h3>Before and afters</h3>
-                  <div className="flex_info_item">
-                    <ul className="year">
-                      <li>PEOPLE WANTED CLEAR FOCUS TIMER </li>
-                      <li>
-                        2 out have clicked the focus banner image to choose time
-                        “Wish there was easier way to look for social media
-                        accounts” (P1)
-                      </li>
-                    </ul>
-                  </div>
-                </section>
+                <br />
+                <br />
                 <section id="cap">
                   <div className="flex_01">
                     <img src={RefineDes2} />
                   </div>
                 </section>
+
                 {/* ================================================
         =========== // mockups
         ================================================  */}
@@ -476,26 +527,18 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={MockUp} />
+                    <img src={MockUp1} />
                   </div>
                 </section>
-                <section id="info" className="flex_info">
-                  <h1>
-                    High fidelity <br />
-                    Wireframes{' '}
-                  </h1>
-                  <div className="flex_info_item">
-                    <ul className="year">
-                      <li>HIGH FIDELITY WIRE-FRAMES</li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </section>
+                <br />
+                <br />
+                <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={HfProto} />
+                    <img src={MockUp2} />
                   </div>
                 </section>
+
                 {/* ================================================
         =========== // Accessability consideration
         ================================================  */}
@@ -506,73 +549,44 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>ONE</li>
                       <li>
-                        Easy way to input time for focusing, instead of
-                        scrolling to set time
+                        I used large check boxes to choose colors and sizes
                       </li>
                     </ul>
                     <ul className="year">
                       <li>TWO</li>
-                      <li>
-                        Adding night mode to accommodate visually challenge
-                        users
-                      </li>
+                      <li>Navigating the site is easy and clean</li>
                     </ul>
                     <ul className="year">
                       <li>THREE</li>
-                      <li>Option to enlarge fonts for better readability</li>
+                      <li>easy to follow call-to-action buttons</li>
                     </ul>
                   </div>
                 </section>
                 {/* ================================================
-        =========== // Branding
+        =========== // Take away
         ================================================  */}
                 <section id="info" className="flex_info">
-                  <h1>
-                    Banding <br />{' '}
-                  </h1>
-                  <h3>
-                    Colors <br /> Icons <br /> Typography <br /> Logo
-                  </h3>
-                  <div className="flex_info_item">
-                    <ul className="year">
-                      <li>BRANDING</li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </section>
-                <section id="cap">
-                  <div className="flex_01">
-                    <img src={Branding} />
-                  </div>
-                </section>
-                {/* ================================================
-        =========== // Going forward
-        ================================================  */}
-                <section id="info" className="flex_info">
-                  <h1>
-                    Going <br />
-                    forward{' '}
-                  </h1>
-                  <h3>Takeaways </h3>
+                  <h1>Takeaways</h1>
+                  <h3>Considerations </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>IMPACT</li>
                       <li>
-                        The app makes users feel like they are focus and
-                        intentional about their time by consuming their social
-                        media in interval of between study and work
+                        Users shared that the design was minimal and clear, and
+                        it was easy to navigate
                       </li>
                     </ul>
                     <ul className="year">
                       <li>WHAT I LEARNED</li>
                       <li>
-                        Through the design of this app, I have learned a lot
-                        about performing good research and usability in order to
-                        put the usr at the centre of everything you do.{' '}
+                        What I learned from this research and usability test is
+                        that shopping can be fun if we place the user in the
+                        center of everything we do.
                       </li>
                     </ul>
                   </div>
                 </section>
+
                 {/* ================================================
         =========== // Next steps
         ================================================  */}
@@ -585,22 +599,15 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>ONE</li>
-                      <li>
-                        Conduct 3rd round usability study, to improve overall
-                        use
-                      </li>
+                      <li>Conduct another usability testing</li>
                     </ul>
                     <ul className="year">
                       <li>TWO</li>
-                      <li>Viability to implementing user requested features</li>
+                      <li>See if everything from client needs have been met</li>
                     </ul>
                     <ul className="year">
                       <li>THREE</li>
-                      <li>
-                        Present to community leaders and to see if there is
-                        interest in going forward to raise funds to develop the
-                        app
-                      </li>
+                      <li>Full stack development</li>
                     </ul>
                   </div>
                 </section>
