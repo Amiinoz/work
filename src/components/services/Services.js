@@ -12,7 +12,7 @@ const accordionIds = [
   {
     id: 0,
     title: 'Design',
-    results: ['UX design'],
+    results: ['UX design from conception to delivery'],
   },
   {
     id: 1,
@@ -58,7 +58,7 @@ const Services = ({ text }) => {
       <SectionHeader
         title="Service"
         subtitle="Passion"
-        heading="User centered design and development"
+        heading="Design and Development"
       />
       <div
         ref={aboutRef}
@@ -81,8 +81,7 @@ const Services = ({ text }) => {
           data-scroll-delay="0.03"
           data-scroll-speed="0.6"
         >
-          <h4>What i bring to the table?</h4>
-
+          <h4>What I am currently working on?</h4>
           <p>
             I assisted small business and stakeholders in developing a viable
             product for their business by improving the user experience through
@@ -92,12 +91,29 @@ const Services = ({ text }) => {
             and functional.
           </p>
 
-          <h4>Why I love to work this industry?</h4>
-
+          <h4>What i bring to the table?</h4>
           <p>
-            The entire design process excites me, from the conception to the
-            research to the end product, always placing the user at the center
-            of every step.
+            As someone with experience in the creative industry, I have
+            developed a strong passion for creating beautiful and user-friendly
+            designs. I have a keen eye for detail and a strong focus on
+            delivering amazing user experiences. My goal is always to create the
+            best possible experience for the user, whether it’s through a
+            website, app, or any other type of digital product. I truly believe
+            that good design can make a difference in people’s lives and I am
+            very excited to be able to contribute to making the world a more
+            beautiful and user-friendly place.
+          </p>
+
+          <h4>Why I love to work this industry?</h4>
+          <p>
+            I love the design industry because it is constantly changing and
+            evolving. There is always something new to learn, and new
+            technologies and approaches to design are constantly emerging. I
+            also love the challenge of designing for different user needs and
+            find the process of designing solutions to problems both creatively
+            and intellectually stimulating. The design industry is also a great
+            place to collaborate with others and build relationships, both
+            professional and personal.
           </p>
 
           <span>

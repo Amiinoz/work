@@ -70,7 +70,8 @@
   &__accordion {
     width: 70%;
     margin: 31px 0 0 106px;
-    margin-top: -50vh;
+    // margin-top: -50vh;
+    margin-top: -16vh;
 
     @include media('<=tablet') {
       margin-left: 14px;

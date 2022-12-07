@@ -44,7 +44,7 @@ const Connect = () => {
       <SectionHeader
         title="Contact"
         subtitle="Say hello"
-        heading="Have a project in mind? Lets work together"
+        heading="Lets collaborate"
       />
       <section className="contact-container" data-scroll-section>
         <div className="contact-container_intro"></div>
