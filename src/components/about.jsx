@@ -4,9 +4,28 @@ import '../styles/components/about.scss';
 
 import Mo from '../assets/profile.png';
 import Signature from '../assets/signature.svg';
-import Github from '../assets/social/socialgithub.svg';
-import Behance from '../assets/social/socialbehance.svg';
-import Linked from '../assets/social/sociallinked.svg';
+
+import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
+
+const socialLinks = [
+  {
+    url: 'https://github.com/Amiinoz',
+    component: <GitHub />,
+  },
+
+  {
+    url: 'https://www.behance.net/momagan',
+    component: <Dribbble />,
+  },
+  {
+    url: 'https://twitter.com/dev_mos',
+    component: <Twitter />,
+  },
+  {
+    url: 'https://www.linkedin.com/in/momagan/',
+    component: <Linkedin />,
+  },
+];
 
 const About = () => {
   return (
@@ -49,32 +68,15 @@ const About = () => {
             />
           </div>
 
-          <div
-            className="social__icons"
-            data-scroll
-            data-scroll-delay="0.02"
-            data-scroll-speed="0.5"
-          >
-            <a
-              href="https://github.com/Amiinoz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Github} alt="github logo" />
-            </a>
-
-            <a href="https://www.behance.net/momagan">
-              <img src={Behance} alt="behance logo" />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/momagan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Linked} alt="linkedlin logo" />
-            </a>
-          </div>
+          <ul className="social__icons">
+            {socialLinks.map(link => (
+              <li key={link.url}>
+                <a style={{ display: 'table-cell' }} href={link.url}>
+                  {link.component}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </>

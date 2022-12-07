@@ -1,11 +1,27 @@
 import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
-import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
 import cn from 'classnames';
 
 import '../../../styles/components/menuContent.scss';
 
 const internalLinks = [
+  {
+    url: '/oneup/',
+    component: <span>OneUp</span>,
+    src: 'https://images.unsplash.com/photo-1578832842586-514eb4695010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2576&q=80',
+  },
+  {
+    url: '/tessa/',
+    component: <span>Tessa</span>,
+    src: 'https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+  },
+
+  {
+    url: '/posty/',
+    component: <span>Posty</span>,
+    src: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+  },
+
   {
     url: '/Favetees/',
     component: <span>favetees</span>,
@@ -33,31 +49,6 @@ const internalLinks = [
     component: <span>vsCode theme</span>,
     src: 'https://images.unsplash.com/photo-1596275281743-e7399c7bdfa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2524&q=80',
   },
-  {
-    url: '/blog/',
-    component: <span>blog</span>,
-    src: 'https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
-  },
-];
-
-const externalLinks = [
-  {
-    url: 'https://github.com/Amiinoz',
-    component: <GitHub />,
-  },
-
-  {
-    url: 'https://www.behance.net/momagan',
-    component: <Dribbble />,
-  },
-  {
-    url: 'https://twitter.com/dev_mos',
-    component: <Twitter />,
-  },
-  {
-    url: 'https://www.linkedin.com/in/momagan/',
-    component: <Linkedin />,
-  },
 ];
 
 export default function MenuContent() {
@@ -74,15 +65,6 @@ export default function MenuContent() {
                   {link.component}
                 </a>
                 <img src={link.src} />
-              </li>
-            ))}
-          </ul>
-          <ul className="external-nav-links">
-            {externalLinks.map(link => (
-              <li key={link.url}>
-                <a style={{ display: 'table-cell' }} href={link.url}>
-                  {link.component}
-                </a>
               </li>
             ))}
           </ul>
