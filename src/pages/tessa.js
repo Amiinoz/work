@@ -13,7 +13,6 @@ import useWindowSize from '../components/useWindowSize';
 
 import Layout from '../components/Layout';
 
-import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
 import User from '../assets/tessa/tessa_user-journey.png';
 import ComAud from '../assets/tessa/tessa_com-audit.png';
@@ -612,15 +611,13 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
               </div>
+              <PageGuides nextProject="./posty" />
             </main>
           </div>
-          <ProjectsButton />
         </motion.div>
 
         {/* //////////////////////////////    page guides   //
          /////////////// */}
-
-        <PageGuides nextProject={nextProject} />
       </Layout>
     </>
   );

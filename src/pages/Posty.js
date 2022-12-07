@@ -657,10 +657,10 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
               </div>
+              <PageGuides nextProject="./Favetees" />
             </main>
           </div>
           {/* <ProjectsButton /> */}
-          <PageGuides nextProject={nextProject} />
         </motion.div>
 
         {/* //////////////////////////////    page guides   //

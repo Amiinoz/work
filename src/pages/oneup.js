@@ -15,7 +15,6 @@ import Layout from '../components/Layout';
 
 import PageGuides from '../components/page-guides/page-guides';
 import User from '../assets/oneup/user_story.png';
-// import PaperWireframe from '../assets/posty/pepar-wf-1.png';
 import DigitlaWirefame1 from '../assets/oneup/oneup_wireframes-1.png';
 import LowFiProto from '../assets/oneup/oneup_lowFi-proto.png';
 import UsabilityStdy1 from '../assets/oneup/oneup_usablity-para.png';
@@ -657,14 +656,13 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
               </div>
+              <PageGuides nextProject="./tessa" />
             </main>
           </div>
         </motion.div>
 
         {/* //////////////////////////////    page guides   //
          /////////////// */}
-
-        <PageGuides nextProject={nextProject} />
       </Layout>
     </>
   );

@@ -12,7 +12,6 @@ import ScrollForMore from '../scrollForMore';
 import useWindowSize from '../useWindowSize';
 import Layout from '../Layout';
 
-import ProjectsButton from '../../components/work-button/work-button';
 import PageGuides from '../../components/page-guides/page-guides';
 
 import '../../styles/components/projects-template.scss';
@@ -487,6 +486,9 @@ const ProjectsTemplate = ({
                           {projImgTitle4}{' '}
                         </h4>
                         <p className="item__caption-copy">{projImgInfo4}</p>
+                        <br />
+                        <br />
+                        <PageGuides nextProject={nextProject} />
                       </div>
                     </div>
                   </div>
@@ -494,13 +496,10 @@ const ProjectsTemplate = ({
               </div>
             </div>
           </div>
-          <ProjectsButton />
         </motion.div>
 
         {/* //////////////////////////////    page guides   //
          /////////////// */}
-
-        <PageGuides nextProject={nextProject} />
       </Layout>
     </>
   );

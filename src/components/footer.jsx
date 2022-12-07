@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="footer__content">
             <div className="copyr">
-              <span>copyright&copy;{new Date().getFullYear()}</span>
+              <span>copyright&copy;{new Date().getFullYear()} momagan</span>
             </div>
           </div>
 
