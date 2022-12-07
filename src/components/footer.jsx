@@ -1,8 +1,27 @@
 import React from 'react';
-import Github from '../assets/social/socialgithub.svg';
-import LinkedIn from '../assets/social/sociallinked.svg';
-import Twitter from '../assets/social/socialtwitter.svg';
+
 import '../styles/components/footer.scss';
+import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
+
+const socialLinks = [
+  {
+    url: 'https://github.com/Amiinoz',
+    component: <GitHub />,
+  },
+
+  {
+    url: 'https://www.behance.net/momagan',
+    component: <Dribbble />,
+  },
+  {
+    url: 'https://twitter.com/dev_mos',
+    component: <Twitter />,
+  },
+  {
+    url: 'https://www.linkedin.com/in/momagan/',
+    component: <Linkedin />,
+  },
+];
 
 const Footer = () => {
   return (
@@ -19,35 +38,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer__social">
-            <span>
-              <a
-                href="https://github.com/Amiinoz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Github} alt="Github site link" />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/momagan/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={LinkedIn} alt="LinkedIn site link" />
-              </a>
-
-              <a
-                href="https://twitter.com/dev_mos"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Twitter} alt="Twitter site link" />
-              </a>
-            </span>
-            <span></span>
-            <span></span>
-          </div>
+          <ul className="footer__social">
+            {socialLinks.map(link => (
+              <li key={link.url}>
+                <a style={{ display: 'table-cell' }} href={link.url}>
+                  {link.component}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </div>

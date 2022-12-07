@@ -59,18 +59,30 @@
       }
     }
     &__social {
+      // margin-top: 65px;
+
       display: flex;
-      position: relative;
-      span {
+      flex-wrap: wrap;
+
+      li {
+        margin-right: 30px;
+        list-style-type: none;
+
         a {
-          position: relative;
-          width: 20px;
-          height: 20px;
-          padding: 8px;
-          img {
-            width: 20px;
-            padding: 7px;
-          }
+          text-decoration: none;
+          color: $black;
+          transform: translate(-100%);
+          // opacity: 0;
+          will-change: transform;
+          transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        a:hover {
+          color: $accent;
+          text-decoration: none;
+          outline: none;
+        }
+        &:last-of-type {
+          margin-right: 0px;
         }
       }
     }
