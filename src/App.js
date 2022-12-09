@@ -24,12 +24,12 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Mo Magan | Portfolio</title>
-          <link rel="canonical" href="https://www.momagan.com/" />
+          <link rel="canonical" href="https://www.momagan.com" />
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/OneUp" component={OneUp} />
-          <Route exact path="/Tessa" component={Tessa} />
+          <Route exact path="/oneup" component={OneUp} />
+          <Route exact path="/tessa" component={Tessa} />
           <Route exact path="/Posty" component={Posty} />
           <Route exact path="/Favetees" component={Favetees} />
           <Route exact path="/Covid19Tracker" component={Covid19Tracker} />
