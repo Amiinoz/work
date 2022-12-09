@@ -77,7 +77,6 @@ const Home = () => {
             <About />
             <Services />
             <Connect />
-            {/* <ProjectsButton /> */}
           </Layout>
         </div>
       )}

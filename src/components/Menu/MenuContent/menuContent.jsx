@@ -24,29 +24,29 @@ const internalLinks = [
 
   {
     url: '/Favetees/',
-    component: <span>favetees</span>,
+    component: <span>Favetees</span>,
     src: 'https://images.unsplash.com/photo-1627225924765-552d49cf47ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
   },
   {
     url: '/Covid19Tracker/',
-    component: <span>covid tracker</span>,
+    component: <span>Covid tracker</span>,
     src: 'https://images.unsplash.com/photo-1613758947307-f3b8f5d80711?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80',
   },
 
   {
     url: '/Portfolio/',
-    component: <span>portfolio</span>,
+    component: <span>Portfolio</span>,
     src: 'https://images.unsplash.com/photo-1517323197145-72f28d311d51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80',
   },
 
   {
     url: '/Garabaldi/',
-    component: <span>garabaldi</span>,
+    component: <span>Garabaldi</span>,
     src: 'https://images.unsplash.com/photo-1622137276463-5d2b374cad11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
   },
   {
     url: '/MosDev/',
-    component: <span>vsCode theme</span>,
+    component: <span>VsCode theme</span>,
     src: 'https://images.unsplash.com/photo-1596275281743-e7399c7bdfa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2524&q=80',
   },
 ];

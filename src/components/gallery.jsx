@@ -132,9 +132,6 @@ export default function Gallery({ src, index, columnOffset }) {
   useEffect(() => {
     // This does not seem to work without a settimeout
     setTimeout(() => {
-      // console.log(ref.current.offsetWidth);
-      // console.log(ref.current.clientWidth);
-      // console.log({ current: ref.current });
       // eslint-disable-next-line prefer-const
       let sections = gsap.utils.toArray('.gallery-item-wrapper');
 

@@ -30,7 +30,9 @@ const Footer = () => {
         <div className="footer">
           <div className="footer__info">
             <p>+1.587.284.1084</p>
-            <p>momagan@gmail.com</p>
+            <a href="mailto:momagan@gmail.com?">
+              <p>momagan@gmail.com</p>
+            </a>
           </div>
           <div className="footer__content">
             <div className="copyr">

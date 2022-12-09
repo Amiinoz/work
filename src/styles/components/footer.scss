@@ -42,6 +42,14 @@
       font-weight: 600;
       line-height: 8px;
     }
+    a {
+      text-decoration: none;
+      outline: none;
+      color: black;
+    }
+    a:hover {
+      color: $accent;
+    }
     &__content {
       font-size: 18px;
       font-weight: 600;

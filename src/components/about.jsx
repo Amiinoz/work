@@ -39,12 +39,16 @@ const About = () => {
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
           <p data-scroll="" data-offset="2.8">
-            My name is Mohamed Magan, and I am a user experience designer and
-            front-end developer. Passionate about design and development, humble
-            and easy going, I value collaboration, and I enjoy seeing people
-            succeed. Playing soccer and basketball in my spare time keeps me
-            active. I also enjoy photography and fashion. Coaching amateur
-            sports in the community keeps me grounded
+            My name is Mohamed Magan, and I am Creative developer and Ux
+            designer. I have a passion for designing and developing creative
+            solutions that are both user-friendly and visually appealing. I
+            strive to create designs that are not only aesthetically pleasing,
+            but also intuitive and easy to use. I am always looking for new ways
+            to improve the user experience, and I firmly believe that good
+            design should be accessible to everyone. I am humble and easy going,
+            I value collaboration, and I enjoy seeing people succeed. Playing
+            soccer and basketball in my spare time keeps me active, and
+            volunteering in the community keeps me grounded.
           </p>
         </div>
 

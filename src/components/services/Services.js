@@ -12,7 +12,14 @@ const accordionIds = [
   {
     id: 0,
     title: 'Design',
-    results: ['UX design from conception to delivery'],
+    results: [
+      'UX design',
+      'User research',
+      'Information architecture',
+      'Interaction design',
+      'Visual design',
+      'Usability testing',
+    ],
   },
   {
     id: 1,
