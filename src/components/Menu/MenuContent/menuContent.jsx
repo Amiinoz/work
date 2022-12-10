@@ -8,7 +8,7 @@ const internalLinks = [
   {
     url: '/oneup/',
     component: <span>OneUp</span>,
-    src: 'https://images.unsplash.com/photo-1578832842586-514eb4695010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2576&q=80',
+    src: require('../../../assets/oneup/oneup_banner.png').default,
   },
   {
     url: '/tessa/',
@@ -43,11 +43,6 @@ const internalLinks = [
     url: '/Garabaldi/',
     component: <span>Garabaldi</span>,
     src: 'https://images.unsplash.com/photo-1622137276463-5d2b374cad11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
-  },
-  {
-    url: '/MosDev/',
-    component: <span>VsCode theme</span>,
-    src: 'https://images.unsplash.com/photo-1596275281743-e7399c7bdfa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2524&q=80',
   },
 ];
 

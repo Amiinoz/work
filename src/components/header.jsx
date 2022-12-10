@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import ScrollForMore from './scrollForMore';
 
-import '../styles/components/header.scss';
+// import '../styles/components/header.scss';
+import '../styles/App.scss';
 
 const Header = () => {
   return (

@@ -1,11 +1,12 @@
 import React from 'react';
 import SectionHeader from './section-header/section-header';
-import '../styles/components/about.scss';
+// import '../styles/components/about.scss';
+import '../styles/App.scss';
 
 import Mo from '../assets/profile.png';
 import Signature from '../assets/signature.svg';
 
-import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
+import { GitHub, Linkedin, Dribbble } from 'react-feather';
 
 const socialLinks = [
   {
@@ -17,10 +18,7 @@ const socialLinks = [
     url: 'https://www.behance.net/momagan',
     component: <Dribbble />,
   },
-  {
-    url: 'https://twitter.com/dev_mos',
-    component: <Twitter />,
-  },
+
   {
     url: 'https://www.linkedin.com/in/momagan/',
     component: <Linkedin />,

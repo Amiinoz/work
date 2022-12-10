@@ -12,12 +12,36 @@
   src: url('../assets/fonts/BaiJamjuree-Bold.ttf');
 }
 
+// ====================== Base
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
 body,
 h1,
 h2,
 h3,
-p {
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
 h1,
@@ -110,6 +134,208 @@ section {
       flex-shrink: 0;
       min-width: 100%;
       min-height: 100%;
+    }
+  }
+}
+
+//==================================== Header
+
+.header-container {
+  position: relative;
+
+  .welcome-text {
+    margin: 25vh 0 -26vh 13vw;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    margin: 25vh 0 0 11vw;
+    line-height: 12vh;
+    width: 100%;
+  }
+
+  .scrl {
+    max-width: 23px;
+    max-height: 8px;
+    margin: -10vh 0 0 84vw;
+  }
+}
+.lineParent {
+  overflow: hidden;
+  .lineChildren {
+    transform: translate(0, 500px);
+  }
+}
+
+.lineChildren {
+  transform: translate(0, 500px);
+}
+//==================================== Section header
+
+.section-header {
+  padding-left: 4vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  height: auto;
+  @include media('<=phone') {
+    margin-left: -2rem;
+  }
+  @include media('<=tablet') {
+    margin: -3vh 0 3rem -2rem;
+    padding-top: -15vh;
+    margin-top: -25vh;
+    border: 1px solid red;
+  }
+
+  .header__content {
+    // padding: 34vh 5vw 3vh 4vw;
+    padding: 34vh 5vw 3vh 8vw;
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
+    .content-title {
+      padding: 2rem;
+      height: calc(100vh - 300px);
+      overflow: auto;
+    }
+    &-subtitle {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1.2;
+      pointer-events: none;
+      @include media('<=tablet') {
+        font-size: 2rem;
+      }
+    }
+    &-heading {
+      font-weight: normal;
+      margin: 0;
+      font-size: 1.5rem;
+
+      @include media('<=phone') {
+        width: 248px;
+      }
+    }
+    &-intro {
+      p {
+        margin: 10vh 0 4rem 0;
+        position: relative;
+        line-height: 1.5;
+      }
+    }
+    &-intro::after {
+      content: '';
+      width: 2rem;
+      height: 2px;
+      position: absolute;
+      background: currentColor;
+      top: calc(100% + 3rem);
+    }
+  }
+}
+
+//==================================== About
+.about-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding-left: 12vw;
+  place-items: center;
+  margin-top: -7vh;
+
+  @include media('<=tablet') {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding-top: 2rem;
+    margin-left: -2rem;
+  }
+
+  &__bio {
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+  }
+  &__bio::after {
+    content: '';
+    width: 2rem;
+    height: 2px;
+    position: absolute;
+    background: currentColor;
+    top: calc(100% + -2rem);
+  }
+  &__social {
+    margin-left: -10vw;
+    @include media('<=tablet') {
+      margin-left: 4rem;
+    }
+    .social__image {
+      justify-content: center;
+      place-items: center;
+      padding: 10px;
+    }
+    .social__sign {
+    }
+    // .social__icons {
+    //   margin: 30px 0;
+    //   a {
+    //     img {
+    //       width: 20px;
+    //       padding: 0 0 0 34px;
+    //     }
+    //   }
+    //   a:hover {
+    //     fill: $accent;
+    //     text-decoration: none;
+    //     outline: none;
+    //   }
+    // }
+  }
+}
+
+.social__icons {
+  margin-top: 65px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    margin-right: 30px;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      transform: translate(-100%);
+      // opacity: 0;
+      will-change: transform;
+      transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    a:hover {
+      color: $accent;
+      text-decoration: none;
+      outline: none;
+    }
+    &:last-of-type {
+      margin-right: 0px;
     }
   }
 }
