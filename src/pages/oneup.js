@@ -29,6 +29,7 @@ import ComAudit from '../assets/oneup/oneup-comm.png';
 import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
 import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
+import Banner from '../assets/oneup/oneup_banner.png';
 
 import '../styles/components/projects-template.scss';
 
@@ -195,7 +196,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                       transition={transition}
                     >
                       <motion.img
-                        src="https://images.unsplash.com/photo-1578832842586-514eb4695010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2576&q=80"
+                        src={Banner}
                         alt="an image"
                         transition={transition}
                         style={{ scale }}

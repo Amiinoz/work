@@ -12,7 +12,9 @@ import '../styles/components/gallery.scss';
 const images = [
   {
     id: 0,
-    src: 'https://images.unsplash.com/photo-1578832842586-514eb4695010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2576&q=80',
+    // src: 'https://images.unsplash.com/photo-1578832842586-514eb4695010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2576&q=80',
+    src: require('../assets/oneup/oneup_banner.png').default,
+
     title: 'OneUp',
     subtitle: 'Case study',
     category: 'Google Design challenge',
