@@ -3,8 +3,9 @@
 @import '../../styles/breakpoints.scss';
 
 .page-guides {
+  position: relative;
   padding: 1rem;
-  // background-color: #ebc340;
+  background-color: #ebc340;
   // position: fixed;
   bottom: 0;
   left: 0;

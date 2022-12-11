@@ -50,7 +50,7 @@ export default function MenuContent() {
   const { open } = useContext(MenuContext);
 
   return (
-    <div className="menu-holder">
+    <div className="menu-holder ">
       <div className={cn('menu-inside', { open })}>
         <div className="menu-nav-container">
           <ul className="internal-nav-links">

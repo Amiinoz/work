@@ -17,7 +17,7 @@ export default function PageGuides({ nextProject }) {
 
         <div className="nextProj">
           <a href={nextProject}>
-            <img src={FrontArrow} alt="To next project" />
+            <img src={FrontArrow} alt="Go to next project" />
             Next Project
           </a>
         </div>

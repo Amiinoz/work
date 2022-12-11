@@ -9,7 +9,7 @@
   transform: translate3d(0, 0, 0);
   position: fixed;
   background: $accent;
-  border: 1px solid $white;
+  // border: 1px solid $black;
   // mix-blend-mode: difference;
   transition: width 0.025s ease-in-out, height 0.025s ease-in-out;
 
@@ -83,13 +83,13 @@
   }
 
   to {
-    transform: scale(1.5);
+    transform: scale(3.5);
   }
 }
 
 @keyframes scaleDown {
   from {
-    transform: scale(1.5);
+    transform: scale(3.5);
   }
 
   to {

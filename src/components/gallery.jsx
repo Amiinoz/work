@@ -80,6 +80,7 @@ function GalleryItem({
 
   return (
     <div
+      data-scroll-target="#gallery"
       className={cn('gallery-item-wrapper', { 'is-reveal': onScreen })}
       ref={ref}
     >
@@ -89,16 +90,16 @@ function GalleryItem({
           <h1
             className="gallery-info-title"
             data-scroll
-            data-scroll-speed="-3"
+            data-scroll-speed="1"
             data-scroll-horizontal="top"
-            data-scroll-delay="0.03"
+            data-scroll-delay="0.5"
           >
             {title}
           </h1>
           <h2
             className="gallery-info-subtitle"
             data-scroll
-            data-scroll-speed="-2"
+            data-scroll-speed="-0.2"
             data-scroll-horizontal="top"
             data-scroll-delay="0.05"
           >
@@ -135,14 +136,14 @@ export default function Gallery({ src, index, columnOffset }) {
           trigger: ref.current,
           scroller: '#main-container',
           pin: true,
-          scrub: 0.5,
+          scrub: 0.7,
           snap: 1 / (sections.length - 1),
           end: () => `+=${ref.current.offsetWidth}`,
         },
       });
       ScrollTrigger.refresh();
     });
-  }, []);
+  }, [ScrollTrigger]);
 
   const handleUpdateActiveImage = index => {
     setActiveImage(index + 1);
