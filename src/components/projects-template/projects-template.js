@@ -236,7 +236,8 @@ const ProjectsTemplate = ({
                   <motion.div
                     initial={{
                       y: 0,
-                      x: '-47%',
+                      // x: '-47%',
+                      x: '-110%',
                       dimensions: { dimensions },
                     }}
                     animate={{

@@ -11,6 +11,7 @@
   // font-family: 'Mulish', serif;
   font-weight: normal;
   font-size: 16px;
+  line-height: 1.5em;
   z-index: 100;
 }
 
@@ -20,8 +21,13 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Bai Jamjuree';
+}
+
+h3 {
+  color: #8f969e;
 }
 
 .flex_info h1:after {
@@ -29,7 +35,7 @@ h2 {
   line-height: 1;
   color: var(--color-link);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 0 0 0.5rem;
   display: block;
 }
@@ -108,13 +114,15 @@ h2 {
   letter-spacing: 1px;
   /* font-weight: bold; */
   // padding-bottom: 25px;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 .year li:nth-child(1),
 .role li:nth-child(1) {
-  color: #8f969e;
-  font-weight: normal;
+  font-family: 'Bai Jamjuree';
+  font-weight: 700;
+  // color: #8f969e;
 }
 
 .explanation {
@@ -161,7 +169,7 @@ h2 {
 #cap {
   position: relative;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 3rem auto;
   z-index: 100;
 }
 
@@ -177,7 +185,7 @@ h2 {
   // -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   // -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   // transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: scale(1.2);
+  transform: scale(1.3);
   margin-top: -8rem;
   -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -192,7 +200,7 @@ h2 {
   // -o-filter: blur(0px);
   // -ms-filter: blur(0px);
   // filter: blur(0px);
-  transform: scale(1.2);
+  transform: scale(1.3);
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);

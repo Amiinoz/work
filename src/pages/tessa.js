@@ -30,7 +30,7 @@ import RefineDes2 from '../assets/tessa/tessa_refine-design2.png';
 import MockUp1 from '../assets/tessa/tessa_mockup-1.png';
 import MockUp2 from '../assets/tessa/tessa_mockup-2.png';
 
-import '../styles/components/projects-template.scss';
+import '../styles/components/uxprojects.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -607,6 +607,21 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <ul className="year">
                       <li>THREE</li>
                       <li>Full stack development</li>
+                    </ul>
+                  </div>
+                </section>
+                {/* ================================================
+        =========== // Thank you
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>
+                    Thank <br />
+                    you{' '}
+                  </h1>
+                  <h3>for taking the time to read Tessa case study </h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>You may check out some of my other projects below</li>
                     </ul>
                   </div>
                 </section>

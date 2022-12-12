@@ -172,7 +172,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <motion.div
                     initial={{
                       y: 0,
-                      x: '-47%',
+                      x: '-110%',
                       dimensions: { dimensions },
                     }}
                     animate={{
@@ -182,10 +182,10 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
 
                       height:
                         window.imageDetails > 1440
+                          ? 1440
+                          : 800 || window.imageDetails > 786
                           ? 800
-                          : 400 || window.imageDetails > 786
-                          ? 400
-                          : 200,
+                          : 400,
                       transition: { delay: 0.2, ...transition },
                     }}
                     className="thumbnail-single"
@@ -588,8 +588,12 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>RESPONSIVE DESIGN</li>
-                      <li></li>
+                      <li>WEBSITE</li>
+                      <li>
+                        The app will be used for mentor connections and the
+                        complementary website will provide educational and
+                        additional resources.{' '}
+                      </li>
                     </ul>
                   </div>
                 </section>
@@ -653,6 +657,21 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                         Perform two additional usability tests with community
                         input
                       </li>
+                    </ul>
+                  </div>
+                </section>
+                {/* ================================================
+        =========== // Thank you
+        ================================================  */}
+                <section id="info" className="flex_info">
+                  <h1>
+                    Thank <br />
+                    you{' '}
+                  </h1>
+                  <h3>for taking the time to read OneUp case study </h3>
+                  <div className="flex_info_item">
+                    <ul className="year">
+                      <li>You may check out some of my other projects below</li>
                     </ul>
                   </div>
                 </section>
