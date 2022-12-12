@@ -489,6 +489,8 @@ const ProjectsTemplate = ({
                         <p className="item__caption-copy">{projImgInfo4}</p>
                         <br />
                         <br />
+                        <br />
+                        <br />
                         <PageGuides nextProject={nextProject} />
                       </div>
                     </div>
