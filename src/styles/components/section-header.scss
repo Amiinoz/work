@@ -10,6 +10,9 @@
   @include media('<=phone') {
     margin-left: -2rem;
   }
+  @include media('<=tablet') {
+    margin-bottom: 2rem;
+  }
 
   .header__content {
     // padding: 34vh 5vw 3vh 4vw;
@@ -24,11 +27,19 @@
     flex-direction: column;
     align-items: flex-start;
     overflow: visible;
+
+    @include media('<=tablet') {
+      padding: 34vh 5vw 3vh 8vw;
+    }
     .content-title {
       padding: 2rem;
       height: calc(100vh - 300px);
       overflow: auto;
+      @include media('<=tablet') {
+        padding: 34vh 5vw 3vh 8vw;
+      }
     }
+
     &-subtitle {
       font-family: 'Bai Jamjuree', sans-serif;
       font-size: 3.5rem;

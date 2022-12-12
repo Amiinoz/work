@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <section className={'header-container'} data-scroll-section>
         <div className="welcome-text">
-          <p>Hi 👋🏽, I am Mohamed</p>
+          <p>Hi, I am Mohamed</p>
         </div>
         <h1 id="header-text" data-scroll="" data-offset="3.0">
           Creative
