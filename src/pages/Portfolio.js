@@ -3,7 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 
-import PortoCover from '../assets/portfolio/cover.jpeg';
+import PortoCover from '../assets/portfolio/portfolio_banner.jpeg';
 import Colors from '../assets/portfolio/colorsTech.png';
 import ProjDelImage1 from '../assets/portfolio/typography.webp';
 import ProjDelImage2 from '../assets/portfolio/logo.webp';

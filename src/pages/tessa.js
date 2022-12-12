@@ -29,6 +29,7 @@ import RefineDes1 from '../assets/tessa/tessa_refine-design1.png';
 import RefineDes2 from '../assets/tessa/tessa_refine-design2.png';
 import MockUp1 from '../assets/tessa/tessa_mockup-1.png';
 import MockUp2 from '../assets/tessa/tessa_mockup-2.png';
+import tessaBanner from '../assets/tessa/tessa_banner.png';
 
 import '../styles/components/uxprojects.scss';
 
@@ -156,7 +157,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 />
                 <motion.div className="proj-container">
                   <motion.span className="title">
-                    <motion.span variants={letter}>Posty</motion.span>
+                    <motion.span variants={letter}>Tessa</motion.span>
                   </motion.span>
                 </motion.div>
               </div>
@@ -195,7 +196,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                       transition={transition}
                     >
                       <motion.img
-                        src="https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        src={tessaBanner}
                         alt="an image"
                         transition={transition}
                         style={{ scale }}
@@ -444,7 +445,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                           <a
                             className="link"
                             style={{ color: 'white' }}
-                            href="https://www.figma.com/file/VlLk05t7vJU3gVHsd3yETs/Posty-Digital_Wireframes?node-id=0%3A1"
+                            // href="https://www.figma.com/file/VlLk05t7vJU3gVHsd3yETs/Posty-Digital_Wireframes?node-id=0%3A1"
                           >
                             Link to prototypes
                           </a>{' '}

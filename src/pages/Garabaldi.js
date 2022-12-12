@@ -2,7 +2,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
-import TravCover from '../assets/garabaldi/cover.jpeg';
+import TravCover from '../assets/garabaldi/garabaldi_banner.avif';
 import Colors from '../assets/garabaldi/colorsTeck.png';
 
 import ProjDelImage1 from '../assets/garabaldi/typography.png';

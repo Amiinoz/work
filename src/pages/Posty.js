@@ -29,6 +29,7 @@ import HfProto from '../assets/posty/hf-wireframes.webp';
 import Colors from '../assets/posty/posty_brand-colors.png';
 import IconFont from '../assets/posty/posty_brand-iconFont.png';
 import ProjLogo from '../assets/posty/posty_brand-logo.png';
+import postyBanner from '../assets/posty/posty_banner.png';
 
 import '../styles/components/uxprojects.scss';
 
@@ -195,7 +196,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                       transition={transition}
                     >
                       <motion.img
-                        src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+                        src={postyBanner}
                         alt="an image"
                         transition={transition}
                         style={{ scale }}
