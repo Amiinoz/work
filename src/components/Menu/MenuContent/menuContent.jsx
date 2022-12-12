@@ -13,36 +13,36 @@ const internalLinks = [
   {
     url: '/tessa/',
     component: <span>Tessa</span>,
-    src: 'https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    src: require('../../../assets/tessa/tessa_banner.png').default,
   },
 
   {
     url: '/posty/',
     component: <span>Posty</span>,
-    src: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+    src: require('../../../assets/posty/posty_banner.png').default,
   },
 
   {
     url: '/Favetees/',
     component: <span>Favetees</span>,
-    src: 'https://images.unsplash.com/photo-1627225924765-552d49cf47ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
+    src: require('../../../assets/favetees/favetees_banner.webp').default,
   },
   {
     url: '/Covid19Tracker/',
     component: <span>Covid tracker</span>,
-    src: 'https://images.unsplash.com/photo-1613758947307-f3b8f5d80711?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80',
+    src: require('../../../assets/covid19-tracker/covid_banner.jpeg').default,
   },
 
   {
     url: '/Portfolio/',
     component: <span>Portfolio</span>,
-    src: 'https://images.unsplash.com/photo-1517323197145-72f28d311d51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80',
+    src: require('../../../assets/portfolio/portfolio_banner.jpeg').default,
   },
 
   {
     url: '/Garabaldi/',
     component: <span>Garabaldi</span>,
-    src: 'https://images.unsplash.com/photo-1622137276463-5d2b374cad11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80',
+    src: require('../../../assets/garabaldi/garabaldi_banner.avif').default,
   },
 ];
 

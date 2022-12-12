@@ -68,7 +68,7 @@ const Home = () => {
       ) : (
         <div className="main-container" id="main-container" data-scroll-section>
           <Helmet>
-            <title>Mo Magan | Home </title>
+            <title> Home | Mo Magan </title>
             <meta name="description" content="Home" />
           </Helmet>
           <Layout>
