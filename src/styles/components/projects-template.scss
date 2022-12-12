@@ -100,6 +100,8 @@
         /////////////////////////////////////////
         // # image
         /////////////////////////////////////////
+        ///
+        ///
 
         .frame-single {
           border-radius: 7px;
@@ -109,7 +111,7 @@
             height: 100%;
             object-fit: cover;
             margin: 0 auto;
-            padding-top: 360px;
+            padding-top: 310px;
             border-radius: 7px;
             @include media('<=phone') {
               margin-left: -5vw;
@@ -595,4 +597,10 @@ h4 {
   font-size: 3rem;
   margin: 0 0 1rem;
   display: block;
+}
+
+.proj {
+  // min-height: 402vh;
+  min-height: fit-content;
+  margin: 1rem;
 }
