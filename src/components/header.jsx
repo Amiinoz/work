@@ -2,13 +2,17 @@
 import React, { useEffect, useState } from 'react';
 import ScrollForMore from './scrollForMore';
 
-import '../styles/components/header.scss';
-// import '../styles/App.scss';
+// import '../styles/components/header.scss';
+import '../styles/App.scss';
 
 const Header = () => {
   return (
     <>
-      <section className={'header-container'} data-scroll-section>
+      <section
+        data-testid="head"
+        className={'header-container'}
+        data-scroll-section
+      >
         <div className="welcome-text">
           <p>Hi, I am Mohamed</p>
         </div>

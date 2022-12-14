@@ -1,6 +1,8 @@
 import React from 'react';
 
-import '../styles/components/footer.scss';
+// import '../styles/components/footer.scss';
+import '../styles/App.scss';
+
 import { GitHub, Twitter, Linkedin, Dribbble } from 'react-feather';
 
 const socialLinks = [

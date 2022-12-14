@@ -28,6 +28,10 @@
     align-items: flex-start;
     overflow: visible;
 
+    @include media('<=phone') {
+      margin-top: 64rem;
+    }
+
     @include media('<=tablet') {
       padding: 34vh 5vw 3vh 8vw;
     }

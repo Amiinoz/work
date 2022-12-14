@@ -4,6 +4,11 @@
 .gallery-wrap {
   margin-left: -5vw;
   margin-right: -5vw;
+  // background-color: lightcoral;
+
+  @include media('<=phone') {
+    // margin-bottom: -17vh;
+  }
 }
 
 .gallery-counter {
@@ -40,6 +45,10 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+
+  @include media('<=phone') {
+    margin-bottom: -12vh;
+  }
 
   .gallery-item {
     width: 100%;

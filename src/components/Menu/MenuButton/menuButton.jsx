@@ -8,7 +8,11 @@ export default function MenuButton() {
   const { open, setOpen } = useContext(MenuContext);
   return (
     <div className={cn('menu-button-wrap', { open })}>
-      <button className="menu-button" onClick={() => setOpen(!open)}>
+      <button
+        data-testid="menuButton"
+        className="menu-button"
+        onClick={props => setOpen(!open)}
+      >
         <span />
       </button>
     </div>

@@ -8,6 +8,10 @@
   height: 60vh;
   margin-top: -11vh;
 
+  // @include media('<=phone') {
+  //   margin-top: 54rem;
+  // }
+
   &_intro {
     p {
       font-size: 16px;

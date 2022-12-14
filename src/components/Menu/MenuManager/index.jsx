@@ -4,7 +4,7 @@ export const MenuContext = createContext({
   open: false,
   setOpen: () => {},
 });
-console.log(MenuContext);
+// console.log(MenuContext);
 
 export default function MenuManager(props) {
   const [open, setOpen] = useState(false);

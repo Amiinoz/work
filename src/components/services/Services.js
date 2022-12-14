@@ -4,7 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import TechStack from '../../assets/techUsed.webp';
 
-import '../../styles/components/services.scss';
+// import '../../styles/components/services.scss';
+import '../../styles/App.scss';
 
 import SectionHeader from '../section-header/section-header';
 

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { MenuContext } from '../MenuManager';
 import cn from 'classnames';
-
 import '../../../styles/components/menuContent.scss';
 
 const internalLinks = [
@@ -46,11 +45,11 @@ const internalLinks = [
   },
 ];
 
-export default function MenuContent() {
+export default function MenuContent({ component }) {
   const { open } = useContext(MenuContext);
 
   return (
-    <div className="menu-holder ">
+    <div className="menu-holder " data-testid="menu-content">
       <div className={cn('menu-inside', { open })}>
         <div className="menu-nav-container">
           <ul className="internal-nav-links">

@@ -13,9 +13,18 @@
   top: -4vh;
   margin-bottom: -5vh;
 
-  @include media('<=tablet') {
-    padding-top: 10vh;
-  }
+  // @include media('<=tablet') {
+  //   padding-top: 10vh;
+  // }
+  // @include media('<=phone') {
+  //   margin-bottom: 12rem;
+  // }
+  // @include media('>phone', '<=tablet') {
+  //   display: grid;
+  //   grid-template-columns: repeat(1, 1fr);
+  //   justify-content: center;
+  //   padding-top: 3rem;
+  // }
 
   @include media('<=tablet') {
     display: grid;
@@ -116,7 +125,11 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin: 8px 0;
+  @include media('<=phone') {
+    margin-top: 70rem;
+  }
 }
+
 .accordionIcon {
   display: flex;
   align-items: center;
