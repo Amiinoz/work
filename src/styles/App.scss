@@ -132,12 +132,10 @@ h3 {
   padding: 2.15px 5vw;
   overflow: hidden !important;
 }
-
 section {
   padding: 70px 0;
   .section-header {
-    // margin-bottom: -39px;
-    margin-bottom: -2rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -223,16 +221,15 @@ section {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   height: auto;
-  top: 4vh;
+  top: 7vh;
   padding-bottom: 2rem;
-
-  // @include media('<=phone') {
-  //   margin-left: -2rem;
-  // }
 
   @include media('>=phone', '<=tablet') {
     margin-left: -0.2rem;
   }
+}
+.section-header #work-header {
+  margin-bottom: -18rem;
 }
 
 // ================================= About section
@@ -251,8 +248,6 @@ section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    // padding-top: 2rem;
-    // margin-left: -2rem;
     padding: 0.5rem;
     margin-top: 7vh;
   }
@@ -340,7 +335,7 @@ section {
   padding-left: 12vw;
   place-items: center;
   top: -4vh;
-  margin-bottom: -5vh;
+  margin-bottom: 8rem;
   max-width: 12%;
 
   @include media('<=phone') {
@@ -484,7 +479,7 @@ section {
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  height: 60vh;
+  width: 80vw;
   margin-top: -11vh;
 
   @include media('<=tablet') {
@@ -507,6 +502,7 @@ section {
     border: 1px solid black;
     border-radius: 3px;
     margin-left: 12vw;
+
     @include media('<=tablet') {
       max-width: 85vw;
       border-radius: 3px;
@@ -537,7 +533,14 @@ section {
         outline: none;
         transition: all 0.2s ease-in-out;
         border-bottom: 1px solid $black;
-        background-color: $bg-color;
+        // background-color: $bg-color;
+
+        background-color: hsl(var(--clr-neutral-200));
+        background-image: radial-gradient($dots 10%, transparent 15%);
+        background-position: 0 0;
+        background-size: 7px 7px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 
         @include media('<=tablet') {
           padding: 10px;
@@ -593,13 +596,12 @@ section {
 // ================================= Footer
 
 .footer-section {
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: 1rem;
-
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 90vw;
 
   .footer {
     display: grid;
@@ -607,17 +609,13 @@ section {
     gap: 10rem;
     justify-content: center;
     place-items: center;
-    @media only screen and (min-width: 640px) and (max-width: 922px) {
-      gap: 5rem;
-    }
-    @media only screen and (min-width: 320px) and (max-width: 640px) {
-      display: none;
-    }
+
     &__info {
       font-size: 18px;
       font-weight: 600;
-      line-height: 8px;
+      line-height: 12px;
     }
+
     a {
       text-decoration: none;
       outline: none;
@@ -626,14 +624,14 @@ section {
     a:hover {
       color: $accent;
     }
+
     &__content {
       font-size: 18px;
       font-weight: 600;
       line-height: 8px;
+
       .copyr {
-        margin-left: -37px;
         svg {
-          margin-left: 45px;
           height: 34px;
         }
         span {
@@ -654,7 +652,6 @@ section {
           text-decoration: none;
           color: $black;
           transform: translate(-100%);
-          // opacity: 0;
           will-change: transform;
           transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
         }

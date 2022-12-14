@@ -67,6 +67,7 @@ const Services = ({ text }) => {
         title="Service"
         subtitle="Passion"
         heading="Design and Development"
+        id="work-header"
       />
       <div
         ref={aboutRef}
