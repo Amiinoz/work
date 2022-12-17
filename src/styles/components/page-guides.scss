@@ -6,14 +6,13 @@
   position: relative;
   padding: 1rem;
   background-color: #ebc340;
-  // position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   padding-bottom: -10rem;
-  background-color: #f7f9fa;
-  background-image: radial-gradient(#c8d3de 10%, transparent 15%);
+  background-color: hsl(var(--clr-neutral-200));
+  background-image: radial-gradient($dots 10%, transparent 15%);
   background-position: 0 0;
   background-size: 7px 7px;
   -webkit-font-smoothing: antialiased;
@@ -29,8 +28,7 @@
   @include media('<=420px') {
     display: none;
   }
-
-  .backHome {
+  .guide {
     a {
       font-size: 1.6rem;
       color: $black;
@@ -38,14 +36,14 @@
       display: flex;
       align-items: center;
       font-weight: 600;
-      margin-top: -24px;
+      margin-top: -4rem;
     }
     img {
       margin-left: 16px;
       border: 2px solid $black;
-      padding: 9px;
-      height: 20px;
-      width: 20px;
+      // padding: 9px;
+      height: 28px;
+      width: 29px;
       margin-right: 15px;
       border-radius: 100px;
       transition: 0.4s ease-in-out;
@@ -56,52 +54,9 @@
       }
     }
   }
-  .nextProj {
-    a {
-      font-size: 1.6rem;
-      color: $black;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-      margin-top: -24px;
-      img &:hover {
-        background: $accent;
-        transition: opacity 0.2s, visibility 0.2s;
-      }
-    }
-    img {
-      margin-left: 16px;
-      border: 2px solid $black;
-      padding: 9px;
-      height: 20px;
-      width: 20px;
-      margin-right: 15px;
-      border-radius: 100px;
-      transition: 0.4s ease-in-out;
-    }
-    &:hover {
-      img {
-        background: $accent;
-        transition: opacity 0.2s, visibility 0.2s;
-      }
-    }
-    p {
-      display: flex;
-      justify-content: center;
-      padding-top: 12px;
-      background-size: cover;
-      width: 309px;
-      height: 32px;
-      padding-left: 25px;
-      overflow: hidden;
-      color: $white;
-      background-size: contain;
 
-      image &:hover {
-        transition: opacity 0.2s, visibility 0.2s;
-        background: $accent;
-      }
-    }
+  .nextProj img {
+    transition: 0.4s ease-in-out;
+    transform: rotate(360deg);
   }
 }
