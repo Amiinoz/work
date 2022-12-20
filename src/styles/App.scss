@@ -157,7 +157,6 @@ section {
   overflow: hidden;
 
   transition: 'all 0.25s ease-in-out';
-  // background-color: #191919;
   background-color: #000000;
   color: #fff;
   z-index: 99;
@@ -166,9 +165,6 @@ section {
     img {
       width: 25vw;
       margin-left: -7vw;
-      // margin-left: auto;
-      // margin-right: auto;
-      // display: block;
       flex-shrink: 0;
       min-width: 100%;
       min-height: 100%;
@@ -194,12 +190,18 @@ section {
     margin: 25vh 0 0 11vw;
     line-height: 14vh;
     width: 100%;
+    @include media('<=phone') {
+      line-height: 12vh;
+    }
   }
 
   .scrl {
     max-width: 23px;
     /* max-height: 8px; */
     margin: -10vh 0 0 84vw;
+    @include media('<=tablet') {
+      display: none !important;
+    }
   }
 }
 .lineParent {
@@ -223,8 +225,10 @@ section {
   height: auto;
   top: 7vh;
   padding-bottom: 2rem;
-
-  @include media('>=phone', '<=tablet') {
+  @include media('<=tablet') {
+    margin-left: -0.2rem;
+  }
+  @include media('<=phone') {
     margin-left: -0.2rem;
   }
 }
@@ -243,12 +247,13 @@ section {
   place-items: center;
   margin-top: -7vh;
   max-width: 12%;
+  text-align: justify;
 
   @include media('<=tablet') {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
     margin-top: 7vh;
   }
 
@@ -327,19 +332,21 @@ section {
 // ================================= Services section
 
 .service-container {
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 05fr);
   justify-content: center;
+  // padding-left: 12vw;
+  // place-items: center;
+  // top: -4vh;
+  // margin-bottom: 8rem;
+  // max-width: 12%;
   padding-left: 12vw;
   place-items: center;
-  top: -4vh;
-  margin-bottom: 8rem;
+  margin-top: -7vh;
   max-width: 12%;
-
-  @include media('<=phone') {
-  }
+  text-align: justify;
 
   @include media('<=tablet') {
     display: grid;
@@ -352,9 +359,16 @@ section {
 
   &__intro {
     @include media('<=tablet') {
-      margin-left: -2rem;
+      margin: -9rem 0 0 -12rem;
+      // margin-left: -12rem;
       font-size: 20px;
-      width: 170%;
+      width: 550px;
+      word-wrap: break-word;
+    }
+    @include media('<=phone') {
+      width: 345px;
+      word-wrap: break-word;
+      margin-left: -9rem;
     }
 
     h4 {
@@ -399,6 +413,12 @@ section {
 
     @include media('<=tablet') {
       margin-left: 14px;
+      margin-top: 2vh;
+    }
+
+    @include media('<=phone') {
+      margin-left: 14px;
+      margin-top: 2vh;
     }
 
     h3 {
@@ -430,19 +450,6 @@ section {
   font-weight: 600;
   font-size: 1.15rem;
   margin: 8px 0;
-}
-.accordionHeader {
-  width: 100%;
-  color: #000;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 1.15rem;
-  margin: 8px 0;
-  @include media('<=phone') {
-    margin-top: 70rem;
-  }
 }
 
 .accordionIcon {
@@ -609,11 +616,23 @@ section {
     gap: 10rem;
     justify-content: center;
     place-items: center;
+    @include media('<=tablet') {
+      gap: 4rem;
+    }
+    @include media('<=phone') {
+      gap: 1rem;
+      justify-content: center;
+    }
 
     &__info {
       font-size: 18px;
       font-weight: 600;
       line-height: 18px;
+      @include media('<=phone') {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+      }
     }
 
     a {
@@ -632,21 +651,41 @@ section {
 
       .copyr {
         svg {
-          height: 34px;
+          height: 30px;
         }
         span {
           font-size: 9px;
           margin-left: 45px;
+          @include media('<=tablet') {
+            font-size: 12px;
+            margin: 0 auto;
+          }
+          @include media('<=phone') {
+            font-size: 9px;
+            margin: 0 auto;
+          }
         }
       }
     }
     &__social {
       display: flex;
       flex-wrap: wrap;
+      @include media('<=tablet') {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+      }
+      @include media('<=phone') {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+      }
 
       li {
         margin-right: 30px;
         list-style-type: none;
+        @include media('<=phone') {
+          flex-wrap: nowrap;
+          margin: 0 auto;
+        }
 
         a {
           text-decoration: none;
