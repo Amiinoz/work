@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "JetBrains Mono Nerd Font, Hasklug NFM, JetBrainsMono Nerd Font Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Hasklug  Nerd Font Regular, JetBrainsMono Nerd Font Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "cSpell.words": ["scrollrender"],

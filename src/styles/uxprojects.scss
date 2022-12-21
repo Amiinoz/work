@@ -1,3 +1,7 @@
+@import './breakpoints.scss';
+@import './variables';
+@import './loco-scroll.scss';
+
 /////////////////////////////////////////
 // # Ux design projects start
 /////////////////////////////////////////
@@ -8,10 +12,11 @@
 //   padding: 1rem;
 // }
 
-.App #info {
-  min-height: fit-content;
-  // padding: 1rem;
-}
+// .App #info {
+//   min-height: fit-content;
+//   // padding: 1rem;
+// }
+
 #info {
   position: relative;
   max-width: 960px;
@@ -22,6 +27,11 @@
   font-weight: normal;
   font-size: 18px;
   z-index: 100;
+
+  @include media('<=tablet') {
+    max-width: 400px;
+    margin: 3rem 0;
+  }
 }
 
 .flex_info {
@@ -209,6 +219,10 @@
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  @include media('<=tablet') {
+    transform: scale(1);
+  }
 }
 
 // .flex_01 {
@@ -222,6 +236,7 @@
 .flex_02 {
   display: flex;
   justify-content: space-between;
+  width: 80%;
 }
 
 .flex_02_item {

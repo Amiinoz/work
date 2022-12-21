@@ -347,6 +347,9 @@ section {
   margin-top: -7vh;
   max-width: 12%;
   text-align: justify;
+  @include media('>=LGdesktop') {
+    margin-top: 2rem;
+  }
 
   @include media('<=tablet') {
     display: grid;

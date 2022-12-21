@@ -172,7 +172,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <motion.div
                     initial={{
                       y: 0,
-                      x: '-47%',
+                      x: '-110%',
                       dimensions: { dimensions },
                     }}
                     animate={{
@@ -334,6 +334,8 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <br />
                 <br />
+                <br />
+                <br />
                 <section id="cap">
                   <div className="flex_01">
                     <img src={ComAud} />
@@ -399,19 +401,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                         digital wireframes. I connected social media accounts
                         and set up a Pomodoro timer as the primary user flow.
                         <br />
-                        <h3>
-                          {' '}
-                          <br />
-                          <br />
-                          <a
-                            className="link"
-                            style={{ color: 'white' }}
-                            href="https://www.figma.com/file/VlLk05t7vJU3gVHsd3yETs/Posty-Digital_Wireframes?node-id=0%3A1"
-                          >
-                            Link to prototypes
-                          </a>{' '}
-                          <br /> <br />
-                        </h3>
                       </li>
                     </ul>
                   </div>
@@ -664,7 +653,9 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Thank <br />
                     you{' '}
                   </h1>
-                  <h3>for taking the time to read Posty case study </h3>
+                  <h3>
+                    for taking the time <br /> to read Posty case study{' '}
+                  </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>You may check out some of my other projects below</li>

@@ -14,8 +14,9 @@ import useWindowSize from '../components/useWindowSize';
 import Layout from '../components/Layout';
 
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/tessa/tessa_user-journey.png';
-import ComAud from '../assets/tessa/tessa_com-audit.png';
+import User from '../assets/tessa/tessa_user-journey--map.png';
+import User1 from '../assets/tessa/tessa_user-story--1.png';
+import User2 from '../assets/tessa/tessa_user-story--2.png';
 import SiteMap from '../assets/tessa/tessa_siteMap.png';
 import PaperWireframe1 from '../assets/tessa/tessa_paper-wf1.png';
 import PaperWireframe2 from '../assets/tessa/tessa_paper-wf2.png';
@@ -172,7 +173,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <motion.div
                     initial={{
                       y: 0,
-                      x: '-47%',
+                      x: '-110%',
                       dimensions: { dimensions },
                     }}
                     animate={{
@@ -299,15 +300,23 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={User} />
+                    <img src={User1} />
+                  </div>
+                </section>
+                <br />
+
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={User2} />
                   </div>
                 </section>
                 <br />
                 <br />
                 <br />
+                <br />
                 <section id="cap">
-                  <div className="flex_01">
-                    <img src={ComAud} />
+                  <div className="flex_03">
+                    <img src={User} />
                   </div>
                 </section>
                 {/* ================================================
@@ -619,7 +628,10 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Thank <br />
                     you{' '}
                   </h1>
-                  <h3>for taking the time to read Tessa case study </h3>
+                  <h3>
+                    for taking the time <br />
+                    to read Tessa case study{' '}
+                  </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>You may check out some of my other projects below</li>

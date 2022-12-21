@@ -32,6 +32,7 @@ import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 
 import '../styles/components/projects-template.scss';
+import '../styles/App.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -139,7 +140,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="proj"
+          className="proj proj-cont"
         >
           <div className="container" ref={scrollContainer}>
             {/* ////////////////////////////////////////// */}
@@ -367,6 +368,8 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
+                <br />
+                <br />
                 <section id="cap">
                   <div className="flex_01">
                     <img src={UserJourney} />
@@ -668,7 +671,9 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     Thank <br />
                     you{' '}
                   </h1>
-                  <h3>for taking the time to read OneUp case study </h3>
+                  <h3>
+                    for taking the time <br /> to read OneUp case study{' '}
+                  </h3>
                   <div className="flex_info_item">
                     <ul className="year">
                       <li>You may check out some of my other projects below</li>
