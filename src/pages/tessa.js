@@ -33,6 +33,7 @@ import MockUp2 from '../assets/tessa/tessa_mockup-2.png';
 import tessaBanner from '../assets/tessa/tessa_banner.png';
 
 import '../styles/components/uxprojects.scss';
+import '../styles/components/projects-template.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -140,7 +141,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="proj"
+          className="proj proj-cont"
         >
           <div className="container" ref={scrollContainer}>
             {/* ////////////////////////////////////////// */}
