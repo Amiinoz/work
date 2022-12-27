@@ -291,7 +291,7 @@
       .proj-tech {
         img {
           width: 300px;
-          height: 150px;
+          // height: 150px;
         }
       }
 
@@ -371,12 +371,14 @@
     }
 
     img {
+      // width: 300px;
+      // height: 250px;
+      // background: #f7f9fa 0% 0% no-repeat padding-box;
+      // border: 1.3px solid #000;
+      // border-radius: 12px;
+      // /* margin: 0 auto; */
       width: 300px;
       height: 250px;
-      background: #f7f9fa 0% 0% no-repeat padding-box;
-      border: 1.3px solid #000;
-      border-radius: 12px;
-      /* margin: 0 auto; */
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         width: 250px;
         height: 250px;
@@ -438,21 +440,27 @@
       margin: 0 auto;
     }
     img {
-      top: 249px;
-      width: 990px;
-      left: 232px;
-      width: 60px;
+      // top: 249px;
+      // width: 990px;
+      // left: 232px;
+      // width: 60px;
+      // height: 60px;
+      // opacity: 1;
+      // object-fit: cover;
       height: 60px;
       opacity: 1;
       object-fit: cover;
     }
     h3 {
-      padding-top: 23px;
-      height: 31px;
+      // padding-top: 23px;
+      // height: 31px;
+      // margin: -60px 0 0 78px;
+      // text-align: left;
+      // font: normal normal bold 18px/18px Bai Jamjuree;
+      // color: $fontColor;
+      /* padding-top: 23px; */
+      padding: 1rem 0 1rem 0;
       margin: -60px 0 0 78px;
-      text-align: left;
-      font: normal normal bold 18px/18px Bai Jamjuree;
-      color: $fontColor;
     }
 
     p {
@@ -529,12 +537,12 @@
     width: 800px;
     --aspect-ratio: 900/505;
     // --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/4.jpg);
-    background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
+    // background: url('../../assets/favetees/feu1.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    // background-size: cover;
   }
 }
 
