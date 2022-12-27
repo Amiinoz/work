@@ -65,7 +65,7 @@
 
             @include media('<=phone') {
               font-size: 30px;
-              margin-right: 60vh;
+              margin-right: 72vh;
             }
             // @include media('<=tablet') {
             //   font-size: 50px;
@@ -194,9 +194,16 @@
       // margin: 54px 0 0 3vw;
       margin: 0 auto;
 
+      @include media('<=desktop') {
+        margin-left: -2rem;
+      }
+
       @include media('<=tablet') {
         width: 107%;
-        margin-left: -6vw;
+        margin-left: -7vw;
+      }
+      @include media('<=phone') {
+        margin-left: -1rem;
       }
 
       .proj-title {

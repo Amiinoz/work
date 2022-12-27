@@ -11,6 +11,12 @@
   }
 }
 
+.title-name {
+  @include media('<=phone') {
+    margin-left: -9rem;
+  }
+}
+
 #info {
   position: relative;
   max-width: 960px;
@@ -23,6 +29,11 @@
   line-height: 1.5em;
   z-index: 100;
   // border: 1px solid red;
+
+  @include media('<=desktop') {
+    max-width: 80%;
+    padding: 3rem 0;
+  }
 
   @include media('<=tablet') {
     margin-inline: auto;
@@ -40,6 +51,12 @@
 .flex_info {
   display: flex;
   justify-content: space-between;
+
+  @include media('<=desktop') {
+    display: block;
+    max-width: 70%;
+    padding: 3rem 0;
+  }
 }
 
 h1,
@@ -193,6 +210,18 @@ h3 {
   max-width: 960px;
   margin: 3rem auto;
   z-index: 100;
+
+  @include media('<=desktop') {
+    display: block;
+    max-width: 80%;
+    padding: 3rem 0;
+  }
+  @include media('<=phone') {
+    display: block;
+    max-width: 40%;
+    padding: 3rem 0;
+    margin-left: -1rem;
+  }
 }
 
 .flex_01 img,

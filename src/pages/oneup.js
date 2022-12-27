@@ -31,7 +31,7 @@ import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 
-import '../styles/components/projects-template.scss';
+// import '../styles/components/projects-template.scss';
 import '../styles/components/uxprojects.scss';
 // import '../styles/App.scss';
 
@@ -158,7 +158,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   className="details"
                 />
                 <motion.div className="proj-container">
-                  <motion.span className="title">
+                  <motion.span className="title title-name">
                     <motion.span variants={letter}>OneUP</motion.span>
                   </motion.span>
                 </motion.div>
