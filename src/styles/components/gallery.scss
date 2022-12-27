@@ -47,12 +47,10 @@
   display: flex;
   flex-wrap: nowrap;
 
-  // @include media('<=phone') {
-  //   // margin-bottom: -12vh;
-  //   border: 1px solid salmon;
-  //   max-height: 60vh;
-  //   margin: 1rem 0;
-  // }
+  @include media('<=phone') {
+    margin-bottom: -12vh;
+    max-height: 60vh;
+  }
 
   .gallery-item {
     width: 100%;

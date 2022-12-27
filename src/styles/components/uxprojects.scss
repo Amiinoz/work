@@ -283,22 +283,22 @@ h3 {
   margin: 1rem;
 }
 
-img {
-  @include media('<=desktop') {
-    margin-inline: auto;
-    max-width: 90%;
-    padding: 1rem;
-    margin-left: -0.5rem;
-  }
+// img {
+//   @include media('<=desktop') {
+//     margin-inline: auto;
+//     max-width: 90%;
+//     padding: 1rem;
+//     margin-left: -0.5rem;
+//   }
 
-  @include media('<=tablet') {
-    margin-inline: auto;
-    max-width: 85%;
-    padding: 3rem;
-  }
-  @include media('<=phone') {
-    max-width: 50%;
-    display: block;
-    margin-left: -4.5rem;
-  }
-}
+//   @include media('<=tablet') {
+//     margin-inline: auto;
+//     max-width: 85%;
+//     padding: 3rem;
+//   }
+//   @include media('<=phone') {
+//     max-width: 50%;
+//     display: block;
+//     margin-left: -4.5rem;
+//   }
+// }
