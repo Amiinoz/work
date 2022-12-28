@@ -1,9 +1,10 @@
 {
-  "editor.fontFamily": "Dank mono, Hasklug  Nerd Font Regular, JetBrainsMono Nerd Font Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 20,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Dank mono, Hasklug  Nerd Font Regular, JetBrainsMono Nerd Font Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "cSpell.words": ["scrollrender"],
   "workbench.tree.renderIndentGuides": "always",
   "js/ts.implicitProjectConfig.checkJs": true,
-  "git.terminalAuthentication": false
+  "git.terminalAuthentication": false,
+  "editor.lineHeight": 1.2
 }

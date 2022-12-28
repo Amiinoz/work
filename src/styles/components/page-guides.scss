@@ -26,7 +26,9 @@
   height: 35px;
 
   @include media('<=420px') {
-    display: none;
+    display: grid;
+    place-items: center;
+    max-width: 40%;
   }
   .guide {
     a {

@@ -282,6 +282,7 @@ section {
     justify-content: center;
     padding: 0.3rem;
     margin-top: 7vh;
+    max-width: 12%;
   }
   @include media('<=phone') {
     max-width: 12%;
@@ -397,11 +398,16 @@ section {
 
   &__intro {
     @include media('<=tablet') {
-      margin: -9rem 0 0 -12rem;
-      // margin-left: -12rem;
+      // margin: -9rem 0 0 -12rem;
+      // // margin-left: -12rem;
+      // font-size: 20px;
+      // width: 550px;
+      // word-wrap: break-word;
+      margin: -9rem 0 0 -25rem;
       font-size: 20px;
       width: 550px;
-      word-wrap: break-word;
+      /* word-wrap: break-word; */
+      max-width: 100%;
     }
     @include media('<=phone') {
       max-width: 85%;

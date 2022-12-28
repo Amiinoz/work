@@ -53,7 +53,7 @@
   justify-content: space-between;
 
   @include media('<=desktop') {
-    display: block;
+    // display: block;
     max-width: 70%;
     padding: 3rem 0;
   }
