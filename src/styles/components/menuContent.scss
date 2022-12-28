@@ -13,9 +13,6 @@
     z-index: -1;
     margin-left: -100vw;
     margin-top: -30vh;
-    // margin-top: 12vw;
-
-    // margin: 11vw 0 0 -6vw;
 
     &.open {
       transform: translateX(0);
@@ -29,14 +26,6 @@
             transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
           }
         }
-        //////////////////////// change to break points
-        // @for $i from 0 through 4 {
-        //   li:nth-child(#{$i + 1}n) {
-        //     a {
-        //       transition-delay: #{$i/10 + 0.8}s;
-        //     }
-        //   }
-        // }
       }
       .external-nav-links {
         @for $i from 0 through 4 {

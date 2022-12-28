@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import ScrollForMore from './scrollForMore';
-import WorkButton from '../components/work-button/work-button';
+import WorkButton from '../components/work-button';
 
-// import '../styles/components/header.scss';
 import '../styles/App.scss';
 
 const Header = () => {

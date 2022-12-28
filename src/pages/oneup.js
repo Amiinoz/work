@@ -10,20 +10,16 @@ import {
 import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../components/scrollForMore';
 import useWindowSize from '../components/useWindowSize';
-
 import Layout from '../components/Layout';
-
 import PageGuides from '../components/page-guides/page-guides';
 import User from '../assets/oneup/user_story.png';
 import DigitlaWirefame1 from '../assets/oneup/oneup_wireframes-1.png';
 import LowFiProto from '../assets/oneup/oneup_lowFi-proto.png';
 import UsabilityStdy1 from '../assets/oneup/oneup_usablity-para.png';
 import UsabilityStdy2 from '../assets/oneup/oneup_usability-find.png';
-
 import RefineDes1 from '../assets/oneup/oneup_refine-1.png';
 import MockUp from '../assets/oneup/oneup_mockup1.webp';
 import Sitemap from '../assets/oneup/oneup_sitemap.png';
-
 import HfProto from '../assets/oneup/oneup_hiFi-proto.webp';
 import ComAudit from '../assets/oneup/oneup-comm.png';
 import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
@@ -31,9 +27,7 @@ import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 
-// import '../styles/components/projects-template.scss';
 import '../styles/components/uxprojects.scss';
-// import '../styles/App.scss';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -144,8 +138,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
           className="proj proj-cont"
         >
           <div className="container" ref={scrollContainer}>
-            {/* ////////////////////////////////////////// */}
-            {/* // Title  */}
             <div className="row center top-row">
               <div className="top">
                 <motion.div
@@ -165,9 +157,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Image  */}
-            {/* // Image  */}
             <div className="row bottom-row">
               <div className="bottom">
                 <div className="image-container-single">
@@ -215,8 +204,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Info  */}
             <main className="contents-detail">
               <section id="info" className="flex_info">
                 <h1>Project Overview </h1>
@@ -268,17 +255,12 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="flex_info_item ">
-                  <img src="../assets/img/001_posty/project_overview.webp" />
-                </div> */}
+
                 <div className="flex_info_item">
                   <ul className="explanation"></ul>
                 </div>
               </section>
               <div>
-                {/* ================================================
-        =========== // understanding  the user
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Understanding <br /> the User{' '}
@@ -311,9 +293,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // Competitive audit
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Competitive
@@ -336,9 +315,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // Ideation
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>Ideation</h1>
                   <h3>Crazy 8 Design</h3>
@@ -357,9 +333,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={Ideation} />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // User journey
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>User</h1>
                   <h3>Zaks journey</h3>
@@ -377,9 +351,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-                        =========== // Starting the design
-                        ================================================  */}
                 <section id="cap"></section>
                 <section id="info" className="flex_info">
                   <h1>
@@ -438,7 +409,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="cap">
                   <div className="flex_01">
                     <img src={LowFiProto} />
-                    {/* <img src='../assets/posty/low-fi-prototype.svg'> */}
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -465,9 +435,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={UsabilityStdy2} />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Refining the design based on research
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Refining <br />
@@ -491,9 +459,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // mockups
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Mockups <br />
@@ -528,9 +493,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={HfProto} />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Accessability consideration
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>Accessability </h1>
                   <h3>Considerations </h3>
@@ -555,9 +518,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Responsive Design
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Responsive Design
@@ -606,9 +567,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={ResDesign} />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Going forward
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Going <br />
@@ -634,9 +593,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Next steps
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Next <br />
@@ -664,9 +621,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Thank you
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Thank <br />
@@ -686,9 +641,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
             </main>
           </div>
         </motion.div>
-
-        {/* //////////////////////////////    page guides   //
-         /////////////// */}
       </Layout>
     </>
   );

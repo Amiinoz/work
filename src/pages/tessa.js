@@ -144,8 +144,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
           className="proj proj-cont"
         >
           <div className="container" ref={scrollContainer}>
-            {/* ////////////////////////////////////////// */}
-            {/* // Title  */}
             <div className="row center top-row">
               <div className="top">
                 <motion.div
@@ -165,9 +163,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Image  */}
-            {/* // Image  */}
             <div className="row bottom-row">
               <div className="bottom">
                 <div className="image-container-single">
@@ -215,8 +210,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Info  */}
             <main className="contents-detail">
               <section id="info" className="flex_info">
                 <h1>Project Overview </h1>
@@ -265,17 +258,12 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="flex_info_item ">
-                  <img src="../assets/img/001_posty/project_overview.webp" />
-                </div> */}
+
                 <div className="flex_info_item">
                   <ul className="explanation"></ul>
                 </div>
               </section>
               <div>
-                {/* ================================================
-        =========== // understanding  the user
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Understanding <br /> the User{' '}
@@ -320,9 +308,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={User} />
                   </div>
                 </section>
-                {/* ================================================
-                        =========== // Sitemap
-                        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Sitemap <br />
@@ -346,9 +332,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-                        =========== // Starting the design
-                        ================================================  */}
                 <section id="cap"></section>
                 <section id="info" className="flex_info">
                   <h1>
@@ -452,11 +435,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                           {' '}
                           <br />
                           <br />
-                          <a
-                            className="link"
-                            style={{ color: 'white' }}
-                            // href="https://www.figma.com/file/VlLk05t7vJU3gVHsd3yETs/Posty-Digital_Wireframes?node-id=0%3A1"
-                          >
+                          <a className="link" style={{ color: 'white' }}>
                             Link to prototypes
                           </a>{' '}
                           <br /> <br />
@@ -486,9 +465,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={UsabilityStdy} />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Refining the design based on research
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Refining <br />
@@ -520,9 +497,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // mockups
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Mockups <br />
@@ -549,9 +523,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // Accessability consideration
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>Accessability </h1>
                   <h3>Considerations </h3>
@@ -572,9 +543,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Take away
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>Takeaways</h1>
                   <h3>Considerations </h3>
@@ -597,9 +566,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // Next steps
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Next <br />
@@ -621,9 +587,7 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Thank you
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Thank <br />
@@ -644,9 +608,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
             </main>
           </div>
         </motion.div>
-
-        {/* //////////////////////////////    page guides   //
-         /////////////// */}
       </Layout>
     </>
   );

@@ -1,6 +1,5 @@
 import firebase from 'firebase';
 
-// Your web app's Firebase configuration
 var firebaseApp = firebase.initializeApp({
   apiKey: 'AIzaSyBZcwl8RM1NGcKYr0yEyz7QEDu67RMacMo',
   authDomain: 'reactform-f5801.firebaseapp.com',

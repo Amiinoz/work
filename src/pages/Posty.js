@@ -13,7 +13,6 @@ import useWindowSize from '../components/useWindowSize';
 
 import Layout from '../components/Layout';
 
-// import ProjectsButton from '../components/work-button/work-button';
 import PageGuides from '../components/page-guides/page-guides';
 import User from '../assets/posty/user_story.png';
 import ComAud from '../assets/posty/posty_ompetitive-audit.png';
@@ -143,8 +142,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
           className="proj proj-cont"
         >
           <div className="container" ref={scrollContainer}>
-            {/* ////////////////////////////////////////// */}
-            {/* // Title  */}
             <div className="row center top-row">
               <div className="top">
                 <motion.div
@@ -164,9 +161,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Image  */}
-            {/* // Image  */}
             <div className="row bottom-row">
               <div className="bottom">
                 <div className="image-container-single">
@@ -214,8 +208,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            {/* ////////////////////////////////////////// */}
-            {/* // Info  */}
             <main className="contents-detail">
               <section id="info" className="flex_info">
                 <h1>Project Overview </h1>
@@ -265,17 +257,12 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="flex_info_item ">
-                  <img src="../assets/img/001_posty/project_overview.webp" />
-                </div> */}
+
                 <div className="flex_info_item">
                   <ul className="explanation"></ul>
                 </div>
               </section>
               <div>
-                {/* ================================================
-        =========== // process
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>
                     Process <br />
@@ -300,9 +287,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={Process} loading="lazy" />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // understanding  the user
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Understanding <br /> the User{' '}
@@ -342,9 +327,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={ComAud} />
                   </div>
                 </section>
-                {/* ================================================
-                        =========== // Starting the design
-                        ================================================  */}
+
                 <section id="cap"></section>
                 <section id="info" className="flex_info">
                   <h1>
@@ -409,7 +392,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="cap">
                   <div className="flex_01">
                     <img src={LowFiProto} loading="lazy" />
-                    {/* <img src='../assets/posty/low-fi-prototype.svg'> */}
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -435,9 +417,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={UsabilityStdy} loading="lazy" />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Refining the design based on research
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Refining <br />
@@ -485,9 +465,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={RefineDes2} loading="lazy" />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // mockups
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Mockups <br />
@@ -525,9 +503,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={HfProto} loading="lazy" />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Accessability consideration
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>Accessability </h1>
                   <h3>Considerations </h3>
@@ -553,9 +529,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                {/* ================================================
-        =========== // Branding
-        ================================================  */}
                 <section id="info" className="flex_info">
                   <h1>Branding</h1>
                   <h3>Colors, Icons, Typography, Logo</h3>
@@ -587,9 +560,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={ProjLogo} loading="lazy" />
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Going forward
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Going <br />
@@ -615,9 +586,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Next steps
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Next <br />
@@ -646,9 +615,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     </ul>
                   </div>
                 </section>
-                {/* ================================================
-        =========== // Thank you
-        ================================================  */}
+
                 <section id="info" className="flex_info">
                   <h1>
                     Thank <br />
@@ -667,11 +634,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
               <PageGuides nextProject="./Favetees" />
             </main>
           </div>
-          {/* <ProjectsButton /> */}
         </motion.div>
-
-        {/* //////////////////////////////    page guides   //
-         /////////////// */}
       </Layout>
     </>
   );

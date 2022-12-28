@@ -43,13 +43,10 @@ const Portfolio = () => {
           projColorImage={Colors}
           role="role"
           roleType="Desing and Development"
-          // button
           viewCode="https://github.com/Amiinoz/work"
           year="Year"
           yearOfDev="2021"
-          //button
           seeItLive="http://momagan.com"
-          ////////////////////////////////////Deliverables///////////////////////
           delivTitle="Deliverables"
           projDelImage1={ProjDelImage1}
           projDelHead1="Typography"
@@ -73,7 +70,6 @@ const Portfolio = () => {
           projDelImage6={ProjDelImage6}
           projDelHead6="Icons"
           projDelBody6="Creating minimal icons that start with great form of recognition, as well as consistent across the set. "
-          ////////////////////////////////////Features///////////////////////
           featTitle="Features"
           projFeatImage1={ProjFeatImage1}
           projFeatHead1="Horizontal scroll"
@@ -88,7 +84,6 @@ const Portfolio = () => {
           projFeatBody3="Consistency in content, scalability, and a simple layout
                       are some of the most important."
           featuresImage={FeatureImage}
-          ////////////////////////////////////Images///////////////////////
           imagesHead="High fidelity Mockups"
           projImgTitle1="Mockups"
           projImgInfo1="Stepping outside of the traditional formats used for client
@@ -103,7 +98,6 @@ const Portfolio = () => {
           projImgTitle4="Website"
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
-          ////////////////////////////////////page guides///////////////////////
           nextProject="./Garabaldi"
         />
       </div>

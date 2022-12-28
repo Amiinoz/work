@@ -2,10 +2,7 @@
 @import '../variables';
 
 .menu-button-wrap {
-  // position: fixed;
   right: 11vw;
-  // top: 34px;
-  // z-index: 11;
 
   will-change: transform;
   transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -39,12 +36,10 @@
       }
 
       &:before {
-        // transform: translate(-5px, -50%) scaleY(0.7) rotate(180deg);
         transform: translate(-5px, -50%) scaleY(0.7) rotate(90deg);
       }
 
       &:after {
-        // transform: translate(5px, -50%) scaleY(0.7) rotate(0);
         transform: translate(-5px, -33%) scaleY(0.7) rotate(90deg);
       }
     }

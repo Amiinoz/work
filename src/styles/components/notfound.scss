@@ -12,12 +12,10 @@
 
     h1 {
       font-weight: 900;
-      // font-size: 165px;
       font-size: 72px;
 
       line-height: 1;
       margin-bottom: -10px;
-      // opacity: 0.6;
     }
     h2 {
       font-weight: 700;
@@ -40,14 +38,12 @@
       border: 1px solid $black;
       padding: 8px 14px;
       border-radius: 4px;
-      // opacity: 0.4;
       cursor: pointer;
       text-decoration: none;
       background-color: $accent;
       color: $black;
     }
     a:hover {
-      // opacity: 0.2;
       background-color: $black;
       color: $accent;
     }

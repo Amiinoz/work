@@ -43,13 +43,10 @@ const Favetees = () => {
           projColorImage={Colors}
           role="role"
           roleType="Full Stack Development"
-          // button
           viewCode="https://github.com/Amiinoz/favetees"
           year="Year"
           yearOfDev="2021"
-          //button
           seeItLive="https://favetees.netlify.app/"
-          ////////////////////////////////////Deliverables///////////////////////
           delivTitle="Deliverables"
           projDelImage1={ProjDelImage1}
           projDelHead1="Typography"
@@ -69,7 +66,6 @@ const Favetees = () => {
           projDelImage6={ProjDelImage6}
           projDelHead6="Icons"
           projDelBody6="Simple clear and cohesive icons to guide customers to your target. "
-          ////////////////////////////////////Features///////////////////////
           featTitle="Features"
           projFeatImage1={ProjFeatImage1}
           projFeatHead1="Shopping Cart"
@@ -81,7 +77,6 @@ const Favetees = () => {
           projFeatHead3="Global Shipping"
           projFeatBody3="Selling beyond your borders can be an important growth area for your business."
           featuresImage={FeatureImage}
-          ////////////////////////////////////Images///////////////////////
           imagesHead="High fidelity Mockups"
           projImgTitle1="Mockups"
           projImgInfo1="Stepping outside of the traditional formats used for client
@@ -96,7 +91,6 @@ const Favetees = () => {
           projImgTitle4="Website"
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
-          ////////////////////////////////////page guides///////////////////////
           nextProject="./Covid19Tracker"
         />
       </div>

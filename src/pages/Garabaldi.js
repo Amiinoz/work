@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 import TravCover from '../assets/garabaldi/garabaldi_banner.avif';
 import Colors from '../assets/garabaldi/colorsTeck.png';
-
 import ProjDelImage1 from '../assets/garabaldi/typography.png';
 import ProjDelImage2 from '../assets/garabaldi/logo.png';
 import ProjDelImage3 from '../assets/garabaldi/Colors.png';
@@ -47,13 +46,10 @@ const Garabaldi = () => {
           projColorImage={Colors}
           role="role"
           roleType="Desing and Development"
-          // button
           viewCode="https://github.com/Amiinoz/garabaldi"
           year="Year"
           yearOfDev="2019"
-          //button
           seeItLive="https://garabaldi.netlify.app/"
-          ////////////////////////////////////Deliverables///////////////////////
           delivTitle="Deliverables"
           projDelImage1={ProjDelImage1}
           projDelHead1="Typography"
@@ -79,7 +75,6 @@ const Garabaldi = () => {
           projDelImage6={ProjDelImage6}
           projDelHead6="Icons"
           projDelBody6="Creating minimal icons that start with great form of recognition, as well as consistent across the set. "
-          ////////////////////////////////////Features///////////////////////
           featTitle="Features"
           projFeatImage1={ProjFeatImage1}
           projFeatHead1="Price table"
@@ -94,7 +89,6 @@ const Garabaldi = () => {
           projFeatBody3="Consistency in content, scalability, and a simple layout
                       are some of the most important."
           featuresImage={FeatureImage}
-          ////////////////////////////////////Images///////////////////////
           imagesHead="High fidelity Mockups"
           projImgTitle1="Mockups"
           projImgInfo1="Stepping outside of the traditional formats used for client
@@ -109,10 +103,8 @@ const Garabaldi = () => {
           projImgTitle4="Website"
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
-          ////////////////////////////////////page guides///////////////////////
           nextProject="./oneup"
         />
-        {/* <PageGuides nextProject="./MosDev" /> */}
       </div>
     </>
   );

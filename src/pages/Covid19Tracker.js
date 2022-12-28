@@ -49,7 +49,6 @@ const Covid19Tracker = () => {
           yearOfDev="2021"
           //button
           seeItLive="https://covid-19-globaltracker.netlify.app/"
-          ////////////////////////////////////Deliverables///////////////////////
           delivTitle="Deliverables"
           projDelImage1={ProjDelImage1}
           projDelHead1="Typography"
@@ -69,7 +68,6 @@ const Covid19Tracker = () => {
           projDelImage6={ProjDelImage6}
           projDelHead6="Cards"
           projDelBody6="Cards to display demographics for the 3 main sections and changes. "
-          ////////////////////////////////////Features///////////////////////
           featTitle="Features"
           projFeatImage1={ProjFeatImage1}
           projFeatHead1="Recovered"
@@ -96,7 +94,6 @@ const Covid19Tracker = () => {
           projImgTitle4="Website"
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
-          ////////////////////////////////////page guides///////////////////////
           nextProject="./Portfolio"
         />
       </div>

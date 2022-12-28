@@ -79,24 +79,6 @@ img {
   max-width: 100%;
   display: block;
   padding-right: 2rem;
-
-  // @include media('<=desktop') {
-  //   margin-inline: auto;
-  //   max-width: 90%;
-  //   padding: 1rem;
-  //   margin-left: -0.5rem;
-  // }
-
-  // @include media('<=tablet') {
-  //   margin-inline: auto;
-  //   max-width: 85%;
-  //   padding: 3rem;
-  // }
-  // @include media('<=phone') {
-  //   max-width: 50%;
-  //   display: block;
-  //   margin-left: -4.5rem;
-  // }
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -398,15 +380,9 @@ section {
 
   &__intro {
     @include media('<=tablet') {
-      // margin: -9rem 0 0 -12rem;
-      // // margin-left: -12rem;
-      // font-size: 20px;
-      // width: 550px;
-      // word-wrap: break-word;
       margin: -9rem 0 0 -25rem;
       font-size: 20px;
       width: 550px;
-      /* word-wrap: break-word; */
       max-width: 100%;
     }
     @include media('<=phone') {
@@ -595,7 +571,6 @@ section {
         outline: none;
         transition: all 0.2s ease-in-out;
         border-bottom: 1px solid $black;
-        // background-color: $bg-color;
 
         background-color: hsl(var(--clr-neutral-200));
         background-image: radial-gradient($dots 10%, transparent 15%);
@@ -769,68 +744,3 @@ section {
     }
   }
 }
-
-// ================================= Project guides
-
-// .page-guides {
-//   position: relative;
-//   padding: 1rem;
-//   background-color: #ebc340;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 99;
-//   padding-bottom: -10rem;
-//   background-color: hsl(var(--clr-neutral-200));
-//   background-image: radial-gradient($dots 10%, transparent 15%);
-//   background-position: 0 0;
-//   background-size: 7px 7px;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   display: flex;
-//   justify-content: space-evenly;
-//   padding: 48px 0 0 0;
-//   grid-gap: 80px;
-//   grid-gap: 80px;
-//   gap: 80px;
-//   height: 35px;
-
-//   // @include media('<=420px') {
-//   //   display: none;
-//   // }
-
-//   .guide {
-//     a {
-//       font-size: 1.6rem;
-//       color: $black;
-//       text-decoration: none;
-//       display: flex;
-//       align-items: center;
-//       font-weight: 600;
-//       margin-top: -4rem;
-//     }
-//     img {
-//       margin-left: 16px;
-//       border: 2px solid $black;
-//       // padding: 9px;
-//       height: 28px;
-//       width: 29px;
-
-//       transition: 0.4s ease-in-out;
-//       transform: rotate(180deg);
-//       @include media('<=phone') {
-//         display: block;
-//         max-width: 40px;
-//       }
-
-//       &:hover {
-//         background: $accent;
-//       }
-//     }
-//   }
-
-//   .nextProj img {
-//     transition: 0.4s ease-in-out;
-//     transform: rotate(360deg);
-//   }
-// }
