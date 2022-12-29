@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 
 import MainImage from '../assets/covid19-tracker/cover.jpeg';
@@ -25,8 +25,12 @@ const Covid19Tracker = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan | Covid Tracker</title>
-          <meta name="description" content="Covid Tracker" />
+          <title>Covid Tracker | Mo Magan Portfolio</title>
+          <meta
+            name="description"
+            content="Covid Tracker is an app that tracks covid infections around the world"
+          />
+          <link rel="canonical" href="https://momagan.com/Covid19Tracker" />
         </Helmet>
         <ProjectsTemplate
           title="Covid19 Tracker"

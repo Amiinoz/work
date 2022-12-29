@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Dank mono, Hasklug  Nerd Font Regular, JetBrainsMono Nerd Font Mono, Source Code Pro For Powerline, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 13,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "cSpell.words": ["scrollrender"],
   "workbench.tree.renderIndentGuides": "always",

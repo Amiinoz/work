@@ -2,6 +2,7 @@
   "name": "work",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/user-event": "^12.1.10",
@@ -64,6 +65,7 @@
     "prettier": "^2.4.1",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.3.0",
     "react-image-webp": "^0.8.0",
     "react-test-renderer": "^17.0.2",
     "url-loader": "^4.1.1"

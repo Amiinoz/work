@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 import TravCover from '../assets/garabaldi/garabaldi_banner.avif';
 import Colors from '../assets/garabaldi/colorsTeck.png';
@@ -24,8 +24,12 @@ const Garabaldi = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan | Garabladi</title>
-          <meta name="description" content="Garabaldi" />
+          <title> Garabladi | Mo Magan Portfolio</title>
+          <meta
+            name="description"
+            content="Garabaldi is resort and adventure travel website project "
+          />
+          <link rel="canonical" href="https://momagan.com/Garabaldi" />
         </Helmet>
         <ProjectsTemplate
           title="Garabaldi"

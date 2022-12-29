@@ -262,7 +262,8 @@ const ProjectsTemplate = ({
                     >
                       <motion.img
                         src={mainImage}
-                        alt="an image"
+                        loading="lazy"
+                        alt="Project image"
                         transition={transition}
                         style={{ scale }}
                         borderRadius="40"

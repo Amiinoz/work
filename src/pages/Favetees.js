@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 import ProjDelImage1 from '../assets/favetees/typography_1.png';
 import ProjDelImage2 from '../assets/favetees/logo_1.png';
@@ -25,8 +25,12 @@ const Favetees = () => {
     <>
       <div data-scroll-section>
         <Helmet>
-          <title>Mo Magan | Favetees</title>
-          <meta name="description" content="Favetees" />
+          <title>Favetees | Mo Magan Portfolio</title>
+          <meta
+            name="description"
+            content="Favetees is eCommerce project website that sells t-shirts"
+          />
+          <link rel="canonical" href="https://momagan.com/favetees" />
         </Helmet>
         <ProjectsTemplate
           title="favetees"

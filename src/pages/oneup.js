@@ -26,6 +26,7 @@ import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
 import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
+import { Helmet } from 'react-helmet-async';
 
 import '../styles/components/uxprojects.scss';
 
@@ -129,6 +130,14 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
   };
   return (
     <>
+      <Helmet>
+        <title> OneUP | Mo Magan Portfolio</title>
+        <meta
+          name="description"
+          content="OneUp is Google design challenge app that matches Mentors to inner-city youth"
+        />
+        <link rel="canonical" href="https://momagan.com/oneup" />
+      </Helmet>
       <Layout>
         <motion.div
           onAnimationComplete={() => setCanScroll(true)}
@@ -180,6 +189,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                       transition: { delay: 0.2, ...transition },
                     }}
                     className="thumbnail-single"
+                    alt="Project banner"
                   >
                     <motion.div
                       className="frame-single"
@@ -188,7 +198,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     >
                       <motion.img
                         src={Banner}
-                        alt="an image"
+                        alt="OneUp Project banner"
                         transition={transition}
                         style={{ scale }}
                         borderRadius="40"

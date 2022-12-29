@@ -10,6 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../components/scrollForMore';
 import useWindowSize from '../components/useWindowSize';
+import { Helmet } from 'react-helmet-async';
 
 import Layout from '../components/Layout';
 
@@ -135,6 +136,14 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
   };
   return (
     <>
+      <Helmet>
+        <title> Tessa | Mo Magan Portfolio </title>
+        <meta
+          name="description"
+          content="Tessa is User Experience case study for local shoe business"
+        />
+        <link rel="canonical" href="https://momagan.com/tessa" />
+      </Helmet>
       <Layout>
         <motion.div
           onAnimationComplete={() => setCanScroll(true)}

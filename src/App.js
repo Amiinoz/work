@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import OneUp from './pages/oneup';
 import Tessa from './pages/tessa';
 import Posty from './pages/Posty';

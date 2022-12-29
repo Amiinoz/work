@@ -10,6 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../components/scrollForMore';
 import useWindowSize from '../components/useWindowSize';
+import { Helmet } from 'react-helmet-async';
 
 import Layout from '../components/Layout';
 
@@ -133,6 +134,14 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
   };
   return (
     <>
+      <Helmet>
+        <title>Posty | Mo Magan Portfolio</title>
+        <meta
+          name="description"
+          content="Posty is Google design challenge app that saves time by limiting social media consumption"
+        />
+        <link rel="canonical" href="https://momagan.com/posty" />
+      </Helmet>
       <Layout>
         <motion.div
           onAnimationComplete={() => setCanScroll(true)}
@@ -192,7 +201,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     >
                       <motion.img
                         src={postyBanner}
-                        alt="an image"
+                        alt="Posty banner image"
                         transition={transition}
                         style={{ scale }}
                         borderRadius="40"
@@ -200,6 +209,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                           transition: { delay: 0.5, ...transition },
                           y: window.imageDetails > 1440 ? -800 : -400,
                         }}
+                        loading="lazy"
                       />
                     </motion.div>
                   </motion.div>
@@ -284,7 +294,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={Process} loading="lazy" />
+                    <img
+                      src={Process}
+                      loading="lazy"
+                      alt="Design process used in the project"
+                    />
                   </div>
                 </section>
 
@@ -315,7 +329,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={User} loading="lazy" />
+                    <img
+                      src={User}
+                      loading="lazy"
+                      alt="User research summary"
+                    />
                   </div>
                 </section>
                 <br />
@@ -324,7 +342,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={ComAud} />
+                    <img
+                      src={ComAud}
+                      loading="lazy"
+                      alt="Competitive audit report"
+                    />
                   </div>
                 </section>
 
@@ -350,7 +372,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={PaperWireframe} loading="lazy" />
+                    <img
+                      src={PaperWireframe}
+                      loading="lazy"
+                      alt="Paper wire-frames"
+                    />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -370,7 +396,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={DigitlaWirefame1} loading="lazy" />
+                    <img
+                      src={DigitlaWirefame1}
+                      loading="lazy"
+                      alt="Project digital wire-frames"
+                    />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -391,7 +421,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={LowFiProto} loading="lazy" />
+                    <img
+                      src={LowFiProto}
+                      loading="lazy"
+                      alt="Low fidelity prototypes"
+                    />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -414,7 +448,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={UsabilityStdy} loading="lazy" />
+                    <img
+                      src={UsabilityStdy}
+                      loading="lazy"
+                      alt="Usability study"
+                    />
                   </div>
                 </section>
 
@@ -440,7 +478,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={RefineDes1} loading="lazy" />
+                    <img src={RefineDes1} loading="lazy" alt="Redesign" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -462,7 +500,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={RefineDes2} loading="lazy" />
+                    <img
+                      src={RefineDes2}
+                      loading="lazy"
+                      alt="Refining the design"
+                    />
                   </div>
                 </section>
 
@@ -481,7 +523,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={MockUp} loading="lazy" />
+                    <img src={MockUp} loading="lazy" alt="Design Mockups" />
                   </div>
                 </section>
                 <section id="info" className="flex_info">
@@ -500,7 +542,11 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={HfProto} loading="lazy" />
+                    <img
+                      src={HfProto}
+                      loading="lazy"
+                      alt="High fidelity wire-frames"
+                    />
                   </div>
                 </section>
 
@@ -543,21 +589,33 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={Colors} loading="lazy" />
+                    <img
+                      src={Colors}
+                      loading="lazy"
+                      alt="Project branding colors"
+                    />
                   </div>
                 </section>
                 <br />
                 <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={IconFont} loading="lazy" />
+                    <img
+                      src={IconFont}
+                      loading="lazy"
+                      alt="Project branding icons"
+                    />
                   </div>
                 </section>
                 <br />
                 <br />
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={ProjLogo} loading="lazy" />
+                    <img
+                      src={ProjLogo}
+                      loading="lazy"
+                      alt="Project branding logo"
+                    />
                   </div>
                 </section>
 

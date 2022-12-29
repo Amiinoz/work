@@ -166,6 +166,8 @@ export default function Gallery({ src, index, columnOffset }) {
                 <GalleryItem
                   key={src.id}
                   index={index}
+                  alt={image.title}
+                  loading="lazy"
                   {...image}
                   updateActiveImage={handleUpdateActiveImage}
                 />

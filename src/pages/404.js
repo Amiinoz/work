@@ -1,13 +1,14 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import '../styles/components/notfound.scss';
 
 const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Mo Magan | 404 </title>
+        <title> 404 | Mo Magan Portfolio </title>
         <meta name="description" content="Not Found" />
+        <link rel="canonical" href="*" />
       </Helmet>
       <main className="container-notfound">
         <div className="content">

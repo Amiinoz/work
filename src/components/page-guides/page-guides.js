@@ -3,7 +3,6 @@ import BackArrow from '../../assets/icons/arrow-right.svg';
 import FrontArrow from '../../assets/icons/arrow-right.svg';
 
 import '../../styles/components/page-guides.scss';
-// import '../../styles/App.scss';
 
 export default function PageGuides({ nextProject }) {
   return (

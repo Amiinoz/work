@@ -5,9 +5,8 @@ import Header from '../components/header';
 import Services from '../components/services/Services';
 import Connect from '../components/contact/connect';
 import Spinner from '../assets/looper.gif';
-
 import Gallery from '../components/gallery';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import '../styles/App.scss';
 import Layout from '../components/Layout';
 
@@ -69,8 +68,12 @@ const Home = () => {
         <div className="main-container" id="main-container" data-scroll-section>
           <div className="section">
             <Helmet>
-              <title> Home | Mo Magan </title>
-              <meta name="description" content="Home" />
+              <title> Home | Mo Magan Portfolio </title>
+              <meta
+                name="description"
+                content="Mohamed Magan is Creative developer & UX designer based in Calgary, Canada"
+              />
+              <link rel="canonical" href="https://momagan.com" />
             </Helmet>
             <Layout>
               <Header />

@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form';
 import SectionHeader from '../section-header/section-header';
 import Footer from '../footer';
 
-// import '../../styles/components/connect.scss';
 import '../../styles/App.scss';
 
 const Connect = () => {

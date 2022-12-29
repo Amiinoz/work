@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 
 import PortoCover from '../assets/portfolio/portfolio_banner.jpeg';
@@ -25,8 +25,12 @@ const Portfolio = () => {
     <>
       <div>
         <Helmet>
-          <title>Mo Magan | Portfolio</title>
-          <meta name="description" content="Portfolio" />
+          <title>Portfolio | Mo Magan Portfolio</title>
+          <meta
+            name="description"
+            content="My Portfolio design and development"
+          />
+          <link rel="canonical" href="https://momagan.com/Portfolio" />
         </Helmet>
         <ProjectsTemplate
           title="Portfolio"
