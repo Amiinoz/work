@@ -20,7 +20,7 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Mo Magan | Portfolio</title>
-          <link rel="canonical" href="https://www.momagan.com/" />
+          <link rel="canonical" href="https://www.momagan.com" />
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />
