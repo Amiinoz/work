@@ -4,6 +4,9 @@
 .container-notfound {
   display: grid;
   place-items: center;
+  margin-inline: auto;
+  width: 100vw;
+  margin-top: -12rem;
 
   .content {
     text-align: center;
