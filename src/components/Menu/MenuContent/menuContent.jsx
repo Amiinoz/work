@@ -5,41 +5,41 @@ import '../../../styles/components/menuContent.scss';
 
 const internalLinks = [
   {
-    url: '/oneup/',
+    url: '/oneup',
     component: <span>OneUp</span>,
     src: require('../../../assets/oneup/oneup_banner.png').default,
   },
   {
-    url: '/tessa/',
+    url: '/tessa',
     component: <span>Tessa</span>,
     src: require('../../../assets/tessa/tessa_banner.png').default,
   },
 
   {
-    url: '/posty/',
+    url: '/posty',
     component: <span>Posty</span>,
     src: require('../../../assets/posty/posty_banner.png').default,
   },
 
   {
-    url: '/Favetees/',
+    url: '/Favetees',
     component: <span>Favetees</span>,
     src: require('../../../assets/favetees/favetees_banner.webp').default,
   },
   {
-    url: '/Covid19Tracker/',
+    url: '/Covid19Tracker',
     component: <span>Covid tracker</span>,
     src: require('../../../assets/covid19-tracker/covid_banner.jpeg').default,
   },
 
   {
-    url: '/Portfolio/',
+    url: '/Portfolio',
     component: <span>Portfolio</span>,
     src: require('../../../assets/portfolio/portfolio_banner.jpeg').default,
   },
 
   {
-    url: '/Garabaldi/',
+    url: '/Garabaldi',
     component: <span>Garabaldi</span>,
     src: require('../../../assets/garabaldi/garabaldi_banner.avif').default,
   },

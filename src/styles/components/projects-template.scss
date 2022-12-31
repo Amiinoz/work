@@ -41,6 +41,15 @@
           margin-top: 23vh;
           align-items: center;
 
+          @include media('<=tablet') {
+            display: grid;
+            place-items: center;
+          }
+          @include media('<=phone') {
+            display: grid;
+            place-items: center;
+          }
+
           span {
             display: inline-block;
             position: relative;
@@ -52,12 +61,11 @@
 
             @include media('<=tablet') {
               font-size: 30px;
-              margin-right: 60vh;
             }
 
             @include media('<=phone') {
               font-size: 25px;
-              margin-right: 59vh;
+              margin-right: 23rem;
             }
           }
         }
