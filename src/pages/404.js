@@ -7,7 +7,10 @@ const NotFound = () => {
     <>
       <Helmet>
         <title> 404 | Mo Magan Portfolio </title>
-        <meta name="description" content="Not Found" />
+        <meta
+          name="description"
+          content="The page you are looking for is not found"
+        />
         <link rel="canonical" href="*" />
       </Helmet>
       <main className="container-notfound">
