@@ -30,7 +30,7 @@ const Footer = () => {
       <section className="footer-section" data-scroll-section>
         <div className="footer">
           <div className="footer__info">
-            <p>+1.587.284.1084</p>
+            <p>+1.587.284.1043</p>
             <a href="mailto:momagan@gmail.com?">
               <p>momagan@gmail.com</p>
             </a>
