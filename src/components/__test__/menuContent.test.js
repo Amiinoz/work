@@ -14,23 +14,23 @@ test('should render header component', () => {
   expect(menuElement).toBeInTheDocument();
 
   const linkEl1 = screen.getByRole('link', { name: 'OneUp' });
-  expect(linkEl1).toHaveAttribute('href', '/oneup/');
+  expect(linkEl1).toHaveAttribute('href', '/oneup');
 
   const linkEl2 = screen.getByRole('link', { name: 'Tessa' });
-  expect(linkEl2).toHaveAttribute('href', '/tessa/');
+  expect(linkEl2).toHaveAttribute('href', '/tessa');
 
   const linkEl3 = screen.getByRole('link', { name: 'Posty' });
-  expect(linkEl3).toHaveAttribute('href', '/posty/');
+  expect(linkEl3).toHaveAttribute('href', '/posty');
 
   const linkEl4 = screen.getByRole('link', { name: 'Favetees' });
-  expect(linkEl4).toHaveAttribute('href', '/Favetees/');
+  expect(linkEl4).toHaveAttribute('href', '/Favetees');
 
   const linkEl5 = screen.getByRole('link', { name: 'Covid tracker' });
-  expect(linkEl5).toHaveAttribute('href', '/Covid19Tracker/');
+  expect(linkEl5).toHaveAttribute('href', '/Covid19Tracker');
 
   const linkEl6 = screen.getByRole('link', { name: 'Portfolio' });
-  expect(linkEl6).toHaveAttribute('href', '/Portfolio/');
+  expect(linkEl6).toHaveAttribute('href', '/Portfolio');
 
   const linkEl7 = screen.getByRole('link', { name: 'Garabaldi' });
-  expect(linkEl7).toHaveAttribute('href', '/Garabaldi/');
+  expect(linkEl7).toHaveAttribute('href', '/Garabaldi');
 });
