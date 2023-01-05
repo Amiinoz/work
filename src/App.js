@@ -20,10 +20,10 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Mo Magan | Portfolio</title>
-          <link rel="canonical" href="https://www.momagan.com/" />
+          <link rel="canonical" href="https://www.momagan.com" />
         </Helmet>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="./" component={Home} />
           <Route exact path="/oneup" component={OneUp} />
           <Route exact path="/tessa" component={Tessa} />
           <Route exact path="/Posty" component={Posty} />
