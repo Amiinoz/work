@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
 import useOnScreen from '../hooks/useOnScreen';
 import Work from '../components/work';
-
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
@@ -81,7 +79,6 @@ function GalleryItem({
 
   return (
     <div
-      data-scroll-target="#gallery"
       className={cn('gallery-item-wrapper', { 'is-reveal': onScreen })}
       ref={ref}
     >
@@ -144,7 +141,7 @@ export default function Gallery({ src, index, columnOffset }) {
       });
       ScrollTrigger.refresh();
     });
-  }, [ScrollTrigger]);
+  }, []);
 
   const handleUpdateActiveImage = index => {
     setActiveImage(index + 1);

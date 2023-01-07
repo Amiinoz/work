@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 
 import MainImage from '../assets/covid19-tracker/cover.jpeg';
@@ -30,7 +30,6 @@ const Covid19Tracker = () => {
             name="description"
             content="Covid Tracker is an app that tracks covid infections around the world"
           />
-          <link rel="canonical" href="https://momagan.com/Covid19Tracker" />
         </Helmet>
         <ProjectsTemplate
           title="Covid19 Tracker"

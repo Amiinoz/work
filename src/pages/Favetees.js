@@ -1,6 +1,6 @@
 /* eslint-disable spaced-comment */
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import ProjectsTemplate from '../components/projects-template/projects-template';
 import ProjDelImage1 from '../assets/favetees/typography_1.png';
 import ProjDelImage2 from '../assets/favetees/logo_1.png';
@@ -30,7 +30,6 @@ const Favetees = () => {
             name="description"
             content="Favetees is eCommerce project website that sells t-shirts"
           />
-          <link rel="canonical" href="https://momagan.com/favetees" />
         </Helmet>
         <ProjectsTemplate
           title="favetees"

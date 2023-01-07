@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import '../styles/components/notfound.scss';
 
 const NotFound = () => {
@@ -11,7 +11,6 @@ const NotFound = () => {
           name="description"
           content="The page you are looking for is not found"
         />
-        <link rel="canonical" href="*" />
       </Helmet>
       <main className="container-notfound">
         <div className="content">

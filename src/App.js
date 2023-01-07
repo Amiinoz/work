@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import OneUp from './pages/oneup';
 import Tessa from './pages/tessa';
 import Posty from './pages/Posty';
@@ -20,7 +20,7 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Mo Magan | Portfolio</title>
-          <link rel="canonical" href="https://www.momagan.com" />
+          <link rel="canonical" href="https://www.momagan.com/" />
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />

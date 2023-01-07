@@ -10,7 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../components/scrollForMore';
 import useWindowSize from '../components/useWindowSize';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 
@@ -140,7 +140,6 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
           name="description"
           content="Posty is Google design challenge app that saves time by limiting social media consumption"
         />
-        <link rel="canonical" href="https://momagan.com/posty" />
       </Helmet>
       <Layout>
         <motion.div

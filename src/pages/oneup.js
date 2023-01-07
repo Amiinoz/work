@@ -26,7 +26,7 @@ import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
 import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import '../styles/components/uxprojects.scss';
 
@@ -130,14 +130,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
   };
   return (
     <>
-      <Helmet>
-        <title> OneUP | Mo Magan Portfolio</title>
-        <meta
-          name="description"
-          content="OneUp is Google design challenge app that matches Mentors to inner-city youth"
-        />
-        <link rel="canonical" href="https://momagan.com/oneup" />
-      </Helmet>
       <Layout>
         <motion.div
           onAnimationComplete={() => setCanScroll(true)}
@@ -146,6 +138,13 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
           exit="exit"
           className="proj proj-cont"
         >
+          <Helmet>
+            <title> OneUP | Mo Magan Portfolio</title>
+            <meta
+              name="description"
+              content="OneUp is Google design challenge app that matches Mentors to inner-city youth"
+            />
+          </Helmet>
           <div className="container" ref={scrollContainer}>
             <div className="row center top-row">
               <div className="top">
@@ -214,7 +213,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
               </div>
             </div>
 
-            <main className="contents-detail">
+            <div className="contents-detail">
               <section id="info" className="flex_info">
                 <h1>Project Overview </h1>
                 <div className="flex_info_item">
@@ -648,7 +647,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
               </div>
               <PageGuides nextProject="./tessa" />
-            </main>
+            </div>
           </div>
         </motion.div>
       </Layout>

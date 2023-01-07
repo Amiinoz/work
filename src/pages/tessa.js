@@ -10,7 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 import ScrollForMore from '../components/scrollForMore';
 import useWindowSize from '../components/useWindowSize';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 
@@ -142,7 +142,6 @@ const Tessa = ({ title, mainImage, images, columnOffset, nextProject }) => {
           name="description"
           content="Tessa is User Experience case study for local shoe business"
         />
-        <link rel="canonical" href="https://momagan.com/tessa" />
       </Helmet>
       <Layout>
         <motion.div
