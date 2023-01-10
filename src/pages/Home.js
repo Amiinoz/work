@@ -73,6 +73,7 @@ const Home = () => {
                 name="description"
                 content="Mohamed Magan is Creative developer & UX designer based in Calgary, Canada"
               />
+              <link rel="canonical" href="https://www.momagan.com/" />
             </Helmet>
             <Layout>
               <Header />
