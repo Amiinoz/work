@@ -358,7 +358,7 @@ section {
   // max-width: 12%;
   padding-left: 12vw;
   place-items: center;
-  margin-top: -7vh;
+  // margin-top: -7vh;
   max-width: 12%;
   text-align: justify;
   @include media('>=LGdesktop') {
@@ -646,6 +646,7 @@ section {
     gap: 10rem;
     justify-content: center;
     place-items: center;
+    margin-bottom: 2.5rem;
     @include media('>=LGdesktop') {
       margin-top: 2rem;
     }

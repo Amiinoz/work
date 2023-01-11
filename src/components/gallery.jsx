@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import useOnScreen from '../hooks/useOnScreen';
-import Work from '../components/work';
+// import Work from '../components/work';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
@@ -123,6 +123,9 @@ export default function Gallery({ src, index, columnOffset }) {
   useEffect(() => {
     // This does not seem to work without a settimeout
     setTimeout(() => {
+      console.log(ref.current.offsetWidth);
+      console.log(ref.current.clientWidth);
+      console.log({ current: ref.current });
       // eslint-disable-next-line prefer-const
       let sections = gsap.utils.toArray('.gallery-item-wrapper');
 
@@ -149,7 +152,7 @@ export default function Gallery({ src, index, columnOffset }) {
 
   return (
     <>
-      <Work />
+      {/* <Work /> */}
       <section data-scroll-section className="section-wrapper gallery-wrap">
         <div className="gallery" ref={ref}>
           <div className="gallery-counter">

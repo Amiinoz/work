@@ -65,7 +65,12 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        <div className="main-container" id="main-container" data-scroll-section>
+        <div
+          className="main-container"
+          id="main-container"
+          data-scroll-section
+          ref={ref}
+        >
           <div className="section">
             <Helmet>
               <title> Home | Mo Magan Portfolio </title>

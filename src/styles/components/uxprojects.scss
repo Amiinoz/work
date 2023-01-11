@@ -164,7 +164,7 @@ h3 {
 .flex_01 img,
 .flex_02 img,
 .flex_03 img {
-  transform: scale(1.3);
+  // transform: scale(1.3);
   margin-top: -8rem;
   -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -174,7 +174,7 @@ h3 {
 .flex_01.is_visible img,
 .flex_02.is_visible img,
 .flex_03.is_visible img {
-  transform: scale(1.3);
+  // transform: scale(1.3);
   -moz-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);

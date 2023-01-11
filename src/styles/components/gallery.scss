@@ -1,7 +1,9 @@
 @import '../../styles//variables';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import '../../styles/breakpoints.scss';
+
 .gallery-wrap {
+  // background-color: lightcoral;
   margin-left: -5vw;
   margin-right: -5vw;
 
@@ -40,10 +42,17 @@
 }
 
 .gallery {
-  height: 80vh;
+  // height: 80vh;
 
-  padding: 3vh 0;
-  width: 100%;
+  // padding: 3vh 0;
+  // width: 100%;
+  // display: flex;
+  // flex-wrap: nowrap;
+
+  height: 90vh;
+
+  padding: 10vh 0;
+  // width: 100%;
   display: flex;
   flex-wrap: nowrap;
 

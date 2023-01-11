@@ -1,5 +1,5 @@
 /* eslint-disable spaced-comment */
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   motion,
   useTransform,
@@ -8,8 +8,6 @@ import {
 } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
-import ScrollForMore from '../components/scrollForMore';
-import useWindowSize from '../components/useWindowSize';
 import Layout from '../components/Layout';
 import PageGuides from '../components/page-guides/page-guides';
 import User from '../assets/oneup/user_story.png';
@@ -27,6 +25,7 @@ import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 import { Helmet } from 'react-helmet';
+import ScrollForMore from '../components/scrollForMore.js';
 
 import '../styles/components/uxprojects.scss';
 
@@ -74,63 +73,16 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
     }
   }, [animation, inView]);
 
-  //smooth scrolling with skew
-  //Hook to grab window size
-  const size = useWindowSize();
-
-  // Ref for parent div and scrolling div
-  // const app = useRef();
-  const scrollContainer = useRef();
-
-  // Configs
-  const data = {
-    ease: 0.1,
-    current: 0,
-    previous: 0,
-    rounded: 0,
-  };
-
-  // Run scroll render once page is loaded.
-  useEffect(() => {
-    requestAnimationFrame(() => skewScrolling());
-  }, []);
-
-  //set the height of the body.
-  useEffect(() => {
-    setBodyHeight();
-  }, [size.height]);
-
-  //Set the height of the body to the height of the scrolling div
-  const setBodyHeight = () => {
-    document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height
-    }px`;
-  };
-
-  // Scrolling
-  const skewScrolling = () => {
-    //Set Current to the scroll position amount
-    data.current = window.scrollY;
-    // Set Previous to the scroll previous position
-    data.previous += (data.current - data.previous) * data.ease;
-    // Set rounded to
-    data.rounded = Math.round(data.previous * 100) / 100;
-
-    // Difference between
-    const difference = data.current - data.rounded;
-    const acceleration = difference / size.width;
-    const velocity = +acceleration;
-    const skew = velocity * 0.4;
-
-    //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
-
-    //loop vai raf
-    requestAnimationFrame(() => skewScrolling());
-  };
   return (
     <>
       <Layout>
+        <Helmet>
+          <title> OneUP | Mo Magan Portfolio</title>
+          <meta
+            name="description"
+            content="OneUp is Google design challenge app that matches Mentors to inner-city youth"
+          />
+        </Helmet>
         <motion.div
           onAnimationComplete={() => setCanScroll(true)}
           initial="initial"
@@ -138,14 +90,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
           exit="exit"
           className="proj proj-cont"
         >
-          <Helmet>
-            <title> OneUP | Mo Magan Portfolio</title>
-            <meta
-              name="description"
-              content="OneUp is Google design challenge app that matches Mentors to inner-city youth"
-            />
-          </Helmet>
-          <div className="container" ref={scrollContainer}>
+          <div className="container">
             <div className="row center top-row">
               <div className="top">
                 <motion.div

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/components/notfound.scss';
-
 const NotFound = () => {
   return (
     <>

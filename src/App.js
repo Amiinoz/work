@@ -15,8 +15,8 @@ import CustomCursor from './custom-cursor/cursor';
 function App() {
   return (
     <>
-      <CustomCursor />
       <div className="App" id="#app">
+        <CustomCursor />
         <Helmet>
           <meta charSet="utf-8" />
           <title>Mo Magan | Portfolio</title>
