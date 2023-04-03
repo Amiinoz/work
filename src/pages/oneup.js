@@ -26,6 +26,9 @@ import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 import { Helmet } from 'react-helmet';
 import ScrollForMore from '../components/scrollForMore.js';
+import Solution1 from '../assets/oneup/oneup_solution1.png';
+import Solution2 from '../assets/oneup/oneup_solution2.png';
+import Solution3 from '../assets/oneup/oneup_solution3.png';
 
 import '../styles/components/uxprojects.scss';
 
@@ -160,52 +163,50 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
 
             <div className="contents-detail">
               <section id="info" className="flex_info">
-                <h1>Project Overview </h1>
+                <h1>Overview </h1>
                 <div className="flex_info_item">
                   <ul className="year">
-                    <li>PRODUCT</li>
-                    <li>
-                      I amm creating an app to help inner-city teens who
-                      struggle to balance school their environment and family
-                      dynamics connect with mentors who have once been in their
-                      shoes.
-                    </li>
-                  </ul>
-                  <ul className="year">
-                    <li>PRODUCT DURATION</li>
-                    <li>September 22</li>
-                  </ul>
-                  <ul className="year">
-                    <li>THE PROBLEM</li>
-                    <li>
-                      Inner-city youth find it difficult to navigate the
-                      Canadian education system as well as their environment and
-                      parents who are unreachable.
-                    </li>
+                    <li>TIMELINE</li>
+                    <li>August 2022 - September 2022</li>
                   </ul>
                 </div>
                 <div className="flex_info_item">
                   <ul className="role">
                     <li>MY ROLE</li>
+                    <li>Google non-profit Ux design challenge for students</li>
+                  </ul>
+                </div>
+
+                <div className="flex_info_item">
+                  <ul className="explanation"></ul>
+                </div>
+              </section>
+              <section id="info" className="flex_info">
+                <h1>THE PROBLEM </h1>
+                <div className="flex_info_item">
+                  <ul className="year">
                     <li>
-                      UX designer designing an app from conception to delivery
+                      Inner-city kids often struggle to balance their personal
+                      lives and education due to various challenges
+                    </li>
+                    <li>
+                      such as lack of resources, limited access to academic
+                      support, and exposure to negative social influences.
                     </li>
                   </ul>
+                </div>
+                <div className="flex_info_item">
                   <ul className="role">
-                    <li>RESPONSIBILITIES</li>
                     <li>
-                      Conducting interviews, paper and digital wire-framing, low
-                      and high-fidelity prototyping, conducting usability
-                      studies, accounting for accessibility, and iterating on
-                      designs.
+                      This leads to a high dropout rate, poor academic
+                      performance, and limited future opportunities
                     </li>
-                  </ul>
-                  <ul className="role">
-                    <li>THE GOAL</li>
                     <li>
-                      By connecting and receiving guidance and mentorship from
-                      University students who have once walked in their shoes,
-                      disadvantaged youth may benefit from my app.
+                      As a result, there is a pressing need to address this
+                      issue and design solutions that can help these students
+                      effectively manage their time and resources to achieve
+                      academic success while also addressing their personal
+                      needs and challenge
                     </li>
                   </ul>
                 </div>
@@ -214,6 +215,47 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <ul className="explanation"></ul>
                 </div>
               </section>
+              <section id="info" className="flex_info">
+                <h1>THE SOLUTION </h1>
+                <div className="flex_info_item">
+                  <ul className="year">
+                    <li>
+                      One potential solution to help inner-city kids balance
+                      their life and education is to develop a comprehensive
+                      digital platform that provides personalized resources and
+                      support.
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div className="flex_info_item">
+                  <ul className="role">
+                    <li></li>
+                    <li>
+                      This platform would address the specific challenges faced
+                      by these students and help them navigate their academic
+                      and personal lives.
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section id="cap">
+                <div className="flex_01">
+                  <img src={Solution1} />
+                </div>
+              </section>
+              <section id="cap">
+                <div className="flex_01">
+                  <img src={Solution2} />
+                </div>
+              </section>
+              <section id="cap">
+                <div className="flex_01">
+                  <img src={Solution3} />
+                </div>
+              </section>
+
               <div>
                 <section id="info" className="flex_info">
                   <h1>
@@ -347,13 +389,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                           {' '}
                           <br />
                           <br />
-                          <a
-                            className="link"
-                            style={{ color: 'white' }}
-                            href="https://www.figma.com/file/VlLk05t7vJU3gVHsd3yETs/Posty-Digital_Wireframes?node-id=0%3A1"
-                          >
-                            Link to prototypes
-                          </a>{' '}
                           <br /> <br />
                         </h3>
                       </li>
