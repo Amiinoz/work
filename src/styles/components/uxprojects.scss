@@ -2,6 +2,10 @@
 @import '../variables';
 @import '../loco-scroll.scss';
 
+body {
+  background-color: #fff;
+}
+
 #cap .flex_01 img {
   @include media('<=phone') {
   }

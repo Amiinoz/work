@@ -114,12 +114,14 @@ body {
 
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
-  background-color: hsl(var(--clr-neutral-200));
-  background-image: radial-gradient($dots 10%, transparent 15%);
-  background-position: 0 0;
-  background-size: 7px 7px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // background-color: hsl(var(--clr-neutral-200));
+  // background-image: radial-gradient($dots 10%, transparent 15%);
+  // background-position: 0 0;
+  // background-size: 7px 7px;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #323a45;
 }
 
 h1,

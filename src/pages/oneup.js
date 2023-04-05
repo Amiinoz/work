@@ -10,17 +10,25 @@ import {
 import { useInView } from 'react-intersection-observer';
 import Layout from '../components/Layout';
 import PageGuides from '../components/page-guides/page-guides';
-import User from '../assets/oneup/user_story.png';
-import DigitlaWirefame1 from '../assets/oneup/oneup_wireframes-1.png';
-import LowFiProto from '../assets/oneup/oneup_lowFi-proto.png';
+import User from '../assets/oneup/oneup-user_story.png';
+import UserInterview from '../assets/oneup/oneup-user_interview.png';
+
+import DigitlaWirefame1 from '../assets/oneup/digital-wireframes-1.png';
+import DigitlaWirefame2 from '../assets/oneup/digital-wireframes-2.png';
+
+import DigitlaWirefame3 from '../assets/oneup/digital-wireframes-3.png';
+
+import LowFiProto from '../assets/oneup/oneup_lowFi-proto.svg';
 import UsabilityStdy1 from '../assets/oneup/oneup_usablity-para.png';
 import UsabilityStdy2 from '../assets/oneup/oneup_usability-find.png';
 import RefineDes1 from '../assets/oneup/oneup_refine-1.png';
-import MockUp from '../assets/oneup/oneup_mockup1.webp';
-import Sitemap from '../assets/oneup/oneup_sitemap.png';
-import HfProto from '../assets/oneup/oneup_hiFi-proto.webp';
-import ComAudit from '../assets/oneup/oneup-comm.png';
-import Ideation from '../assets/oneup/oneup_paper-wireframes.png';
+import MockUp from '../assets/oneup/oneup_mockup1.png';
+import Sitemap from '../assets/oneup/oneup_sitemap.svg';
+import StickerSheet from '../assets/oneup/Sticker-sheet.png';
+import ComAudit from '../assets/oneup/oneup-com_anly.png';
+import Painpoints from '../assets/oneup/onup-painpoints.png';
+
+import Ideation from '../assets/oneup/oneup_paper-wireframes.svg';
 import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
@@ -51,7 +59,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
   };
 
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 2.15]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   const [canScroll, setCanScroll] = useState(false);
 
@@ -163,7 +171,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
 
             <div className="contents-detail">
               <section id="info" className="flex_info">
-                <h1>Overview </h1>
+                <h1> OVERVIEW </h1>
                 <div className="flex_info_item">
                   <ul className="year">
                     <li>TIMELINE</li>
@@ -185,13 +193,12 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <h1>THE PROBLEM </h1>
                 <div className="flex_info_item">
                   <ul className="year">
+                    <li></li>
                     <li>
-                      Inner-city kids often struggle to balance their personal
-                      lives and education due to various challenges
-                    </li>
-                    <li>
-                      such as lack of resources, limited access to academic
-                      support, and exposure to negative social influences.
+                      inner-city kids often struggle to balance their personal
+                      lives and education due to various challenges such as lack
+                      of resources, limited access to academic support, and
+                      exposure to negative social influences.
                     </li>
                   </ul>
                 </div>
@@ -220,10 +227,9 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <div className="flex_info_item">
                   <ul className="year">
                     <li>
-                      One potential solution to help inner-city kids balance
-                      their life and education is to develop a comprehensive
-                      digital platform that provides personalized resources and
-                      support.
+                      A potential solution to help inner-city kids balance their
+                      life and education is to develop a comprehensive digital
+                      platform that provides personalized resources and support.
                     </li>
                     <li></li>
                   </ul>
@@ -268,20 +274,34 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>USER RESEARCH SUMMARY</li>
-                      <li>
-                        A primary user group identified through research is
-                        young black teens who struggle to navigate Canadian
-                        education system and their needs. The study confirmed
-                        initial assumptions about ideal users, but also revealed
-                        that a number of factors preventing users from
-                        navigating the educational system and succeeding,
-                        including socioeconomic, institutions, environment,
-                        racism, and a lack of communication between parents and
-                        children.
-                      </li>
+                      These research questions would help gather insights from
+                      inner-city kids about their current experiences,
+                      challenges, and needs in balancing their academic and
+                      personal lives. The findings would inform the design and
+                      development of a digital platform that effectively
+                      addresses their unique requirements and helps them achieve
+                      academic success while navigating their personal
+                      circumstances.
                     </ul>
                   </div>
+                </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={UserInterview} />
+                  </div>
+                </section>
+                <section id="cap">
+                  <h3>USER RESEARCH SUMMARY</h3>
+                  <p>
+                    A primary user group identified through research is young
+                    teens who struggle to navigate Canadian education system and
+                    their needs. The study confirmed initial assumptions about
+                    ideal users, but also revealed that a number of factors
+                    preventing users from navigating the educational system and
+                    succeeding, including socioeconomic, institutions,
+                    environment, racism, and a lack of communication between
+                    parents and children.
+                  </p>
                 </section>
                 <section id="cap">
                   <div className="flex_01">
@@ -310,17 +330,22 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={ComAudit} />
                   </div>
                 </section>
+                <section id="cap">
+                  <div className="flex_01">
+                    <img src={Painpoints} />
+                  </div>
+                </section>
 
                 <section id="info" className="flex_info">
                   <h1>Ideation</h1>
-                  <h3>Crazy 8 Design</h3>
+                  <h3>INITIAL SKETCHES</h3>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>INITIAL SKETCHES</li>
                       <li>
                         From the beginning, my sketching goals were to place the
                         user at the center of everything the app does
                       </li>
+                      <li></li>
                     </ul>
                   </div>
                 </section>
@@ -370,6 +395,12 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="cap">
                   <div className="flex_01">
                     <img src={DigitlaWirefame1} />
+                  </div>
+                  <div className="flex_01">
+                    <img src={DigitlaWirefame2} />
+                  </div>
+                  <div className="flex_01">
+                    <img src={DigitlaWirefame3} />
                   </div>
                 </section>
 
@@ -467,19 +498,18 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </section>
                 <section id="info" className="flex_info">
                   <h1>
-                    High fidelity <br />
-                    Wireframes{' '}
+                    Sticker sheet <br />{' '}
                   </h1>
                   <div className="flex_info_item">
                     <ul className="year">
-                      <li>HIGH FIDELITY WIRE-FRAMES</li>
+                      <li>STYYLE GUIDE</li>
                       <li></li>
                     </ul>
                   </div>
                 </section>
                 <section id="cap">
                   <div className="flex_01">
-                    <img src={HfProto} />
+                    <img src={StickerSheet} />
                   </div>
                 </section>
 
