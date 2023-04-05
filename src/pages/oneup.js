@@ -19,8 +19,7 @@ import DigitlaWirefame2 from '../assets/oneup/digital-wireframes-2.png';
 import DigitlaWirefame3 from '../assets/oneup/digital-wireframes-3.png';
 
 import LowFiProto from '../assets/oneup/oneup_lowFi-proto.svg';
-import UsabilityStdy1 from '../assets/oneup/oneup_usablity-para.png';
-import UsabilityStdy2 from '../assets/oneup/oneup_usability-find.png';
+import UsabilityStdy1 from '../assets/oneup/oneup-usability.png';
 import RefineDes1 from '../assets/oneup/oneup_refine-1.png';
 import MockUp from '../assets/oneup/oneup_mockup1.png';
 import Sitemap from '../assets/oneup/oneup_sitemap.svg';
@@ -448,11 +447,6 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 <section id="cap">
                   <div className="flex_01">
                     <img src={UsabilityStdy1} />
-                  </div>
-                </section>
-                <section id="cap">
-                  <div className="flex_01">
-                    <img src={UsabilityStdy2} />
                   </div>
                 </section>
 

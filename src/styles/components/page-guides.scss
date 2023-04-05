@@ -11,10 +11,12 @@
   width: 100%;
   z-index: 99;
   padding-bottom: -10rem;
-  background-color: hsl(var(--clr-neutral-200));
-  background-image: radial-gradient($dots 10%, transparent 15%);
-  background-position: 0 0;
-  background-size: 7px 7px;
+  // background-color: hsl(var(--clr-neutral-200));
+  // background-image: radial-gradient($dots 10%, transparent 15%);
+  // background-position: 0 0;
+  // background-size: 7px 7px;
+  background-color: #ffffff;
+  color: #323a45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
