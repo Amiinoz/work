@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import useOnScreen from '../hooks/useOnScreen';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import Work from './work';
 
 import '../styles/components/gallery.scss';
 
@@ -150,7 +151,7 @@ export default function Gallery({ src, index, columnOffset }) {
 
   return (
     <>
-      {/* <Work /> */}
+      <Work />
       <section data-scroll-section className="section-wrapper gallery-wrap">
         <div className="gallery" ref={ref}>
           <div className="gallery-counter">

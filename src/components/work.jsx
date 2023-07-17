@@ -7,8 +7,12 @@ import '../styles/components/work.scss';
 const Work = () => {
   return (
     <section className="work-section">
-      <SectionHeader title="work" subtitle="Projects" heading="Selected work" />
-      <div className="work-wrap"></div>
+      <SectionHeader
+        title="Hello, I am Mohamed"
+        subtitle="Creative Developer & UX Designer"
+        heading="Based in Calgary"
+      />
+      {/* <div className="work-wrap"></div> */}
     </section>
   );
 };

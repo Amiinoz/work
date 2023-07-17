@@ -12,14 +12,7 @@ const accordionIds = [
   {
     id: 0,
     title: 'Design',
-    results: [
-      'UX design',
-      'User research',
-      'Information architecture',
-      'Interaction design',
-      'Visual design',
-      'Usability testing',
-    ],
+    results: ['UX design', 'UI development'],
   },
   {
     id: 1,
@@ -36,10 +29,7 @@ const projectArchive = [
       'Vanilla Js Chat app',
       'Budget ap',
       'Web news scrapper ',
-      'Blog post',
       'React and Framer motion',
-      'PWA Weather app',
-      'Awwwards remake',
       'WebGL Portfolio',
       'Dice game',
     ],
@@ -64,8 +54,8 @@ const Services = ({ text }) => {
     <>
       <SectionHeader
         title="Service"
-        subtitle="Passion"
-        heading="Design and Development"
+        subtitle="Design & Development"
+        heading="Passion"
         id="work-header"
       />
       <div
@@ -89,41 +79,22 @@ const Services = ({ text }) => {
           data-scroll-delay="0.03"
           data-scroll-speed="0.6"
         >
-          <h4>Collaboration</h4>
           <p>
-            My approach to design is centered on collaboration, and I enjoy
-            working with small businesses and stakeholders to help them develop
-            viable products. I conduct usability studies, create sitemaps and
-            wireframes, and enhance the overall product design to improve the
-            user experience. Outside of work, I stay active by playing soccer
-            and basketball, and I volunteer in my community to stay grounded.
-            Thank you for taking the time to visit my portfolio, and please feel
-            free to contact me with any questions or opportunities for
-            collaboration.
-          </p>
-
-          <h4>Skills</h4>
-          <p>
-            In addition to my experience and skills in the creative industry, I
-            bring a strong passion for creating beautiful and user-friendly
-            designs to the table. With a keen eye for detail and a focus on
-            delivering amazing user experiences, my goal is always to create the
-            best possible experience for the user, whether it’s through a
-            website, app, or any other type of digital product. I truly believe
-            that good design can make a difference in people’s lives, and I am
-            excited to contribute to making the world a more beautiful and
-            user-friendly place.
-          </p>
-
-          <h4>I love what I do</h4>
-          <p>
-            I love working in the design industry because it is constantly
-            changing and evolving, providing new opportunities to learn and
-            grow. The challenge of designing for different user needs is both
-            creatively and intellectually stimulating, and I find the process of
-            designing solutions to problems extremely rewarding. Collaborating
-            with others and building relationships, both professional and
-            personal, is also a highlight of working in this industry.
+            My design approach involves collaborating closely with small
+            businesses and stakeholders to develop successful products. I
+            utilize user centric design, usability studies, sitemaps,
+            wireframes, and enhanced product design to improve the user
+            experience. Outside of work, I participate in sports and community
+            volunteering. Thank you for visiting my portfolio. Please do not
+            hesitate to reach out for inquiries or collaboration opportunities.
+            I am passionate about creating beautiful and user-friendly designs,
+            aiming to deliver exceptional user experiences across various
+            digital platforms. I believe that good design can positively impact
+            lives. The ever-evolving nature of the design industry excites me,
+            presenting constant opportunities for growth and learning. Designing
+            solutions for diverse user needs stimulates my creativity and
+            intellect, and building professional and personal relationships
+            through collaboration is a fulfilling aspect of my work.
           </p>
 
           <span>
