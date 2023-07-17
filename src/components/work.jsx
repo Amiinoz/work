@@ -8,9 +8,10 @@ const Work = () => {
   return (
     <section className="work-section">
       <SectionHeader
-        title="Hello, I am Mohamed"
-        subtitle="Creative Developer & UX Designer"
-        heading="Based in Calgary"
+        title="Work"
+        subtitle="Selected Projects"
+        heading="Design & Development"
+        // id="slc-proj"
       />
       {/* <div className="work-wrap"></div> */}
     </section>

@@ -17,7 +17,11 @@ const accordionIds = [
   {
     id: 1,
     title: 'Development',
-    results: ['Front end Development', 'Basic database setup', 'Depolyment'],
+    results: [
+      'Front end Development',
+      'Basic database & API call setup',
+      'Deployment',
+    ],
   },
 ];
 
