@@ -11,17 +11,17 @@ import SectionHeader from '../section-header/section-header';
 const accordionIds = [
   {
     id: 0,
-    title: 'Design',
-    results: ['UX design', 'UI development'],
-  },
-  {
-    id: 1,
     title: 'Development',
     results: [
       'Front end Development',
       'Basic database & API call setup',
       'Deployment',
     ],
+  },
+  {
+    id: 1,
+    title: 'Design',
+    results: ['UX design', 'UI development'],
   },
 ];
 
@@ -84,21 +84,25 @@ const Services = ({ text }) => {
           data-scroll-speed="0.6"
         >
           <p>
-            My design approach involves collaborating closely with small
-            businesses and stakeholders to develop successful products. I
-            utilize user centric design, usability studies, sitemaps,
+            I am passionate about creating beautiful and user-friendly designs
+            that provide exceptional user experiences across various digital
+            platforms. It is my belief that good design can positively impact
+            the lives of people.
+          </p>
+          <br />
+          <p>
+            I work closely with small businesses and stakeholders to develop
+            successful products through a user-centric design approach. This
+            involves conducting user research, usability studies, sitemaps,
             wireframes, and enhanced product design to improve the user
-            experience. Outside of work, I participate in sports and community
-            volunteering. Thank you for visiting my portfolio. Please do not
-            hesitate to reach out for inquiries or collaboration opportunities.
-            I am passionate about creating beautiful and user-friendly designs,
-            aiming to deliver exceptional user experiences across various
-            digital platforms. I believe that good design can positively impact
-            lives. The ever-evolving nature of the design industry excites me,
-            presenting constant opportunities for growth and learning. Designing
-            solutions for diverse user needs stimulates my creativity and
-            intellect, and building professional and personal relationships
-            through collaboration is a fulfilling aspect of my work.
+            experience. In my free time, I enjoy sports and volunteering within
+            my community.
+          </p>
+          <br />
+          <p>
+            Thank you for taking the time to view my portfolio. If you have any
+            inquiries or collaboration opportunities, please do not hesitate to
+            contact me.
           </p>
 
           <span>
