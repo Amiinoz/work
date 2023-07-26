@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import useOnScreen from '../hooks/useOnScreen';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import Work from './work';
 
 import '../styles/components/gallery.scss';
 
@@ -17,10 +18,10 @@ const images = [
   },
   {
     id: 1,
-    src: require('../assets/tessa/tessa_banner.png').default,
-    title: 'Tessa',
-    subtitle: 'E-commerce site',
-    category: 'Ux Design',
+    src: require('../assets/covid19-tracker/covid_banner.jpeg').default,
+    title: 'Covid19Tracker',
+    subtitle: 'Global data',
+    category: 'Development / Website',
   },
   {
     id: 2,
@@ -31,31 +32,25 @@ const images = [
   },
   {
     id: 3,
-    src: require('../assets/favetees/favetees_banner.webp').default,
-    title: 'Favetees',
-    subtitle: 'E-Commerce site',
-    category: 'Development / Full Stack',
-  },
-  {
-    id: 4,
-    src: require('../assets/covid19-tracker/covid_banner.jpeg').default,
-    title: 'Covid19Tracker',
-    subtitle: 'Global data',
-    category: 'Development / Website',
-  },
-  {
-    id: 5,
     src: require('../assets/portfolio/portfolio_banner.jpeg').default,
     title: 'Portfolio',
     subtitle: 'Projects',
     category: 'Design / Development',
   },
   {
-    id: 6,
-    src: require('../assets/garabaldi/garabaldi_banner.avif').default,
-    title: 'Garabaldi',
-    subtitle: 'Resorts & Spa',
-    category: 'Development / Website',
+    id: 4,
+    src: require('../assets/tessa/tessa_banner.png').default,
+    title: 'Tessa',
+    subtitle: 'E-commerce site',
+    category: 'Ux Design',
+  },
+
+  {
+    id: 5,
+    src: require('../assets/favetees/favetees_banner.webp').default,
+    title: 'Favetees',
+    subtitle: 'E-Commerce site',
+    category: 'Development / Full Stack',
   },
 ];
 function GalleryItem({
@@ -150,7 +145,7 @@ export default function Gallery({ src, index, columnOffset }) {
 
   return (
     <>
-      {/* <Work /> */}
+      <Work />
       <section data-scroll-section className="section-wrapper gallery-wrap">
         <div className="gallery" ref={ref}>
           <div className="gallery-counter">

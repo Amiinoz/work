@@ -1,7 +1,8 @@
 import React from 'react';
-import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import CustomCursor from './custom-cursor/cursor';
+import Home from './pages/Home';
 import OneUp from './pages/oneup';
 import Tessa from './pages/tessa';
 import Posty from './pages/Posty';
@@ -10,16 +11,15 @@ import Covid19Tracker from './pages/Covid19Tracker';
 import Portfolio from './pages/Portfolio';
 import Garabaldi from './pages/Garabaldi';
 import NotFound from './pages/404';
-import CustomCursor from './custom-cursor/cursor';
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="App" id="#app">
         <CustomCursor />
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Mo Magan | Portfolio</title>
+          <title>{`Mo Magan | Portfolio`}</title>
           <link rel="canonical" href="https://www.momagan.com/" />
         </Helmet>
         <Switch>
@@ -36,6 +36,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

@@ -4,5 +4,10 @@
   height: 100%;
   position: relative;
   will-change: transform;
-  margin: 0 -5vw -5vh 15vw;
+  // margin: 0 -5vw -5vh 15vw;
+}
+
+.work-section {
+  margin: 0 -5vw -15vh 5vw;
+  line-height: -3rem;
 }

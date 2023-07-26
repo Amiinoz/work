@@ -7,8 +7,13 @@ import '../styles/components/work.scss';
 const Work = () => {
   return (
     <section className="work-section">
-      <SectionHeader title="work" subtitle="Projects" heading="Selected work" />
-      <div className="work-wrap"></div>
+      <SectionHeader
+        title="Work"
+        subtitle="Selected Projects"
+        heading="Design & Development"
+        // id="slc-proj"
+      />
+      {/* <div className="work-wrap"></div> */}
     </section>
   );
 };

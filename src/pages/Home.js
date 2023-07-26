@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import useLocoScroll from '../hooks/useLocoScroll';
 import About from '../components/about';
 import Header from '../components/header';
-import Services from '../components/services/Services';
+import Gallery from '../components/gallery';
 import Connect from '../components/contact/connect';
 import Spinner from '../assets/looper.gif';
-import Gallery from '../components/gallery';
 import { Helmet } from 'react-helmet';
+import Services from '../components/services/Services';
 import '../styles/App.scss';
 import Layout from '../components/Layout';
 
@@ -14,48 +14,44 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  const [timer, setTimer] = useState(1);
 
   useLocoScroll(!preloader);
 
   useEffect(() => {
-    if (!preloader && ref) {
+    if (!preloader && ref.current) {
       if (typeof window === 'undefined' || !window.document) {
         return;
       }
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(1);
-
-  const id = React.useRef(null);
-
   const clear = () => {
-    window.clearInterval(id.current);
+    clearInterval(id.current);
     setPreload(false);
   };
 
-  React.useEffect(() => {
-    id.current = window.setInterval(() => {
+  const id = useRef(null);
+
+  useEffect(() => {
+    id.current = setInterval(() => {
       setTimer(time => time - 1);
     }, 1000);
     return () => clear();
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (timer === 0) {
       clear();
     }
   }, [timer]);
-
-  if (typeof window === 'undefined' || !window.document) {
-    return null;
-  }
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   console.log(toggleSidebar);
+
   return (
     <>
       {preloader ? (
@@ -73,7 +69,7 @@ const Home = () => {
         >
           <div className="section">
             <Helmet>
-              <title> Home | Mo Magan Portfolio </title>
+              <title>{`Home | Mo Magan Portfolio`}</title>
               <meta
                 name="description"
                 content="Mohamed Magan is Creative developer & UX designer based in Calgary, Canada"
@@ -81,8 +77,8 @@ const Home = () => {
               <link rel="canonical" href="https://www.momagan.com/" />
             </Helmet>
             <Layout>
-              <Header />
-              <Gallery />
+              <Header toggleSidebar={toggleSidebar} />
+              <Gallery toggleSidebar={toggleSidebar} />
               <About />
               <Services />
               <Connect />
