@@ -89,41 +89,32 @@ const Services = ({ text }) => {
           data-scroll-delay="0.03"
           data-scroll-speed="0.6"
         >
-          <h4>Collaboration</h4>
           <p>
-            My approach to design is centered on collaboration, and I enjoy
-            working with small businesses and stakeholders to help them develop
-            viable products. I conduct usability studies, create sitemaps and
-            wireframes, and enhance the overall product design to improve the
-            user experience. Outside of work, I stay active by playing soccer
-            and basketball, and I volunteer in my community to stay grounded.
-            Thank you for taking the time to visit my portfolio, and please feel
-            free to contact me with any questions or opportunities for
-            collaboration.
+            I have a passion for crafting seamless online experiences, I offer a
+            comprehensive range of solutions to cater to your digital needs. As
+            a skilled web developer, I specialize in building responsive,
+            user-friendly websites that not only impress visually but also
+            deliver exceptional performance across devices. Whether you require
+            a captivating landing page, an e-commerce platform, or a
+            full-fledged corporate website, I ensure every project is
+            custom-tailored to meet your unique requirements.
           </p>
+          <br />
 
-          <h4>Skills</h4>
           <p>
-            In addition to my experience and skills in the creative industry, I
-            bring a strong passion for creating beautiful and user-friendly
-            designs to the table. With a keen eye for detail and a focus on
-            delivering amazing user experiences, my goal is always to create the
-            best possible experience for the user, whether it’s through a
-            website, app, or any other type of digital product. I truly believe
-            that good design can make a difference in people’s lives, and I am
-            excited to contribute to making the world a more beautiful and
-            user-friendly place.
-          </p>
-
-          <h4>I love what I do</h4>
-          <p>
-            I love working in the design industry because it is constantly
-            changing and evolving, providing new opportunities to learn and
-            grow. The challenge of designing for different user needs is both
-            creatively and intellectually stimulating, and I find the process of
-            designing solutions to problems extremely rewarding. Collaborating
-            with others and building relationships, both professional and
-            personal, is also a highlight of working in this industry.
+            Furthermore, as a UX designer, I place a strong emphasis on user
+            research and interaction design to create intuitive interfaces that
+            enhance user satisfaction and engagement. By employing wireframes,
+            prototypes, and usability testing, I guarantee that each design
+            decision aligns with your target audience is preferences and goals.
+            By combining cutting-edge technologies with a user-centric approach,
+            my services encompass the perfect blend of creativity and
+            functionality. As I take pride in delivering projects on time and
+            within budget, you can rest assured that your digital aspirations
+            are in safe hands. Lets collaborate to transform your ideas into
+            reality and create digital experiences that stand out in todays
+            competitive landscape. Get in touch, and lets embark on a journey to
+            craft a remarkable online presence for your brand.
           </p>
 
           <span>
