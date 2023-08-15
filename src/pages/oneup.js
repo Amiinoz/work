@@ -18,17 +18,17 @@ import DigitlaWirefame2 from '../assets/oneup/digital-wireframes-2.png';
 
 import DigitlaWirefame3 from '../assets/oneup/digital-wireframes-3.png';
 
-import LowFiProto from '../assets/oneup/oneup_lowFi-proto.svg';
-import UsabilityStdy1 from '../assets/oneup/oneup-usability.png';
+// import LowFiProto from '../assets/oneup/oneup_lowFi-proto.svg';
+// import UsabilityStdy1 from '../assets/oneup/oneup-usability.png';
 import RefineDes1 from '../assets/oneup/oneup_refine-1.png';
 import MockUp from '../assets/oneup/oneup_mockup1.png';
 import Sitemap from '../assets/oneup/oneup_sitemap.svg';
 import StickerSheet from '../assets/oneup/Sticker-sheet.png';
-import ComAudit from '../assets/oneup/oneup-com_anly.png';
+// import ComAudit from '../assets/oneup/oneup-com_anly.png';
 import Painpoints from '../assets/oneup/onup-painpoints.png';
 
 import Ideation from '../assets/oneup/oneup_paper-wireframes.svg';
-import UserJourney from '../assets/oneup/oneup_user-journey.png';
+// import UserJourney from '../assets/oneup/oneup_user-journey.png';
 import ResDesign from '../assets/oneup/oneup_respponsive.webp';
 import Banner from '../assets/oneup/oneup_banner.png';
 import { Helmet } from 'react-helmet';
@@ -308,7 +308,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                <section id="info" className="flex_info">
+                {/* <section id="info" className="flex_info">
                   <h1>
                     Competitive
                     <br /> audit{' '}
@@ -329,6 +329,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <img src={ComAudit} />
                   </div>
                 </section>
+                */}
                 <section id="cap">
                   <div className="flex_01">
                     <img src={Painpoints} />
@@ -354,7 +355,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
 
-                <section id="info" className="flex_info">
+                {/* <section id="info" className="flex_info">
                   <h1>User</h1>
                   <h3>Zaks journey</h3>
                   <div className="flex_info_item">
@@ -369,7 +370,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_01">
                     <img src={UserJourney} />
                   </div>
-                </section>
+                </section> */}
 
                 <section id="cap"></section>
                 <section id="info" className="flex_info">
@@ -407,7 +408,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <h1>
                     Starting <br /> the designing
                   </h1>
-                  <div className="flex_info_item">
+                  {/* <div className="flex_info_item">
                     <ul className="year">
                       <li>LOW FIDELITY PROTOTYPES</li>
                       <li>
@@ -423,9 +424,9 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                         </h3>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </section>
-                <section id="cap">
+                {/* <section id="cap">
                   <div className="flex_01">
                     <img src={LowFiProto} />
                   </div>
@@ -448,7 +449,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   <div className="flex_01">
                     <img src={UsabilityStdy1} />
                   </div>
-                </section>
+                </section> */}
 
                 <section id="info" className="flex_info">
                   <h1>
