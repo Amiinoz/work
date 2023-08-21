@@ -73,7 +73,7 @@ const Home = () => {
         >
           <div className="section">
             <Helmet>
-              <title> Home | Mo Magan Portfolio </title>
+              <title> Home | Mo Magan | Portfolio </title>
               <meta
                 name="description"
                 content="Mohamed Magan is Creative developer & UX designer based in Calgary, Canada"
