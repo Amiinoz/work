@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import '../styles/components/cursor.scss';
 
 const CustomCursor = () => {
-  const secondaryCursor = React.useRef(null);
+  const secondaryCursor = useRef(null);
 
-  const positionRef = React.useRef({
+  const positionRef = useRef({
     mouseX: 0,
     mouseY: 0,
     destinationX: 0,
@@ -15,23 +15,26 @@ const CustomCursor = () => {
     key: -1,
   });
 
-  React.useEffect(() => {
-    document.addEventListener('mousemove', event => {
+  // Track mouse movement
+  useEffect(() => {
+    const handleMouseMove = (event) => {
       const { clientX, clientY } = event;
 
-      const mouseX = clientX;
-      const mouseY = clientY;
-
       positionRef.current.mouseX =
-        mouseX - secondaryCursor.current.clientWidth / 2;
+        clientX - secondaryCursor.current.clientWidth / 2;
       positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
-    });
+        clientY - secondaryCursor.current.clientHeight / 2;
+    };
 
-    return () => {};
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
-  React.useEffect(() => {
+  // Animate cursor with smooth following effect
+  useEffect(() => {
     const followMouse = () => {
       positionRef.current.key = requestAnimationFrame(followMouse);
       const {
@@ -42,12 +45,14 @@ const CustomCursor = () => {
         distanceX,
         distanceY,
       } = positionRef.current;
+
       if (!destinationX || !destinationY) {
         positionRef.current.destinationX = mouseX;
         positionRef.current.destinationY = mouseY;
       } else {
         positionRef.current.distanceX = (mouseX - destinationX) * 0.1;
         positionRef.current.distanceY = (mouseY - destinationY) * 0.1;
+
         if (
           Math.abs(positionRef.current.distanceX) +
             Math.abs(positionRef.current.distanceY) <
@@ -60,10 +65,17 @@ const CustomCursor = () => {
           positionRef.current.destinationY += distanceY;
         }
       }
-      if (secondaryCursor && secondaryCursor.current)
+
+      if (secondaryCursor && secondaryCursor.current) {
         secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      }
     };
+
     followMouse();
+
+    return () => {
+      cancelAnimationFrame(positionRef.current.key);
+    };
   }, []);
 
   return (

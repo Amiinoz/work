@@ -749,3 +749,62 @@ section {
     }
   }
 }
+
+// ================================= Intro Overlay
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.top {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  .overlay-top {
+    position: absolute;
+    height: 100%;
+    width: 33.333vw;
+    background: #000;
+    top: 0;
+    &:nth-child(1) {
+      left: 0;
+    }
+    &:nth-child(2) {
+      left: 33.333%;
+    }
+    &:nth-child(3) {
+      left: 66.666%;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  .overlay-bottom {
+    position: absolute;
+    height: 100%;
+    width: 33.333vw;
+    background: #000;
+    bottom: 0;
+    &:nth-child(1) {
+      left: 0;
+    }
+    &:nth-child(2) {
+      left: 33.333%;
+    }
+    &:nth-child(3) {
+      left: 66.666%;
+    }
+  }
+}

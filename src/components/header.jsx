@@ -16,14 +16,14 @@ const Header = () => {
         <div className="welcome-text">
           <p>Hi, I am Mohamed</p>
         </div>
-        <h1 id="header-text" data-scroll="" data-offset="3.0">
-          Creative
+        <h1 id="header-text" className="line" data-scroll="" data-offset="3.0">
+          <span>Creative</span>
           <br />
-          Developer
+          <span>Developer</span>
           <br />
-          & UX Designer
+          <span>& UX Designer</span>
           <br />
-          Based in Calgary
+          <span>Based in Calgary</span>
         </h1>
         <div className="scrl">
           <ScrollForMore />

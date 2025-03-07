@@ -9,10 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 export default function useLocoScroll(start) {
   useEffect(() => {
     if (!start) return;
-    let locoScroll = null;
 
+    let locoScroll = null;
     const scrollEl = document.querySelector('#main-container');
 
+    // Initialize Locomotive Scroll
     locoScroll = new LocomotiveScroll({
       el: scrollEl,
       smooth: true,
@@ -20,10 +21,12 @@ export default function useLocoScroll(start) {
       class: 'is-reveal',
     });
 
+    // Update ScrollTrigger when locomotive scroll updates
     locoScroll.on('scroll', () => {
       ScrollTrigger.update();
     });
 
+    // Set up ScrollTrigger proxy for smooth scrolling integration
     ScrollTrigger.scrollerProxy(scrollEl, {
       scrollTop(value) {
         if (locoScroll) {
@@ -43,6 +46,7 @@ export default function useLocoScroll(start) {
       },
     });
 
+    // Update locomotive scroll when ScrollTrigger refreshes
     const lsUpdate = () => {
       if (locoScroll) {
         locoScroll.update();
@@ -52,12 +56,12 @@ export default function useLocoScroll(start) {
     ScrollTrigger.addEventListener('refresh', lsUpdate);
     ScrollTrigger.refresh();
 
+    // Cleanup function
     return () => {
       if (locoScroll) {
         ScrollTrigger.removeEventListener('refresh', lsUpdate);
         locoScroll.destroy();
         locoScroll = null;
-        console.log('Kill', locoScroll);
       }
     };
   }, [start]);
