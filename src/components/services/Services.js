@@ -68,21 +68,7 @@ const Services = ({ text }) => {
         heading="Design and Development"
         id="work-header"
       />
-      <div
-        ref={aboutRef}
-        animate={animation}
-        initial="hidden"
-        variants={{
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] },
-          },
-          hidden: { opacity: 0, y: 72 },
-        }}
-        data-scroll-section
-        className="service-container"
-      >
+      <div ref={aboutRef} data-scroll-section className="service-container">
         <div
           className="service-container__intro"
           data-scroll

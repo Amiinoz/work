@@ -2,13 +2,11 @@ import React from 'react';
 import Home from './pages/Home';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import DigitalDivide from './pages/DigitalDivide';
+import TheBrdge from './pages/TheBrdge';
 import OneUp from './pages/oneup';
-import Tessa from './pages/tessa';
 import Posty from './pages/Posty';
-import Favetees from './pages/Favetees';
-import Covid19Tracker from './pages/Covid19Tracker';
 import Portfolio from './pages/Portfolio';
-import Garabaldi from './pages/Garabaldi';
 import NotFound from './pages/404';
 import CustomCursor from './custom-cursor/cursor';
 
@@ -24,13 +22,14 @@ function App() {
         </Helmet>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/DigitalDivide" component={DigitalDivide} />
+          <Route exact path="/TheBrdge" component={TheBrdge} />
           <Route exact path="/oneup" component={OneUp} />
-          <Route exact path="/tessa" component={Tessa} />
+
           <Route exact path="/Posty" component={Posty} />
-          <Route exact path="/Favetees" component={Favetees} />
-          <Route exact path="/Covid19Tracker" component={Covid19Tracker} />
+
           <Route exact path="/Portfolio" component={Portfolio} />
-          <Route exact path="/Garabaldi" component={Garabaldi} />
+
           <Route path="*" component={NotFound} />
         </Switch>
       </div>

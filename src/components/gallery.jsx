@@ -11,46 +11,40 @@ import '../styles/components/gallery.scss';
 const images = [
   {
     id: 0,
+    src: require('../assets/digitalDivide/dd-banner.png').default,
+    title: 'DigitalDivide',
+    subtitle: 'Bridging the gap',
+    category: 'An Accessibility-Focused UX Study ',
+  },
+  {
+    id: 1,
+    src: require('../assets/theBrdge/thebridge-banner.png').default,
+    title: 'TheBrdge',
+    subtitle: 'Local catering service',
+    category: 'Ux Design ',
+  },
+
+  {
+    id: 2,
     src: require('../assets/oneup/oneup_banner.png').default,
     title: 'OneUp',
     subtitle: 'Mentoring App',
     category: 'Ux Design & UI development',
   },
+
   {
-    id: 1,
-    src: require('../assets/favetees/favetees_banner.webp').default,
-    title: 'Favetees',
-    subtitle: 'E-Commerce site',
-    category: 'Development / Full Stack',
-  },
-  {
-    id: 2,
+    id: 3,
     src: require('../assets/posty/posty_banner.png').default,
     title: 'Posty',
     subtitle: 'Time Manegment App',
     category: 'Ux Design',
   },
   {
-    id: 3,
+    id: 4,
     src: require('../assets/portfolio/portfolio_banner.jpeg').default,
     title: 'Portfolio',
     subtitle: 'Projects',
     category: 'Design / Development',
-  },
-  {
-    id: 4,
-    src: require('../assets/tessa/tessa_banner.png').default,
-    title: 'Tessa',
-    subtitle: 'E-commerce site',
-    category: 'Ux Design',
-  },
-
-  {
-    id: 5,
-    src: require('../assets/garabaldi/garabaldi_banner.avif').default,
-    title: 'Garabaldi',
-    subtitle: 'Resorts & Spa',
-    category: 'Development / Website',
   },
 ];
 function GalleryItem({
