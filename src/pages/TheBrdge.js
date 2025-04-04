@@ -15,6 +15,8 @@ import Banner from '../assets/theBrdge/thebridge-banner.png';
 import { Helmet } from 'react-helmet';
 import ScrollForMore from '../components/scrollForMore.js';
 import Solution1 from '../assets/theBrdge/thebrdge-banner2.png';
+import Findings from '../assets/theBrdge/thebrdge-findings.png';
+import Recommendations from '../assets/theBrdge/thebrdge-recommendations.png';
 
 import '../styles/components/uxprojects.scss';
 
@@ -314,6 +316,7 @@ const TheBrdge = ({ title, mainImage, images, columnOffset, nextProject }) => {
               <section id="info" className="flex_info">
                 <h1>Key </h1>
                 <p>Findings</p>
+
                 <div className="flex_info_item">
                   <ul className="year">
                     <h3>Positive Insights.</h3>
@@ -324,6 +327,11 @@ const TheBrdge = ({ title, mainImage, images, columnOffset, nextProject }) => {
                     <br />
                     <br />
                   </ul>
+                </div>
+              </section>
+              <section id="cap">
+                <div className="flex_01">
+                  <img src={Findings} />
                 </div>
               </section>
               <section id="info" className="flex_info">
@@ -353,7 +361,75 @@ const TheBrdge = ({ title, mainImage, images, columnOffset, nextProject }) => {
               <section id="info" className="flex_info">
                 <h1>Recommendations </h1>
                 <p></p>
+
                 <div className="flex_info_item"></div>
+              </section>
+              <section id="cap">
+                <div className="flex_01">
+                  <img src={Recommendations} />
+                </div>
+              </section>
+              <section id="info" className="flex_info">
+                <h1>Improving </h1>
+                <p>Information </p>
+
+                <div className="flex_info_item">
+                  <ul className="year">
+                    <h3>Clarity</h3>
+                    Clearly communicate portion sizes with visual examples or
+                    comparative descriptions.
+                    <br />
+                    Provide detailed descriptions for menu items that match
+                    their pictures; include disclaimers when they differ.
+                    <br />
+                  </ul>
+                </div>
+              </section>
+              <section id="info" className="flex_info">
+                <h1>Enhancing </h1>
+                <p>Navigation </p>
+                <div className="flex_info_item">
+                  <ul className="year">
+                    <h3>Filter</h3>
+                    Add a &quot;clear filter&quot button at the top of filter
+                    menus for better usability.
+                    <br />
+                    Use chips or visual indicators to show active filters.
+                    <br />
+                  </ul>
+                </div>
+              </section>
+              <section id="info" className="flex_info">
+                <h1>Optimizing </h1>
+                <p>Visual Design </p>
+                <div className="flex_info_item">
+                  <ul className="year">
+                    <h3>Refresh</h3>
+                    Update dish cards with unique and accurate photos of each
+                    menu item.
+                    <br />
+                    Simplify layouts by reducing overlapping elements and
+                    excessive bright colors.
+                    <br />
+                  </ul>
+                </div>
+              </section>
+
+              <section id="info" className="flex_info">
+                <h1>Impact</h1>
+                <p>Recommendations </p>
+                <div className="flex_info_item">
+                  <ul className="year">
+                    <h3>Change is good</h3>
+                    By addressing these issues, The BRDGE has improved user
+                    trust, reduced friction in the ordering process, and created
+                    a more inclusive experience for its diverse audience. These
+                    changes led to higher user satisfaction and increased order
+                    completions.
+                    <br />
+                    <br />
+                  </ul>
+                </div>
               </section>
 
               <PageGuides nextProject="./tessa" />
