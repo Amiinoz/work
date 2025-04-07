@@ -432,7 +432,7 @@ const TheBrdge = ({ title, mainImage, images, columnOffset, nextProject }) => {
                 </div>
               </section>
 
-              <PageGuides nextProject="./tessa" />
+              <PageGuides nextProject="./oneup" />
             </div>
           </div>
         </motion.div>

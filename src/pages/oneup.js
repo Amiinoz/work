@@ -651,7 +651,7 @@ const OneUp = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
               </div>
-              <PageGuides nextProject="./tessa" />
+              <PageGuides nextProject="./Posty" />
             </div>
           </div>
         </motion.div>

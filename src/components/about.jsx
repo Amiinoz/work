@@ -35,15 +35,24 @@ const About = () => {
       />
       <div className="about-container" data-scroll-section>
         <div className="about-container__bio">
-          <p data-scroll="" data-offset="2.8">
-            I have a passion for creating user-friendly and visually appealing
-            designs that enhance the user experience. With a focus on
-            accessibility, I strive to create intuitive designs that are easy to
-            use for everyone. In my work, I have completed several successful
-            projects, including OneUp, Tessa, Posty, and Favetees. I have also
-            developed Covid19Tracker, a website that provides global data on the
-            pandemic, and designed and developed websites for Garabaldi Resorts
-            & Spa and other clients.
+          <p data-scroll="">
+            I’m Mohamed Magan, a Front-End Developer and UX Designer based in
+            Calgary, AB. My tech journey has been quite eventful, allowing me to
+            refine my skills in user-centric design and digital accessibility.
+            Recently, I completed two exciting projects that challenged me
+            significantly. I helped improve a client’s (under NDA) online
+            services to make them more accessible for individuals with various
+            abilities. Prior to that, I revamped The BRDGE&apos;s digital
+            platform, which significantly enhanced user engagement and increased
+            chef orders.
+          </p>
+          <p>
+            When I’m not coding or designing, I’m actively involved in the tech
+            community. I love volunteering at events like DevFest and Startup
+            Weekend. I’m also very passionate about digital equity and
+            environmental sustainability. These activities keep me engaged,
+            inspire my creativity, and remind me of my purpose: making a real
+            difference through technology.
           </p>
         </div>
 

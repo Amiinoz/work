@@ -369,7 +369,7 @@ const DigitalDivide = ({
                 </div>
               </section>
 
-              <PageGuides nextProject="./tessa" />
+              <PageGuides nextProject="./TheBrdge" />
             </div>
           </div>
         </motion.div>

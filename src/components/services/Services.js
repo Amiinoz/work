@@ -64,7 +64,7 @@ const Services = ({ text }) => {
     <>
       <SectionHeader
         title="Service"
-        subtitle="Passion"
+        subtitle=" Crafting Seamless Digital Experiences"
         heading="Design and Development"
         id="work-header"
       />
@@ -76,31 +76,22 @@ const Services = ({ text }) => {
           data-scroll-speed="0.6"
         >
           <p>
-            I have a passion for crafting seamless online experiences, I offer a
-            comprehensive range of solutions to cater to your digital needs. As
-            a skilled web developer, I specialize in building responsive,
-            user-friendly websites that not only impress visually but also
-            deliver exceptional performance across devices. Whether you require
-            a captivating landing page, an e-commerce platform, or a
-            full-fledged corporate website, I ensure every project is
-            custom-tailored to meet your unique requirements.
+            I&apos;m passionate about creating seamless online experiences that
+            drive real results. Whether you need a captivating landing page, a
+            robust e-commerce platform, or a corporate website, I tailor each
+            project to meet your unique needs. My approach combines
+            user-friendly design with exceptional performance across all
+            devices.
           </p>
-          <br />
 
           <p>
-            Furthermore, as a UX designer, I place a strong emphasis on user
-            research and interaction design to create intuitive interfaces that
-            enhance user satisfaction and engagement. By employing wireframes,
-            prototypes, and usability testing, I guarantee that each design
-            decision aligns with your target audience is preferences and goals.
-            By combining cutting-edge technologies with a user-centric approach,
-            my services encompass the perfect blend of creativity and
-            functionality. As I take pride in delivering projects on time and
-            within budget, you can rest assured that your digital aspirations
-            are in safe hands. Lets collaborate to transform your ideas into
-            reality and create digital experiences that stand out in todays
-            competitive landscape. Get in touch, and lets embark on a journey to
-            craft a remarkable online presence for your brand.
+            As a UX designer, I focus on user research and interaction design to
+            craft intuitive interfaces that boost engagement and satisfaction. I
+            use wireframes, prototypes, and usability testing to ensure every
+            design decision aligns with your audience&apos;s preferences and
+            goals. Let&apos;s collaborate to transform your ideas into a
+            competitive digital advantage that stands out in today&apos;s
+            landscape.
           </p>
 
           <span>

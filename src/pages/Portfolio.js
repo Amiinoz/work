@@ -101,7 +101,7 @@ const Portfolio = () => {
           projImgTitle4="Website"
           projImgInfo4="Everything comes together; the deliverables, features and design."
           projImages4={ProjImages4}
-          nextProject="./Garabaldi"
+          nextProject="./DigitalDivide"
         />
       </div>
     </>

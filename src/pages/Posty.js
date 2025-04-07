@@ -633,7 +633,7 @@ const Posty = ({ title, mainImage, images, columnOffset, nextProject }) => {
                   </div>
                 </section>
               </div>
-              <PageGuides nextProject="./Favetees" />
+              <PageGuides nextProject="./Portfolio" />
             </main>
           </div>
         </motion.div>

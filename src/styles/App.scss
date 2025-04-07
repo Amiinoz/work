@@ -248,7 +248,7 @@ section {
   padding-left: 12vw;
   place-items: center;
   margin-top: -7vh;
-  max-width: 12%;
+  max-width: 17%;
   text-align: justify;
 
   @include media('>=LGdesktop') {
@@ -278,17 +278,17 @@ section {
       line-height: 1.5em;
     }
   }
-  &__bio::after {
-    content: '';
-    width: 2rem;
-    height: 2px;
-    position: absolute;
-    background: currentColor;
-    top: calc(100% + -2rem);
-  }
+  // &__bio::after {
+  //   content: '';
+  //   width: 2rem;
+  //   height: 2px;
+  //   position: absolute;
+  //   background: currentColor;
+  //   top: calc(100% + -2rem);
+  // }
 
   &__social {
-    margin-left: -10vw;
+    margin-left: 2vw;
 
     @include media('<=tablet') {
       margin-left: 4rem;
@@ -360,8 +360,8 @@ section {
   // max-width: 12%;
   padding-left: 12vw;
   place-items: center;
-  // margin-top: -7vh;
-  max-width: 12%;
+  // margin-top: 3vh;
+  max-width: 17%;
   text-align: justify;
   @include media('>=LGdesktop') {
     margin-top: 2rem;

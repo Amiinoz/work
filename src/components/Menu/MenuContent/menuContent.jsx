@@ -5,14 +5,19 @@ import '../../../styles/components/menuContent.scss';
 
 const internalLinks = [
   {
+    url: '/DigitalDivide',
+    component: <span>DigitalDivide</span>,
+    src: require('../../../assets/digitalDivide/dd.png').default,
+  },
+  {
+    url: '/TheBrdge',
+    component: <span>TheBrdge</span>,
+    src: require('../../../assets/theBrdge/thebridge-banner.png').default,
+  },
+  {
     url: '/oneup',
     component: <span>OneUp</span>,
     src: require('../../../assets/oneup/oneup_banner.png').default,
-  },
-  {
-    url: '/tessa',
-    component: <span>Tessa</span>,
-    src: require('../../../assets/tessa/tessa_banner.png').default,
   },
 
   {
@@ -22,26 +27,9 @@ const internalLinks = [
   },
 
   {
-    url: '/Favetees',
-    component: <span>Favetees</span>,
-    src: require('../../../assets/favetees/favetees_banner.webp').default,
-  },
-  {
-    url: '/Covid19Tracker',
-    component: <span>Covid tracker</span>,
-    src: require('../../../assets/covid19-tracker/covid_banner.jpeg').default,
-  },
-
-  {
     url: '/Portfolio',
     component: <span>Portfolio</span>,
     src: require('../../../assets/portfolio/portfolio_banner.jpeg').default,
-  },
-
-  {
-    url: '/Garabaldi',
-    component: <span>Garabaldi</span>,
-    src: require('../../../assets/garabaldi/garabaldi_banner.avif').default,
   },
 ];
 
